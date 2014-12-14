@@ -1,0 +1,44 @@
+/***************
+TABLE STYLES
+***************/
+
+table {
+	width: 100%;
+	border: 1px solid lighten($grey, 15%);
+	margin-bottom: 1.5em;
+
+	caption {
+		margin: 0 0 7px;
+		font-size: 0.75em;
+		color: $grey;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+	}
+}
+
+tr {
+	border-bottom: 1px solid lighten($grey, 15%);
+
+	&:nth-child(even) {
+		background-color: lighten($grey, 30%);
+	}
+}
+
+td {
+	padding: 7px;
+	border-right: 1px solid lighten($grey, 15%);
+
+	&:last-child {
+		border-right: 0;
+	}
+}
+
+th {
+	background-color: lighten($grey, 30%);
+	border-bottom: 1px solid lighten($grey, 15%);
+	border-right: 1px solid lighten($grey, 15%);
+
+	&:last-child {
+		border-right: 0;
+	}
+}

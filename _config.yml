@@ -1,0 +1,14 @@
+name: Long Haul
+desctription: A minimal, long form template for Jekyll.
+markdown: redcarpet
+pygments: true
+
+navigation:
+ - title: Home
+   url: /index.html
+ - title: Articles
+   url: /articles.html
+ - title: About
+   url: /about.html
+ - title: Contact
+   url: /contact.html 

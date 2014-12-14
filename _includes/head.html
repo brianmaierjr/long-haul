@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>{{ page.title }}</title>
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="/assets/css/syntax.css">
+        <link rel="stylesheet" href="/assets/css/style.css">
+    </head>
+    <body>
+
+          <div class="header">
+            <h1 class="title"><a href="/">{{ site.name }}</a></h1>
+            <nav>
+                <ul class="nolist">
+                {% for link in site.navigation %}
+                    {% assign current = nil %}
+                    {% if page.url contains link.url %}
+                        {% assign current = 'current' %}
+                    {% endif %}
+                    <li class="element {% if forloop.first %}first{% endif %} {{ current }} {% if forloop.last %}last{% endif %}">
+                        <a href="{{ link.url }}">{{ link.title }}</a>
+                    </li> 
+                {% endfor %}
+                </ul>
+            </nav>
+          </div>
