@@ -2,7 +2,7 @@ name: Long Haul
 desctription: A minimal, long form template for Jekyll.
 markdown: redcarpet
 pygments: true
-baseurl: http://brianmaierjr.github.com/long-haul
+url: http://brianmaierjr.github.com/long-haul
 
 navigation:
  - title: Home
