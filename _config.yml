@@ -11,6 +11,6 @@ navigation:
  - title: Home
    url: /index.html
  - title: About
-   url: /about.html
+   url: {{ site.url }}{{ site.baseurl }}about.html
  - title: Contact
-   url: /contact.html 
+   url: {{ site.url }}{{ site.baseurl }}contact.html 
