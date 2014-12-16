@@ -11,6 +11,6 @@ navigation:
  - title: Home
    url: /index.html
  - title: About
-   url: {{ site.url }}{{ site.baseurl }}about.html
+   url: https://brianmaierjr.github.io/long-haul/about.html
  - title: Contact
-   url: {{ site.url }}{{ site.baseurl }}contact.html 
+   url: https://brianmaierjr.github.io/long-haul/contact.html 
