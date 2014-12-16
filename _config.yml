@@ -7,8 +7,6 @@ url: http://brianmaierjr.github.com/long-haul
 navigation:
  - title: Home
    url: /index.html
- - title: Articles
-   url: /articles.html
  - title: About
    url: /about.html
  - title: Contact
