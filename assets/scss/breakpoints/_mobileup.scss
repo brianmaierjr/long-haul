@@ -103,23 +103,21 @@ FOOTER STYLING
 
 
 /***************
-HOME STYLING
+POST LIST STYLING
 ***************/
 
-#home {
-	.posts {		
-		li {
-			margin-bottom: 3em;
+.posts {		
+	li {
+		margin-bottom: 3em;
 
-			.date {
-				color: lighten(black, 50%);
-				font-style: italic;
-			}
+		.date {
+			color: lighten(black, 50%);
+			font-style: italic;
 		}
+	}
 
-		h3 {
-			margin: 0;
-		}
+	h3 {
+		margin: 0;
 	}
 }
 
