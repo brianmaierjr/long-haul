@@ -8,10 +8,10 @@ baseurl: /long-haul/
 
 navigation:
  - title: Home
-   url: /index.html
+   url: {{ site.url }}{{ site.baseurl }}index.html
  - title: Articles
-   url: /articles.html
+   url: {{ site.url }}{{ site.baseurl }}articles.html
  - title: About
-   url: /about.html
+   url: {{ site.url }}{{ site.baseurl }}about.html
  - title: Contact
-   url: /contact.html 
+   url: {{ site.url }}{{ site.baseurl }}contact.html 
