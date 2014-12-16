@@ -8,10 +8,10 @@ baseurl: /long-haul/
 
 navigation:
  - title: Home
-   url: {{ site.url }}{{ site.baseurl }}index.html
+   url: https://brianmaierjr.github.io/long-haul/index.html
  - title: Articles
-   url: {{ site.url }}{{ site.baseurl }}articles.html
+   url: https://brianmaierjr.github.io/long-haul/articles.html
  - title: About
-   url: {{ site.url }}{{ site.baseurl }}about.html
+   url: https://brianmaierjr.github.io/long-haul/about.html
  - title: Contact
-   url: {{ site.url }}{{ site.baseurl }}contact.html 
+   url: https://brianmaierjr.github.io/long-haul/contact.html 
