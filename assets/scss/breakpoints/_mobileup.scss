@@ -12,8 +12,13 @@ html {
 
 body {
 	font-family: $serif; 
-	line-height: 1.5;  
-	font-size: 100%;
+	line-height: 1.75;  
+	font-size: 112.5%;
+	color: $black;
+
+	p , ul {
+		margin: 0 0 1.5em;
+	}
 }
 
 .nolist{
@@ -35,31 +40,43 @@ a {
 	}
 }
 
+
 /***************
 LAYOUTS
 ***************/
 
 .container {
-	@include container(750px); 
+	@include container(610px); 
 	padding: 0 20px;
 }
 
+
+/***************
+LAYOUTS
+***************/
+
+#home {
+	padding-top: 2em;
+}
 
 /***************
 HEADER
 ***************/
 
 .header {
-	background-image: url('../img/header-bg.jpg');
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center center;
-	text-align: center;
+	background-color: $black;
 	color: white;
-	padding: 5em 0;
+	padding: 0;
+	overflow: hidden;
+	height: 3em;
 
 	h1 {
-		margin-top: 0;
+		margin: 0;
+		float: left;
+		font-size: 1em;
+		line-height: 3em;
+		font-family: $sans-serif;
+		font-weight: normal;
 
 		a {
 			color: white;
@@ -68,13 +85,56 @@ HEADER
 	}
 
 	nav {
+		float: right;
 		ul {
+			margin: 0;
 			li {
 				display: inline;
+				line-height: 3em;
+
+				a {
+					color: white;
+					font-size: .9em;
+					text-decoration: none;
+					padding: 0 .25em;
+
+					&:hover {
+						color: darken(white, 20%);
+					}
+				}
 			}
 		}
 	}
 }
+
+
+/***************
+POST STYLING
+***************/
+
+.post {
+
+	.postTitle {
+		text-align: center;
+		margin-top: 1em;
+	}
+
+	blockquote {
+		margin: 2em 0;
+
+		p {
+			padding: 0 0 0 .5em;
+			line-height: 1.8;
+		}
+	}
+
+	.meta {
+		text-align: center;
+		color: lighten(black, 50%);
+		font-style: italic;
+	}
+}
+
 
 /***************
 FOOTER STYLING
@@ -114,13 +174,12 @@ POST LIST STYLING
 			color: lighten(black, 50%);
 			font-style: italic;
 		}
-	}
 
-	h3 {
-		margin: 0;
+		h3 {
+			margin: 0;
+		}
 	}
 }
-
 
 
 /***************
@@ -130,3 +189,18 @@ MEDIA STYLING
 img,video,audio,iframe,object{
 	max-width:100%;
 }
+
+
+/***************
+FIGURE STYLING
+***************/
+
+figure {
+	figcaption {
+		text-align: center;
+		font-size: .9em;
+		font-style: italic;
+		color: lighten($black, 10%); 
+	}
+}
+

@@ -11,18 +11,20 @@
     <body>
 
           <div class="header">
-            <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-            <nav>
-                <ul class="nolist">
-                {% for link in site.navigation %}
-                    {% assign current = nil %}
-                    {% if page.url contains link.url %}
-                        {% assign current = 'current' %}
-                    {% endif %}
-                    <li class="element {% if forloop.first %}first{% endif %} {{ current }} {% if forloop.last %}last{% endif %}">
-                        <a href="{{ link.url }}">{{ link.title }}</a>
-                    </li> 
-                {% endfor %}
-                </ul>
-            </nav>
+            <div class="container">
+                <h1 class="title"><a href="/">{{ site.name }}</a></h1>
+                <nav>
+                    <ul class="nolist">
+                    {% for link in site.navigation %}
+                        {% assign current = nil %}
+                        {% if page.url contains link.url %}
+                            {% assign current = 'current' %}
+                        {% endif %}
+                        <li class="element {% if forloop.first %}first{% endif %} {{ current }} {% if forloop.last %}last{% endif %}">
+                            <a href="{{ link.url }}">{{ link.title }}</a>
+                        </li> 
+                    {% endfor %}
+                    </ul>
+                </nav>
+            </div>
           </div>

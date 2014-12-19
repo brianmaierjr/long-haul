@@ -1,0 +1,61 @@
+/***************
+768 UP STYLES
+***************/
+
+
+/***************
+LAYOUTS
+***************/
+
+.container {
+	@include container(750px); 
+	padding: 0 20px;
+}
+
+#home {
+	.posts, h1 {
+		padding: 0 90px;
+	}
+}
+
+
+/***************
+POST STYLING
+***************/
+
+.post {
+	h1, h2, h3, h4, h5, h6, p, ul, ol, dl {
+		padding: 0 90px;
+	}
+
+	ul, ol {
+		padding: 0 90px 0 130px;
+	}
+}
+
+
+/***************
+FOOTER STYLES
+***************/
+
+.footer {
+	&-links {
+		float: right;
+	}
+
+	.copy {
+		float: left;
+	}
+}
+
+
+/***************
+HOME STYLING
+***************/
+
+#contact {
+	form {
+		float: right;
+		margin-left: 2em;
+	}
+}
