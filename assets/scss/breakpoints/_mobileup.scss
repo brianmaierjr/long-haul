@@ -120,12 +120,10 @@ POST STYLING
 	}
 
 	blockquote {
+		clear: both;
 		margin: 2em 0;
-
-		p {
-			padding: 0 0 0 .5em;
-			line-height: 1.8;
-		}
+		padding: 0 0 0 1em;
+		line-height: 1.8;
 	}
 
 	.meta {
@@ -146,9 +144,10 @@ FOOTER STYLING
 
 	.container {
 		border-top: 4px solid darken(white, 15%);
+		padding-top: .5em;
 	}
 
-	.copy {
+	.copy, .footer-links {
 		font-size: .8em; 
 	}
 
