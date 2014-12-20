@@ -5,6 +5,7 @@ MOBILE UP STYLES
 // A better box-sizing practice http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
 html {
   box-sizing: border-box;
+  overflow-y: scroll;
 }
 *, *:before, *:after {
   box-sizing: inherit;
