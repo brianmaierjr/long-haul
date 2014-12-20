@@ -5,6 +5,7 @@ pygments: true
 paginate: 3
 paginate_path: "blog/page:num/"
 baseurl: brianmaierjr.com
+url: /long-haul
 
 navigation:
  - title: Home
