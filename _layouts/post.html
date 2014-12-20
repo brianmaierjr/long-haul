@@ -8,11 +8,4 @@ layout: default
 	<h1 class="postTitle">{{ page.title }}</h1>
 	<p class="meta">{{ page.date | date_to_string }}</p>
 	{{ content }}
-
-	<!-- POST NAVIGATION -->
-	{% if page.previous %} 
-	<div class="postNav">
-	        <a id="prev" rel="prev" href="{{ page.previous.url }}"><strong>Previous Article:</strong><br/>{{ page.previous.title }}</a>
-	</div>
-	{% endif %}
 </div>
