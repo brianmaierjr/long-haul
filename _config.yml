@@ -4,7 +4,7 @@ markdown: redcarpet
 pygments: true
 paginate: 3
 paginate_path: "blog/page:num/"
-baseurl: brianmaierjr.com
+baseurl: https://brianmaierjr.github.io
 url: /long-haul
 
 navigation:
