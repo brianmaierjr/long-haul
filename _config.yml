@@ -3,7 +3,7 @@ desctription: A minimal, long form template for Jekyll.
 markdown: redcarpet
 pygments: true
 paginate: 3
-paginate_path: "blog/page:num/"
+paginate_path: "https://brianmaierjr.github.io/long-haul/blog/page:num/"
 baseurl: https://brianmaierjr.github.io
 url: /long-haul
 
