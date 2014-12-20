@@ -12,10 +12,69 @@ LAYOUTS
 	padding: 0 20px;
 }
 
+.contentContainer {
+	padding-top: 0;
+	position: relative;
+	z-index: 1;
+
+	&:after {
+		z-index: -1;
+		background: white;
+		content: "";
+		display: block;
+		width: 120%;
+		height: 5em;
+		position: absolute;
+		top: -2em;
+		left: 0;
+		-webkit-transform: skewY(-2deg);
+		-ms-transform: skewY(-2deg);
+		transform: skewY(-2deg);
+		-webkit-transform-origin: bottom left;
+		-ms-transform-origin: bottom left;
+		transform-origin: bottom left;
+	}
+}
+
 #home {
-	.posts, h1 {
-		@include span(6 of 12 last);
-		@include push(3);
+	.posts, .pageTitle, .pagination {
+		@include span(9 of 12);
+		float: none;
+		margin: 0 auto 1.5em;
+	}
+
+	.pageTitle {
+		margin: .5em auto 1em;
+	}
+}
+
+
+/***************
+HEADER STYLING
+***************/
+
+.header {
+	height: 15em;
+	position: relative;
+	padding-bottom: 2em;
+
+	.container {
+		position: relative;
+		top: 50%;
+		-webkit-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+		transform: translateY(-50%);
+
+		h1 {
+			font-size: 3em;
+			line-height: 1;
+			letter-spacing: -3px;
+		}
+
+		nav {
+			float: left;
+			clear: left;
+		}
 	}
 }
 
@@ -25,9 +84,18 @@ POST STYLING
 ***************/
 
 .post {
-	h1, h2, h3, h4, h5, h6, p, ul, ol, dl {
-		@include span(8 of 12); 
-		@include push(2);
+	h2, h3, h4, h5, h6, p, ul, ol, dl, .pageTitle {
+		@include span(9 of 12); 
+		float: none;
+		margin: 0 auto 1.5em; 
+	}
+
+	.pageTitle {
+		margin: .5em auto 1em;
+	}
+
+	.postTitle {
+		margin-top: 0;
 	}
 }
 
@@ -48,12 +116,28 @@ FOOTER STYLES
 
 
 /***************
-HOME STYLING
+HOMEPAGE STYLING
 ***************/
 
 #contact {
 	form {
 		float: right;
 		margin-left: 2em;
+	}
+}
+
+
+/***************
+CONTACT PAGE STYLING
+***************/
+
+.contactContent {
+	@include span(6 of 12);
+}
+
+#contact {
+	form {
+		@include span(6 of 12 last);
+		margin-left: 0;
 	}
 }

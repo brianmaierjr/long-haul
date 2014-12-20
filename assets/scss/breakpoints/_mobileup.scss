@@ -27,6 +27,10 @@ body {
 	margin-left:0;
 }
 
+.pageTitle {
+	margin-bottom: 1em;
+}
+
 
 /***************
 LINKS
@@ -50,24 +54,22 @@ LAYOUTS
 	padding: 0 20px;
 }
 
-
-/***************
-LAYOUTS
-***************/
-
-#home {
-	padding-top: 2em;
+.contentContainer {
+	padding-top: 1em;
 }
+
 
 /***************
 HEADER
 ***************/
 
 .header {
-	background-color: $black;
+	background-color: seagreen;
+	background-image: url('../img/touring.jpg');
+	background-size: cover;
+	background-position: center center;
 	color: white;
 	padding: 0;
-	overflow: hidden;
 	height: 3em;
 
 	h1 {
@@ -76,7 +78,8 @@ HEADER
 		font-size: 1em;
 		line-height: 3em;
 		font-family: $sans-serif;
-		font-weight: normal;
+		font-weight: 800;
+		text-transform: uppercase;
 
 		a {
 			color: white;
@@ -102,6 +105,11 @@ HEADER
 						color: darken(white, 20%);
 					}
 				}
+
+				&.current {
+					padding-bottom: .25em;
+					border-bottom: 4px solid rgba(255,255,255,.4); 
+				}
 			}
 		}
 	}
@@ -116,7 +124,7 @@ POST STYLING
 
 	.postTitle {
 		text-align: center;
-		margin-top: 1em;
+		margin-top: 0;
 	}
 
 	blockquote {
@@ -129,7 +137,29 @@ POST STYLING
 	.meta {
 		text-align: center;
 		color: lighten(black, 50%);
-		font-style: italic;
+		font-family: $sans-serif;
+		font-weight: 300;
+	}
+
+	figure {
+		img {
+			margin-bottom: .25em;
+		}
+	}
+
+	img {
+		margin-bottom: 1.5em;
+	}
+
+	.dropcap {
+		font-family: $sans-serif;
+		color: $primary-color;
+		font-weight: 800;
+	}
+
+	.highlight {
+		clear: both;
+		margin-bottom: 1.5em;
 	}
 }
 
@@ -162,20 +192,44 @@ FOOTER STYLING
 
 
 /***************
+PAGINATION STYLING
+***************/
+ 
+.pagination { 
+	.next {
+		float: right;
+	}
+}
+
+
+/***************
 POST LIST STYLING
 ***************/
 
 .posts {		
 	li {
-		margin-bottom: 3em;
+		margin-bottom: 4em;
+		position: relative;
+
+		&:before {
+			content: "";
+			position: absolute;
+			bottom: -2em;
+			left: 0;
+			background: darken(white, 10%);
+			height: 2px;
+			width: 60px;
+		}
 
 		.date {
 			color: lighten(black, 50%);
-			font-style: italic;
+			font-family: $sans-serif;
+			font-weight: 300;
+			font-size: .8em;
 		}
 
 		h3 {
-			margin: 0;
+			margin: 0 0 .5em;
 		}
 	}
 }

@@ -4,14 +4,23 @@ title: Your New Jekyll Site
 ---
 
 <div id="home">
-  <h1 class="h2">Recent Posts</h1>
+  <h1 class="pageTitle">Recent Posts</h1>
   <ul class="posts nolist">
-    {% for post in site.posts %}
+    {% for post in paginator.posts %}
       <li>
       	<span class="date">{{ post.date | date_to_string }}</span>
       	<h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-      	<p class="description">{% if post.description %}{{ post.description  | strip_html | strip_newlines | truncate: 120 }}{% else %}{{ post.content | strip_html | strip_newlines | truncate: 120 }}{% endif %}</p>
+      	<p class="description">{% if post.description %}{{ post.description  | strip_html | strip_newlines | truncate: 250 }}{% else %}{{ post.content | strip_html | strip_newlines | truncate: 250 }}{% endif %}</p>
       </li>
     {% endfor %}
   </ul>
+  <!-- Pagination links -->
+  <div class="pagination">
+    {% if paginator.previous_page %}
+      <a href="{{ paginator.previous_page_path }}" class="previous">Newer Posts</a>
+    {% endif %}
+    {% if paginator.next_page %}
+      <a href="{{ paginator.next_page_path }}" class="next">Older Posts</a>
+    {% endif %}
+  </div>
 </div>

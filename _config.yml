@@ -2,6 +2,8 @@ name: Long Haul
 desctription: A minimal, long form template for Jekyll.
 markdown: redcarpet
 pygments: true
+paginate: 3
+paginate_path: "blog/page:num/"
 
 navigation:
  - title: Home

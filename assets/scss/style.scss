@@ -5,7 +5,7 @@
 @import "normalize";
 
 // Import fonts from Google
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,800);
 @import url(http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic);
 
 // Site configuration
@@ -24,9 +24,7 @@
 // Mobile up base styles
 @import "breakpoints/mobileup";
 
-// Import media queries
-
-@media only screen and (min-width: 481px) { @import "breakpoints/481up";} 
+// Import media queries add more as you desire
 @media only screen and (min-width: 750px) { @import "breakpoints/750up";} 
 
 // If IE support is needed you can add them here or create another stylesheet for specific IE fixes

@@ -5,7 +5,7 @@ date:   2014-12-13 21:01:02
 categories: jekyll update
 ---
 
-Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Vestibulum id ligula porta felis euismod semper. Donec sed odio dui. Aenean lacinia bibendum nulla sed consectetur.
+<span class="dropcap">C</span>urabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Vestibulum id ligula porta felis euismod semper. Donec sed odio dui. Aenean lacinia bibendum nulla sed consectetur.
 
 Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas faucibus mollis interdum. Sed posuere consectetur est at lobortis. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
 
