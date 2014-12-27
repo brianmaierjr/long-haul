@@ -44,7 +44,7 @@ LAYOUTS
 	}
 
 	.pageTitle {
-		margin: .5em auto 1em;
+		margin: 2rem auto 1em;
 	}
 }
 
@@ -87,15 +87,62 @@ POST STYLING
 	h2, h3, h4, h5, h6, p, ul, ol, dl, .pageTitle {
 		@include span(9 of 12); 
 		float: none;
-		margin: 0 auto 1.5em; 
+		margin: 0 auto 2rem; 
+	}
+
+	h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+		margin: 1rem auto; 
 	}
 
 	.pageTitle {
-		margin: .5em auto 1em;
+		margin: 2rem auto 1em;
 	}
 
 	.postTitle {
-		margin-top: 0;
+		margin-top: 2rem;
+	}
+
+	.featuredImage {
+		position: relative;
+		margin-top: 2rem;
+
+		&:before {
+			background: white;
+			content: "";
+			display: block;
+			width: 120%;
+			height: 4em;
+			position: absolute;
+			top: -2em;
+			left: 0;
+			-webkit-transform: skewY(-2deg);
+			-ms-transform: skewY(-2deg);
+			transform: skewY(-2deg);
+			-webkit-transform-origin: bottom left;
+			-ms-transform-origin: bottom left;
+			transform-origin: bottom left;
+		}
+
+	}
+}
+
+
+/***************
+POST NAV STYLING
+***************/
+
+#post-nav {
+
+	.prev, .next {
+		width: 50%;
+	}
+
+	.prev {
+		float: left;
+	}
+
+	.next {
+		float: right;
 	}
 }
 
@@ -111,6 +158,10 @@ FOOTER STYLES
 
 	.copy {
 		float: left;
+	}
+
+	.container {
+		padding: 1rem 0;
 	}
 }
 

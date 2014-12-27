@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generate more at customizr.net -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg id="picassa" class="custom-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" style="height: 100px; width: 100px;"><circle class="outer-shape" cx="50" cy="50" r="48" style="opacity: 1; fill: rgb(46, 139, 87);"></circle>
+	<path class="inner-shape" style="opacity: 1; fill: rgb(247, 247, 247);" transform="translate(25,25) scale(0.5)" d="M68.375,38.732L33.496,3.853C38.654,2.008,44.209,1,50,1c6.498,0,12.7,1.268,18.375,3.565V38.732z M74.5,68.375V7.557 C89.146,16.029,99,31.864,99,50c0,6.498-1.268,12.7-3.565,18.375H74.5z M31.625,74.5h60.818C83.971,89.146,68.136,99,50,99 c-6.498,0-12.7-1.268-18.375-3.565V74.5z M41.794,22.438L2.434,61.798C1.499,58.019,1,54.068,1,50 C1,31.493,11.262,15.384,26.405,7.048C26.405,7.048,41.794,22.438,41.794,22.438z M25.5,49.018v43.425 C16.447,87.206,9.227,79.155,5.032,69.486L25.5,49.018z"></path>
+</svg>
+

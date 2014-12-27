@@ -4,6 +4,7 @@ markdown: redcarpet
 pygments: true
 paginate: 3
 paginate_path: "blog/page:num/"
+permalink: /blog/:title/
 
 navigation:
  - title: Home

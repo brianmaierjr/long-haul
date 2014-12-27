@@ -17,18 +17,12 @@ body {
 	color: $black;
 
 	p , ul {
-		margin: 0 0 1.5em;
+		margin: 0 0 2rem;
 	}
 }
 
-.nolist{
-	list-style:none;
-	padding-left:0;
-	margin-left:0;
-}
-
 .pageTitle {
-	margin-bottom: 1em;
+	margin: 2rem auto 1em;
 }
 
 
@@ -43,6 +37,26 @@ a {
 		color: darken($link-color, 15%);
 	}
 }
+
+
+/***************
+LIST STYLING
+***************/
+
+.nolist{
+	list-style:none;
+	padding-left:0;
+	margin-left:0;
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	margin: 0 0 1.5rem;
+}
+
 
 
 /***************
@@ -129,7 +143,7 @@ POST STYLING
 
 	blockquote {
 		clear: both;
-		margin: 2em 0;
+		margin: 2.5em 0;
 		padding: 0 0 0 1em;
 		line-height: 1.8;
 	}
@@ -165,6 +179,84 @@ POST STYLING
 
 
 /***************
+POST NAV STYLING
+***************/
+
+#post-nav {
+	border-top: 1px solid darken(white, 10%);
+	border-bottom: 1px solid darken(white, 10%);
+	overflow: hidden;
+
+	.prev, .next {
+		display: block;
+		width: 100%;
+		height: 5rem;
+		overflow: hidden;
+		position: relative;
+		font-family: $sans-serif;
+		font-weight: 800;
+		font-size: .9em;
+		text-transform: uppercase;
+
+		img {
+			z-index: 1;
+			display: block;
+			position: absolute;
+			top: 50%;
+			-webkit-transform: translateY(-50%);
+			-ms-transform: translateY(-50%);
+			transform: translateY(-50%);
+			left: 0;
+			width: 100%;.
+			height: auto;
+		}
+
+		span {
+			z-index: 10;
+			position: relative;
+			padding: .5rem;
+			position: absolute;
+			top: 50%;
+			-webkit-transform: translateY(-50%);
+			-ms-transform: translateY(-50%);
+			transform: translateY(-50%);
+			width: 100%;
+			line-height: 1.4;
+		}
+
+		&.image {
+			text-decoration: none;
+			color: white;
+			text-shadow: 1px 1px 3px rgba(0,0,0,.8);
+			padding: 0 .5rem;
+			position: relative;
+			@include transition(all 0.2s ease-in-out);
+		}
+
+		&:hover {
+			&.image {
+				opacity: .8;
+			}
+		}
+	}
+
+	.prev {
+		span {
+			left: 0;
+		}
+	}
+
+	.next {
+		text-align: right;
+
+		span {
+			right: 0;
+		}
+	}
+}
+
+
+/***************
 FOOTER STYLING
 ***************/
 
@@ -181,10 +273,29 @@ FOOTER STYLING
 		font-size: .8em; 
 	}
 
+	.copy {
+		margin-bottom: 1rem;
+	}
+
 	&-links {
 		ul {
+			text-align: center;
+
 			li {
 				display: inline;
+
+				a {
+					display: inline-block;
+					width: 30px;
+					height: 30px;
+					@include transition(all 0.2s ease-in-out);
+				}
+
+				&:hover {
+					a {
+						opacity: .8;
+					}
+				}
 			}
 		}
 	}
@@ -249,11 +360,13 @@ FIGURE STYLING
 ***************/
 
 figure {
+	margin: 3rem 0;
+
 	figcaption {
 		text-align: center;
 		font-size: .9em;
 		font-style: italic;
-		color: lighten($black, 10%); 
+		color: lighten($black, 30%); 
 	}
 }
 
