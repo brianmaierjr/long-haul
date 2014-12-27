@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generate more at customizr.net -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg id="delicious" class="custom-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" style="height: 100px; width: 100px;"><circle class="outer-shape" cx="50" cy="50" r="48" style="opacity: 1; fill: rgb(46, 139, 87);"></circle>
+	<path class="inner-shape" style="opacity: 1; fill: rgb(247, 247, 247);" transform="translate(25,25) scale(0.5)" d="M82.67,1H17.335C8.35,1,0.999,8.352,0.999,17.336v65.329C0.999,91.654,8.35,99,17.335,99H82.67 c8.984,0,16.33-7.345,16.33-16.334V17.336C98.999,8.351,91.654,1,82.67,1z M92.875,82.665c0,2.712-1.066,5.271-3.002,7.208 c-1.935,1.935-4.493,3.002-7.202,3.002h-32.67V50H7.126V17.336c0-2.709,1.067-5.268,3.005-7.206s4.496-3.005,7.206-3.005h32.664V50 h42.875L92.875,82.665L92.875,82.665z"></path>
+</svg>
+
