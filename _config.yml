@@ -10,8 +10,8 @@ permalink: /blog/:title/
 
 navigation:
  - title: Home
-   url: /index.html
+   url: {{ site.url }}/index.html
  - title: About
-   url: /about.html
+   url: {{ site.url }}/about.html
  - title: Contact
-   url: /contact.html 
+   url: {{ site.url }}/contact.html 
