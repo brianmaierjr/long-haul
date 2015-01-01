@@ -171,11 +171,6 @@ HEADER
 		a {
 			color: white;
 			text-decoration: none;
-			@include transition(all 0.2s ease-in-out);
-		}
-
-		&:hover a { 
-			opacity: .7; 
 		}
 	}
 }
