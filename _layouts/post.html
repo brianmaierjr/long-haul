@@ -4,7 +4,7 @@ layout: default
 <div class="post">
 	{% if page.image %}
 		<div class="featuredImage">
-	  		<img src="/assets/img/{{ page.image }}" alt="" />
+	  		<img src="{{ site.url }}/assets/img/{{ page.image }}" alt="" />
 	  	</div>
 	{% endif %}
 	<h1 class="postTitle">{{ page.title }}</h1>
@@ -16,15 +16,14 @@ layout: default
 	  {% if page.previous.url %} 
 	    <a class="prev{% if page.previous.image %} image{% endif %}" href="{{page.previous.url}}"><span>&laquo; {{page.previous.title}}</span>
 	    {% if page.previous.image %} 
-	    	<img src="/assets/img/{{ page.previous.image }}" alt="">
+	    	<img src="{{ site.url }}/assets/img/{{ page.previous.image }}" alt="">
 	    {% endif %}
 		</a>
 	  {% endif %}  
-
 	  {% if page.next.url %}  
 	    <a class="next{% if page.next.image %} image{% endif %}" href="{{page.next.url}}"><span>{{page.next.title}} &raquo;</span>
 	    {% if page.next.image %} 
-	    	<img src="/assets/img/{{ page.next.image }}" alt="">
+	    	<img src="{{ site.url }}/assets/img/{{ page.next.image }}" alt="">
 	  	{% endif %} 
 	  	</a>
 	  {% endif %} 

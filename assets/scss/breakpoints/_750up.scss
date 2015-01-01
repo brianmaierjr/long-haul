@@ -64,18 +64,61 @@ HEADER STYLING
 		-webkit-transform: translateY(-50%);
 		-ms-transform: translateY(-50%);
 		transform: translateY(-50%);
+	}
 
-		h1 {
-			font-size: 3em;
-			line-height: 1;
-			letter-spacing: -3px;
-		}
+	h1 {
+		font-size: 3em;
+		line-height: 1;
+		letter-spacing: -3px;
+		padding-left: 0;
+	}
 
-		nav {
-			float: left;
-			clear: left;
+	nav {
+		float: left;
+		clear: left;
+
+		ul {
+			margin: 0;
+			li {
+				display: inline;
+				line-height: 3em;
+				background: none;
+				padding: 0 5px;
+				border: none;
+
+				a {
+					color: white;
+					font-size: .9em;
+					text-decoration: none;
+					padding: 0 .25em;
+
+					&:hover {
+						color: darken(white, 20%);
+					}
+				}
+
+				&.current {
+					padding-bottom: .25em;
+					border-bottom: 4px solid rgba(255,255,255,.4); 
+				}
+			}
 		}
 	}
+}
+
+
+/***************
+MENU STYLING
+***************/
+
+.js .nav-collapse {
+  position: relative;
+}
+.js .nav-collapse.closed {
+  max-height: none;
+}
+.nav-toggle {
+  display: none;
 }
 
 
@@ -139,9 +182,11 @@ POST NAV STYLING
 
 	.prev {
 		float: left;
+		text-align: left;
 	}
 
 	.next {
+		text-align: right;
 		float: right;
 	}
 }
@@ -167,18 +212,6 @@ FOOTER STYLES
 
 
 /***************
-HOMEPAGE STYLING
-***************/
-
-#contact {
-	form {
-		float: right;
-		margin-left: 2em;
-	}
-}
-
-
-/***************
 CONTACT PAGE STYLING
 ***************/
 
@@ -189,6 +222,5 @@ CONTACT PAGE STYLING
 #contact {
 	form {
 		@include span(6 of 12 last);
-		margin-left: 0;
 	}
 }

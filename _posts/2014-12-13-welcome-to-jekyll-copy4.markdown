@@ -37,7 +37,7 @@ Cras justo odio, dapibus ac facilisis in, egestas eget quam. Curabitur blandit t
 Maecenas faucibus mollis interdum. Maecenas faucibus mollis interdum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Etiam porta sem malesuada magna mollis euismod. Vestibulum id ligula porta felis euismod semper. Cras mattis consectetur purus sit amet fermentum.
 
 <figure>
-	<img src="/assets/img/touring.jpg" alt="">
+	<img src="{{ site.url }}/assets/img/touring.jpg" alt="">
 	<figcaption>Fig1. - This is an example figcaption</figcaption>
 </figure>
 

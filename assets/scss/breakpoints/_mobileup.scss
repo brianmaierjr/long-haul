@@ -15,6 +15,7 @@ body {
 	line-height: 1.75;  
 	font-size: 112.5%;
 	color: $black;
+	overflow-X: hidden;
 
 	p , ul {
 		margin: 0 0 2rem;
@@ -36,6 +37,73 @@ a {
 	&:hover {
 		color: darken($link-color, 15%);
 	}
+}
+
+
+/***************
+MENU STYLING
+***************/
+
+.nav-collapse ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: block;
+  list-style: none;
+}
+
+.nav-collapse li {
+  width: 100%;
+  display: block;
+  background: seagreen;
+  padding: 5px 20px;
+  border-bottom: 2px solid lighten(seagreen, 5%);
+
+  a {
+  	color: white;
+  	text-decoration: none;
+  }
+}
+
+.js .nav-collapse {
+  clip: rect(0 0 0 0);
+  max-height: 0;
+  position: absolute;
+  display: block;
+  overflow: hidden;
+  zoom: 1;
+  clear: both;
+  width: 100%;
+}
+
+.nav-collapse.opened {
+  max-height: 9999px;
+}
+
+.nav-toggle {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  float: right;
+  line-height: 2em;
+  margin-top: .5em;
+  background-color: seagreen;
+  border-radius: 4px;
+  padding: 0 .5em;
+  color: white;
+  text-decoration: none;
+  position: relative;
+  right: 20px;
+  @include transition(all 0.2s ease-in-out);
+
+  &:hover {
+  	color: white;
+  	background-color: darken(seagreen, 10%);
+  }
 }
 
 
@@ -86,9 +154,14 @@ HEADER
 	padding: 0;
 	height: 3em;
 
+	.container {
+		padding: 0;
+	}
+
 	h1 {
 		margin: 0;
 		float: left;
+		padding-left: 20px;
 		font-size: 1em;
 		line-height: 3em;
 		font-family: $sans-serif;
@@ -98,33 +171,6 @@ HEADER
 		a {
 			color: white;
 			text-decoration: none;
-		}
-	}
-
-	nav {
-		float: right;
-		ul {
-			margin: 0;
-			li {
-				display: inline;
-				line-height: 3em;
-
-				a {
-					color: white;
-					font-size: .9em;
-					text-decoration: none;
-					padding: 0 .25em;
-
-					&:hover {
-						color: darken(white, 20%);
-					}
-				}
-
-				&.current {
-					padding-bottom: .25em;
-					border-bottom: 4px solid rgba(255,255,255,.4); 
-				}
-			}
 		}
 	}
 }
@@ -144,8 +190,31 @@ POST STYLING
 	blockquote {
 		clear: both;
 		margin: 2.5em 0;
-		padding: 0 0 0 1em;
+		padding: 0;
 		line-height: 1.8;
+		position: relative;
+
+		&:before {
+			content: "";
+			position: absolute;
+			top: -1.25em;
+			background: seagreen;
+			display: block;
+			height: 2px;
+			width: 150px;
+			left: calc(50% - 75px);
+		}
+
+		&:after {
+			content: "";
+			position: absolute;
+			bottom: -1.25em;
+			background: seagreen;
+			display: block;
+			height: 2px;
+			width: 150px;
+			left: calc(50% - 75px);
+		}		
 	}
 
 	.meta {
@@ -197,6 +266,7 @@ POST NAV STYLING
 		font-weight: 800;
 		font-size: .9em;
 		text-transform: uppercase;
+		text-align: center;
 
 		img {
 			z-index: 1;
@@ -247,8 +317,6 @@ POST NAV STYLING
 	}
 
 	.next {
-		text-align: right;
-
 		span {
 			right: 0;
 		}

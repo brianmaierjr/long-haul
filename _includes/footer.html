@@ -4,23 +4,31 @@
 
               <div class="footer-links"> 
                 <ul class="nolist"> 
-                  <li><a href="/"><img src="/assets/img/social-icons/facebook-square.svg" alt=""></a></li>
-                  <li><a href="/"><img src="/assets/img/social-icons/twitter.svg" alt=""></a></li>
-                  <li><a href="/"><img src="/assets/img/social-icons/github.svg" alt=""></a></li>
-                  <li><a href="/"><img src="/assets/img/social-icons/mail.svg" alt=""></a></li>
+                  <li><a href="/"><img src="{{ site.url }}/assets/img/social-icons/facebook-square.svg" alt=""></a></li>
+                  <li><a href="/"><img src="{{ site.url }}/assets/img/social-icons/twitter.svg" alt=""></a></li>
+                  <li><a href="/"><img src="{{ site.url }}/assets/img/social-icons/github.svg" alt=""></a></li>
+                  <li><a href="/"><img src="{{ site.url }}/assets/img/social-icons/mail.svg" alt=""></a></li>
                 </ul>
               </div>
             </div>
           </div><!-- end .footer -->
 
-          <!-- Dropcap.js -->
-          <script src='/assets/js/dropcap.min.js'></script>
-          <script>
-            var dropcaps = document.querySelectorAll(".dropcap");
-            window.Dropcap.layout(dropcaps, 3);
-          </script>
+          <!-- Add jQuery and other scripts -->
+          <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+          <script>window.jQuery || document.write('<script src="{{ site.url }}/assets/js/jquery-1.11.2.min.js"><\/script>')</script>
+          <script src='{{ site.url }}/assets/js/dropcap.min.js'></script>
+          <script src='{{ site.url }}/assets/js/responsive-nav.min.js'></script>
+          <script src='{{ site.url }}/assets/js/scripts.js'></script>
 
-          <script src='/assets/js/scripts.js'></script> 
+          <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+          <script>
+              (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+              function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+              e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+              e.src='//www.google-analytics.com/analytics.js';
+              r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+              ga('create','UA-XXXXX-X');ga('send','pageview');
+          </script>
 
     </body>
 </html>
