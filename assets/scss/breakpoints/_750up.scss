@@ -127,7 +127,7 @@ POST STYLING
 ***************/
 
 .post {
-	h2, h3, h4, h5, h6, p, ul, ol, dl, .pageTitle {
+	h1, h2, h3, h4, h5, h6, p, ul, ol, dl, .pageTitle {
 		@include span(9 of 12); 
 		float: none;
 		margin: 0 auto 2rem; 
