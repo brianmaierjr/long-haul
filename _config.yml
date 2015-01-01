@@ -11,8 +11,8 @@ permalink: /blog/:title/
 
 navigation:
  - title: Home
-   url: {{ site.url }}/index.html
+   url: {{ site.baseurl }}/index.html
  - title: About
-   url: {{ site.url }}/about.html
+   url: {{ site.baseurl }}/about.html
  - title: Contact
-   url: {{ site.url }}/contact.html 
+   url: {{ site.baseurl }}/contact.html 
