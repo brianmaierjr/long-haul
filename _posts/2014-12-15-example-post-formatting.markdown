@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "This is a test post"
-date:   2014-12-13 21:01:02
+title:  "Example Post Formatting" 
+date:   2014-12-18 21:01:02
 ---
 
 <span class="dropcap">C</span>urabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Vestibulum id ligula porta felis euismod semper. Donec sed odio dui. Aenean lacinia bibendum nulla sed consectetur.
@@ -17,12 +17,12 @@ Nullam quis risus eget urna mollis ornare vel eu leo. Cras mattis consectetur pu
 * Longer List Item
 * List Item
 
-### Ordered List
+## Ordered List
 1. List Item
 2. Longer List Item
 3. List Item
 
-#### Definition List
+## Definition List
 <dl>
   <dt>Coffee</dt>
   <dd>Black hot drink</dd>
@@ -37,7 +37,7 @@ Cras justo odio, dapibus ac facilisis in, egestas eget quam. Curabitur blandit t
 Maecenas faucibus mollis interdum. Maecenas faucibus mollis interdum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Etiam porta sem malesuada magna mollis euismod. Vestibulum id ligula porta felis euismod semper. Cras mattis consectetur purus sit amet fermentum.
 
 <figure>
-	<img src="{{ site.url }}/assets/img/touring.jpg" alt="">
+	<img src="{{ site.url }}/assets/img/touring.jpg" alt=""> 
 	<figcaption>Fig1. - This is an example figcaption</figcaption>
 </figure>
 
