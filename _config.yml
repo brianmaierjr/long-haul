@@ -6,7 +6,7 @@ markdown: redcarpet
 pygments: true
 paginate: 3
 paginate_path: "{{ site.url }}/blog/page:num/"
-permalink: "{{ site.url }}/blog/:title/"
+permalink: {{ site.url }}/blog/:title/
 
 navigation:
  - title: Home
