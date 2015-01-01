@@ -167,14 +167,14 @@ HEADER
 		font-family: $sans-serif;
 		font-weight: 800;
 		text-transform: uppercase;
-		@include transition(all 0.2s ease-in-out);
 
 		a {
 			color: white;
 			text-decoration: none;
+			@include transition(all 0.2s ease-in-out);
 		}
 
-		&:hover a {
+		&:hover a { 
 			opacity: .7; 
 		}
 	}
