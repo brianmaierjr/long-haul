@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "This is a test post"
-date:   2014-12-13 21:01:02
+date:   2014-12-12
 ---
 
 

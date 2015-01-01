@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Post With A Code Snippet"
-date:   2014-12-13 21:01:02
+date:   2014-12-13
 ---
 
 <span class="dropcap">Y</span>ou'll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes!

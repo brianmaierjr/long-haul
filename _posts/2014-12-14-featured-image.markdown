@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Featured Image"
-date:   2014-12-13 21:01:02
+date:   2014-12-14
 image: touring.jpg
 ---
 
