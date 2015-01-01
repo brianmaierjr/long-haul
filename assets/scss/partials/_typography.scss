@@ -101,8 +101,7 @@ h4, .h4 {
 blockquote {
   font-size: 1.25em; // 20px / 16px
   line-height: 1.25; // 25px / 20px
-  padding-left: .5em;
-  border-left: 4px solid $primary-color;
+  padding: 0;  
 }
 
 @media (min-width: 43.75em) {
