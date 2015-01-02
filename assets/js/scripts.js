@@ -8,6 +8,14 @@ $( document ).ready(function() {
 	// Responsive-Nav
 	var nav = responsiveNav(".nav-collapse");
 
+	// Contact Form AJAX
+	$.ajax({
+	    url: "//formspree.io/brimaidesigns@gmail.com", 
+	    method: "POST",
+	    data: {message: "hello!"},
+	    dataType: "json"
+	});
+
 });
 
 
