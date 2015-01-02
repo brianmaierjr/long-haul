@@ -234,12 +234,6 @@ POST STYLING
 		margin-bottom: 1.5em;
 	}
 
-	.dropcap {
-		font-family: $sans-serif;
-		color: $primary-color;
-		font-weight: 800;
-	}
-
 	.highlight {
 		clear: both;
 		margin-bottom: 1.5em;
@@ -350,13 +344,19 @@ FOOTER STYLING
 			text-align: center;
 
 			li {
-				display: inline;
+				display: inline-block;
 
 				a {
 					display: inline-block;
 					width: 30px;
 					height: 30px;
 					@include transition(all 0.2s ease-in-out);
+
+					img {
+						display: block;
+						width: 100%;
+						height: 100%;
+					}
 				}
 
 				&:hover {
