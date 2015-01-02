@@ -113,6 +113,7 @@ MENU STYLING
 
 .js .nav-collapse {
   position: relative;
+  max-height: none;
 }
 .js .nav-collapse.closed {
   max-height: none;
