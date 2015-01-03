@@ -8,7 +8,8 @@ layout: default
 	  	</div>
 	{% endif %}
 	<h1 class="postTitle">{{ page.title }}</h1>
-	<p class="meta">{{ page.date | date_to_string }}</p>
+	<p class="meta">{{ page.date | date_to_string }} | Reading Time {{ content | reading_time_as_i }}
+</p>
 	{{ content }}
 
 	<!-- POST NAVIGATION -->

@@ -8,9 +8,7 @@ permalink: blog/:title/
 
 markdown: redcarpet
 pygments: true
-paginate: 3
-
-#url: ""
+paginate: 5
 
 navigation:
  - title: Home
@@ -18,4 +16,4 @@ navigation:
  - title: About
    url: /about.html
  - title: Contact
-   url: /contact.html 
+   url: /contact.html

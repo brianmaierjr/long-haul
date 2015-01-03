@@ -8,7 +8,7 @@ LAYOUTS
 ***************/
 
 .container {
-	@include container(750px); 
+	@include container(800px); 
 	padding: 0 20px;
 }
 
@@ -18,7 +18,7 @@ LAYOUTS
 	z-index: 1;
 
 	&:after {
-		z-index: -1;
+		z-index: -1; 
 		background: white;
 		content: "";
 		display: block;
@@ -38,7 +38,7 @@ LAYOUTS
 
 #home {
 	.posts, .pageTitle, .pagination {
-		@include span(10 of 12);
+		@include span(9 of 12);
 		float: none;
 		margin: 0 auto 1.5em;
 	}
@@ -129,7 +129,7 @@ POST STYLING
 
 .post {
 	h1, h2, h3, h4, h5, h6, p, ul, ol, dl, .pageTitle {
-		@include span(10 of 12); 
+		@include span(9 of 12); 
 		float: none;
 		margin: 0 auto 2rem; 
 	}

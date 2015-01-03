@@ -244,6 +244,11 @@ POST STYLING
 		color: $primary-color;
 		margin-right: .45rem;
 	}
+
+	.featuredImage {
+		position: relative;
+		margin-top: 2rem;
+	}
 }
 
 
@@ -408,6 +413,14 @@ POST LIST STYLING
 			background: darken(white, 10%);
 			height: 2px;
 			width: 60px;
+		}
+
+		a {
+			text-decoration: none;
+
+			&:hover {
+				text-decoration: underline;
+			}
 		}
 
 		.date {
