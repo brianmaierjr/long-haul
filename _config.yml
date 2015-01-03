@@ -1,8 +1,8 @@
 name: Long Haul
 description: Long Form Jekyll theme built with SASS / COMPASS / SUSY
 
-url: http://brianmaierjr.github.com/long-haul
-baseurl: /long-haul
+#url: http://brianmaierjr.github.com/long-haul
+#baseurl: /long-haul
 paginate_path: "blog/page:num/"
 permalink: blog/:title/
 
@@ -10,9 +10,7 @@ markdown: redcarpet
 pygments: true
 paginate: 3
 
-#baseurl: ""
-#paginate_path: "/blog/page:num/"
-#permalink: /blog/:title/
+#url: ""
 
 navigation:
  - title: Home

@@ -24,6 +24,7 @@ body {
 
 .pageTitle {
 	margin: 2rem auto 1em;
+	text-align: center;
 }
 
 
@@ -376,6 +377,10 @@ PAGINATION STYLING
  
 .pagination { 
 	.next {
+		float: left;
+	}
+
+	.previous {
 		float: right;
 	}
 }

@@ -17,10 +17,10 @@ title: Your New Jekyll Site
         <!-- Pagination links -->
         <div class="pagination">
           {% if paginator.previous_page %}
-            <a href="{{ site.url }}{{ paginator.previous_page_path }}" class="previous">Newer Posts</a>
-          {% endif %}
+            <a href="{{ site.url }}{{ paginator.previous_page_path }}" class="previous button__outline">Newer Posts</a>  
+          {% endif %} 
           {% if paginator.next_page %}
-            <a href="{{ site.url }}{{ paginator.next_page_path }}" class="next">Older Posts</a>
+            <a href="{{ site.url }}{{ paginator.next_page_path }}" class="next button__outline">Older Posts</a>
           {% endif %}
         </div>
       </div>

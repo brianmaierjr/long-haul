@@ -56,3 +56,18 @@ BUTTON DEFAULTS
   }  
 }
 
+
+// Outline Button
+.button__outline {  
+  @extend %btn;
+  background-color: transparent;
+  border: 3px solid $primary-color;
+  color: $primary-color;
+  border-radius: 4px; 
+
+  &:hover {
+    background-color: $primary-color;
+    color: $white;
+  }
+}
+
