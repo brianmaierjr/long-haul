@@ -178,6 +178,7 @@ HEADER STYLING
 
 	.container {
 		padding: 0;
+		@include container(100%);
 	}
 
 	h1 {
