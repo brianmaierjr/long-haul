@@ -14,6 +14,7 @@ BUTTON DEFAULTS
   font-weight: normal;
   padding: .5em 1.5em;
   border: 0;
+  border-radius: 4px; 
   cursor: pointer;
   margin-bottom: .5em;
   @include transition(background-color 0.14s ease-in-out);
@@ -63,7 +64,6 @@ BUTTON DEFAULTS
   background-color: transparent;
   border: 3px solid $primary-color;
   color: $primary-color;
-  border-radius: 4px; 
 
   &:hover {
     background-color: $primary-color;
