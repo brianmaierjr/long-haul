@@ -1,26 +1,17 @@
 /***************
-768 UP STYLES
+GLOBAL STYLES
 ***************/
-
-
-/***************
-LAYOUTS
-***************/
-
-.container {
-	@include container(800px); 
-	padding: 0 20px;
-}
 
 .contentContainer {
 	padding-top: 0;
 	position: relative;
 	z-index: 1;
+	overflow: hidden;
 
 	&:after {
 		z-index: -1; 
 		background: white;
-		content: "";
+		content: ""; 
 		display: block;
 		width: 120%;
 		height: 5em;
@@ -35,6 +26,16 @@ LAYOUTS
 		transform-origin: bottom left;
 	}
 }
+
+.container {
+	@include container(800px); 
+	padding: 0 20px;
+}
+
+
+/***************
+HOMEPAGE STYLING
+***************/
 
 #home {
 	.posts, .pageTitle, .pagination {
@@ -111,13 +112,18 @@ HEADER STYLING
 MENU STYLING
 ***************/
 
-.js .nav-collapse {
-  position: relative;
-  max-height: none;
+.js {
+
+	.nav-collapse {
+	  position: relative;
+	  max-height: none;
+
+		&.closed {
+		  max-height: none;
+		}
+	}
 }
-.js .nav-collapse.closed {
-  max-height: none;
-}
+
 .nav-toggle {
   display: none;
 }
@@ -162,7 +168,6 @@ POST STYLING
 			-ms-transform-origin: bottom left;
 			transform-origin: bottom left;
 		}
-
 	}
 }
 

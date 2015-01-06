@@ -1,5 +1,5 @@
 /***************
-MOBILE UP STYLES
+GLOBAL STYLES
 ***************/
 
 // A better box-sizing practice http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
@@ -13,25 +13,16 @@ html {
 body {
 	font-family: $serif; 
 	line-height: 1.75;  
-	font-size: 112.5%; // 18px
+	font-size: 112.5%; // 18px base font size
 	color: $black;
-	overflow-X: hidden;
+	overflow-x: hidden;
 
 	p , ul {
 		margin: 0 0 2rem;
 	}
 }
 
-.pageTitle {
-	margin: 2rem auto 1em;
-	text-align: center; 
-}
-
-
-/***************
-SELECTED TEXT STYLING
-***************/
-
+// Text Selection Styling
 ::-moz-selection {
 	background: $primary-color;
 	color: white;
@@ -42,10 +33,20 @@ SELECTED TEXT STYLING
 	color: white;
 }
 
+// Media Styling
+img,video,audio,iframe,object{
+	max-width:100%;
+}
+
+// Layout
+.container {
+	@include container(610px); 
+	padding: 0 20px;
+}
 
 
 /***************
-LINKS
+LINK STYLING
 ***************/
 
 a {
@@ -61,25 +62,30 @@ a {
 MENU STYLING
 ***************/
 
-.nav-collapse ul {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  display: block;
-  list-style: none;
-}
+.nav-collapse {
+	z-index: 1;
 
-.nav-collapse li {
-  width: 100%;
-  display: block;
-  background: seagreen;
-  padding: 5px 20px;
-  border-bottom: 2px solid lighten(seagreen, 5%);
+	ul {
+	  margin: 0;
+	  padding: 0;
+	  width: 100%;
+	  display: block; 
+	  list-style: none;
 
-  a {
-  	color: white;
-  	text-decoration: none;
-  }
+		li {
+		  width: 100%;
+		  display: block;
+		  background: seagreen;
+		  padding: 5px 20px;
+		  border-bottom: 2px solid lighten(seagreen, 5%);
+
+		  a {
+		  	color: white;
+		  	text-decoration: none;
+		  	display: block;
+		  }
+		}
+	}
 }
 
 .js .nav-collapse {
@@ -118,7 +124,7 @@ MENU STYLING
   @include transition(all 0.2s ease-in-out);
 
   &:hover {
-  	color: white;
+  	color: white; 
   	background-color: darken(seagreen, 10%);
   }
 }
@@ -128,7 +134,7 @@ MENU STYLING
 LIST STYLING
 ***************/
 
-.nolist{
+.nolist {
 	list-style:none;
 	padding-left:0;
 	margin-left:0;
@@ -143,29 +149,29 @@ dd {
 }
 
 
-
 /***************
-LAYOUTS
+PAGE STYLES
 ***************/
 
-.container {
-	@include container(610px); 
-	padding: 0 20px;
+.pageTitle {
+	margin: 2rem auto 1em;
+	text-align: center; 
 }
 
 .contentContainer {
 	padding-top: 1em;
+	overflow: hidden;
 }
 
 
 /***************
-HEADER
+HEADER STYLING
 ***************/
 
 .header {
 	background-color: seagreen;
 	background-image: url('../img/touring.jpg');
-	background-size: cover;
+	background-size: cover; 
 	background-position: center center;
 	color: white;
 	padding: 0;
@@ -202,6 +208,7 @@ POST STYLING
 	.postTitle {
 		text-align: center;
 		margin-top: 2rem;
+		margin-bottom: .5rem;
 	}
 
 	blockquote {
@@ -242,18 +249,27 @@ POST STYLING
 	}
 
 	figure {
+		margin: 3rem 0;
+
+		figcaption {
+			text-align: center;
+			font-size: .9em;
+			font-style: italic;
+			color: lighten($black, 30%); 
+		}
+
 		img {
 			margin-bottom: .25em;
 		}
 	}
 
 	img {
-		margin-bottom: 1.5em;
+		margin-bottom: 2rem;
 	}
 
 	.highlight {
 		clear: both;
-		margin-bottom: 1.5em;
+		margin-bottom: 2rem;
 	}
 
 	.dropcap {
@@ -264,6 +280,10 @@ POST STYLING
 	.featuredImage {
 		position: relative;
 		margin-top: 2rem;
+
+		img {
+			margin-bottom: 0;
+		}
 	}
 }
 
@@ -272,7 +292,7 @@ POST STYLING
 POST NAV STYLING
 ***************/
 
-#post-nav {
+.post-nav {
 	border-top: 1px solid darken(white, 10%);
 	border-bottom: 1px solid darken(white, 10%);
 	overflow: hidden;
@@ -351,7 +371,7 @@ FOOTER STYLING
 
 .footer {
 	text-align: center;
-	padding: 2em 0;
+	padding: 2rem 0;
 
 	.container {
 		border-top: 4px solid darken(white, 15%);
@@ -418,13 +438,13 @@ POST LIST STYLING
 
 .posts {		
 	li {
-		margin-bottom: 4em;
+		margin-bottom: 4rem;
 		position: relative;
 
 		&:before {
 			content: "";
 			position: absolute;
-			bottom: -2em;
+			bottom: -2rem;
 			left: 0;
 			background: darken(white, 10%);
 			height: 2px;
@@ -449,31 +469,6 @@ POST LIST STYLING
 		h3 {
 			margin: 0 0 .5em;
 		}
-	}
-}
-
-
-/***************
-MEDIA STYLING
-***************/
-
-img,video,audio,iframe,object{
-	max-width:100%;
-}
-
-
-/***************
-FIGURE STYLING
-***************/
-
-figure {
-	margin: 3rem 0;
-
-	figcaption {
-		text-align: center;
-		font-size: .9em;
-		font-style: italic;
-		color: lighten($black, 30%); 
 	}
 }
 
