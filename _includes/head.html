@@ -29,7 +29,7 @@
             <div class="container">
                 <h1 class="logo"><a href="{{ site.url }}">{{ site.name }}</a></h1>
                 <nav class="nav-collapse">
-                    <ul class="nolist">
+                    <ul class="noList">
                     {% for link in site.navigation %}{% assign current = nil %}{% if page.url contains link.url %}{% assign current = 'current' %}{% endif %}
                         <li class="element {% if forloop.first %}first{% endif %} {{ current }} {% if forloop.last %}last{% endif %}">
                             <a href="{{ site.url }}{{ link.url }}">{{ link.title }}</a>
