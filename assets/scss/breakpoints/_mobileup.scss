@@ -120,7 +120,7 @@ MENU STYLING
   color: white;
   text-decoration: none;
   position: relative;
-  right: 20px;
+  right: 2rem;
   @include transition(all 0.2s ease-in-out);
 
   &:hover {
@@ -184,7 +184,7 @@ HEADER STYLING
 	h1 {
 		margin: 0;
 		float: left;
-		padding-left: 20px;
+		padding-left: 2rem;
 		font-size: 1em;
 		line-height: 3em;
 		font-family: $sans-serif;
