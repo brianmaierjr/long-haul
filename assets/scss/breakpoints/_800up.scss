@@ -2,7 +2,7 @@
 GLOBAL STYLES
 ***************/
 
-.contentContainer {
+.content {
 	padding-top: 0;
 	position: relative;
 	z-index: 1;
@@ -28,7 +28,7 @@ GLOBAL STYLES
 
 .container {
 	@include container(800px); 
-	padding: 0 20px;
+	padding: 0;
 }
 
 
