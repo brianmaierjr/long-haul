@@ -13,7 +13,7 @@ html {
 body {
 	font-family: $serif; 
 	line-height: 1.75;  
-	font-size: 112.5%;
+	font-size: 112.5%; // 18px
 	color: $black;
 	overflow-X: hidden;
 
@@ -24,8 +24,24 @@ body {
 
 .pageTitle {
 	margin: 2rem auto 1em;
-	text-align: center;
+	text-align: center; 
 }
+
+
+/***************
+SELECTED TEXT STYLING
+***************/
+
+::-moz-selection {
+	background: $primary-color;
+	color: white;
+}
+
+::selection {
+	background: $primary-color;
+	color: white;
+}
+
 
 
 /***************
