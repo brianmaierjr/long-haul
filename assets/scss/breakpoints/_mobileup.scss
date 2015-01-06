@@ -404,12 +404,25 @@ FOOTER STYLING
 						display: block;
 						width: 100%;
 						height: 100%;
+
+						.outer-shape {
+							fill: $primary-color;
+						}
+
+						.inner-shape { 
+							fill: white;
+						}
 					}
 				}
 
-				&:hover {
+
+				&:hover { 
 					a {
-						opacity: .8;
+						svg { 
+							.outer-shape {
+								fill: darken($primary-color, 10%);
+							}
+						}
 					}
 				}
 			}
