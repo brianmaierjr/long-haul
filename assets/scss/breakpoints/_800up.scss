@@ -6,14 +6,13 @@ GLOBAL STYLES
 	padding-top: 0;
 	position: relative;
 	z-index: 1;
-	overflow: hidden;
 
 	&:after {
 		z-index: -1; 
 		background: white;
 		content: ""; 
 		display: block;
-		width: 120%;
+		width: 100%;
 		height: 5em;
 		position: absolute;
 		top: -2em;
@@ -23,7 +22,7 @@ GLOBAL STYLES
 		transform: skewY(-2deg);
 		-webkit-transform-origin: bottom left;
 		-ms-transform-origin: bottom left;
-		transform-origin: bottom left;
+		transform-origin: bottom left; 
 	}
 }
 
@@ -160,7 +159,7 @@ POST STYLING
 			background: white;
 			content: "";
 			display: block;
-			width: 120%;
+			width: 100%;
 			height: 4em;
 			position: absolute;
 			top: -2em;
