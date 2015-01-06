@@ -82,7 +82,7 @@ MENU STYLING
 		  	color: white;
 		  	text-decoration: none;
 		  	display: block;
-		  	padding: 5px 20px;
+		  	padding: 5px 2rem;
 		  }
 		}
 	}
@@ -376,6 +376,7 @@ FOOTER STYLING
 	.container {
 		border-top: 4px solid darken(white, 15%);
 		padding-top: .5em;
+		@include container(90%);
 	}
 
 	.copy, .footer-links {

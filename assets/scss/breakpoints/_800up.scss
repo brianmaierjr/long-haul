@@ -213,6 +213,7 @@ FOOTER STYLES
 
 	.container {
 		padding: 1rem 0;
+		@include container(800px);
 	}
 }
 
