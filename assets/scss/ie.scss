@@ -1,7 +1,7 @@
 .lt-ie9.js {
 
 	.nav-collapse {
-		clip: none;
+		clip: auto;
 		width: 50%;
 		float: right;
 		max-height: none;
@@ -10,7 +10,10 @@
 
 		ul {
 			li {
-				width: auto; 
+				width: auto;
+				background: none;
+				float: right;
+				margin-left: 20px;
 			}
 		}
 	}
