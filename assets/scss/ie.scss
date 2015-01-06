@@ -2,7 +2,7 @@
 
 	.nav-collapse {
 		clip: auto;
-		width: 50%;
+		width: 100%;
 		float: right;
 		max-height: none;
 		clear: none;
@@ -13,7 +13,7 @@
 			li {
 				width: auto;
 				background: none;
-				display: inline;
+				display: inline-block;
 				margin-left: 20px;
 				border:none;
 			}
