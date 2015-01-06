@@ -67,7 +67,7 @@ MENU STYLING
 
 	ul {
 	  margin: 0;
-	  padding: 0;
+	  padding: 0; 
 	  width: 100%;
 	  display: block; 
 	  list-style: none;
@@ -76,13 +76,13 @@ MENU STYLING
 		  width: 100%;
 		  display: block;
 		  background: seagreen;
-		  padding: 5px 20px;
 		  border-bottom: 2px solid lighten(seagreen, 5%);
 
 		  a {
 		  	color: white;
 		  	text-decoration: none;
 		  	display: block;
+		  	padding: 5px 20px;
 		  }
 		}
 	}

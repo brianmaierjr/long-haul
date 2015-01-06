@@ -119,7 +119,11 @@ MENU STYLING
 	  max-height: none;
 
 		&.closed {
-		  max-height: none;
+		  max-height: none; 
+		}
+
+		ul li a {
+			display: inline-block;
 		}
 	}
 }
