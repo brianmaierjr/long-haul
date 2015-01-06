@@ -7,14 +7,16 @@
 		max-height: none;
 		clear: none;
 		overflow: visible;
+		text-align: right;
 
 		ul {
 			li {
 				width: auto;
 				background: none;
-				float: right;
+				display: inline;
 				margin-left: 20px;
+				border:none;
 			}
-		}
+		} 
 	}
 }
