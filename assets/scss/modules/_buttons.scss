@@ -9,7 +9,7 @@ BUTTON DEFAULTS
   font-family: $sans-serif;
   text-decoration: none;
   color: $white;
-  font-size: 1.2em;
+  font-size: 1em;
   line-height: 1.2em;
   font-weight: normal;
   padding: .5em 1.5em;
@@ -45,7 +45,7 @@ BUTTON DEFAULTS
       background-color: darken($secondary-color, 10%);
     }
   }
-
+ 
   &-tertiary {
     @extend %btn;
     background-color: $tertiary-color;
