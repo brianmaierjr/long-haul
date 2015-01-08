@@ -25,13 +25,13 @@ If you really enjoy Long Haul and want to give me credit somewhere on the send o
 1. [Install Jekyll](http://jekyllrb.com)
 2. Fork the [Long Haul repo](http://github.com/brianmaierjr/long-haul)
 3. Clone it
-4. Run Jekyll 'jekyll serve -w'
-5. Run 'compass watch'
+4. Run Jekyll `jekyll serve -w`
+5. Run `compass watch`
 6. Customize!
 
 ## Site Settings
 
-The main settings can be found inside the '_config.yml' file:
+The main settings can be found inside the `_config.yml` file:
 
 **name:** name of your site
 **description:** description of your site
