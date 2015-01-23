@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generate more at customizr.net -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg id="stackoverflow" class="custom-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" style="height: 100px; width: 100px;"><circle class="outer-shape" cx="50" cy="50" r="48" style="opacity: 1; fill: rgb(46, 139, 87);"></circle>
-	<path class="inner-shape" style="opacity: 1; fill: rgb(247, 247, 247);" transform="translate(25,25) scale(0.5)" d="M62.317,85.89l-38.679,0.018l-0.004-8.261l38.678-0.019L62.317,85.89z M88.453,39.107L81.837,1l-8.14,1.413l6.615,38.107 L88.453,39.107z M63.248,67.037l-38.514-3.549l-0.758,8.227l38.514,3.546L63.248,67.037z M65.789,56.257L28.437,46.216l-2.146,7.978 l37.353,10.041L65.789,56.257z M70.664,46.808L37.35,27.158l-4.199,7.114l33.317,19.651L70.664,46.808z M78.833,41.021L57.041,9.065 l-6.826,4.654l21.793,31.955L78.833,41.021z M68.885,58.716v33.772H18.154V58.716h-6.607v40.253h0.066 C11.612,99,13.541,99,13.541,99h61.886v-0.031c0.065,0,0.065-1.93,0.065-1.93V58.716H68.885z"></path>
-</svg>
-

@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generate more at customizr.net -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg id="vimeo" class="custom-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" style="height: 100px; width: 100px;"><circle class="outer-shape" cx="50" cy="50" r="48" style="opacity: 1; fill: rgb(46, 139, 87);"></circle>
-	<path class="inner-shape" style="opacity: 1; fill: rgb(247, 247, 247);" transform="translate(25,25) scale(0.5)" d="M1,30.512l3.981,5.22c0,0,8.208-6.47,10.945-3.235c2.736,3.235,13.182,42.297,16.669,49.501 c3.043,6.319,11.438,14.673,20.645,8.707c9.2-5.966,39.797-32.088,45.274-62.935c5.472-30.837-36.818-24.378-41.299,2.489 c11.196-6.722,17.172,2.731,11.443,13.434C62.938,54.386,57.713,61.36,54.976,61.36c-2.731,0-4.832-7.156-7.961-19.662 c-3.235-12.93-3.214-36.22-16.664-33.579C17.669,10.608,1,30.512,1,30.512L1,30.512z"></path>
-</svg>
-

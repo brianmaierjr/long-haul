@@ -1,28 +1,18 @@
 /***************
-768 UP STYLES
+GLOBAL STYLES
 ***************/
 
-
-/***************
-LAYOUTS
-***************/
-
-.container {
-	@include container(750px); 
-	padding: 0 20px;
-}
-
-.contentContainer {
+.content {
 	padding-top: 0;
 	position: relative;
 	z-index: 1;
 
 	&:after {
-		z-index: -1;
+		z-index: -1; 
 		background: white;
-		content: "";
+		content: ""; 
 		display: block;
-		width: 120%;
+		width: 100%;
 		height: 5em;
 		position: absolute;
 		top: -2em;
@@ -32,9 +22,19 @@ LAYOUTS
 		transform: skewY(-2deg);
 		-webkit-transform-origin: bottom left;
 		-ms-transform-origin: bottom left;
-		transform-origin: bottom left;
+		transform-origin: bottom left; 
 	}
 }
+
+.container {
+	@include container(800px); 
+	padding: 0;
+}
+
+
+/***************
+HOMEPAGE STYLING
+***************/
 
 #home {
 	.posts, .pageTitle, .pagination {
@@ -64,6 +64,7 @@ HEADER STYLING
 		-webkit-transform: translateY(-50%);
 		-ms-transform: translateY(-50%);
 		transform: translateY(-50%);
+		@include container(800px); 
 	}
 
 	h1 {
@@ -111,12 +112,22 @@ HEADER STYLING
 MENU STYLING
 ***************/
 
-.js .nav-collapse {
-  position: relative;
+.js {
+
+	.nav-collapse {
+	  position: relative;
+	  max-height: none;
+
+		&.closed {
+		  max-height: none; 
+		}
+
+		ul li a {
+			display: inline-block;
+		}
+	}
 }
-.js .nav-collapse.closed {
-  max-height: none;
-}
+
 .nav-toggle {
   display: none;
 }
@@ -127,22 +138,18 @@ POST STYLING
 ***************/
 
 .post {
-	h2, h3, h4, h5, h6, p, ul, ol, dl, .pageTitle {
+	h1, h2, h3, h4, h5, h6, p, ul, ol, dl, .pageTitle {
 		@include span(9 of 12); 
 		float: none;
 		margin: 0 auto 2rem; 
 	}
 
-	h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+	h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 		margin: 1rem auto; 
 	}
 
 	.pageTitle {
 		margin: 2rem auto 1em;
-	}
-
-	.postTitle {
-		margin-top: 2rem;
 	}
 
 	.featuredImage {
@@ -153,7 +160,7 @@ POST STYLING
 			background: white;
 			content: "";
 			display: block;
-			width: 120%;
+			width: 100%;
 			height: 4em;
 			position: absolute;
 			top: -2em;
@@ -165,7 +172,6 @@ POST STYLING
 			-ms-transform-origin: bottom left;
 			transform-origin: bottom left;
 		}
-
 	}
 }
 
@@ -174,7 +180,7 @@ POST STYLING
 POST NAV STYLING
 ***************/
 
-#post-nav {
+.postNav {
 
 	.prev, .next {
 		width: 50%;
@@ -207,6 +213,7 @@ FOOTER STYLES
 
 	.container {
 		padding: 1rem 0;
+		@include container(800px);
 	}
 }
 

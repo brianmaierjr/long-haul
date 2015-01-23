@@ -1,5 +1,5 @@
 /***************
-MOBILE UP STYLES
+GLOBAL STYLES
 ***************/
 
 // A better box-sizing practice http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
@@ -13,22 +13,40 @@ html {
 body {
 	font-family: $serif; 
 	line-height: 1.75;  
-	font-size: 112.5%;
+	font-size: 112.5%; // 18px base font size
 	color: $black;
-	overflow-X: hidden;
+	overflow-x: hidden;
 
 	p , ul {
 		margin: 0 0 2rem;
 	}
 }
 
-.pageTitle {
-	margin: 2rem auto 1em;
+// Text Selection Styling
+::-moz-selection {
+	background: $primary-color;
+	color: white;
+}
+
+::selection {
+	background: $primary-color;
+	color: white;
+}
+
+// Media Styling
+img,video,audio,iframe,object{
+	max-width:100%;
+}
+
+// Layout
+.container {
+	@include container(610px); 
+	padding: 0 20px;
 }
 
 
 /***************
-LINKS
+LINK STYLING
 ***************/
 
 a {
@@ -44,25 +62,30 @@ a {
 MENU STYLING
 ***************/
 
-.nav-collapse ul {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  display: block;
-  list-style: none;
-}
+.nav-collapse {
+	z-index: 1;
 
-.nav-collapse li {
-  width: 100%;
-  display: block;
-  background: seagreen;
-  padding: 5px 20px;
-  border-bottom: 2px solid lighten(seagreen, 5%);
+	ul {
+	  margin: 0;
+	  padding: 0; 
+	  width: 100%;
+	  display: block; 
+	  list-style: none;
 
-  a {
-  	color: white;
-  	text-decoration: none;
-  }
+		li {
+		  width: 100%;
+		  display: block;
+		  background: seagreen;
+		  border-bottom: 2px solid lighten(seagreen, 5%);
+
+		  a {
+		  	color: white;
+		  	text-decoration: none;
+		  	display: block;
+		  	padding: 5px 2rem;
+		  }
+		}
+	}
 }
 
 .js .nav-collapse {
@@ -97,11 +120,11 @@ MENU STYLING
   color: white;
   text-decoration: none;
   position: relative;
-  right: 20px;
+  right: 2rem;
   @include transition(all 0.2s ease-in-out);
 
   &:hover {
-  	color: white;
+  	color: white; 
   	background-color: darken(seagreen, 10%);
   }
 }
@@ -111,7 +134,7 @@ MENU STYLING
 LIST STYLING
 ***************/
 
-.nolist{
+.noList {
 	list-style:none;
 	padding-left:0;
 	margin-left:0;
@@ -126,29 +149,28 @@ dd {
 }
 
 
-
 /***************
-LAYOUTS
+PAGE STYLES
 ***************/
 
-.container {
-	@include container(610px); 
-	padding: 0 20px;
+.pageTitle {
+	margin: 2rem auto 1em;
+	text-align: center; 
 }
 
-.contentContainer {
+.content {
 	padding-top: 1em;
 }
 
 
 /***************
-HEADER
+HEADER STYLING
 ***************/
 
 .header {
 	background-color: seagreen;
 	background-image: url('../img/touring.jpg');
-	background-size: cover;
+	background-size: cover; 
 	background-position: center center;
 	color: white;
 	padding: 0;
@@ -156,12 +178,13 @@ HEADER
 
 	.container {
 		padding: 0;
+		@include container(100%);
 	}
 
 	h1 {
 		margin: 0;
 		float: left;
-		padding-left: 20px;
+		padding-left: 2rem;
 		font-size: 1em;
 		line-height: 3em;
 		font-family: $sans-serif;
@@ -170,7 +193,7 @@ HEADER
 
 		a {
 			color: white;
-			text-decoration: none;
+			text-decoration: none; 
 		}
 	}
 }
@@ -184,7 +207,8 @@ POST STYLING
 
 	.postTitle {
 		text-align: center;
-		margin-top: 0;
+		margin-top: 2rem;
+		margin-bottom: 1rem;
 	}
 
 	blockquote {
@@ -225,24 +249,41 @@ POST STYLING
 	}
 
 	figure {
+		margin: 3rem 0;
+
+		figcaption {
+			text-align: center;
+			font-size: .9em;
+			font-style: italic;
+			color: lighten($black, 30%); 
+		}
+
 		img {
 			margin-bottom: .25em;
 		}
 	}
 
 	img {
-		margin-bottom: 1.5em;
-	}
-
-	.dropcap {
-		font-family: $sans-serif;
-		color: $primary-color;
-		font-weight: 800;
+		margin-bottom: 2rem;
 	}
 
 	.highlight {
 		clear: both;
-		margin-bottom: 1.5em;
+		margin-bottom: 2rem;
+	}
+
+	.dropcap {
+		color: $primary-color;
+		margin-right: .45rem;
+	}
+
+	.featuredImage {
+		position: relative;
+		margin-top: 2rem;
+
+		img {
+			margin-bottom: 0;
+		}
 	}
 }
 
@@ -251,7 +292,7 @@ POST STYLING
 POST NAV STYLING
 ***************/
 
-#post-nav {
+.postNav {
 	border-top: 1px solid darken(white, 10%);
 	border-bottom: 1px solid darken(white, 10%);
 	overflow: hidden;
@@ -330,11 +371,12 @@ FOOTER STYLING
 
 .footer {
 	text-align: center;
-	padding: 2em 0;
+	padding: 2rem 0;
 
 	.container {
 		border-top: 4px solid darken(white, 15%);
 		padding-top: .5em;
+		@include container(90%);
 	}
 
 	.copy, .footer-links {
@@ -350,18 +392,37 @@ FOOTER STYLING
 			text-align: center;
 
 			li {
-				display: inline;
+				display: inline-block;
 
 				a {
 					display: inline-block;
 					width: 30px;
-					height: 30px;
+					height: 30px; 
 					@include transition(all 0.2s ease-in-out);
+
+					svg {
+						display: block;
+						width: 100%;
+						height: 100%;
+
+						.outer-shape {
+							fill: $primary-color;
+						}
+
+						.inner-shape { 
+							fill: white;
+						}
+					}
 				}
 
-				&:hover {
+
+				&:hover { 
 					a {
-						opacity: .8;
+						svg { 
+							.outer-shape {
+								fill: darken($primary-color, 10%);
+							}
+						}
 					}
 				}
 			}
@@ -376,6 +437,10 @@ PAGINATION STYLING
  
 .pagination { 
 	.next {
+		float: left;
+	}
+
+	.previous {
 		float: right;
 	}
 }
@@ -387,17 +452,25 @@ POST LIST STYLING
 
 .posts {		
 	li {
-		margin-bottom: 4em;
+		margin-bottom: 4rem;
 		position: relative;
 
 		&:before {
 			content: "";
 			position: absolute;
-			bottom: -2em;
+			bottom: -2rem;
 			left: 0;
 			background: darken(white, 10%);
 			height: 2px;
 			width: 60px;
+		}
+
+		a {
+			text-decoration: none;
+
+			&:hover {
+				text-decoration: underline;
+			}
 		}
 
 		.date {
@@ -410,31 +483,6 @@ POST LIST STYLING
 		h3 {
 			margin: 0 0 .5em;
 		}
-	}
-}
-
-
-/***************
-MEDIA STYLING
-***************/
-
-img,video,audio,iframe,object{
-	max-width:100%;
-}
-
-
-/***************
-FIGURE STYLING
-***************/
-
-figure {
-	margin: 3rem 0;
-
-	figcaption {
-		text-align: center;
-		font-size: .9em;
-		font-style: italic;
-		color: lighten($black, 30%); 
 	}
 }
 

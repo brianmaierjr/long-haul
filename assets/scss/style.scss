@@ -15,7 +15,7 @@
 @import "modules/buttons";
 @import "modules/forms"; 
 @import "modules/tables";
-@import "modules/syntax";
+@import "modules/syntax"; 
 
 // Import Partials
 @import "partials/typography";
@@ -26,7 +26,7 @@
 @import "breakpoints/mobileup";
 
 // Import media queries add more as you desire
-@media only screen and (min-width: 750px) { @import "breakpoints/750up";} 
+@media only screen and (min-width: 800px) { @import "breakpoints/800up";} 
 
 // If IE support is needed you can add them here or create another stylesheet for specific IE fixes
 

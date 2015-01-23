@@ -5,7 +5,7 @@ title: Your New Jekyll Site
 
 <div id="articles">
   <h1>Articles</h1>
-  <ul class="posts nolist">
+  <ul class="posts noList">
     {% for post in site.posts %}
       <li>
       	<span class="date">{{ post.date | date_to_string }}</span>

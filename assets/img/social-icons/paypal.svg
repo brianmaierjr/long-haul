@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generate more at customizr.net -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg id="paypal" class="custom-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" style="height: 100px; width: 100px;"><circle class="outer-shape" cx="50" cy="50" r="48" style="opacity: 1; fill: rgb(46, 139, 87);"></circle>
-	<path class="inner-shape" style="opacity: 1; fill: rgb(247, 247, 247);" transform="translate(25,25) scale(0.5)" d="M85.279,13.516c2.46,1.203,4.603,2.917,6.173,5.022c3.306,4.431,4.234,10.467,2.76,17.941 c-1.49,7.563-4.825,13.947-9.681,18.571c-0.888,0.928-1.839,1.794-2.853,2.592c-5.202,4.096-11.772,6.261-18.998,6.261H39.705 l-6.179,28.972H20.853l0.965-4.431h4.415l6.179-28.972H50.43c17.251,0,31.671-10.63,35.531-28.705C90.337,10.303,75.663,1,63.049,1 H20.051L1,88.444h14.55L13.25,99h25.233l6.179-28.972H62.68c17.251,0,31.671-10.63,35.531-28.705 C101.438,26.233,94.306,17.212,85.279,13.516L85.279,13.516z M41.42,18.809h12.359c6.182,0,10.298,5.315,8.498,11.959 c-1.544,6.645-7.98,11.961-14.417,11.961H36.015L41.42,18.809L41.42,18.809z"></path>
-</svg>
-

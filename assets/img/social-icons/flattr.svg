@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generate more at customizr.net -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg id="flattr" class="custom-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" style="height: 100px; width: 100px;"><circle class="outer-shape" cx="50" cy="50" r="48" style="opacity: 1; fill: rgb(46, 139, 87);"></circle>
-	<path class="inner-shape" style="opacity: 1; fill: rgb(247, 247, 247);" transform="translate(25,25) scale(0.5)" d="M36.177,1C12.888,1,1,14.415,1,39.459l0,0v52.544l22.814-22.838V42.475c0-10.375,2.75-16.978,11.975-18.46l0,0 c3.222-0.63,9.929-0.41,14.193-0.41l0,0v15.847c0,0.144,0.02,0.403,0.057,0.535l0,0c0.179,0.642,0.759,1.111,1.446,1.113l0,0 c0.389,0.001,0.753-0.201,1.128-0.571l0,0L92.15,1.007L36.177,1L36.177,1z M76.185,30.835v26.69c0,10.375-2.75,16.979-11.974,18.46 l0,0c-3.222,0.63-9.929,0.41-14.194,0.41l0,0V60.548c0-0.143-0.02-0.403-0.057-0.534l0,0c-0.178-0.642-0.759-1.112-1.446-1.113l0,0 c-0.389-0.001-0.753,0.202-1.128,0.571l0,0L7.85,98.994L63.824,99C87.113,99,99,85.585,99,60.542l0,0V7.999L76.185,30.835 L76.185,30.835z"></path>
-</svg>
-
