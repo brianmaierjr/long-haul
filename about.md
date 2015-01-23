@@ -22,4 +22,4 @@ title: About Long Haul
   		<li><a href="https://github.com/adobe-webplatform/dropcap.js">Drop Cap</a> on posts</li>
   		<li><a href="http://typecast.com/blog/a-more-modern-scale-for-web-typography">A Better Type Scale</a></li>
   	</ul>
-</div><!-- end .post -->
+</div>
