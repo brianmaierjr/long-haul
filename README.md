@@ -4,13 +4,14 @@ Long Haul is a minimal jekyll theme built with COMPASS / SASS / SUSY and focuses
 
 If you really enjoy Long Haul and want to give me credit somewhere on the send or tweet out your experience with Long Haul and tag me [@brianmaierjr](https://twitter.com/brianmaier).
 
-###[View Live Demo &rarr;](http://brianmaierjr.com/long-haul)
+####[View Demo](http://brianmaierjr.com/long-haul)
 
 ## Features
 
+- Minimal, Type Focused Design
 - Built with SASS + COMPASS
 - Layout with SUSY Grid
-- SVG Social Icons from Customizr
+- SVG Social Icons
 - Responsive Nav Menu
 - XML Feed for RSS Readers
 - Contact Form via Formspree
@@ -71,7 +72,4 @@ long-haul/
 
 ## License
 
-This is [MIT](LICENSE) with no added caveats, so feel free to use this Jekyll theme on your site without linking back to me or using a disclaimer. 
-
-If you'd like give me credit somewhere on your blog or tweet a shout out to
-[@ctrunsthis](https://twitter.com/ctrunsthis), that would be pretty sweet.
+This is [MIT](LICENSE) with no added caveats, so feel free to use this Jekyll theme on your site without linking back to me or using a disclaimer.
