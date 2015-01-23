@@ -40,36 +40,6 @@ The main settings can be found inside the `_config.yml` file:
 - **paginate:** the amount of posts displayed on homepage
 - **navigation:** this is links for the main site navigation
 
-## File Structure
-
-``` bash
-long-haul/
-├── _includes
-|    ├── footer.html  //site footer
-|    ├── head.html  //site head
-├── _layouts
-|    ├── default.html  //default page layout
-|    ├── post.html  //single post layout
-├── _posts
-├── assets
-|    ├── css  //processed sass styles.
-|    ├── img  //images and graphics used in css and js
-|    ├── js
-|    |   ├── scripts.js  //jQuery scripts go here
-|    └── sass //preprocessed sass stylesheets
-|        ├── breakpoints  //responsive breakpoint stylesheets
-|        ├── modules  //module stylesheets
-|        ├── partials  //partial stylesheets
-|        ├── _config.scss  //configuration settings
-|        ├── ie.scss  //ie stylesheet
-|        ├── style.scss  //main stylesheet
-├── images  //images for posts and pages
-├── about.html  //about page
-├── contact.html  //contact page
-├── feed.xml  //xml feed for rss readers
-└── index.html  //homepage. lists 5 most recent posts
-```
-
 ## License
 
 This is [MIT](LICENSE) with no added caveats, so feel free to use this Jekyll theme on your site without linking back to me or using a disclaimer.
