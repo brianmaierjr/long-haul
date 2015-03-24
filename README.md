@@ -38,7 +38,7 @@ The main settings can be found inside the `_config.yml` file:
 - **description:** description of your site
 - **url:** your url
 - **paginate:** the amount of posts displayed on homepage
-- **navigation:** this is links for the main site navigation
+- **navigation:** these are the links in the main site navigation
 
 ## License
 
