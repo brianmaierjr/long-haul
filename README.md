@@ -34,11 +34,12 @@ If you really enjoy Long Haul and want to give me credit somewhere on the send o
 
 The main settings can be found inside the `_config.yml` file:
 
-- **name:** name of your site
+- **title:** title of your site
 - **description:** description of your site
 - **url:** your url
 - **paginate:** the amount of posts displayed on homepage
 - **navigation:** these are the links in the main site navigation
+- **social** diverse social media usernames
 
 ## License
 
