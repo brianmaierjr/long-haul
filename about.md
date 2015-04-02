@@ -15,7 +15,7 @@ title: About Long Haul
   		<li>SVG Social Icons from <a href="http://customizr.net/icons/">Customizr</a></li>
   		<li><a href="http://responsive-nav.com/">Responsive Nav Menu</a></li>
   		<li><a href="https://github.com/snaptortoise/jekyll-rss-feeds">XML Feed for RSS Readers</a></li>
-  		<li>Contact Form via <a href="http://http://formspree.io//">Formspree</a></li>
+  		<li>Contact Form via <a href="http://formspree.io/">Formspree</a></li>
       <li>5 Post Loop with excerpt on Home Page</li>
   		<li>Previous / Next Post Navigation</li>
       <li>Estimated Reading Time for posts</li>
