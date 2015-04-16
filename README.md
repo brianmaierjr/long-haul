@@ -34,11 +34,12 @@ If you really enjoy Long Haul and want to give me credit somewhere on the send o
 
 The main settings can be found inside the `_config.yml` file:
 
-- **title:** title of your site
+- **title:** title of your site (used in the <title> html tag)
 - **description:** description of your site
 - **url:** your url
 - **paginate:** the amount of posts displayed on homepage
 - **navigation:** these are the links in the main site navigation
+- **always_prepend_site_title:** this is a useful setting that will prepend the value defined in the "title" var in _config.yml to the "title" defined in each page's Front Matter (e.g.: "My Cool Blog - My Awesome Page")
 - **social** diverse social media usernames (optional)
 - **google_analytics** Google Analytics key (optional)
 

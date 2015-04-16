@@ -3,7 +3,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <title>{{ page.title }}</title>
+    <title>{% if page.title and site.always_prepend_site_title %} {{ site.title | append: ' - ' | append: page.title }} {% else %} {{ page.title }} {% endif %}</title>
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="{{ "/assets/img/favicon.ico" | prepend: site.baseurl }}" />

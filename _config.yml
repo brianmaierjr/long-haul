@@ -5,6 +5,9 @@ url: http://brianmaierjr.github.com/long-haul
 baseurl: ""
 paginate_path: "blog/page:num/"
 permalink: blog/:title/
+always_prepend_site_title: false # Use this if you want to generate a title like "blogname - page" for all pages.
+								 # "blogname" will be the value in the "title" defined here, and "page" will be the
+								 # "title" value defined in the page's Front Matter.
 
 markdown: redcarpet
 highlighter: pygments
@@ -22,6 +25,7 @@ social:
    github: brianmaierjr
    twitter: brianmaierjr
    facebook: brianmaierjr
+   linkedin: brianmaierjr
    email: brimaidesigns@gmail.com
 
 google_analytics: "UA-58263416-1"
