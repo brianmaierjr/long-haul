@@ -1,8 +1,7 @@
-title: Long Haul
-description: Long Form Jekyll theme built with SASS / COMPASS / SUSY
-
-url: http://brianmaierjr.github.com/long-haul
-baseurl: ""
+title: Huy Kận IT
+description: Personal Blog
+url: http://calemolech.github.io/calemolech.github.io
+baseurl: "http://calemolech.github.io"
 paginate_path: "blog/page:num/"
 permalink: blog/:title/
 
@@ -19,9 +18,7 @@ navigation:
    url: /contact
 
 social:
-   github: brianmaierjr
-   twitter: brianmaierjr
-   facebook: brianmaierjr
-   email: brimaidesigns@gmail.com
-
-google_analytics: "UA-58263416-1"
+   github: calemolech
+   twitter: calemolech
+   facebook: tranhuy.uit
+   email: calemolech@gmail.com
