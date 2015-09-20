@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Example Post Formatting" 
+title:  "Example Post Formatting"
 date:   2014-12-15
 ---
 
@@ -20,6 +20,8 @@ Nullam quis risus eget urna mollis ornare vel eu leo. Cras mattis consectetur pu
 ## Unordered List
 * List Item
 * Longer List Item
+  * Nested List Item
+  * Nested Item
 * List Item
 
 ## Ordered List
