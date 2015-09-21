@@ -148,7 +148,10 @@ dd {
 	margin: 0 0 1.5rem;
 }
 
-.post ul ul {
+.post ul ul,
+.post ul ol,
+.post ol ul,
+.post ol ol {
   margin: 0;
 }
 
