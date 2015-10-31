@@ -75,8 +75,8 @@ MENU STYLING
 		li {
 		  width: 100%;
 		  display: block;
-		  background: seagreen;
-		  border-bottom: 2px solid lighten(seagreen, 5%);
+		  background: $background-color;
+		  border-bottom: 2px solid lighten($background-color, 5%);
 
 		  a {
 		  	color: white;
@@ -114,7 +114,7 @@ MENU STYLING
   float: right;
   line-height: 2em;
   margin-top: .5em;
-  background-color: seagreen;
+  background-color: $background-color;
   border-radius: 4px;
   padding: 0 .5em;
   color: white;
@@ -125,7 +125,7 @@ MENU STYLING
 
   &:hover {
   	color: white;
-  	background-color: darken(seagreen, 10%);
+  	background-color: darken($background-color, 10%);
   }
 }
 
@@ -175,7 +175,7 @@ HEADER STYLING
 ***************/
 
 .header {
-	background-color: seagreen;
+	background-color: $background-color;
 	background-image: url('../img/touring.jpg');
 	background-size: cover;
 	background-position: center center;
@@ -229,7 +229,7 @@ POST STYLING
 			content: "";
 			position: absolute;
 			top: -1.25em;
-			background: seagreen;
+			background: $background-color;
 			display: block;
 			height: 2px;
 			width: 150px;
@@ -240,7 +240,7 @@ POST STYLING
 			content: "";
 			position: absolute;
 			bottom: -1.25em;
-			background: seagreen;
+			background: $background-color;
 			display: block;
 			height: 2px;
 			width: 150px;
