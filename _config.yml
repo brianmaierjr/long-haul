@@ -8,6 +8,7 @@ permalink: blog/:title/
 
 markdown: redcarpet
 highlighter: pygments
+gems: [jekyll-paginate]
 paginate: 5
 
 navigation:
