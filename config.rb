@@ -1,4 +1,5 @@
 # Require any additional compass plugins here.
+require "support-for"
 require "normalize-scss"
 require "susy"
 
