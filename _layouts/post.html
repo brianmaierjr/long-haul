@@ -10,10 +10,7 @@ layout: default
   {% endif %}
   <h1 class="postTitle">{{ page.title }}</h1>
   {% assign m = page.date %}
-  <p class="meta">{{ page.date | date: '%B %d, %Y' }} | <span class="time">{{
-    page.content | number_of_words | divided_by:180 }}</span> Минут на
-    прочтение</p>
-  {% case m %}
+    {% case m %}
   {% when '1' %}Januar
   {% when '2' %}Februar
   {% when '3' %}March
@@ -27,7 +24,9 @@ layout: default
   {% when '11' %}November
   {% when '12' %}Dezember
 {% endcase %}
-{{ page.date | date: "%Y" }}
+  <p class="meta">{{ page.date | date: '%B %d, %Y' }} | <span class="time">{{
+    page.content | number_of_words | divided_by:180 }}</span> Минут на
+    прочтение</p>
   {{ content }}
 
   <!-- POST NAVIGATION -->
