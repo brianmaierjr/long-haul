@@ -16,10 +16,12 @@ title: Long Haul
   <!-- Pagination links -->
   <div class="pagination">
     {% if paginator.previous_page %}
-      <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="previous button__outline">Newer Posts</a> 
+      <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}"
+         class="previous button__outline">Новые Посты</a>
     {% endif %}
     {% if paginator.next_page %}
-      <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="next button__outline">Older Posts</a>
+      <a href="{{ paginator.next_page_path | prepend: site.baseurl }}"
+         class="next button__outline">Старые Посты</a>
     {% endif %}
   </div>
 </div>
