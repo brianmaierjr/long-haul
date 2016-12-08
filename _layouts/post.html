@@ -8,23 +8,7 @@ layout: default
       </div>
   {% endif %}
   <h1 class="postTitle">{{ page.title }}</h1>
-  {% case m %}
-  {% when '1' %}январь
-  {% when '2' %}февраля
-  {% when '3' %}марта
-  {% when '4' %}апреля
-  {% when '5' %}мая
-  {% when '6' %}июня
-  {% when '7' %}июля
-  {% when '8' %}августа
-  {% when '9' %}сентября
-  {% when '10' %}октября
-  {% when '11' %}ноября
-  {% when '12' %}декабря
-{% endcase %}
-  <p class="meta">{{ page.date | date: '%B %m, %Y' }} | <span class="time">{{
-    page.content | number_of_words | divided_by:180 }}</span> Минут на
-    прочтение</p>
+  <p class="meta">{{ {% include date.html date=page.date %} | <span class="time">{{ page.content | number_of_words | divided_by:180 }}</span> Minute Read</p>
 
   {{ content }}
 
