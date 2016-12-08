@@ -8,9 +8,9 @@ layout: default
       </div>
   {% endif %}
   <h1 class="postTitle">{{ page.title }}</h1>
-  <p class="meta"> {% include date.html date=page.date %} | <span
-      class="time">{{ page.content | number_of_words | divided_by:180
-    }}</span> Минут на прочтение</p>
+  <p class="meta">{% include date.html date=page.date %} | <span class="time">{{
+    page.content | number_of_words | divided_by:180 }}</span> Минут на
+    прочтение</p>
 
   {{ content }}
 
@@ -25,10 +25,10 @@ layout: default
     {% endif %}
     {% if page.next.url %}
       <a class="next{% if page.next.image %} image{% endif %}" href="{{ page.next.url | prepend: site.baseurl }}"><span>{{ page.next.title }}&nbsp;&raquo;</span>
-      {% if page.next.image %} 
+      {% if page.next.image %}
         <img src="{{ '/assets/img/' | prepend: site.baseurl | append: page.next.image }}" alt="">
-      {% endif %} 
+      {% endif %}
       </a>
-    {% endif %} 
+    {% endif %}
   </div>
 </div>
