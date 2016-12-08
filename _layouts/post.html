@@ -7,7 +7,7 @@ layout: default
         <img src="{{ '/assets/img/' | prepend: site.baseurl | append: page.image }}" alt="" />
       </div>
   {% endif %}
-  <h1 class="postTitle">{{ page.title }} — {{ site.title }}</h1>
+  <h1 class="postTitle">{{ page.title }}</h1>
   <p class="meta"> {% include date.html date=page.date %} | <span
       class="time">{{ page.content | number_of_words | divided_by:180
     }}</span> Минут на прочтение</p>
