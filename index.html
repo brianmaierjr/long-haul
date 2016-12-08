@@ -8,7 +8,8 @@ title: Long Haul
   <ul class="posts noList">
     {% for post in paginator.posts %}
       <li>
-        {% assign m = include.date | date: "%-m" %}
+        <span class="date">
+          {% assign m = include.date | date: "%-m" %}
 {{ include.date | date: "%-d" }}
 {% case m %}
   {% when '1' %}января
@@ -24,7 +25,7 @@ title: Long Haul
   {% when '11' %}ноября
   {% when '12' %}декабря
 {% endcase %}
-        <span class="date">{{ post.date | date: '%B %d, %Y' }}</span>
+        </span>
         <h3><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
         <p class="description">{% if post.description %}{{ post.description | strip_html | strip_newlines | truncate: 250 }}{% else %}{{ post.content | strip_html | strip_newlines | truncate: 250 }}{% endif %}</p>
       </li>
