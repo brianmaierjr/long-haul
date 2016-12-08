@@ -1,7 +1,6 @@
 ---
 layout: default
 ---
-{% include date.html date=page.date %}
 <div class="post">
   {% if page.image %}
     <div class="featuredImage">
@@ -9,7 +8,7 @@ layout: default
       </div>
   {% endif %}
   <h1 class="postTitle">{{ page.title }}</h1>
-  <p class="meta">{{ page.date | date: '%B %d, %Y' }} | <span class="time">{{
+  <p class="meta">{% include date.html date=page.date %} | <span class="time">{{
     page.content | number_of_words | divided_by:180 }}</span> Минут на
     прочтение</p>
 
