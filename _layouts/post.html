@@ -14,7 +14,6 @@ layout: default
 
   {{ content }}
 
-  {% include comment.html %}
   <!-- POST NAVIGATION -->
   <div class="postNav clearfix">
     {% if page.previous.url %}
@@ -31,5 +30,6 @@ layout: default
       {% endif %}
       </a>
     {% endif %}
+    {% include comment.html %}
   </div>
 </div>
