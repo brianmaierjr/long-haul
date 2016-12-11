@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+{% assign author = site.data.authors[page.author] %}
 <div class="post">
   {% if page.image %}
     <div class="featuredImage">
@@ -13,6 +14,14 @@ layout: default
     прочтение</p>
 
   {{ content }}
+
+  {% if author %}
+    <span>
+        <!-- Personal Info. -->
+        Written by <a href="mailto:{{ author.email }}" target="_blank">{{
+      author.name }}</a>
+    </span>
+{% endif %}
 
   <!-- POST NAVIGATION -->
   <div class="postNav clearfix">
