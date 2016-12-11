@@ -2,6 +2,7 @@
 layout: post
 title: Таинственное шествие
 date: 2016-12-7
+author: barbara
 ---
 
 <span class="dropcap">М</span>айкл Райли был обычным юношей:
