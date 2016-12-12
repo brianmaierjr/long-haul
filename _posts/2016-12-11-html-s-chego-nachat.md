@@ -41,5 +41,3 @@ c названием
 
 ![](/assets/img/example-html.png)
 
-Рекумендую курс HTML на сайте
-[http://htmlbook.ru/](http://htmlbook.ru/)
