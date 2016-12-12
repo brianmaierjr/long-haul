@@ -18,7 +18,7 @@ layout: default
   {% if author %}
     <span>
         <!-- Personal Info. -->
-        <p>Автор: <a href="mailto:{{ author.email }}" target="_blank">{{
+        <p class="authors">Автор: <a href="{{ author.web }}" target="_blank">{{
       author.name }}</a></p>
     </span>
 {% endif %}
