@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Что такое HTML
+author: justin
 ---
 HTML - это гипертекстовый язык разметки.
 Есть много форматов файлов, например: .html, .htm, .xhtml.
