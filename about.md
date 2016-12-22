@@ -5,19 +5,16 @@ title: О сайте и о нас
 
 <div class="post">
 	<h1 class="pageTitle">О сайте и о нас</h1>
-	<img src="{{ '/assets/img/touring.jpg' | prepend: site.baseurl }}" alt="">
-	<p class="intro">Long Haul is a minimal, long form <a href="http://jekyllrb.com">Jekyll</a> Theme. It can be used as is or customized to your hearts desire.</p>
+	<img src="{{ '/assets/img/фото-1.jpg' | prepend: site.baseurl }}" alt="">
+	<p class="intro"> </p>
 	<p> </p>
-	<h2>Features</h2>
-> многострочная
-> цитата
-
-	<ul>
-		<li>Built with <a href="http://sass-lang.com/">SASS</a> + <a href="http://compass-style.org/">COMPASS</a></li>
-  		<li>Layout with <a href="http://susy.oddbird.net/">SUSY Grid</a></li>
-  		<li>SVG Social Icons from <a href="http://customizr.net/icons/">Customizr</a></li>
-  		<li><a href="http://responsive-nav.com/">Responsive Nav Menu</a></li>
-  		<li><a href="https://github.com/snaptortoise/jekyll-rss-feeds">XML Feed for RSS Readers</a></li>
+	<h2>Преимущества проживания в селе</h2>
+  <ul>
+		<li>Можно побыть на природе</li>
+  		<li>Разводить животных</li>
+  		<li>Красивые виды</li>
+  		<li><Чистый воздух</li>
+  		<li></li>
   		<li>Contact Form via <a href="http://formspree.io/">Formspree</a></li>
       <li>5 Post Loop with excerpt on Home Page</li>
   		<li>Previous / Next Post Navigation</li>
