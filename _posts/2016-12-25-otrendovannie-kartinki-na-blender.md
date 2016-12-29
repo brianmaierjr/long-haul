@@ -1,6 +1,6 @@
 ---
 layout: post
-title
+title: justin
 author: justin
 ---
 ![](/assets/img/too.jpg)
