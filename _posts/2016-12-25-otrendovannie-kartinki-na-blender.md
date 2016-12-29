@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Отhендованные картинки blender 3d
+title: Отрендованные картинки blender 3d
 author: justin
 ---
 ![](/assets/img/too.jpg)
