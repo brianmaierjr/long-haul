@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Your New Jekyll Site
+title: Aaimaa Web Solutions
 ---
 
 <div id="articles">

@@ -1,7 +1,7 @@
-title: Long Haul
-description: Long Form Jekyll theme built with SASS / COMPASS / SUSY
+title: Aaimaa Web Solutions
+description: As an Open Source Enthusiast Company, We love to initiate Open Source Projects as well. 
 
-url: http://brianmaierjr.github.com/long-haul
+url: https://aaimaa.github.io/
 baseurl: ""
 paginate_path: "blog/page:num/"
 permalink: blog/:title/
@@ -20,9 +20,7 @@ navigation:
    url: /contact
 
 social:
-   github: brianmaierjr
-   twitter: brianmaierjr
-   facebook: brianmaierjr
-   email: brimaidesigns@gmail.com
-
-google_analytics: "UA-58263416-1"
+   github: aaimaa
+   twitter: aaimaawebs
+   facebook: aaimaawebs
+   email: hello@aaimaa.in
