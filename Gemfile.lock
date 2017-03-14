@@ -42,7 +42,7 @@ GEM
     multi_json (1.12.1)
     normalize-scss (6.0.0)
       sass (~> 3.3)
-    parallel (1.10.0)
+    parallel (1.11.1)
     pathutil (0.14.0)
       forwardable-extended (~> 2.6)
     rb-fsevent (0.9.8)
