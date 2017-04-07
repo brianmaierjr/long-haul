@@ -2,7 +2,6 @@
 GLOBAL STYLES
 ***************/
 
-// A better box-sizing practice http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
 html {
   box-sizing: border-box;
 }
@@ -16,6 +15,7 @@ body {
 	font-size: 112.5%; // 18px base font size
 	color: $black;
 	overflow-x: hidden;
+  margin: 0;
 
 	p , ul {
 		margin: 0 0 2rem;
@@ -40,8 +40,10 @@ img,video,audio,iframe,object{
 
 // Layout
 .container {
-	@include container(610px);
+  max-width: 610px;
 	padding: 0 20px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 
@@ -75,8 +77,8 @@ MENU STYLING
 		li {
 		  width: 100%;
 		  display: block;
-		  background: seagreen;
-		  border-bottom: 2px solid lighten(seagreen, 5%);
+		  background: $background-color;
+		  border-bottom: 2px solid lighten($background-color, 5%);
 
 		  a {
 		  	color: white;
@@ -114,18 +116,18 @@ MENU STYLING
   float: right;
   line-height: 2em;
   margin-top: .5em;
-  background-color: seagreen;
+  background-color: $background-color;
   border-radius: 4px;
   padding: 0 .5em;
   color: white;
   text-decoration: none;
   position: relative;
   right: 2rem;
-  @include transition(all 0.2s ease-in-out);
+  transition: all 0.2s ease-in-out;
 
   &:hover {
   	color: white;
-  	background-color: darken(seagreen, 10%);
+  	background-color: darken($background-color, 10%);
   }
 }
 
@@ -175,7 +177,7 @@ HEADER STYLING
 ***************/
 
 .header {
-	background-color: seagreen;
+	background-color: $background-color;
 	background-image: url('../img/touring.jpg');
 	background-size: cover;
 	background-position: center center;
@@ -185,7 +187,7 @@ HEADER STYLING
 
 	.container {
 		padding: 0;
-		@include container(100%);
+    max-width: 100%;
 	}
 
 	h1 {
@@ -229,7 +231,7 @@ POST STYLING
 			content: "";
 			position: absolute;
 			top: -1.25em;
-			background: seagreen;
+			background: $background-color;
 			display: block;
 			height: 2px;
 			width: 150px;
@@ -240,7 +242,7 @@ POST STYLING
 			content: "";
 			position: absolute;
 			bottom: -1.25em;
-			background: seagreen;
+			background: $background-color;
 			display: block;
 			height: 2px;
 			width: 150px;
@@ -322,11 +324,9 @@ POST NAV STYLING
 			display: block;
 			position: absolute;
 			top: 50%;
-			-webkit-transform: translateY(-50%);
-			-ms-transform: translateY(-50%);
 			transform: translateY(-50%);
 			left: 0;
-			width: 100%;.
+			width: 100%;
 			height: auto;
 		}
 
@@ -336,8 +336,6 @@ POST NAV STYLING
 			padding: .5rem;
 			position: absolute;
 			top: 50%;
-			-webkit-transform: translateY(-50%);
-			-ms-transform: translateY(-50%);
 			transform: translateY(-50%);
 			width: 100%;
 			line-height: 1.4;
@@ -349,7 +347,7 @@ POST NAV STYLING
 			text-shadow: 1px 1px 3px rgba(0,0,0,.8);
 			padding: 0 .5rem;
 			position: relative;
-			@include transition(all 0.2s ease-in-out);
+			transition: all 0.2s ease-in-out;
 		}
 
 		&:hover {
@@ -380,11 +378,12 @@ FOOTER STYLING
 .footer {
 	text-align: center;
 	padding: 2rem 0;
+	clear: both;
 
 	.container {
 		border-top: 4px solid darken(white, 15%);
 		padding-top: .5em;
-		@include container(90%);
+    max-width: 90%;
 	}
 
 	.copy, .footer-links {
@@ -406,7 +405,7 @@ FOOTER STYLING
 					display: inline-block;
 					width: 30px;
 					height: 30px;
-					@include transition(all 0.2s ease-in-out);
+					transition: all 0.2s ease-in-out;
 
 					svg {
 						display: block;
@@ -493,3 +492,6 @@ POST LIST STYLING
 		}
 	}
 }
+
+
+
