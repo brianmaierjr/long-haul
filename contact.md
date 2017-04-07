@@ -11,7 +11,7 @@ title: Contact Long Haul
     <p>If you have questions about the theme feel free to <a href="mailto:brimaidesigns@gmail.com">email me</a> or create an issue on <a href="https://github.com/brianmaierjr/long-haul">GitHub</a>. Enjoy!</p>
   </div>
   <form action="http://formspree.io/your@mail.com" method="POST">
-    <label for="name">Name</label>    
+    <label for="name">Name</label>
     <input type="text" id="name" name="name" class="full-width"><br>
     <label for="email">Email Address</label>
     <input type="email" id="email" name="_replyto" class="full-width"><br>
