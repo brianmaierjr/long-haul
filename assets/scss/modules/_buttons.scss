@@ -17,7 +17,7 @@ BUTTON DEFAULTS
   border-radius: 4px; 
   cursor: pointer;
   margin-bottom: .5em;
-  @include transition(background-color 0.14s ease-in-out);
+  transition: background-color 0.14s ease-in-out;
 
   // hovering on the btn
   &:hover, &:focus {

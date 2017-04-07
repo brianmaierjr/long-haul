@@ -2,7 +2,6 @@
 GLOBAL STYLES
 ***************/
 
-// A better box-sizing practice http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
 html {
   box-sizing: border-box;
 }
@@ -41,8 +40,10 @@ img,video,audio,iframe,object{
 
 // Layout
 .container {
-	@include container(610px);
+  max-width: 610px;
 	padding: 0 20px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 
@@ -122,7 +123,7 @@ MENU STYLING
   text-decoration: none;
   position: relative;
   right: 2rem;
-  @include transition(all 0.2s ease-in-out);
+  transition: all 0.2s ease-in-out;
 
   &:hover {
   	color: white;
@@ -186,7 +187,7 @@ HEADER STYLING
 
 	.container {
 		padding: 0;
-		@include container(100%);
+    max-width: 100%;
 	}
 
 	h1 {
@@ -323,8 +324,6 @@ POST NAV STYLING
 			display: block;
 			position: absolute;
 			top: 50%;
-			-webkit-transform: translateY(-50%);
-			-ms-transform: translateY(-50%);
 			transform: translateY(-50%);
 			left: 0;
 			width: 100%;
@@ -337,8 +336,6 @@ POST NAV STYLING
 			padding: .5rem;
 			position: absolute;
 			top: 50%;
-			-webkit-transform: translateY(-50%);
-			-ms-transform: translateY(-50%);
 			transform: translateY(-50%);
 			width: 100%;
 			line-height: 1.4;
@@ -350,7 +347,7 @@ POST NAV STYLING
 			text-shadow: 1px 1px 3px rgba(0,0,0,.8);
 			padding: 0 .5rem;
 			position: relative;
-			@include transition(all 0.2s ease-in-out);
+			transition: all 0.2s ease-in-out;
 		}
 
 		&:hover {
@@ -381,11 +378,12 @@ FOOTER STYLING
 .footer {
 	text-align: center;
 	padding: 2rem 0;
+	clear: both;
 
 	.container {
 		border-top: 4px solid darken(white, 15%);
 		padding-top: .5em;
-		@include container(90%);
+    max-width: 90%;
 	}
 
 	.copy, .footer-links {
@@ -407,7 +405,7 @@ FOOTER STYLING
 					display: inline-block;
 					width: 30px;
 					height: 30px;
-					@include transition(all 0.2s ease-in-out);
+					transition: all 0.2s ease-in-out;
 
 					svg {
 						display: block;
@@ -494,3 +492,6 @@ POST LIST STYLING
 		}
 	}
 }
+
+
+

@@ -9,8 +9,7 @@ If you really enjoy Long Haul and want to give me credit somewhere on the intern
 ## Features
 
 - Minimal, Type Focused Design
-- Built with SASS + COMPASS
-- Layout with SUSY Grid
+- Built with GULP + SASS + BROWSERSYNC + AUTOPREFIXER
 - SVG Social Icons
 - Responsive Nav Menu
 - XML Feed for RSS Readers
@@ -28,8 +27,8 @@ If you really enjoy Long Haul and want to give me credit somewhere on the intern
 3. Clone it
 4. [Install Bundler](http://bundler.io/)
 5. Run `bundle install`
-6. Run Jekyll `jekyll serve -w`
-7. Run `compass watch`
+6. Run `npm install`
+7. Run `gulp`
 8. Customize!
 
 ## Site Settings
