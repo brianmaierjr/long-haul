@@ -16,6 +16,21 @@
       </div>
    </div><!-- end .content -->
 
+   <!-- Katex -->
+   <script>
+        var scripts = document.getElementsByTagName("script");
+        for (var i = 0; i < scripts.length; i++) {
+            var script = scripts[i];
+            if (script.type.match(/^math\/tex/)) {
+                var text = script.text === "" ? script.innerHTML : script.text;
+                var options = script.type.match(/mode\s*=\s*display/) ?
+                              {displayMode: true} : {};
+                script.insertAdjacentHTML("beforebegin",
+                                          katex.renderToString(text, options));
+            }
+        }
+    </script>
+
    {% include footer.html %}
    {% include scripts.html %}
 
