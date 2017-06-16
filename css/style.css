@@ -1000,7 +1000,8 @@ POST LIST STYLING
     height: 2px;
     width: 60px; }
   .posts li a {
-    text-decoration: none; }
+    text-decoration: none;
+    text-decoration-skip: ink; }
     .posts li a:hover {
       text-decoration: underline; }
   .posts li .date {
