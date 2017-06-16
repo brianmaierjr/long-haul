@@ -474,6 +474,7 @@ POST LIST STYLING
 
 		a {
 			text-decoration: none;
+			text-decoration-skip: ink;
 
 			&:hover {
 				text-decoration: underline;
