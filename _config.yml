@@ -1,7 +1,7 @@
 title: Haz algo GRANDE
 description: El blog de Tech Talent South Spain
 
-url: ""
+url: "https://techtalentsouthes.github.io/blog.techtalentsouth.es"
 baseurl: "https://techtalentsouthes.github.io/blog.techtalentsouth.es"
 paginate_path: "/page:num/"
 permalink: "/:title/"
