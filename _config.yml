@@ -1,13 +1,13 @@
-title: Long Haul
-description: Long Form Jekyll theme built with SASS / COMPASS / SUSY
+title: Haz algo GRANDE
+description: El blog de Tech Talent South Spain
 
-url: http://brianmaierjr.github.com/long-haul
-baseurl: "/long-haul"
-paginate_path: "blog/page:num/"
-permalink: blog/:title/
+url: ""
+baseurl: "https://techtalentsouthes.github.io/blog.techtalentsouth.es"
+paginate_path: "/page:num/"
+permalink: "/:title/"
 
-markdown: redcarpet
-highlighter: pygments
+markdown: kramdown
+highlighter: rouge
 gems: [jekyll-paginate]
 paginate: 5
 
@@ -20,9 +20,9 @@ navigation:
    url: /contact
 
 social:
-   github: brianmaierjr
-   twitter: brianmaierjr
-   facebook: brianmaierjr
-   email: brimaidesigns@gmail.com
+   github: TechTalentSouthES
+   twitter: TechTalentSpain
+   facebook: TechTalentSpain
+   email: malaga@techtalentsouth.es
 
-google_analytics: "UA-58263416-1"
+google_analytics: ""
