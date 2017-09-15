@@ -5,9 +5,9 @@ var prefix      = require('gulp-autoprefixer');
 var cp          = require('child_process');
 var cssnano 		= require('gulp-cssnano');
 
-var jekyll   = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
+var bundle   = process.platform === 'win32' ? 'bundle.bat' : 'bundle';
 var messages = {
-    jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
+    jekyllBuild: '<span style="color: grey">Running:</span> $ bundle exec jekyll build'
 };
 
 /**
@@ -15,7 +15,7 @@ var messages = {
  */
 gulp.task('jekyll-build', function (done) {
     browserSync.notify(messages.jekyllBuild);
-    return cp.spawn( jekyll , ['build'], {stdio: 'inherit'})
+    return cp.spawn( bundle , ['exec', 'jekyll', 'build'], {stdio: 'inherit'})
         .on('close', done);
 });
 
