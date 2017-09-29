@@ -32,7 +32,7 @@ Estas son las fechas para los próximos cursos de programación en Málaga:
 * 02/11/17 **Desarrollador Android**
 * 13/11/17 **Code Immersion Full-Time** (en Inglés)
 * 24/11/17 **UX Design para todos**
-* 27/11/17 **Desarrollo JavaScripti, Angular y React**
+* 27/11/17 **Desarrollo JavaScript, Angular y React**
 * 12/01/18 **Code Immersion Part-Time** (en Español)
 
 ### ¿A quiénes van dirigidos?
