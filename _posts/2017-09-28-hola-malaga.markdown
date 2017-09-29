@@ -26,10 +26,10 @@ En Tech Talent South te formamos y ayudamos a encontrar un trabajo relacionado c
 * Cursos de diseño web y UX (experiencia de usuario).
 * Curso de desarrollo en JavaScript, Angular y React.
 
-Estas son las fechas para los próximos cursos de programación en Málaga: 
+Estas son las fechas para los próximos cursos de programación en Málaga:
 
 * 16/10/17 **Code Immersion Full-Time** (en Español)
-* 26/10/17 **Desarrollador Android**
+* 02/11/17 **Desarrollador Android**
 * 13/11/17 **Code Immersion Full-Time** (en Inglés)
 * 24/11/17 **UX Design para todos**
 * 27/11/17 **Desarrollo JavaScripti, Angular y React**
@@ -38,10 +38,9 @@ Estas son las fechas para los próximos cursos de programación en Málaga:
 ### ¿A quiénes van dirigidos?
 Están dirigidos a personas interesadas en la tecnología, da igual su edad o sus conocimientos. También para emprendedores que vayan a comenzar su aventura y necesiten conocimientos para el desarrollo web o desarrollo de aplicaciones.
 
-Otro caso habitual son las personas que quieren cambiar de profesión y reinventarse en el mundo de la programación. Por último, profesionales que tienen contacto con equipod de desarrollo y quieren recibir apoyo a la hora de comunicarse mejor para entender los problemas a los que se enfrentan.
+Otro caso habitual son las personas que quieren cambiar de profesión y reinventarse en el mundo de la programación. Por último, profesionales (diseñadores, *product owners*, etc.) que tienen contacto con equipos de desarrollo y quieren comunicarse mejor para entender los problemas a los que se enfrentan.
 
 ### ¿Te animas?
 Como ves, te ofrecemos una manera para aprender programación y entrar en el mercado con más futuro laboral. Además,los estudiantes de nuestro campus malagueño tendrán la posibilidad de realizar prácticas en empresas del sector tecnológico en Charlotte, Estados Unidos. Contáctanos y te informaremos de todo sin compromiso.  Recuerda: LEARN TO CODE AND DO \<BIG\> SOMETHING \</BIG\>
 
 Si te interesa o necesitas más información, estaremos encantados de atenderte [en nuestra web](http://techtalentsouth.es/).
-
