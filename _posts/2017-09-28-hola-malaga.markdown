@@ -47,4 +47,4 @@ Como ves, te ofrecemos una manera para aprender programación y entrar en el mer
 
 Si te interesa o necesitas más información, estaremos encantados de atenderte [en nuestra web](http://techtalentsouth.es/). También organizamos eventos cada mes [en nuestro grupo de Meetup](http://meetu.ps/c/3s6dL/9DHnY/f).
 
-<blockquote>LEARN TO CODE AND DO \<BIG\> SOMETHING \</BIG\></blockquote>
+<blockquote>LEARN TO CODE AND DO <BIG> SOMETHING </BIG></blockquote>
