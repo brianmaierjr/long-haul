@@ -8,7 +8,9 @@ image:  boqueron.jpg
 <p class="intro">Tech Talent South llega a España: cursos de programación en Málaga con modelo coding bootcamp americano y pionero en Andalucía.</p>
 
 ### Tech Talent South
-[Tech Talent South](https://www.techtalentsouth.com/) es en la actualidad uno de los **coding bootcamps** (cursos intensivos) con mejor valoración del mundo. Esta empresa estadounidense nace en Atlanta y actualmente tiene sede en Charlotte (Carolina del Norte). Su misión desde su fundación ha sido fomentar el talento en el campo de la tecnología en todo el Sureste de Estados Unidos. Tanto ha sido el éxito alcanzado, que en la actualidad, Tech Talent South tiene centros en Atlanta, Nueva Orleans, Dallas, Phoenix y San Antonio y hasta 12 ciudades en EE.UU., todas ellas caracterizadas por una gran demanda de profesionales de la programación. Los datos hablan por sí solos. A día de hoy, Tech Talent South en Estados Unidos ha entregado más de 500.000$ en becas. Desde su fundación, de la escuela han salido más de 2.000 profesionales relacionados con el mundo de la programación informática.
+[Tech Talent South](https://www.techtalentsouth.com/) es en la actualidad uno de los **coding bootcamps** (cursos intensivos) con mejor valoración del mundo. Esta empresa estadounidense nace en Atlanta y actualmente tiene sede en Charlotte (Carolina del Norte). Su misión desde su fundación ha sido fomentar el talento en el campo de la tecnología en todo el Sureste de Estados Unidos.
+
+Tanto ha sido el éxito alcanzado, que en la actualidad, Tech Talent South tiene centros en Atlanta, Nueva Orleans, Dallas, Phoenix y San Antonio y hasta 12 ciudades en EE.UU., todas ellas con una gran demanda de profesionales de la programación. Los datos hablan por sí solos. A día de hoy, Tech Talent South en Estados Unidos ha entregado más de 500.000 $ en becas. Desde su fundación, de la escuela han salido más de 2.000 profesionales relacionados con el mundo de la programación informática.
 
 ### Desde USA a Andalucía
 No hace mucho tiempo, si querías realizar algún curso de programación presencial o formarte a nivel profesional para encontrar trabajo en el mundo del desarrollo de software, tenías que viajar a otras ciudades de España, o incluso al extranjero. Si nos eliges, ya es posible hacerlo en el Sur de España: en Andalucía. En Tech Talent South Málaga encontrarás la mejor manera de empezar.
@@ -38,9 +40,11 @@ Estas son las fechas para los próximos cursos de programación en Málaga:
 ### ¿A quiénes van dirigidos?
 Están dirigidos a personas interesadas en la tecnología, da igual su edad o sus conocimientos. También para emprendedores que vayan a comenzar su aventura y necesiten conocimientos para el desarrollo web o desarrollo de aplicaciones.
 
-Otro caso habitual son las personas que quieren cambiar de profesión y reinventarse en el mundo de la programación. Por último, profesionales (diseñadores, *product owners*, etc.) que tienen contacto con equipos de desarrollo y quieren comunicarse mejor para entender los problemas a los que se enfrentan.
+Otro caso habitual son las personas que quieren cambiar de profesión y reinventarse en el mundo de la programación. Por último, profesionales (diseño gráfico, *product owners*, etc.) que tienen contacto con equipos de desarrollo y quieren comunicarse mejor para entender los problemas a los que se enfrentan.
 
 ### ¿Te animas?
-Como ves, te ofrecemos una manera para aprender programación y entrar en el mercado con más futuro laboral. Además,los estudiantes de nuestro campus malagueño tendrán la posibilidad de realizar prácticas en empresas del sector tecnológico en Charlotte, Estados Unidos. Contáctanos y te informaremos de todo sin compromiso.  Recuerda: LEARN TO CODE AND DO \<BIG\> SOMETHING \</BIG\>
+Como ves, te ofrecemos una manera para aprender programación y entrar en el mercado con más futuro laboral. Además, los estudiantes de nuestro campus malagueño tendrán la posibilidad de realizar prácticas en empresas del sector tecnológico en Charlotte, Estados Unidos.
 
-Si te interesa o necesitas más información, estaremos encantados de atenderte [en nuestra web](http://techtalentsouth.es/).
+Si te interesa o necesitas más información, estaremos encantados de atenderte [en nuestra web](http://techtalentsouth.es/). También organizamos eventos cada mes [en nuestro grupo de Meetup](http://meetu.ps/c/3s6dL/9DHnY/f).
+
+<blockquote>LEARN TO CODE AND DO \<BIG\> SOMETHING \</BIG\></blockquote>
