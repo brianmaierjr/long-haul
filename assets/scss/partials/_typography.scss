@@ -4,23 +4,9 @@ http://typecast.com/blog/a-more-modern-scale-for-web-typography
 ***************/
 
 body {
-  font-size: 1em;
-  /* equivalent to 16px */
-  line-height: 1.45;
-  /* equivalent to 20px */
-
   .intro {
     font-size: 1.25em;
     line-height: 1.7;
-  }
-}
-
-@media (min-width: 43.75em) {
-  body {
-    font-size: 1em;
-    /* equivalent to 16px */
-    line-height: 1.375;
-    /* equivalent to 22px */
   }
 }
 

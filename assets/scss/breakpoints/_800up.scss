@@ -2,6 +2,10 @@
 GLOBAL STYLES
 ***************/
 
+body {
+  font-size: 125%;
+}
+
 .content {
 	padding-top: 0;
 	position: relative;
@@ -23,7 +27,7 @@ GLOBAL STYLES
 }
 
 .container {
-  max-width: 800px;
+  max-width: 880px;
   margin-left: auto;
   margin-right: auto;
 	padding: 0;
