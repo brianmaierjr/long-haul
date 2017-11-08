@@ -10,6 +10,8 @@ description: This is first post.
 <blockquote>Living the same as yesterday and expecting a different future is an early symptom of mental illness. - Albert Einstein </blockquote>
 
 블로그는 천천히 고쳐나가겠습니다. 하루에 하나씩.
+우씽 업데이트는 어떻게 되는거야? ㅜㅜ
+아놔---------------
 
 <!--
 # 연습 1
