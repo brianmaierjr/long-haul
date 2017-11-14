@@ -1,7 +1,7 @@
-title: Long Haul
-description: Long Form Jekyll theme built with SASS / COMPASS / SUSY
+title: nyagum, sleeping beauty
+description: sleeping beauty with ...
 
-url: http://brianmaierjr.github.com/long-haul
+url: http://github.com/nyagum
 baseurl: ""
 paginate_path: "blog/page:num/"
 permalink: blog/:title/
@@ -20,9 +20,9 @@ navigation:
    url: /contact
 
 social:
-   github: brianmaierjr
-   twitter: brianmaierjr
-   facebook: brianmaierjr
-   email: brimaidesigns@gmail.com
+   github: nyagum
+  #  twitter: brianmaierjr
+  #  facebook: brianmaierjr
+   email: anyaboselchoi@gmail.com
 
 google_analytics: "UA-58263416-1"
