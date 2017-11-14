@@ -1,0 +1,44 @@
+### Git 생성
+<pre><code>ls -al
+git init
+ls -al
+git pull https://github.com/your_url
+ls
+</code></pre>
+
+### Git branch 생성 및 merge
+<pre><code>git branch
+git branch test
+git branch
+git checkout test
+git branch
+git add .
+git status
+git commit -m "commit message"
+git checkout master
+git status
+git merge test
+git checkout test
+</code></pre>
+
+### Git commit
+<pre><code>git branch
+git add .
+git commit -m "commit message"
+</code></pre>
+
+### Git push
+<pre><code>git status
+git push --set-upstream https://github.com/your_url master
+git status
+</code></pre>
+
+### Git log
+<pre><code> git log
+</code></pre>
+
+### Git Delete branch
+<pre><code>git branch
+git branch -d branch_name
+git branch
+</code></pre>
