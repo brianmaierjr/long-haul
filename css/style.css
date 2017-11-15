@@ -821,7 +821,8 @@ HEADER STYLING
     text-transform: uppercase; }
     .header h1 a {
       color: white;
-      text-decoration: none; }
+      text-decoration: none;
+      text-shadow:3px 3px 3px rgb(0,0,0); }
 
 /***************
 POST STYLING
