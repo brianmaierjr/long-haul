@@ -2,19 +2,17 @@
 layout: post
 title:  "MVP,MVVM 정리"
 date:   2017-11-22
-description: MVP, MVVM 정리?
+description: MVP, MVVM 정리 라고 하기엔 별거 없다?? 어떻게 구성하면 처음하는 사람도 잘 알아보기 쉽게 구성할 수 있을까? 많은 프로젝트에서 분류하고 있는 activity, adapter, fragmenet는 왜 프로젝트가 커지면 알아보기 힘들까?ㅜㅜ
 ---
 
-<p class="intro"><span class="dropcap">M</span>VP, MVVM 을 당장 따라하기에는 조금 무린거 같다 </p>
+<p class="intro"><span class="dropcap">M</span>MVP, MVVM 정리 라고 하기엔 별거 없다?? 어떻게 구성하면 처음하는 사람도 잘 알아보기 쉽게 구성할 수 있을까? 많은 프로젝트에서 분류하고 있는 activity, adapter, fragmenet는 왜 프로젝트가 커지면 알아보기 힘들까?ㅜㅜ VP, MVVM 을 당장 따라하기에는 조금 무린거 같다 ㅜㅜ 역시 코드는 스파게티로 짜고 리펙토링하며서 실력이 팍팍 느는거 같다 알면 뭐하나 안하는데;;; 왜 요즘 늘어지는지; ㅜㅜ</p>
 
 ### 결론
-adapter, data, util, view 로 나눈다.
+* adapter, data, util, view, etc 로 나눈다.
 
-### 역시 진리는 구현->리펙토링
-
-### 으으으 아직은 이해하지 못하겠엉.
--[링크 1]
--[링크 2]
+### 진리는 구현->리펙토링
+1. [링크 1]
+2. [링크 2]
 
 [링크 1]: http://thdev.tech/androiddev/2017/08/09/Android-MVC_MVP_MVVM-Intro.html
 [링크 2]: http://thdev.tech/androiddev/2017/02/20/Android-MVP-Package-Structure.html
