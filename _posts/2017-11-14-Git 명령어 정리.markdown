@@ -2,12 +2,11 @@
 layout: post
 title:  "Git 명령어 정리"
 date:   2017-11-14
-description: Git 명령어 더이상 찾지 말자.
+description: 매번 찾다 지친 명령어들ㅜㅜ Git 명령어 더이상 찾지 말자.
 ---
 
 <p class="intro"><span class="dropcap">이</span>제는 명령어 더이상 찾지 말자. 귀찮다.ㅜㅜ
-자주자주 까먹는 나를 위한 Git 명령어 뭉치.
-추후 수정 가능성 많음.</p>
+자주자주 까먹는 나를 위한 Git 명령어 뭉치. 추후 수정 가능성 많음.</p>
 
 
 ### Git 생성
@@ -18,7 +17,6 @@ ls -al
 git pull https://github.com/your_url
 ls
 ```
-
 
 ### Git branch 생성 및 merge
 ```
@@ -36,6 +34,15 @@ git merge test
 git checkout test
 ```
 
+### git 저장소에 이미 commit 된 파일 무시하기
+.gitignore에 추가하는 것을 빼먹고 이미 commit하는 경우
+working directory에는 남겨두고 staging area에서만 삭제하고 다시 커밋해준다.
+```
+git status
+git rm --cached ignorefile.txt
+git status
+git commit -m 'untrack ignorefile.txt'
+```
 
 ### Git commit
 ```
