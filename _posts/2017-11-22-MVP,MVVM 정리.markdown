@@ -7,12 +7,14 @@ description: MVP, MVVM 정리?
 
 <p class="intro"><span class="dropcap">M</span>VP, MVVM 을 당장 따라하기에는 조금 무린거 같다 </p>
 
--결론
+### 결론
 adapter, data, util, view 로 나눈다.
 
--역시 진리는 구현->리펙토링
+### 역시 진리는 구현->리펙토링
 
--으으으 아직은 이해하지 못하겠엉.
+### 으으으 아직은 이해하지 못하겠엉.
+-[링크 1]
+-[링크 2]
 
--http://thdev.tech/androiddev/2017/08/09/Android-MVC_MVP_MVVM-Intro.html
--http://thdev.tech/androiddev/2017/02/20/Android-MVP-Package-Structure.html
+[링크 1]: http://thdev.tech/androiddev/2017/08/09/Android-MVC_MVP_MVVM-Intro.html
+[링크 2]: http://thdev.tech/androiddev/2017/02/20/Android-MVP-Package-Structure.html
