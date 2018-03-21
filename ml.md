@@ -1,7 +1,7 @@
 ---
 layout: article
 title: Machine Learning
-intro: Ever since blasbla
+intro: Replace **this** text with something more useful...
 permalink: /ml
 toc: true
 eta: true
