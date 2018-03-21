@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Machine Learning
 subtitle: What I know about ML and Deep Learning
 permalink: /ml
