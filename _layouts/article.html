@@ -2,7 +2,7 @@
 layout: default
 comments: true
 ---
-<div class="post editable">
+<div class="post">
   {% if page.image %}
     <div class="featuredImage">
         <img src="{{ '/assets/img/' | prepend: site.baseurl | append: page.image }}" alt="" />
@@ -15,7 +15,7 @@ comments: true
     {% include intro.html %}
   {% endif %}
   
-  {{ content }}
+  <div>{{ content }}</div>
 
   {% include disqus.html %}
   </div>
