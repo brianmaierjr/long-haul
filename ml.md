@@ -1,6 +1,7 @@
 ---
 title: Machine Learning
 subtitle: What I know about ML and Deep Learning
+permalink: /ml
 toc: true
 eta: true
 ---
