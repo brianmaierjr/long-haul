@@ -1,7 +1,7 @@
 ---
 layout: article
 title: Machine Learning
-image: ml_title_image.jpg
+image: ml_title.jpg
 intro: Replace **this** text with something more useful...
 permalink: /ml
 toc: true
