@@ -1,9 +1,6 @@
 ---
 title: Machine Learning
 subtitle: What I know about ML and Deep Learning
-layout: article
-icon: fa-graduation-cap
-order: 3
 toc: true
 eta: true
 ---
