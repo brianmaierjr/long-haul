@@ -10,6 +10,13 @@ comments: true
   {% endif %}
   <h1 class="postTitle">{{ page.title }}</h1>
   <p class="meta"><span class="time">{{ page.content | number_of_words | divided_by:180 }}</span> Minute Read</p>
+
+  {% if page.intro %}
+    <p class="intro">
+        <span class="dropcap">{{ page.intro | slice: 0}}</span>
+        {{ page.intro | slice: 1, page.intro.size}}
+    </p>
+  {% endif %}
   
   {{ content }}
 
