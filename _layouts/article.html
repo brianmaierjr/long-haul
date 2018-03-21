@@ -14,7 +14,7 @@ comments: true
   {% if page.intro %}
     <p class="intro">
         <span class="dropcap">{{ page.intro | slice: 0}}</span>
-        {{ page.intro | slice: 1, page.intro.size}}
+        {{ page.intro | slice: 1, page.intro.size | markdownify }}
     </p>
   {% endif %}
   
