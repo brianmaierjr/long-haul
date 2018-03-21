@@ -16,6 +16,8 @@ navigation:
    url: /index.html
  - title: About
    url: /about
+ - title: Machine Learning
+   url: /ml
  - title: Contact
    url: /contact
 
