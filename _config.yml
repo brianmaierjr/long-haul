@@ -26,6 +26,8 @@ social:
    twitter: danitiefenauer
    facebook: daniel.tiefenauer
    email: daniel@tiefenauer.info
-   
+
+plugins:
+   - jemoji
       
 google_analytics: "UA-56931568-3"
