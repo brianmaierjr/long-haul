@@ -1,7 +1,7 @@
 ---
 layout: article
 title: Machine Learning
-subtitle: What I know about ML and Deep Learning
+intro: Ever since blasbla
 permalink: /ml
 toc: true
 eta: true
