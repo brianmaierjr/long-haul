@@ -26,5 +26,13 @@ social:
    twitter: danitiefenauer
    facebook: daniel.tiefenauer
    email: daniel@tiefenauer.info
-
+   
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      pdf: true
+      
 google_analytics: "UA-56931568-3"
