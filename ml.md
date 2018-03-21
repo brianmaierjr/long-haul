@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title: Machine Learning
 subtitle: What I know about ML and Deep Learning
 permalink: /ml
