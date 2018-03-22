@@ -69,7 +69,7 @@ Expected :A reall...
 Actual :A really long station name which will definitely not fit into the display</pre>
 {% endhighlight %}
 
-Failure of this test is actually a good thing, since it gives us a chance to fix this and immediately check the result of our efforts &#8211; all in the name of test-driven development. 🙂 So let&#8217;s change the previously added  getDisplay()-method to the following:
+Failure of this test is actually a good thing, since it gives us a chance to fix this and immediately check the result of our efforts &#8211; all in the name of test-driven development. 🙂 So let&#8217;s change the previously added  `getDisplay()`-method to the following:
 
 Now run the test again! It should become green like a cucumber.
 
@@ -87,7 +87,7 @@ Now lets assume if the radio is already turned on, it should be turned off by pr
 
 {% highlight %}
 Given a digital radio
-**And the radio is already turned on**
+And the radio is already turned on
 When I press the on/off switch
 Then the radio should be turned off
 {% endhighlight %}
