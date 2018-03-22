@@ -87,7 +87,7 @@ Now let&#8217;s assume if the radio is already turned on, it should be turned of
 
 {% highlight bash %}
 Given a digital radio
-**And the radio is already turned on**
+And the radio is already turned on
 When I press the on/off switch
 Then the radio should be turned off
 {% endhighlight %}
@@ -106,4 +106,15 @@ with the following step:
 
 The result would be identical.
 
-&nbsp;
+{% highlight java %}
+    @Given("the radio is already turned on")
+    @Composite(steps = {
+            "Given a digital radio"
+    })
+    public void theRadioIsTurnedOn(){
+        if (radio == null)
+            aDigitalRadio();
+        if(!radio.isTurnedOn())
+            radio.switchOnOff();
+    }
+{% endhighlight %}
