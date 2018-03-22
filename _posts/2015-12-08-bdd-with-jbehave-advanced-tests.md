@@ -1,7 +1,6 @@
 ---
 id: 754
 title: 'BDD with JBehave: Advanced tests'
-date: 2015-12-08T11:22:25+00:00
 author: admin
 layout: post
 guid: http://www.tiefenauer.info/?p=754
