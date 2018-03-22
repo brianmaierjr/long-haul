@@ -1,5 +1,6 @@
 ---
 title: 'BDD with JBehave (2/2): Advanced tests'
+description: Second part on my tutorial on BDD
 layout: post
 categories:
   - Coding
