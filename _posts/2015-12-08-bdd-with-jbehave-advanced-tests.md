@@ -23,7 +23,9 @@ In this second part of the article series about BDD and JBehave we will explore 
 
 When describing events and expected behavior, it is often useful to evaluate certain parts of the expectation description in the story. We did this implicitly before by stating the following expectation
 
-```Then the radio should be turned on```
+{% highlight %}
+Then the radio should be turned on
+{% endhighlight %}
 
 and evaluating the expecation in Java to a boolean:
 
@@ -61,9 +63,11 @@ Also add the following methods to `Radio.java`:
 
 If we run our test now, it will fail with the following message:
 
-<pre>org.junit.ComparisonFailure: 
+{% highlight %}
+org.junit.ComparisonFailure: 
 Expected :A reall...
-Actual :A really long station name which will definitely not fit into the display</pre>
+Actual :A really long station name which will definitely not fit into the display
+{% endhighlight %}
 
 Failure of this test is actually a good thing, since it gives us a chance to fix this and immediately check the result of our efforts &#8211; all in the name of test-driven development. 🙂 So let&#8217;s change the previously added  getDisplay()-method to the following:
 
