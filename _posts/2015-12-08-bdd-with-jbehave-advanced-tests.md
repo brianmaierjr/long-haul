@@ -94,17 +94,25 @@ Then the radio should be turned off
 
 Let&#8217;s also extend our RadioSteps.java with an additional method:
 
-&nbsp;
+{% highlight java %}
+    @Given("the radio is already turned on")
+    public void theRadioIsTurnedOn(){
+        if (radio == null)
+            aDigitalRadio();
+        if(!radio.isTurnedOn())
+            radio.switchOnOff();
+    }
+{% endhighlight %}
 
 The two preconditions are now chained together i.e. executed in sequence in the order given by the story file. Composition of steps can also be achieved by using the `@Composite`-annotation in Java. We could use the following test
 
-<pre>Given <strong>the radio is already turned on</strong>
+{% highlight bash %}
+Given the radio is already turned on
 When I press the on/off switch
-Then the radio should be turned off</pre>
+Then the radio should be turned off
+{% endhighlight %}
 
 with the following step:
-
-The result would be identical.
 
 {% highlight java %}
     @Given("the radio is already turned on")
@@ -118,3 +126,5 @@ The result would be identical.
             radio.switchOnOff();
     }
 {% endhighlight %}
+
+The result would be identical.
