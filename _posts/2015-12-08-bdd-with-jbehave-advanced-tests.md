@@ -77,14 +77,11 @@ Now run the test again! It should become green like a cucumber.
 
 Sometimes it can be useful to chain certain preconditions together to formulate a test. For example, let&#8217;s revisit our first test:
 
-{% highlight %}
-Given a digital radio
+<pre>Given a digital radio
 When I press the on/off switch
-Then the radio should be turned on
-{% endhighlight %}
+Then the radio should be turned on</pre>
 
-Now lets assume if the radio is already turned on, it should be turned off by pressing the on/off switch again. We can write another test, which is similar to the above, but with an additional precondition:
-
+Now let&#8217;s assume if the radio is already turned on, it should be turned off by pressing the on/off switch again. We can write another test, which is similar to the above, but with an additional precondition:
 
 <pre>Given a digital radio
 <strong>And the radio is already turned on</strong>
