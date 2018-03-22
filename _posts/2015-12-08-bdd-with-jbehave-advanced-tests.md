@@ -51,23 +51,21 @@ Now run your test and voilà: The test succeeds! 🙂
 
 # Example tables
 
-In certain cases it can become necessary to feed different parameter values to the test in order to check different behaviour. For example: Let's assume our radio has a display which can display the current station name, but which is limited to 10 characters. If a station name is longer than 10 characters, the name should be truncated down to 7 characters and appended with three dots.
+In certain cases it can become necessary to feed different parameter values to the test in order to check different behaviour. For example: Let&#8217;s assume our radio has a display which can display the current station name, but which is limited to 10 characters. If a station name is longer than 10 characters, the name should be truncated down to 7 characters and appended with three dots.
 
 This is actually an extension of a parameterized test and can be formulated similarly in the story by using an example table:
 
 The test will then be executed once for each row in the example table, having the parameter values set to their respective value from the table.
 
-Let's try this out and extend our `RadioSteps.java` with appropriate methods to match the story:
+Let&#8217;s try this out and extend our `RadioSteps.java` with appropriate methods to match the story:
 
 Also add the following methods to `Radio.java`:
 
 If we run our test now, it will fail with the following message:
 
-{% highlight %}
-org.junit.ComparisonFailure: 
+<pre>org.junit.ComparisonFailure: 
 Expected :A reall...
-Actual :A really long station name which will definitely not fit into the display
-{% endhighlight %}
+Actual :A really long station name which will definitely not fit into the display</pre>
 
 Failure of this test is actually a good thing, since it gives us a chance to fix this and immediately check the result of our efforts &#8211; all in the name of test-driven development. 🙂 So let&#8217;s change the previously added  getDisplay()-method to the following:
 
