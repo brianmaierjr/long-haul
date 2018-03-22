@@ -24,7 +24,7 @@ In this second part of the article series about BDD and JBehave we will explore 
 When describing events and expected behavior, it is often useful to evaluate certain parts of the expectation description in the story. We did this implicitly before by stating the following expectation
 
 {% highlight %}
-Then the radio should be turned on```
+Then the radio should be turned on
 {% endhighlight %}
 
 and evaluating the expecation in Java to a boolean:
