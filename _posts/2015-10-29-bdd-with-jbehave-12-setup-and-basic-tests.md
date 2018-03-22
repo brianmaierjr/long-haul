@@ -206,7 +206,7 @@ Uh-oh. Our test has failed. But that’s actually a good thing, since we can fix
 
 Let’s run our test again and we should see the following test result:
 
-<img src="wp-content/uploads/2015/10/img_5631e65b002a7.png" />
+<img src="assets/img/wp-content/uploads/2015/10/img_5631e65b002a7.png" />
 
 ### Good to know
 
