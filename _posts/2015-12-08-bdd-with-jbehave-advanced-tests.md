@@ -29,7 +29,7 @@ and evaluating the expecation in Java to a boolean:
 
 {% highlight java %}
 assertTrue(radio.isTurnedOn());
-{% highlight %}
+{% endhighlight %}
 
 But what if we wanted to evaluate the expectation in a more complex manner, e.g. by specifying the following test:
 
