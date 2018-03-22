@@ -58,7 +58,22 @@ The radio will be implemented in a single class `Radio.java`, which will be test
 
 Setup your project with Maven (or directly in the IDE). Of course, in order to use the functionalities of JBehave, we must add JBehave as a dependency:
 
-Note I have also included a dependency to [Hamcrest](http://hamcrest.org/) in order to use their really useful matchers. This should be enough for now to write our first JBehave test.
+{% highlight xml %}
+<dependencies>
+    <dependency>
+        <groupId>org.jbehave</groupId>
+        <artifactId>jbehave-core</artifactId>
+        <version>4.0.4</version>
+    </dependency>
+    <dependency>
+        <groupId>org.hamcrest</groupId>
+        <artifactId>hamcrest-all</artifactId>
+        <version>1.3</version>
+    </dependency>
+</dependencies>
+{% endhighlight %}
+
+Note I have also included a dependency to [Hamcrest](http://hamcrest.org/) in order to use their really useful matchers. This should be enough for now to write our first JBehave test.
 
 ## Our first JBehave test
 
@@ -70,9 +85,15 @@ JBehave needs three things to run a test:
 
 ### The story
 
-Let&#8217;s start with the most simple use case.  Let&#8217;s say I have a digital radio, which I want to turn on to listen to music. The expected behavior could be decribed as follows:
+Let&#8217;s start with the most simple use case. Let&#8217;s say I have a digital radio, which I want to turn on to listen to music. The expected behavior could be decribed as follows:
 
-Easy to read, huh? This is not a free text. It is acutally code being executed by JBehave! That&#8217;s the good thing about BDD: Since the behavior is language agnostic, expectations can be formulated almost entirely in natural language. You only have to follow a basic [syntax pattern](http://jbehave.org/) with the following keywords:
+{% highlight bash %}
+Given a digital radio
+When I turn on the radio
+Then the radio should be turned on
+{% endhighlight %}
+
+Easy to read, huh? This is not a free text. It is acutally code being executed by JBehave! That&#8217;s the good thing about BDD: Since the behavior is language agnostic, expectations can be formulated almost entirely in natural language. You only have to follow a basic [syntax pattern](http://jbehave.org/) with the following keywords:
 
   * **Given**: Decribe the starting position for the behavior (preconditions)
   * **When**: Describe what is happening in the test
@@ -84,15 +105,77 @@ Of course there&#8217;s more and the descriptions can also be parameterized. But
 
 As said, JBehave needs the steps corresponding with the story description. This can be done using a POJO with some JBehave-annotated methods:
 
+{% highlight java %}
+public class RadioSteps {
+
+    private Radio radio;
+
+    @Given("a digital radio")
+    public void aDigitalRadio(){
+        radio = new Radio();
+    }
+
+    @When("I turn on the radio")
+    public void iTurnOnTheRadio(){
+        radio.switchOnOff();
+    }
+
+    @Then("the radio should be turned on")
+    public void theRadioShouldBeTurnedOn(){
+        assertTrue(radio.isTurnedOn());
+    }
+}
+{% endhighlight %}
+
 As you can see, the annotations carry the same namings like keywords described above. It is important that the string passed in as an argument matches the text following the keyword.
 
 The more perceptive of you might have noted that we&#8217;re still missing a radio that contains the actual behavior to be tested, so let&#8217;ts add that, too:
 
-&nbsp;
+{% highlight java %}
+public class Radio {
+
+    private String stationName;
+    private boolean turnedOn;
+
+    public Radio() {
+
+    }
+
+    public void switchOnOff(){
+        
+    }
+
+    public boolean isTurnedOn() {
+        return turnedOn;
+    }
+}
+{% endhighlight %}
 
 ### The Mapping
 
 Now, in order for JBehave to know what steps to execute for what parts of the story, we must provide it with some basic configuration. I won&#8217;t dig into the details of what else could be configured, but this should be enough for the moment.
+
+{% highlight java %}
+public class TurnRadioOn extends JUnitStory {
+    
+    @Override
+    public Configuration configuration(){
+        return new MostUsefulConfiguration()
+                // where to find the stories
+                .useStoryLoader(new LoadFromClasspath(this.getClass()))
+                // CONSOLE and TXT reporting
+                .useStoryReporterBuilder(new StoryReporterBuilder().withDefaultFormats().withFormats(Format.CONSOLE, Format.TXT));
+    }
+
+    // Here we specify the steps classes
+    @Override
+    public InjectableStepsFactory stepsFactory() {
+        // varargs, can have more that one steps classes
+        return new InstanceStepsFactory(configuration(), new RadioSteps());
+    }
+
+}
+{% endhighlight %}
 
 What this code does is tell JBehave the classpath to load stories from and write the results to the console in text format.
 
@@ -100,7 +183,8 @@ What this code does is tell JBehave the classpath to load stories from and writ
 
 Now let&#8217;s try it out. Right click on the mapping class (`TurnRadioOn.java`) and run it as a Unit Test. You should get the following output:
 
-<pre>java.lang.AssertionError
+{% highlight bash %}
+java.lang.AssertionError
  at org.junit.Assert.fail(Assert.java:86)
  at org.junit.Assert.assertTrue(Assert.java:41)
  at org.junit.Assert.assertTrue(Assert.java:52)
@@ -108,15 +192,22 @@ Now let&#8217;s try it out. Right click on the mapping class (`TurnRadioOn.java`
  at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
  at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
  at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-...</pre>
+...
+{% endhighlight %}
+
 
 Uh-oh. Our test has failed. But that&#8217;s actually a good thing, since we can fix it now and will immediately know whether our fix has produced the expected behavior. So let&#8217;s complete the `switchOnOff`-Method to simulate the radio&#8217;s behavior:
 
+{% highlight java %}
+    public void switchOnOff(){
+        turnedOn = !turnedOn;
+    }
+
+{% endhighlight %}
+
 Let&#8217;s run our test again and we should see the following test result:
 
-<p id="GeuMbzV">
-  <a href="http://www.tiefenauer.info/wp-content/uploads/2015/10/img_5631e65b002a7.png" rel="lightbox[743]"><img class="alignnone wp-image-746 size-full" src="http://www.tiefenauer.info/wp-content/uploads/2015/10/img_5631e65b002a7.png" alt="" width="1566" height="352" srcset="http://www.tiefenauer.info/wp-content/uploads/2015/10/img_5631e65b002a7.png 1566w, http://www.tiefenauer.info/wp-content/uploads/2015/10/img_5631e65b002a7-300x67.png 300w, http://www.tiefenauer.info/wp-content/uploads/2015/10/img_5631e65b002a7-1024x230.png 1024w" sizes="(max-width: 1566px) 100vw, 1566px" /></a>
-</p>
+
 
 ### Good to know
 
