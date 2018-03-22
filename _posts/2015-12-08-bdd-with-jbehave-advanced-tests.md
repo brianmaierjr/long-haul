@@ -1,9 +1,6 @@
 ---
 title: 'BDD with JBehave (2/2): Advanced tests'
-author: admin
 layout: post
-guid: http://www.tiefenauer.info/?p=754
-permalink: /bdd-with-jbehave-advanced-tests/
 categories:
   - Coding
 tags:
@@ -14,9 +11,7 @@ tags:
 series:
   - BDD with JBehave
 ---
-<div class="seriesmeta">
-  This entry is part 2 of 2 in the series <a href="http://www.tiefenauer.info/series/bdd-with-jbehave/" class="series-60" title="BDD with JBehave">BDD with JBehave</a>
-</div>
+This entry is part 2 of 2 in the series _BDD with JBehave_.
 
 In the previous article about BDD with JBehave, we learned about how to create a test using the JBehave story pattern that describes preconditions, events and the expected behavior. Due to its natural language, the story can even be understood by non-technical users. The test described the behavior of a digital radio when the on/off switch is being pressed.
 
@@ -24,13 +19,11 @@ This test was very basic, but sufficient to illustrate the basic functionality. 
 
 In this second part of the article series about BDD and JBehave we will explore some of the more advanced functionalities of JBehave to create more sophisticated behavior driven tests.
 
-<!--more-->
-
 # Parameterized Tests
 
 When describing events and expected behavior, it is often useful to evaluate certain parts of the expectation description in the story. We did this implicitly before by stating the following expectation
 
-<pre>Then the radio should be turned on</pre>
+```Then the radio should be turned on```
 
 and evaluating the expecation in Java to a boolean:
 
