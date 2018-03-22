@@ -1,6 +1,5 @@
 ---
-id: 754
-title: 'BDD with JBehave: Advanced tests'
+title: BDD with JBehave (2/2): Advanced tests
 author: admin
 layout: post
 guid: http://www.tiefenauer.info/?p=754
