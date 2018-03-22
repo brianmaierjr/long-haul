@@ -43,7 +43,7 @@ Usually, the method parameters carry the same names and occur in the same order 
 
 Using the `@Named`-annotation both name and/or order of parameter can become independent of the description in the story. However, having parameter names and order the same is good practice and also less verbose. I suggest keeping them in sync unless there&#8217;s absolutely no way to avoid it.
 
-Let&#8217;s update our Radio so that the user can tune to a frequency by adding the following code:
+Let's update our Radio so that the user can tune to a frequency by adding the following code:
 
 Now run your test and voilà: The test succeeds! 🙂
 
