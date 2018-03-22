@@ -23,15 +23,13 @@ In this second part of the article series about BDD and JBehave we will explore 
 
 When describing events and expected behavior, it is often useful to evaluate certain parts of the expectation description in the story. We did this implicitly before by stating the following expectation
 
-{% highlight %}
-Then the radio should be turned on
-{% endhighlight %}
+```Then the radio should be turned on```
 
 and evaluating the expecation in Java to a boolean:
 
 {% highlight java %}
 assertTrue(radio.isTurnedOn());
-{% endhighlight %}
+{% highlight %}
 
 But what if we wanted to evaluate the expectation in a more complex manner, e.g. by specifying the following test:
 
@@ -45,7 +43,7 @@ Usually, the method parameters carry the same names and occur in the same order 
 
 Using the `@Named`-annotation both name and/or order of parameter can become independent of the description in the story. However, having parameter names and order the same is good practice and also less verbose. I suggest keeping them in sync unless there&#8217;s absolutely no way to avoid it.
 
-Let's update our Radio so that the user can tune to a frequency by adding the following code:
+Let&#8217;s update our Radio so that the user can tune to a frequency by adding the following code:
 
 Now run your test and voilà: The test succeeds! 🙂
 
