@@ -66,7 +66,7 @@ If we run our test now, it will fail with the following message:
 {% highlight %}
 org.junit.ComparisonFailure: 
 Expected :A reall...
-Actual :A really long station name which will definitely not fit into the display</pre>
+Actual :A really long station name which will definitely not fit into the display
 {% endhighlight %}
 
 Failure of this test is actually a good thing, since it gives us a chance to fix this and immediately check the result of our efforts &#8211; all in the name of test-driven development. 🙂 So let&#8217;s change the previously added  getDisplay()-method to the following:
