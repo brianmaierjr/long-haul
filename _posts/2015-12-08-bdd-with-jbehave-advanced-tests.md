@@ -23,7 +23,9 @@ In this second part of the article series about BDD and JBehave we will explore 
 
 When describing events and expected behavior, it is often useful to evaluate certain parts of the expectation description in the story. We did this implicitly before by stating the following expectation
 
-```Then the radio should be turned on```
+{% highlight %}
+Then the radio should be turned on```
+{% endhighlight %}
 
 and evaluating the expecation in Java to a boolean:
 
@@ -49,21 +51,23 @@ Now run your test and voilà: The test succeeds! 🙂
 
 # Example tables
 
-In certain cases it can become necessary to feed different parameter values to the test in order to check different behaviour. For example: Let&#8217;s assume our radio has a display which can display the current station name, but which is limited to 10 characters. If a station name is longer than 10 characters, the name should be truncated down to 7 characters and appended with three dots.
+In certain cases it can become necessary to feed different parameter values to the test in order to check different behaviour. For example: Let's assume our radio has a display which can display the current station name, but which is limited to 10 characters. If a station name is longer than 10 characters, the name should be truncated down to 7 characters and appended with three dots.
 
 This is actually an extension of a parameterized test and can be formulated similarly in the story by using an example table:
 
 The test will then be executed once for each row in the example table, having the parameter values set to their respective value from the table.
 
-Let&#8217;s try this out and extend our `RadioSteps.java` with appropriate methods to match the story:
+Let's try this out and extend our `RadioSteps.java` with appropriate methods to match the story:
 
 Also add the following methods to `Radio.java`:
 
 If we run our test now, it will fail with the following message:
 
-<pre>org.junit.ComparisonFailure: 
+{% highlight %}
+org.junit.ComparisonFailure: 
 Expected :A reall...
 Actual :A really long station name which will definitely not fit into the display</pre>
+{% endhighlight %}
 
 Failure of this test is actually a good thing, since it gives us a chance to fix this and immediately check the result of our efforts &#8211; all in the name of test-driven development. 🙂 So let&#8217;s change the previously added  getDisplay()-method to the following:
 
@@ -73,16 +77,20 @@ Now run the test again! It should become green like a cucumber.
 
 Sometimes it can be useful to chain certain preconditions together to formulate a test. For example, let&#8217;s revisit our first test:
 
-<pre>Given a digital radio
+{% highlight %}
+Given a digital radio
 When I press the on/off switch
-Then the radio should be turned on</pre>
+Then the radio should be turned on
+{% endhighlight %}
 
-Now let&#8217;s assume if the radio is already turned on, it should be turned off by pressing the on/off switch again. We can write another test, which is similar to the above, but with an additional precondition:
+Now lets assume if the radio is already turned on, it should be turned off by pressing the on/off switch again. We can write another test, which is similar to the above, but with an additional precondition:
 
-<pre>Given a digital radio
-<strong>And the radio is already turned on</strong>
+{% highlight %}
+Given a digital radio
+**And the radio is already turned on**
 When I press the on/off switch
 Then the radio should be turned off</pre>
+{% endhighlight %}
 
 Let&#8217;s also extend our RadioSteps.java with an additional method:
 
