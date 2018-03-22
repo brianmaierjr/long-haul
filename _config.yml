@@ -21,8 +21,8 @@ navigation:
  - title: Contact
    url: /contact
 
-# plugins:
-#  - jemoji
+plugins:
+  - jemoji
  
 social:
    github: tiefenauer
