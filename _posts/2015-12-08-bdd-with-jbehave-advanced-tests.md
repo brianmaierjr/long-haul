@@ -1,6 +1,6 @@
 ---
 title: BDD with JBehave: Advanced tests
-date: 2015-12-08
+date: 2015-12-08T11:22:25+00:00
 layout: post
 categories:
   - Coding
