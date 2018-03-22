@@ -1,5 +1,5 @@
 ---
-title: BDD with JBehave: Advanced tests
+title: BDD with JBehave (2/2): Advanced tests
 layout: post
 categories:
   - Coding
