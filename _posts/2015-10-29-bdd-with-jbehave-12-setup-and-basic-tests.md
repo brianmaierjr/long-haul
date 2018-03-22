@@ -216,12 +216,15 @@ Also, JBehave will run all your stories as a single unit test by default. if you
 
 After that you can update your test file to be run with the custom test runner:
 
-```
-**@RunWith(JUnitReportingRunner.class)**
+{% highlight java %}
+    public void switchOnOff(){
+        turnedOn = !turnedOn;
+    }
+@RunWith(JUnitReportingRunner.class)
 public class TurnRadioOn extends JUnitStory {
 ...
 }
-```
+{% endhighlight %}
 
 ## Congratulations!
 
