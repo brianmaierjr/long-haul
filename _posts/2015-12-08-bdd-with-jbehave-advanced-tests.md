@@ -89,7 +89,7 @@ Now lets assume if the radio is already turned on, it should be turned off by pr
 Given a digital radio
 **And the radio is already turned on**
 When I press the on/off switch
-Then the radio should be turned off</pre>
+Then the radio should be turned off
 {% endhighlight %}
 
 Let&#8217;s also extend our RadioSteps.java with an additional method:
