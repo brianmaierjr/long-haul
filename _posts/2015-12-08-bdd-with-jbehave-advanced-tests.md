@@ -41,7 +41,7 @@ Luckily, extracting parameters from textual descriptions is not hard at all with
 
 Parameters are defined as Strings in the story file, but can be any other type in Java, including object types. Type conversion is done automatically by JBehave, where possible using <a href="http://jbehave.org/reference/stable/parameter-converters.html" target="_blank">built-in parameter converters</a>. If this is not possible, you can write your own parameter converter, but this is not in scope for this article.
 
-Usually, the method parameters carry the same names and occur in the same order as specified in the annotation string. This is good practice but there may be cases where naming and/or order of parameters in Java may be different. That&#8217;s why JBehave includes the `@Named`-annotation for parameter values:
+Usually, the method parameters carry the same names and occur in the same order as specified in the annotation string. This is good practice but there may be cases where naming and/or order of parameters in Java may be different. That's why JBehave includes the `@Named`-annotation for parameter values:
 
 Using the `@Named`-annotation both name and/or order of parameter can become independent of the description in the story. However, having parameter names and order the same is good practice and also less verbose. I suggest keeping them in sync unless there&#8217;s absolutely no way to avoid it.
 
@@ -67,7 +67,7 @@ If we run our test now, it will fail with the following message:
 Expected :A reall...
 Actual :A really long station name which will definitely not fit into the display</pre>
 
-Failure of this test is actually a good thing, since it gives us a chance to fix this and immediately check the result of our efforts &#8211; all in the name of test-driven development. 🙂 So let&#8217;s change the previously added  getDisplay()-method to the following:
+Failure of this test is actually a good thing, since it gives us a chance to fix this and immediately check the result of our efforts &#8211; all in the name of test-driven development. 🙂 So let&#8217;s change the previously added `getDisplay()`-method to the following:
 
 Now run the test again! It should become green like a cucumber.
 
@@ -75,9 +75,11 @@ Now run the test again! It should become green like a cucumber.
 
 Sometimes it can be useful to chain certain preconditions together to formulate a test. For example, let&#8217;s revisit our first test:
 
-<pre>Given a digital radio
+{% highlight bash %}
+Given a digital radio
 When I press the on/off switch
-Then the radio should be turned on</pre>
+Then the radio should be turned on
+{% endhighlight %}
 
 Now let&#8217;s assume if the radio is already turned on, it should be turned off by pressing the on/off switch again. We can write another test, which is similar to the above, but with an additional precondition:
 
