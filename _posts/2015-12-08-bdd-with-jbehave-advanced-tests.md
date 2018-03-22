@@ -69,7 +69,7 @@ Expected :A reall...
 Actual :A really long station name which will definitely not fit into the display</pre>
 {% endhighlight %}
 
-Failure of this test is actually a good thing, since it gives us a chance to fix this and immediately check the result of our efforts &#8211; all in the name of test-driven development. 🙂 So let&#8217;s change the previously added  `getDisplay()`-method to the following:
+Failure of this test is actually a good thing, since it gives us a chance to fix this and immediately check the result of our efforts &#8211; all in the name of test-driven development. 🙂 So let&#8217;s change the previously added  getDisplay()-method to the following:
 
 Now run the test again! It should become green like a cucumber.
 
@@ -85,12 +85,11 @@ Then the radio should be turned on
 
 Now lets assume if the radio is already turned on, it should be turned off by pressing the on/off switch again. We can write another test, which is similar to the above, but with an additional precondition:
 
-{% highlight %}
-Given a digital radio
-And the radio is already turned on
+
+<pre>Given a digital radio
+<strong>And the radio is already turned on</strong>
 When I press the on/off switch
-Then the radio should be turned off
-{% endhighlight %}
+Then the radio should be turned off</pre>
 
 Let&#8217;s also extend our RadioSteps.java with an additional method:
 
