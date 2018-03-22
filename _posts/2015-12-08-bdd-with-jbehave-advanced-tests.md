@@ -1,7 +1,11 @@
 ---
-title: BDD with JBehave: Advanced tests
+id: 754
+title: 'BDD with JBehave: Advanced tests'
 date: 2015-12-08T11:22:25+00:00
+author: admin
 layout: post
+guid: http://www.tiefenauer.info/?p=754
+permalink: /bdd-with-jbehave-advanced-tests/
 categories:
   - Coding
 tags:
@@ -12,20 +16,23 @@ tags:
 series:
   - BDD with JBehave
 ---
-This entry is part 2 of 2 in the series _BDD with JBehave_.
+<div class="seriesmeta">
+  This entry is part 2 of 2 in the series <a href="http://www.tiefenauer.info/series/bdd-with-jbehave/" class="series-60" title="BDD with JBehave">BDD with JBehave</a>
+</div>
 
-In the previous article about BDD with JBehave, we learned about how to create a test using the JBehave story pattern that describes preconditions, events and the expected behavior. Due to its natural language, the story can even be understood by non-technical users. The test described the behavior of a digital radio when the on/off switch is being pressed.
+In the previous article about BDD with JBehave, we learned about how to create a test using the JBehave story pattern that describes preconditions, events and the expected behavior. Due to its natural language, the story can even be understood by non-technical users. The test described the behavior of a digital radio when the on/off switch is being pressed.
 
 This test was very basic, but sufficient to illustrate the basic functionality. More often however, it is neccessary to describe behavior in a more complex manner, e.g. by specifying and evaluating parameters, chaining preconditions and so on.
 
 In this second part of the article series about BDD and JBehave we will explore some of the more advanced functionalities of JBehave to create more sophisticated behavior driven tests.
 
+<!--more-->
 
 # Parameterized Tests
 
 When describing events and expected behavior, it is often useful to evaluate certain parts of the expectation description in the story. We did this implicitly before by stating the following expectation
 
-```Then the radio should be turned on```
+<pre>Then the radio should be turned on</pre>
 
 and evaluating the expecation in Java to a boolean:
 
@@ -35,13 +42,13 @@ But what if we wanted to evaluate the expectation in a more complex manner, e.g.
 
 For this test we need to evaluate a part of the `When...` part of the story in Java to use it to set the frequency (`103.8`) of the radio. We also have to evaluate a part of the `Then...` part of the story in Java to assert the fulfillment of our expectation (displayed value should be `103.80 FM`).
 
-Luckily, extracting parameters from textual descriptions is not hard at all with JBehave. As you remember from part 1 of the series, it is important that the String handed over to the annotation matches the string in the story. JBehave finds the annotated Java method for a textual description by <a href="http://jbehave.org/reference/stable/annotations.html" target="_blank">regex-matching this string </a>with the one found in the story file. Since a regex is used for matching, the annotation string can contain special characters that will translate to parameter names. The parameter values can be injected in Java by specifying method arguments of the same name:
+Luckily, extracting parameters from textual descriptions is not hard at all with JBehave. As you remember from part 1 of the series, it is important that the String handed over to the annotation matches the string in the story. JBehave finds the annotated Java method for a textual description by <a href="http://jbehave.org/reference/stable/annotations.html" target="_blank">regex-matching this string </a>with the one found in the story file. Since a regex is used for matching, the annotation string can contain special characters that will translate to parameter names. The parameter values can be injected in Java by specifying method arguments of the same name:
 
 Parameters are defined as Strings in the story file, but can be any other type in Java, including object types. Type conversion is done automatically by JBehave, where possible using <a href="http://jbehave.org/reference/stable/parameter-converters.html" target="_blank">built-in parameter converters</a>. If this is not possible, you can write your own parameter converter, but this is not in scope for this article.
 
 Usually, the method parameters carry the same names and occur in the same order as specified in the annotation string. This is good practice but there may be cases where naming and/or order of parameters in Java may be different. That&#8217;s why JBehave includes the `@Named`-annotation for parameter values:
 
-Using the `@Named`-annotation both name and/or order of parameter can become independent of the description in the story. However, having parameter names and order the same is good practice and also less verbose. I suggest keeping them in sync unless there&#8217;s absolutely no way to avoid it.
+Using the `@Named`-annotation both name and/or order of parameter can become independent of the description in the story. However, having parameter names and order the same is good practice and also less verbose. I suggest keeping them in sync unless there&#8217;s absolutely no way to avoid it.
 
 Let&#8217;s update our Radio so that the user can tune to a frequency by adding the following code:
 
@@ -57,7 +64,7 @@ The test will then be executed once for each row in the example table, having th
 
 Let&#8217;s try this out and extend our `RadioSteps.java` with appropriate methods to match the story:
 
-Also add the following methods to `Radio.java`:
+Also add the following methods to `Radio.java`:
 
 If we run our test now, it will fail with the following message:
 
@@ -65,7 +72,7 @@ If we run our test now, it will fail with the following message:
 Expected :A reall...
 Actual :A really long station name which will definitely not fit into the display</pre>
 
-Failure of this test is actually a good thing, since it gives us a chance to fix this and immediately check the result of our efforts &#8211; all in the name of test-driven development. 🙂 So let&#8217;s change the previously added  getDisplay()-method to the following:
+Failure of this test is actually a good thing, since it gives us a chance to fix this and immediately check the result of our efforts &#8211; all in the name of test-driven development. 🙂 So let&#8217;s change the previously added  getDisplay()-method to the following:
 
 Now run the test again! It should become green like a cucumber.
 
