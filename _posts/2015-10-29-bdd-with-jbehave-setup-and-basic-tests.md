@@ -1,11 +1,7 @@
 ---
-id: 743
-title: 'BDD with JBehave: Setup and basic tests'
-date: 2015-10-29T15:45:10+00:00
-author: admin
+title: 'BDD with JBehave (1/2): Setup and basic tests'
+description: First part on my tutorial on BDD
 layout: post
-guid: http://www.tiefenauer.info/?p=743
-permalink: /bdd-with-jbehave-setup-and-basic-tests/
 categories:
   - Coding
 tags:
@@ -16,19 +12,15 @@ tags:
 series:
   - BDD with JBehave
 ---
-<div class="seriesmeta">
-  This entry is part 1 of 2 in the series <a href="http://www.tiefenauer.info/series/bdd-with-jbehave/" class="series-60" title="BDD with JBehave">BDD with JBehave</a>
-</div>
+This entry is part 1 of 2 in the series _BDD with JBehave_.
 
-In [an earlier article series](http://www.tiefenauer.info/mockito-powermock-part-0-introduction/) I showed how to use Mockito together with JUnit in order to write good unit tests. While this tool is good for [Test Driven Development (TDD)](https://en.wikipedia.org/wiki/Test-driven_development), it falls short when it comes to [Behavior Driven Development (BDD)](https://en.wikipedia.org/wiki/Behavior-driven_development). In this article, I&#8217;m going to introduce another tool that has caught my attention and leverages your testing facilities to make use of the BDD-paradigms. But first, let&#8217;s see what we mean when we talk about BDD.
-
-<!--more-->
+In an earlier article series I showed how to use Mockito together with JUnit in order to write good unit tests. While this tool is good for [Test Driven Development (TDD)](https://en.wikipedia.org/wiki/Test-driven_development), it falls short when it comes to [Behavior Driven Development (BDD)](https://en.wikipedia.org/wiki/Behavior-driven_development). In this article, I&#8217;m going to introduce another tool that has caught my attention and leverages your testing facilities to make use of the BDD-paradigms. But first, let&#8217;s see what we mean when we talk about BDD.
 
 ## Preface
 
 There are a lot of posts and tutorials about JBehave, but none have satisfied my expectations so far. If you&#8217;ve never heard of JBehave before, it might be a bit hard to start out as a complete beginner, since most of the magic is happening under the hood and not transparent to the user.
 
-A very good introduction to JBehave can be found in [this blog post](https://blog.codecentric.de/en/2012/06/jbehave-configuration-tutorial) on Codecentric.com. However, this post takes you only to a certain point, without covering the full capabilities of JBehave. This article series is intended to pick up where Codecentric.com left off.
+A very good introduction to JBehave can be found in [this blog post](https://blog.codecentric.de/en/2012/06/jbehave-configuration-tutorial) on Codecentric.com. However, this post takes you only to a certain point, without covering the full capabilities of JBehave. This article series is intended to pick up where Codecentric.com left off.
 
 All code to the sample project built in this tutorial is available in my [GitHub repository](https://github.com/tiefenauer/jbehave-tutorial).
 
@@ -50,7 +42,7 @@ Ok, now it&#8217;s time to get our hands dirty. Let&#8217;s build our first proj
 
 If you&#8217;re using another IDE, you may have to undertake additional steps. I know that there&#8217;s a [JBehave plugin for Eclipse](http://jbehave.org/eclipse-integration.html), too. However, this tutorial does only cover setup with IntelliJ.
 
-We will use a  very simple example as use case for our tests. We will write Java code which implements a digital radio. Of course we will not have a real radio (i.e. you won&#8217;t hear any sound coming out of your speakers), since we only need some code to run our test against.
+We will use a very simple example as use case for our tests. We will write Java code which implements a digital radio. Of course we will not have a real radio (i.e. you won&#8217;t hear any sound coming out of your speakers), since we only need some code to run our test against.
 
 The radio The radio will need a power source in order to play and should have some basic functionalities, such as:
 
