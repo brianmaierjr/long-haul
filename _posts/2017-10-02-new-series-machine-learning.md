@@ -1,19 +1,18 @@
 ---
-id: 892
-title: 'New Series: Machine Learning'
-date: 2017-10-02T17:38:27+00:00
-author: admin
+title: Machine Learning
 layout: post
-guid: http://www.tiefenauer.info/?p=892
-permalink: /new-series-machine-learning/
 categories:
   - Machine Learning
 tags:
   - coursera
   - machine learning
 ---
-It has been a looong time since my last post&#8230;
+It has been a looong time since my last post... :frowning:
 
-Meanwhile, I have started my master&#8217;s degree with a focus on machine learning and have gone through [Andrew Ng&#8217;s fantastic course in ML](https://www.coursera.org/learn/machine-learning/) for preparation. As a means of better understanding and memorizing what I have learned I wrote a summary in my own words along the way (in German).
+Meanwhile, I have started my master's degree with a focus on Machine Learning. For preparation I have finished [Andrew Ng's course in ML](https://www.coursera.org/learn/machine-learning/). If you have never heard of this course and want to break into ML I think this is a fantastic starting point. The explanations are concise and clear even without prior knowledge. The course consists of a series of videos and accompanying programming assignments, for which you'll need [Matlab](https://www.mathworks.com/products/matlab.html) (or its open-source twin [Octave](https://www.gnu.org/software/octave/)).
 
-You can read all about it [here](http://www.tiefenauer.info/ml/).
+To be able to come back to what I have learned and revisit individual topics I decided to write a summary in my own words. This also helped me to get my thoughts straight and memorize the content better. I figured someone else might be interested in it too, so I put it all online for you to read.
+
+You can find the summary [here](http://www.tiefenauer.info/ml_de). Note it's only available in German. Maybe I will translate it to English someday if I have the time.
+
+Please drop me a comment if you find anything unclear or (god forbid!) you find a mistake. :thumbsup:
