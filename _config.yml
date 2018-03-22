@@ -21,6 +21,9 @@ navigation:
  - title: Contact
    url: /contact
 
+plugins:
+ - jemoji
+ 
 social:
    github: tiefenauer
    twitter: danitiefenauer
