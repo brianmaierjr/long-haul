@@ -12,9 +12,9 @@ intro: |
     
     I summarized what I have learned in my own words and have decided to put it online for you to read. I divided the content into the following topics (following the structure from Andrew Ng's courses on Machine Learning/Deep Learning on Coursera):
     
-    * Introduction to Machine Learning
-    * Deep Learning
-        * [Neural Networks]({% link /ml/deep_learning/1 %})
+    * Introduction to Machine Learning (11 weeks)
+    * Deep Learning (16 weeks)
+        * [Neural Networks]({% link /ml/deep_learning/1 %}) (weeks 1-4)
         * Improving Deep Neural Networks
         * Structuring ML projects
         * Convolutional Neural Networks
