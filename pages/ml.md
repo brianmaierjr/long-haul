@@ -14,7 +14,7 @@ intro: |
     
     * Introduction to Machine Learning
     * Deep Learning
-        * Neural Networks
+        * [Neural Networks]({% link /ml/deep_learning/1 %})
         * Improving Deep Neural Networks
         * Structuring ML projects
         * Convolutional Neural Networks
