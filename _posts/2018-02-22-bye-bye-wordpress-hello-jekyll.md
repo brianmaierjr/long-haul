@@ -2,7 +2,9 @@
 title: Bye bye, Wordpress. Hello Jekyll!
 layout: post
 ---
-I have hosted my personal blog on my beloved Synology 109+ NAS for a long time. The device is quite old and I has been running 24/7 for many years now. Unfortunately, due to its mature age, the performance is not the best anymore, especially considering the blog ran on Wordpress using PHP and a MySQL-DB. All the various plugins (and PHP's hunger for CPU and memory) took their toll on the performance - resulting in poor access times on the blog.
+I have hosted my personal blog on my beloved [Synology 109+ NAS](https://www.synology.com/de-de/support/download/DS109+#utilities) for a long time. The device is quite old and I has been running 24/7 for many years now. Unfortunately, due to its mature age, the performance is not the best anymore, especially considering the blog ran on Wordpress using PHP and a MySQL-DB. All the various plugins (and PHP's hunger for CPU and memory) took their toll on the performance - resulting in poor access times on the blog.
+
+<img src="{{ '/assets/img/posts/synology_109_nas.jpg' | prepend: site.baseurl }}" alt=""> 
 
 Additionally Synology has stopped developping software updates for my NAS. It hasn't received any major update for a long time and still runs DiskStation 4.2, which includes an outdated PHP version. 
 
