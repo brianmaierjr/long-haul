@@ -12,8 +12,6 @@ intro: |
     
     I summarized what I have learned in my own words and have decided to put it online for you to read. I divided the content into the following topics (following the structure from Andrew Ng's courses on Machine Learning/Deep Learning on Coursera):
     
-    ---
-    
 permalink: /ml
 toc: true
 eta: true
