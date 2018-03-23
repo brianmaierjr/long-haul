@@ -4,7 +4,7 @@ title: Machine Learning
 image: ml_title.jpg
 intro: | 
     Machine Learning has captivated me since I first heard about it. I find it fascinating how I can teach my computer something without having to explicitly program it for it.
-    A lot of what I have learned so far came from the following sources:
+    A lot of what I know I have learned from the following sources:
     
     - Free and paid courses on [Coursera](https://www.coursera.org/)
     - free lecture videos of [Stanford University](http://cs231n.stanford.edu/)
