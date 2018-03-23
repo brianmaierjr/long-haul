@@ -5,9 +5,11 @@ image: ml_title.jpg
 intro: | 
     Machine Learning has captivated me since I first heard about it. I find it fascinating how I can teach my computer something without having to explicitly program it for it.
     A lot of what I have learned so far came from the following sources:
+    
     - Free and paid courses on [Coursera](https://www.coursera.org/)
     - free lecture videos of [Stanford University](http://cs231n.stanford.edu/)
     - courses at [FHNW](https://www.fhnw.ch/) where I am earning my master's degree with a focus on ML
+    
     I summarized what I have learned in my own words and have decided to put it online for you to read. I divided the content into the following topics (following the structure from Andrew Ng's courses on Machine Learning/Deep Learning on Coursera):
     * Introduction to Machine Learning
     * Deep Learning
