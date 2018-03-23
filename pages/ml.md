@@ -15,6 +15,7 @@ intro: |
     * Introduction to Machine Learning (11 weeks)
     * Deep Learning (16 weeks)
         * [Neural Networks]({% link pages/ml/dl_1_neural_networks.md %}) (weeks 1-4)
+        * [Neural Networks]({{ site.baseurl }}{% link pages/ml/dl_1_neural_networks.md %})
         * Improving Deep Neural Networks
         * Structuring ML projects
         * Convolutional Neural Networks
