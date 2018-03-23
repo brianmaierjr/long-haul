@@ -26,8 +26,8 @@ permalink: /ml
 toc: true
 eta: true
 ---
-        * [Neural Networks]({% link pages/dl_1_neural_networks.md %}) (weeks 1-4)
-        * [Neural Networks]({{ site.baseurl }}{% link pages/dl_1_neural_networks.md %})
+* [Neural Networks]({% link pages/dl_1_neural_networks.md %}) (weeks 1-4)
+* [Neural Networks]({{ site.baseurl }}{% link pages/dl_1_neural_networks.md %})
         
 ## Why the hassle?
 
