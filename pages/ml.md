@@ -26,7 +26,9 @@ permalink: /ml
 toc: true
 eta: true
 ---
-
+        * [Neural Networks]({% link pages/ml/dl_1_neural_networks.md %}) (weeks 1-4)
+        * [Neural Networks]({{ site.baseurl }}{% link pages/ml/dl_1_neural_networks.md %})
+        
 ## Why the hassle?
 
 Writing about what you have learned is a good opportunity to consolidate your knowledge and refine your thoughts. So I found it a good idea to write down what I have learned about ML in my own words. A lot of the content is based on [Andrew Ng’s introductory course about ML](https://www.coursera.org/learn/machine-learning/home/welcome). I later completed Andrew’s [specialization in DL](https://www.coursera.org/specializations/deep-learning) because I wanted to learn more about Neural Networks. A side goal of this summary is therefore also to serve as searchable reference work for later use without me having to go over the videos again. I put all this online in the hope someone else might find it useful too. If you do like what I wrote please feel free to drop me a line below. If you find mistakes (typos, wrong formulas, wrong explanations, …) or the descriptions seem unclear to you, please don’t hesitate to send me a correction. Since this website is hosted on GitHub Pages you can also just fork my repository and send me a pull request!
