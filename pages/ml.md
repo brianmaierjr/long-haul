@@ -10,7 +10,7 @@ intro: |
     - free lecture videos of [Stanford University](http://cs231n.stanford.edu/)
     - courses at [FHNW](https://www.fhnw.ch/) where I am earning my master's degree with a focus on ML
     
-    I summarized what I have learned in my own words and have decided to put it online for you to read. I divided the content into the following topics (following the structure from Andrew Ng's courses on Machine Learning/Deep Learning on Coursera):
+    I summarized what I have learned in my own words and have decided to put it online for you to read. I divided the content into the following topics:
     
 permalink: /ml
 toc: true
@@ -25,6 +25,8 @@ eta: true
     * Structuring ML projects
     * Convolutional Neural Networks
     * Sequence Models        
+
+This structure roughly follows Andrew Ng's courses on [Machine Learning](https://www.coursera.org/learn/machine-learning)/[Deep Learning](https://www.coursera.org/specializations/deep-learning) on Coursera.
 
 ## Why the hassle?
 
