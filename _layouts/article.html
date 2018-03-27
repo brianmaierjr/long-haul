@@ -23,7 +23,8 @@ toc: true
   {% endif %}
   
   {% if page.toc %}
-    {% include toc.markdown %}
+    {% capture toc %}{% include toc.md %}{% endcapture %}
+    {{ toc | markdownify }}
   {% endif %}
   
   <div>{{ content }}</div>
