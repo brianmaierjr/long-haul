@@ -121,7 +121,7 @@ We now have $$b=0$$ and $$w=(0, 0)$$.
 We can now compute the cell state $$z$$ by calculating:
 $$z=w^T \cdot x$$
 
-This cell state needs to go through an **activation function** first before it can be used for classification. We will see why we need an activation function and what activation functions there are. For now, let's just use the **Sigmoid** function which is defined as:
+This cell state needs to go through an **activation function** first before it can be used for classification. We will see later why we need an activation function and what activation functions there are. For now, let's just use the **Sigmoid** function which is defined as:
 
 $$
 \begin{equation}
