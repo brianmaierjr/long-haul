@@ -123,12 +123,26 @@ $$
 \end{equation}
 $$
 
-By putting the cell state through the activation function we get the **activation** of the neuron.
-
-### Computing the loss
-According to the formulas for the loss ($$\ref{loss}$$) and the cost ($$\ref{cost}$$) we can now compute the cost over all training samples as follows:
+By putting the cell state through the activation function we get the **activation** of the neuron. We can do this for all training samples simultaeously by computing:
 
 $$
-a^{(i)}=\sigma(w^T \cdot x^{(i)})
+A=\sigma (w^T \cdot X)
+$$
+
+### Computing the loss
+According to the formulas for the loss ($$\ref{loss}$$) and the cost ($$\ref{cost}$$) we can now compute the cost for the current iteration over all training samples as follows (note that $$a^{(i)}=\sigma(w^T \cdot x^{(i)})$$ refers to the activation of the neuron for the $$i$$-th training sample:
+
+$$
 J=-\frac{1}{m} \sum_{i=1}^m(y\log(a^{(i)}) + (1 - y)\log(1 - a^{(i)}))
+$$
+
+## Computing the gradient with backpropagation
+We can calculate the partial derivative as follows:
+
+$$
+\frac{\partial J}{\partial w}=\frac{1}{m}X(A-Y)^T
+$$
+
+$$
+\frac{\partial J}{\partial b}=\frac{1}{m}\sum_{i=1}^m(a^{(i)}-y^{(i)})
 $$
