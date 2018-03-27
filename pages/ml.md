@@ -10,7 +10,7 @@ intro: |
     - free lecture videos of [Stanford University](http://cs231n.stanford.edu/)
     - courses at [FHNW](https://www.fhnw.ch/) where I am earning my master's degree with a focus on ML
     
-    I summarized what I have learned in my own words and have decided to put it online for you to read. I divided the content into the following topics:
+    I summarized what I have learned in my own words and have decided to put it online for you to read. I distinguish the following topics (roughly following Andrew Ng's courses on [Machine Learning](https://www.coursera.org/learn/machine-learning)/[Deep Learning](https://www.coursera.org/specializations/deep-learning) on Coursera):
     
 permalink: /ml
 toc: true
@@ -25,13 +25,11 @@ eta: true
     * [Convolutional Neural Networks]({% link pages/dl_4_convolutional_neural_networks.md %}) (weeks 10-13)
     * [Sequence Models]({% link pages/dl_5_sequence_models.md %}) (weeks 14-16)
 
-This structure roughly follows Andrew Ng's courses on [Machine Learning](https://www.coursera.org/learn/machine-learning)/[Deep Learning](https://www.coursera.org/specializations/deep-learning) on Coursera. A lot of the content is also taken from his slides, but I addedmy own other images here and there.
-
 ## Why the hassle?
 
-_"What's the worth of writing down someone else has already said?"_ you might ask. Well, for me summarizing in my own words what I have learned is a good opportunity to consolidate your knowledge and refine your thoughts. With a written summary I also get a searchable reference for later use that I can go through without having to watch the videos again. 
+_"Writing down what some one else has already said... what's it worth?"_ you might ask. Well, for me summarizing in my own words what I have learned is a good opportunity to consolidate my knowledge and refine my thoughts. Plus, with a written summary I also get a searchable reference for later use that I can go through without having to watch the videos again. 
 
-I'm puting this online in the hope someone else might find it useful too. At the end of the day sharing is caring. If you do like what I wrote please feel free to drop me a line below. If you find mistakes (typos, wrong formulas, wrong explanations, …) or the descriptions seem unclear to you, please do not hesitate to send me a correction. Since this website is hosted on GitHub Pages you can also just fork my repository and send me a pull request!
+I'm putting this online in the hope someone else might find it useful too. At the end of the day, sharing is caring. If you like what you see please feel free to [drop me a line](contact.md). If you find mistakes (typos, wrong formulas, wrong explanations, …) or the descriptions seem unclear to you, please do not hesitate to send me a correction. Since this website is hosted on GitHub Pages you can also just fork my repository and send me a pull request!
 
 ## About the Coursera courses
 
