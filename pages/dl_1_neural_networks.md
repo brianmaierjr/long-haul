@@ -101,3 +101,9 @@ Because we do not know the optimal parameters from the beginning, we need to ini
 We now have $$b=0$$ and $$w=(0, 0)$$.
 
 ### Forward propagation
+We can now compute the cell state $$z$$ by calculating:
+$$z=w^T \cdot x$$
+
+This cell state needs to go through an **activation function** first before it can be used for classification. We will see why we need an activation function and what activation functions there are. For now, let's just use the **Sigmoid** function which is defined as:
+
+$$\sigma (z)=\frac{1}{z + e^{-z}}$$
