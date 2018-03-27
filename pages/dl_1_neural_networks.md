@@ -32,3 +32,24 @@ The **first week** focuses on theoretical aspects, different types of NN and pos
 In the **second week** you will learn how to see Logistic Regression with one unit as the simplest form of a neural network. You will learn what an activation function is and why you should use one. You will do two programming assignments. The first one is an (optional) introduction to Numpy and vectorization, which you can skip if you are already familiar with this module. If not, you should do this assignment and maybe even invest a bit more time on those technologies using extracurricular tutorials because Numpy is a very common Python module for ML. In the second assignment you will implement logistic regression “bare metal”, i.e. by just using Python and Numpy.
 The **third week** will introduce shallow neural networks, i.e. NN with one hidden layer. You will get to know alternative activation functions. You will see how forward- and backpropagation can be implemented in a vectorized manner as well as why parameters should be initialized randomly. In the programming assignment you will implement a first "real" NN, although it only has one hidden layer (i.e. not a Deep-NN).
 Finally in **week four** you will implement your first Deep-NN step by step. The network will be used in a follow-up assignment for a binary classifier that can recognize cat pictures with fairly high accuracy. You can even test it with your own pictures!
+
+## Introduction to Deep Learning (DL)
+Deep Learning has really become a household name in recent years because the methods and techniques outperformed a lot of what was state of the art before. A lot of problems became solvable or learnable by means of Neural Networks - especially but not limited to Computer Vision, Audio Processing, language/translation tasks, and so on. NN became really popular when they undercut then-standard algorithms on unstructured data (images, audio, text). It is sometimes forgotten that NN can also be applied on structured data, too.
+A possible cause for the sudden hype of NN is twofold:
+
+* computational power has seen a dramatic increase over the past 10-20 years
+* huge loads of data have become readily available with digitalization (particularly the advent of the internet and mobile devices)
+ 
+The reason, why NN usually dominate over traditional ML algorithms ([SVM](https://en.wikipedia.org/wiki/Support_vector_machine), [Logistic Regression](https://en.wikipedia.org/wiki/Logistic_regression), ...) today is that NN usually become better the more data is available. In contrast, traditional methods usually reach a certain point from which they can only improve marginally, regardless of how much data is available. That's why we speak about _training_ a NN. However, more complex tasks require more training data (_"Scale drives deep learning progress"_). The performance of NN is possibly only limited by the available data and computational power. On the other hand, if only little data is available, traditional methods might still outperform NN even today. How much data is enough for a given task, however, is an active field of research.
+
+So Neural Networks (NN) are at the core of what Deep Learning is. NN can be used in supervised or unsupervised learning settings, although I think they are still more often applied in the former while unsupervised learning is often referred to as the _holy grail_ of ML. One can roughly distinguish the following NN types:
+
+* Deep-NN (NN): This is the standard form of a NN and can be seen as a prototype for other variations of NN. This page is all about Deep-NN.
+* Convolutional Neural Networks (CNN): These networks are often used for Computer Vision task (image recognition, image classification, ...). You can read about them in [part 4 of this article series]({% link pages/dl_4_convolutional_neural_networks.md %}).
+* Recurrent Neural Networks (RNN): These networks are often used for one-dimensional, sequential data such as speech/audio, text and so on. You can read about them in [part 5 about sequence models]({% link pages/dl_5_sequence_models.md %})
+
+There's a zoo of other forms and combinations of NN, like [Generative Adversarial Networks (GAN)](https://en.wikipedia.org/wiki/Generative_adversarial_network), [Variational Autoencoders (VAE)](https://en.wikipedia.org/wiki/Autoencoder) and many more, which have gained momentum in the past years. However, I only know them conceptually and will refrain therefore of including them in this list (for now).
+
+## Logistic Regression as a NN
+
+As seen in [Andrew's introductory course in ML]({% link pages/ml_intro.md %}) a binary classification problem can be solved with Logistic Regression (LR). By observing features $$x=(x_1, x_2, ..., x_n)$$ we try
