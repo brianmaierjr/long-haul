@@ -29,7 +29,7 @@ This structure roughly follows Andrew Ng's courses on [Machine Learning](https:/
 
 ## Why the hassle?
 
-"What's the worth of writing down someone else has already said?" you might ask. Well, for me summarizing in my own words what I have learned is a good opportunity to consolidate your knowledge and refine your thoughts. With a written summary I also get a searchable reference for later use that I can go through without having to watch the videos again. 
+_"What's the worth of writing down someone else has already said?"_ you might ask. Well, for me summarizing in my own words what I have learned is a good opportunity to consolidate your knowledge and refine your thoughts. With a written summary I also get a searchable reference for later use that I can go through without having to watch the videos again. 
 
 I'm puting this online in the hope someone else might find it useful too. At the end of the day sharing is caring. If you do like what I wrote please feel free to drop me a line below. If you find mistakes (typos, wrong formulas, wrong explanations, …) or the descriptions seem unclear to you, please do not hesitate to send me a correction. Since this website is hosted on GitHub Pages you can also just fork my repository and send me a pull request!
 
