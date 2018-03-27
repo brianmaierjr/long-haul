@@ -152,7 +152,7 @@ $$
 To update the parameters [Gradient Descent](https://en.wikipedia.org/wiki/Gradient_descent) GD is commonly used. We can choose a fixed learning rate $$\alpha$$ arbitrarily. However, choosing this value wisely is crucial: if it is too big, we might never reach the optimal values, because GD will "overshoot" it. If we choose $$\alpha$$ too small, GD might be very slow. We learn more on it in [part 2 about hyperparameter tuning]({% link pages/dl_2_improving_deep_neural_networks.md %}).
 
 $$
-\Theta=w-\alpha \cdot d\Theta
+\Theta=\Theta - \alpha \cdot d\Theta
 $$
 
 ### Making predictions on unknown samples
