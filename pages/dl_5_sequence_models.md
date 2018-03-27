@@ -3,7 +3,7 @@ layout: article
 title: "Deep Learning (5/5): Sequence Models"
 intro: | 
     The last course introduces various forms of NN-Models that take their input as a sequence of tokens. Starting with Recurrent Neural Networks (RNN) for speech/text processing you get to know word embeddings as a special form of Natural Language Processing (NLP). Finally, you learn about Sequence-to-Sequence Models that take a sequence as an input and also produce a sequence as an output. In the first week’s assignment you will implement two generative models: a RNN that can generate music that sounds like improvized Jazz. You also implement another form of an RNN that deals with textual data which can generate random names for dinosaurs. In the second week you will implement some core functions of NLP models such as calculating the similarity between two words or removing the gender bias. You will also implement a RNN that can classify an arbitrary text with a suitable Emoji. Finally you will put your newly learned knowledge about Attention Models into practice by implementing some functions of an RNN that can be used for machine translation. You will also learn how to implement a model that is able to detect trigger words from audio clips.
-permalink: /ml/deep-learning/4
+permalink: /ml/deep-learning/5
 ---
 
 | **Week**                   | **Content**                   | **Introduced Concepts** |
