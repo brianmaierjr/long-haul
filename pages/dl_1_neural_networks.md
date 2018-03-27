@@ -62,7 +62,7 @@ To define what "optimal" means we need a **loss function** that tells us big the
 
 $$
 \begin{equation}
-\mathcal{L}(y, \hat{y}) = -{(y\log(\hat{y}) + (1 - y)\log(1 - \hat{y}))} 
+\mathcal{L}(y, \hat{y}) = -{(y\log(\hat{y}) + (1 - y)\log(1 - \hat{y}))}
 \label{loss}
 \end{equation}
 $$
@@ -71,7 +71,8 @@ The **cost function** calculates the total error (_cost_) over all $$m$$ instanc
 
 $$
 \begin{equation}
-J=\frac{1}{m} \sum_{i=1}^m(\mathcal{L}y^{(i)}, \hat{y}^{(i)}) \label{cost}
+J=\frac{1}{m} \sum_{i=1}^m(\mathcal{L}y^{(i)}, \hat{y}^{(i)})
+\label{cost}
 \end{equation}
 $$
 
@@ -118,10 +119,16 @@ This cell state needs to go through an **activation function** first before it c
 $$
 \begin{equation}
 \sigma (z)=\frac{1}{z + e^{-z}} \label{sigmoid}
+\label{sigmoid}
 \end{equation}
 $$
 
 By putting the cell state through the activation function we get the **activation** of the neuron.
 
 ### Computing the loss
-According to the formulas for the loss ($$\ref{loss}$$) and the cost ($$\ref{cost}$$)
+According to the formulas for the loss ($$\ref{loss}$$) and the cost ($$\ref{cost}$$) we can now compute the cost over all training samples as follows:
+
+$$
+a^{(i)}=\sigma(w^T \cdot x^{(i)})
+J=-\frac{1}{m} \sum_{i=1}^m(y\log(a^{(i)}) + (1 - y)\log(1 - a^{(i)}))
+$$
