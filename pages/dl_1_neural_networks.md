@@ -5,3 +5,8 @@ intro: |
     Some Intro Text
 permalink: /ml/deep_learning/1
 ---
+
+# Hello
+{% template awesome.html %}
+I am content!
+{% endtemplate %}
