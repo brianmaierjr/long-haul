@@ -44,9 +44,9 @@ The reason, why NN usually dominate over traditional ML algorithms ([SVM](https:
 
 So Neural Networks (NN) are at the core of what Deep Learning is. NN can be used in supervised or unsupervised learning settings, although I think they are still more often applied in the former while unsupervised learning is often referred to as the _holy grail_ of ML. One can roughly distinguish the following NN types:
 
-* Deep-NN (NN): This is the standard form of a NN and can be seen as a prototype for other variations of NN. This page is all about Deep-NN.
-* Convolutional Neural Networks (CNN): These networks are often used for Computer Vision task (image recognition, image classification, ...). You can read about them in [part 4 of this article series]({% link pages/dl_4_convolutional_neural_networks.md %}).
-* Recurrent Neural Networks (RNN): These networks are often used for one-dimensional, sequential data such as speech/audio, text and so on. You can read about them in [part 5 about sequence models]({% link pages/dl_5_sequence_models.md %})
+* **Deep-NN (NN)**: This is the standard form of a NN and can be seen as a prototype for other variations of NN. This page is all about Deep-NN.
+* **Convolutional Neural Networks (CNN)**: These networks are often used for Computer Vision task (image recognition, image classification, ...). You can read about them in [part 4 of this article series]({% link pages/dl_4_convolutional_neural_networks.md %}).
+* **Recurrent Neural Networks (RNN)**: These networks are often used for one-dimensional, sequential data such as speech/audio, text and so on. You can read about them in [part 5 about sequence models]({% link pages/dl_5_sequence_models.md %})
 
 There's a zoo of other forms and combinations of NN, like [Generative Adversarial Networks (GAN)](https://en.wikipedia.org/wiki/Generative_adversarial_network), [Variational Autoencoders (VAE)](https://en.wikipedia.org/wiki/Autoencoder) and many more, which have gained momentum in the past years. However, I only know them conceptually and will refrain therefore of including them in this list (for now).
 
