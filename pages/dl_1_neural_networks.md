@@ -62,7 +62,7 @@ To define what "optimal" means we need a **loss function** that tells us big the
 
 $$
 \begin{equation}
-\mathcal{L}(y, \hat{y}) = -{(y\log(\hat{y}) + (1 - y)\log(1 - \hat{y}))}
+\mathcal{L}(y, \hat{y}) = -{(y\log(\hat{y}) + (1 - y)\log(1 - \hat{y}))} \label{loss}
 \end{equation}
 $$
 
@@ -115,4 +115,4 @@ $$\sigma (z)=\frac{1}{z + e^{-z}}$$
 By putting the cell state through the activation function we get the **activation** of the neuron.
 
 ### Computing the loss
-According to the above 
+According to the formulas for the [loss]($$\ref{loss}$$) and the cost 
