@@ -21,7 +21,7 @@ navigation:
  - title: Contact
    url: /contact
 
-plugins:
+gems:
   - jemoji
  
 social:
