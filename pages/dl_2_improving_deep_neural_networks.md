@@ -1,9 +1,9 @@
 ---
 layout: article
-title: "Deep Learning (1/5): Neural Networks and Deep Learning"
+title: "Deep Learning (2/5): Improving Deep Neural Networs"
 intro: | 
     This course focuses on common problems you might encounter when working on your own DL-projects. The course introduces some useful recipes that might help you when your algorithm is not performing as well as it should. It also introduces best practices when training your own NN and some useful techniques. You will deepen your understanding of how to optimize your hyperparameters and convergence speed. In the last week you get into touch with a DL-Framework (TensorFlow) for the first time.
-permalink: /ml/deep-learning/1
+permalink: /ml/deep-learning/2
 ---
 
 | **Week**                   | **Content**                   | **Introduced Concepts** |
