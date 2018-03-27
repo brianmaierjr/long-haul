@@ -162,7 +162,9 @@ Having found our optimal values for $$\Theta$$ we can now predict the membership
 The explanations above were made for a single neuron. However, we can now expand this example to a NN using a **hidden layer** with several neurons and apply the sampe principles. We still keep our single neuron as the output layer. The only change we make is that instead of a weight vector $$w$$ we now use a **weight matrix** $$W^{[]i}$$ holding the weights for each neuron in the layer $$i$$. Since we have 
 The computations are then as follows (similar to the equations for a single neuron):
 
-Z^{[1]}=W\cdot X + b
-A^{[1]}=\sigma(Z^{[1]})
-Z^{[2]}=W\cdot X + b
+$$
+Z^{[1]}=W\cdot X + b \\
+A^{[1]}=\sigma(Z^{[1]}) \\
+Z^{[2]}=W\cdot X + b \\
 A^{[2]}=\sigma(Z^{[2]})
+$$
