@@ -11,6 +11,10 @@ comments: true
   <h1 class="postTitle">{{ page.title }}</h1>
   <p class="meta"><span class="time">{{ page.content | number_of_words | divided_by:180 }}</span> Minute Read</p>
 
+  {% if page.tags %}
+    {% include tags.html tags=page.tags %}
+  {% endif %}
+
   {% if page.intro %}
     {% include intro.html %}
   {% endif %}
