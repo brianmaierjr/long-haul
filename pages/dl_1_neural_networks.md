@@ -180,3 +180,11 @@ $$
 
 ## Activation functions
 You might wonder why we used an activation function (the Sigmoid-function $$\sigma$$) at all. Why couldn't we just take the cell state $$Z^{[i]}$$? Well, we could do this, but then the end result in the output layer would be the combination of several linear functions ($$ W^{[i]} \cdot X + b^{[i]} $$, see $$\ref{forwardprop}$$), which is itself a linear combination. The NN would then not be better than Logistic Regression. So the goal of using an activation function is to **break linearity**.
+
+Apart from the Sigmoid-Function there are several other activation functions. To name the most common:
+
+|Name|Definition|Description|
+|---|---|---|
+|Tanh| $$a= \frac{e^z-e^-z}{e^z+e^-z}$$ | Similar to Sigmoid, but the values are in the interval $$[-1, 1]$$|
+|ReLU (Rectified Linear Unit)| $$a=max(0,z)$$ | The derivatives of this function are not defined for $$z=0$$, but this does not matter in practice|
+|Leaky ReLU|$$a=max(0.01\cdot z,z)$$| The coefficient $$0.01$$ is arbitrary and could be chosen greater/smaller. However, this value is often used in practice|
