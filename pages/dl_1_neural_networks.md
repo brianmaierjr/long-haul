@@ -169,8 +169,8 @@ Having found our optimal values for $$\Theta$$ we can now predict the membership
 $$
 \sigma (w^T \cdot x^{(i)})
 \begin{cases}
-    \ge 0.5  & \text{x^{(i)} belongs to class}\\
-    < 0.5   & \text{x^{(i)} does not belong to class}
+    \ge 0.5  & x^{(i)} \text{belongs to class}\\
+    < 0.5    & x^{(i)} \text{does not belong to class}
 \end{cases}
 $$
 
