@@ -23,8 +23,11 @@ toc: true
   {% endif %}
   
   {% if page.toc %}
-    {% capture toc %} {% include toc.md %} {% endcapture %}
-    {{ toc | markdownify }}
+    #### Table of Contents
+    {:.no_toc}
+    
+    * this unordered seed list will be replaced by toc as unordered list
+    {:toc}
   {% endif %}
   
   <div>{{ content }}</div>
