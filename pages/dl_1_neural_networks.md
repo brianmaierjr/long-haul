@@ -114,7 +114,11 @@ $$z=w^T \cdot x$$
 
 This cell state needs to go through an **activation function** first before it can be used for classification. We will see why we need an activation function and what activation functions there are. For now, let's just use the **Sigmoid** function which is defined as:
 
-$$\sigma (z)=\frac{1}{z + e^{-z}}$$
+$$
+\begin{equation}
+\sigma (z)=\frac{1}{z + e^{-z}} \label{sigmoid}
+\end{equation}
+$$
 
 By putting the cell state through the activation function we get the **activation** of the neuron.
 
