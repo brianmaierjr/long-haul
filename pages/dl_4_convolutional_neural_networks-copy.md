@@ -1,0 +1,14 @@
+---
+layout: article
+title: "Deep Learning (4/5): Convolutional Neural Networks (CNN)"
+intro: | 
+    In this course you get to know more about Convolutional Neural Networks (CNN). Because CNNs are often used in computer vision, the key concepts are often illustrated with image processing problems. The course contains a few case studies as well as practical advices for using ConvNets. In the first week’s programming assignments you implement the key steps for a CNN that can recognize sign language. In the second week you will get to know Keras as a high-level DL-Framework that uses TensorFlow. You will implement a ResNet that is able to detect whether a person is happy or not. The programming assignment in the third week is all about autonomous driving. You will implement a YOLO-Model that can detect vehicles inside a picture, state their positions an classify them as buses or cars. In the last week you will implement a CNN that is able to generate art images from photos (Neural Style Transfer) and also a face recognition system that can identify people.
+permalink: /ml/deep-learning/4
+---
+
+
+| *Week*                   | *Content*                   | *Introduced Concepts* |
+| 1                   | The first week explains the advantages of CNN and illustrates convolution by example of edge detection in images. You will get to know the different layers that make the difference between an ordinary NN and a CNN.                   | CONV-Layer<br>POOL-Layer<br>FC-Layer<br>Max- and Avg-Pooling<br>Kernel<br>Filter<br>Channels<br>Padding & Stride<br>Parameter Sharing |
+| 2                   | In the second week you get to know a few classic NN-architectures. You learn about the problems of very deep CNNs and how ResNets can help. Finally you are given some practical advides for using ConfNets in context of computer vision.                   | LeNet-5<br>AlexNet<br>VGG-16<br>Residual Networks (ResNets)<br>1x1 Convolutions<br>Inception networks |
+| 3                   | Week three is about detection algorithms. You learn how a CNN can not only classify but also localize objects inside an image.                   | Object Localization<br>Landmark and object detection<br>Sliding Windows<br>YOLO-Algorithm (You Only Look Once)<br>Intersection over Unit (IoU)<br>Non-Max Suppression<br>Anchor- & Bounding-Boxes<br>Region Proposal (R-CNN) |
+| 4                   | The last week introduces face recognition as a DL problem for CNN. Additionally you get to know Neural Style Transfer (NST) as a special application of CNNs.                   | One-Shot Learning<br>Face Recognition<br>Face Verification<br>similarity function<br>Siamese Networks<br>Triplet Loss<br>Neural Style Transfer (NST)<br>Content- & Style Cost Function |
