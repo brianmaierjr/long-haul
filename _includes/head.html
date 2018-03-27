@@ -81,9 +81,18 @@
     <!-- MathJax -->
     <!-- Equation numbering -->
     <script type="text/x-mathjax-config;executed=true">
-        MathJax.Hub.Config({ TeX: { equationNumbers: {autoNumber: "AMS"} } });
+    MathJax.Hub.Config({
+        config: ["MMLorHTML.js"],
+        jax: ["input/TeX","input/MathML","output/HTML-CSS","output/NativeMML", "output/PreviewHTML"],
+        extensions: ["tex2jax.js","mml2jax.js","MathMenu.js","MathZoom.js", "fast-preview.js", "AssistiveMML.js", "a11y/accessibility-menu.js"],
+        TeX: {
+            extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"],
+            equationNumbers: {autoNumber: "AMS"} }
+        }
+    });
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>-->
 
     {% if site.google_analytics %} {% include google_analytics.html %} {% endif %}
 </head>
