@@ -73,7 +73,7 @@ $$
 \end{equation}
 $$
 
-The **cost function** calculates the total error (_cost_) over all $$m$$ instances classified with the current parameters:
+The **cost function** calculates the average error (_cost_) over all $$m$$ instances classified with the current parameters:
 
 $$
 \begin{equation}
