@@ -6,9 +6,3 @@ intro: |
 permalink: /ml/deep_learning/1
 ---
 
-#  Title
-
-# Hello
-{% template awesome.html %}
-I am content!
-{% endtemplate %}
