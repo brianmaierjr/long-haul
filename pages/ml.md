@@ -47,6 +47,4 @@ This is an introductory course on various ML techniques. You learn about the dis
 
 ### Deep Learning Specialization (16 weeks)
 
-This is a 16-week specialization with a focus on Deep Learning including all kinds of variations of Neural Networks. Although it is not explicitly built on top of the introductory course I think it’s a very good idea finishing that one first before starting the specialization (in fact Andrew Ng [explicitly recommends this in the FAQs](https://www.coursera.org/specializations/deep-learning#faq-list)). In contrast to the introductory course all assignments are in Python 3. Most of the time you get an IPython notebook with code that you have to complete. The notebook contains detailed instructions about what to do and the relevant positions in the code are marked. The specialization consists of five courses:
-
-
+This is a 16-week specialization with a focus on Deep Learning including all kinds of variations of Neural Networks. Although it is not explicitly built on top of the introductory course I think it’s a very good idea finishing that one first before starting the specialization (in fact Andrew Ng [explicitly recommends this in the FAQs](https://www.coursera.org/specializations/deep-learning#faq-list)). In contrast to the introductory course all assignments are in Python 3. Most of the time you get an IPython notebook with code that you have to complete. The notebook contains detailed instructions about what to do and the relevant positions in the code are marked. The specialization consists of five courses.
