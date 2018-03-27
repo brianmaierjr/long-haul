@@ -137,7 +137,7 @@ $$
 J=-\frac{1}{m} \sum_{i=1}^m(y\log(a^{(i)}) + (1 - y)\log(1 - a^{(i)}))
 $$
 
-## Computing the gradient with backpropagation
+### Computing the gradient with backpropagation
 We can calculate the partial derivative as follows:
 
 $$
@@ -154,3 +154,15 @@ To update the parameters [Gradient Descent](https://en.wikipedia.org/wiki/Gradie
 $$
 \Theta=w-\alpha \cdot d\Theta
 $$
+
+### Making predictions on unknown samples
+Having found our optimal values for $$\Theta$$ we can now predict the membership of an unknown sample by its probability. To calculate the probability we simply compute forward propagation again with the optimized $$\Theta$$ and the sample's feature vector.
+
+## Shallow Neural Networks
+The explanations above were made for a single neuron. However, we can now expand this example to a NN using a **hidden layer** with several neurons and apply the sampe principles. We still keep our single neuron as the output layer. The only change we make is that instead of a weight vector $$w$$ we now use a **weight matrix** $$W^{[]i}$$ holding the weights for each neuron in the layer $$i$$. Since we have 
+The computations are then as follows (similar to the equations for a single neuron):
+
+Z^{[1]}=W\cdot X + b
+A^{[1]}=\sigma(Z^{[1]})
+Z^{[2]}=W\cdot X + b
+A^{[2]}=\sigma(Z^{[2]})
