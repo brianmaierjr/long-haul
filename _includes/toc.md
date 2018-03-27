@@ -1,6 +1,3 @@
----
-toc: true
----
 #### Table of Contents
 {:.no_toc}
 
