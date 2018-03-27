@@ -22,6 +22,7 @@ tags:
     - shallow NN
     - deep NN
     - Random initialization
+toc: true
 ---
 
 | **Week**                   | **Content**                   | **Introduced Concepts** |
