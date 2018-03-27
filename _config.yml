@@ -8,7 +8,7 @@ permalink: blog/:title/
 
 markdown: kramdown
 highlighter: rouge
-gems: [jekyll-paginate, jemoji, jekyll-jolt]
+gems: [jekyll-paginate, jemoji]
 paginate: 5
 
 navigation:
