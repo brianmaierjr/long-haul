@@ -5,8 +5,23 @@ intro: |
     In this course you will learn about the basics of Neural Networks (NN). You will get to know the nuts and bolts of neural networks. Starting out with simple Logistic Regression with a single node you gradually add complexity by expanding this to a one-layer network and finally a deep network with multiple layers. You will also get a short introduction of Python, IPython notebooks and Numpy in the first programming assignment (week 2). This should be no problem if you already know Python, but if you feel unfamiliar with these technologies you should maybe invest a bit more time on those technologies using extracurricular tutorials. It will also be week two where you will implement logistic regression “bare metal”, i.e. by just using Python and Numpy. In later programming assignments you will implement a 1-Layer-NN (week 3) and finally your first Deep-NN step by step (week 4). In the last week’s assignment you will implement a binary classifier that can recognize cat pictures with fairly high accuracy as a Deep-NN. You can test it with your own pictures!
 permalink: /ml/deep-learning/1
 tags:
-    - Tag 1
-    - Tag 2
+    - Logistic Regression
+    - Gradient Descent
+    - hidden layer/units
+    - activation function
+    - Sigmoid
+    - (Leaky) ReLU
+    - Tanh
+    - Loss
+    - cost function
+    - computation graph
+    - forward propagation
+    - backprop
+    - Numpy
+    - vectorization
+    - shallow NN
+    - deep NN
+    - Random initialization
 ---
 
 | **Week**                   | **Content**                   | **Introduced Concepts** |
