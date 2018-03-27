@@ -11,8 +11,8 @@ highlighter: rouge
 gems: [jekyll-paginate, jemoji]
 paginate: 5
 
-kramdown:
-  parse_block_html: true
+# kramdown:
+#   parse_block_html: true
 
 navigation:
  - title: Home
