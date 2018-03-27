@@ -119,7 +119,7 @@ This cell state needs to go through an **activation function** first before it c
 
 $$
 \begin{equation}
-\sigma (z)=\frac{1}{z + e^{-z}} \label{sigmoid}
+\sigma (z)=\frac{1}{z + e^{-z}}
 \label{sigmoid}
 \end{equation}
 $$
