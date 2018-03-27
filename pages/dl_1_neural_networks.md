@@ -73,7 +73,7 @@ $$
 \end{equation}
 $$
 
-The **cost function** calculates the average error (_cost_) over all $$m$$ instances classified with the current parameters:
+The **cost function** calculates the average error (_cost_) over all $$m$$ training instances classified with the current parameters:
 
 $$
 \begin{equation}
@@ -82,7 +82,7 @@ J=\frac{1}{m} \sum_{i=1}^m(\mathcal{L}y^{(i)}, \hat{y}^{(i)})
 \end{equation}
 $$
 
-A NN can perform Logistic regression exactly like this. In fact, traditional binary Logistic Regression can be seen as a NN in its simplest form: with only one single **neuron** (a.k.a. _unit_ or _cell_) and therefore only two parameters to learn:
+By Logistic Regression we try find the parameters $$w$$ and $$b$$ that minimize the overall cost $$J$$. A NN can perform Logistic regression exactly the same way. In fact, traditional binary Logistic Regression can be seen as a NN in its simplest form: with only one single **neuron** (a.k.a. _unit_ or _cell_) and therefore only two parameters to learn:
 
 (example image here)
 
