@@ -163,8 +163,20 @@ The explanations above were made for a single neuron. However, we can now expand
 The computations are then as follows (similar to the equations for a single neuron):
 
 $$
-Z^{[1]}=W\cdot X + b \\
+Z^{[1]}=W^{[1]} \cdot X + b^{[1]} \\
 A^{[1]}=\sigma(Z^{[1]}) \\
-Z^{[2]}=W\cdot X + b \\
+Z^{[2]}=W\cdot X + b^{[2]} \\
 A^{[2]}=\sigma(Z^{[2]})
 $$
+
+Or more generally:
+
+$$
+\begin{equation}
+A^{[i]}=\sigma(W^{[i]} \cdot X + b^{[i]})
+\label{forwardprop}
+\end{equation}
+$$
+
+## Activation functions
+You might wonder why we used an activation function (the Sigmoid-function $$\sigma$$) at all. Why couldn't we just take the cell state $$Z^{[i]}$$? Well, we could do this, but then the end result in the output layer would be the combination of several linear functions ($$ W^{[i]} \cdot X + b^{[i]} $$, see $$\ref{forwardprop}$$)
