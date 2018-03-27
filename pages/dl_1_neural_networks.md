@@ -179,4 +179,4 @@ A^{[i]}=\sigma(W^{[i]} \cdot X + b^{[i]})
 $$
 
 ## Activation functions
-You might wonder why we used an activation function (the Sigmoid-function $$\sigma$$) at all. Why couldn't we just take the cell state $$Z^{[i]}$$? Well, we could do this, but then the end result in the output layer would be the combination of several linear functions ($$ W^{[i]} \cdot X + b^{[i]} $$, see $$\ref{forwardprop}$$)
+You might wonder why we used an activation function (the Sigmoid-function $$\sigma$$) at all. Why couldn't we just take the cell state $$Z^{[i]}$$? Well, we could do this, but then the end result in the output layer would be the combination of several linear functions ($$ W^{[i]} \cdot X + b^{[i]} $$, see $$\ref{forwardprop}$$), which is itself a linear combination. The NN would then not be better than Logistic Regression. So the goal of using an activation function is to **break linearity**.
