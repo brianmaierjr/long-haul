@@ -61,9 +61,10 @@ To fit the line optimally we usually take a bunch of labelled sample instances (
 To define what "optimal" means we need a **loss function** that tells us big the error is if a single training instance is treated as belongig to the class. Generally, you can choose whatever loss function you like, but in linear regression the [Log Loss Function](http://wiki.fast.ai/index.php/Log_Loss) is used for logistic regression:
 
 $$
-\begin{aligned}
-\mathcal{L}(y, \hat{y}) = -{(y\log(\hat{y}) + (1 - y)\log(1 - \hat{y}))} \label{loss}
-\end{aligned}
+\begin{equation}
+\mathcal{L}(y, \hat{y}) = -{(y\log(\hat{y}) + (1 - y)\log(1 - \hat{y}))} 
+\label{loss}
+\end{equation}
 $$
 
 The **cost function** calculates the total error (_cost_) over all $$m$$ instances classified with the current parameters:
