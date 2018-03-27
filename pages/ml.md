@@ -17,7 +17,7 @@ toc: true
 eta: true
 ---
 
-* Introduction to Machine Learning (11 weeks)
+* [Introduction to Machine Learning]({% link pages/ml_intro.md %}) (11 weeks)
 * Deep Learning (16 weeks)
     * [Neural Networks and Deep Learning]({% link pages/dl_1_neural_networks.md %}) (weeks 1-4)
     * [Improving Deep Neural Networks]({% link pages/dl_2_improving_deep_neural_networks.md %}) (weeks 5-7)
