@@ -57,3 +57,7 @@ As seen in [Andrew's introductory course in ML]({% link pages/ml_intro.md %}) a 
 \[example image here\]
 
 To fit the line optimally we usually take a bunch of labelled sample instances (i.e. samples where we know the class already). Such a training instance can be represented by the tuple $$(x,y)$$, where $$x$$ is said feature vector and $$y$$ either the number zero (instance does not belong to class) or one (instance belongs to class). Logistic Regression tries to approximate the separating line so that the overall error of all training instances is minimal. After the optimal parameters to separate the training instances have been learned, the same parameters can be applied to unlabeled (unknown) instances to decide whether a given instance belongs to the class or not. This can be done by calculating the probability that a single instance belongs to the class. An unlabelled instance can be represented by the tuple $$(x,\hat{y})$$, whereas $$x$$ is again a feature vector and $$\hat{y}$$ the probability $$P(y=1|x)$$ that the instance belongs to the class (given $$x$$).
+
+To define what "optimal" means we need a loss function that tells us big the error is if training instance $$i$$ is treated as belongig to the class. Generally, you can choose whatever loss function you like, but in linear regression the [Log Loss Function](http://wiki.fast.ai/index.php/Log_Loss) is used for logistic regression:
+
+$$\mathcal{L}(y, \hat{y}) = -{(y\log(\hat{y}) + (1 - y)\log(1 - \hat{y}))}$$
