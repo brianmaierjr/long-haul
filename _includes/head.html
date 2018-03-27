@@ -80,6 +80,10 @@
     
     <!-- MathJax -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+    <!-- Equation numbering -->
+    <script type="text/x-mathjax-config;executed=true">
+        MathJax.Hub.Config({ TeX: { equationNumbers: {autoNumber: "AMS"} } });
+    </script>
 
     {% if site.google_analytics %} {% include google_analytics.html %} {% endif %}
 </head>
