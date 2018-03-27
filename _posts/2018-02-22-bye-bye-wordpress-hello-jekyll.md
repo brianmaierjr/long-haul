@@ -2,18 +2,18 @@
 title: Bye bye, Wordpress. Hello Jekyll!
 layout: post
 ---
-I have hosted my personal blog on my beloved [Synology 109+ NAS](https://www.synology.com/de-de/support/download/DS109+#utilities) for a long time. The device is quite old and I has been running 24/7 for many years now. Unfortunately, due to its mature age, the performance is not the best anymore, especially considering the blog ran on Wordpress using PHP and a MySQL-DB. All the various plugins (and PHP's hunger for CPU and memory) took their toll on the performance - resulting in poor access times on the blog.
+I have hosted my personal blog using [Wordpress](https://wordpress.org/) on my beloved [Synology 109+ NAS](https://www.synology.com/de-de/support/download/DS109+#utilities) for a long time. The site has been running 24/7 on this hardware for many years now. But after adding content over the years, adding more and more plugins and upgrading PHP a few times I begann noticing performance deteriorate more and more. I never put it to test, but it seemed to me like the pages took longer and longer to load. In the end, page speed was sluggish at best. All the plugins and DB accesses (and PHP's hunger for resources) took their toll on the performance. It looked like my NAS was not such a good fit for a PHP/MySQL-backed Wordpress blog anymore...
 
 <figure>
 	<img src="{{ '/assets/img/posts/synology_109_nas.jpg' | prepend: site.baseurl }}" alt=""> 
 	<figcaption>My devoted workhorse which has been hosting my blog until now...</figcaption>
 </figure>
 
-Additionally Synology has stopped developping software updates for my NAS. It hasn't received any major update for a long time and still runs DiskStation 4.2, which includes an outdated PHP version. 
+To make things worse, Synology has stopped shipping major software updates for my NAS. It hasn't received any update (apart from security patches) for a long time and still runs DiskStation 4.2 at the time, which includes an outdated PHP version. 
 
 # Exit Wordpress
 
-All this hasn't been much of a problem for me, since this blog has only got small attention (although I did receive some comments or E-Mails from all around the world). Until recently, when warnings started to pile up in the Wordpress Admin-Dashboard, pushing me to update to the newest PHP version. I wasn't even able to install or upgrade certain plugins anymore since they require a higher version of PHP. Since I don't want to update it manually via CLI and run into compatibility problems with Synology's OS or MySQL I decided for a radical step and migrate everything to a new host. 
+Apart from the long page loadsall I didn't deem this to be much of a problem for me. Especially considering I use this blog as my personal braindump which has only got small attention (although I did receive some comments or E-Mails from all around the world). Until recently, when warnings started to pile up in the Wordpress Admin-Dashboard, urging me to update to the newest PHP version. I wasn't even able to install or upgrade certain plugins anymore since they require a higher version of PHP. Upgrading the PHP version would be possible in theory, but this would mean fiddling with the internals of the DiskStation software and potentially running into compatibility issues. Not my idea of fun. So I had to decide between two paths: Staying with the current state (with the danger of the site becoming inoperable due to deprecated software) or going for the radical path and migrating everything to a new host. I went for the latter.
 
 Since I didn't find any solutions for free Wordpress Hosting that met my requirements I looked around for something simpler, less resource hungry, without a zillion plugins. Something lightweight and sleek. At the same time it should support some key features that I often use:
 
