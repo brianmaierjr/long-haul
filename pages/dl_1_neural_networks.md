@@ -64,4 +64,21 @@ $$\mathcal{L}(y, \hat{y}) = -{(y\log(\hat{y}) + (1 - y)\log(1 - \hat{y}))}$$
 
 The **cost function** calculates the total error (_cost_) over all $$m$$ instances classified with the current parameters:
 
-    $$\mathcal{J}=\frac{1}{m} \sum_{i=1}^m(\mathcal{L}y^{(i)}, \hat{y}^{(i)})$$
+$$\mathcal{J}=\frac{1}{m} \sum_{i=1}^m(\mathcal{L}y^{(i)}, \hat{y}^{(i)})$$
+
+A NN can perform Logistic regression exactly like this. In fact, traditional binary Logistic Regression can be seen as a NN in its simplest form: with only one single node and therefore only two parameters to learn:
+
+(example image here)
+
+Let's say for example that we want to predict housing prices by observing the features of a set of known houses where we already know the price. The features of an individual house taken into account might be its size, number of bedrooms, zip code, wealth of the neighborhood and so on. Those features must be transformed into a numeric representation somehow in order to be used as a feature vector. We can then train above NN. The general methodology to build a NN is usually as follows (we will describe the unknown terms below):
+
+1. Define a neural network structure: number of input units, number of hidden units, number of layers, etc...
+2. Initialize the model's parameters
+3. Loop
+  a. implement forward propagation
+  b. compute loss
+  c. implement backward propagation to get the gradients
+  d. update the parameters with gradient descent
+
+### Defining the neural network structure
+For now, let's assume we stick with the simplest NN model with only one layer containing a single unit. This unit is the output unit, receiving the input from an input layer to whom it is connected. So the number of hidden layers is 0 (zero)
