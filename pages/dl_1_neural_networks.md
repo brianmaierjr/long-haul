@@ -68,7 +68,7 @@ In linear regression however the [Log Loss Function](http://wiki.fast.ai/index.p
 
 $$
 \begin{equation}
-\mathcal{L}(\hat{y^{(i)}}, y^{(i)}) = -{(y^{(i)}\log(\hat{y^{(i)}}) + (1 - y^{(i)})\log(1 - \hat{y}^{(i)}))}
+\mathcal{L}(\hat{y}^{(i)}, y^{(i)}) = -{(y^{(i)}\log(\hat{y}^{(i)}) + (1 - y^{(i)})\log(1 - \hat{y}^{(i)}))}
 \label{loss}
 \end{equation}
 $$
