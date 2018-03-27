@@ -75,10 +75,10 @@ Let's say for example that we want to predict housing prices by observing the fe
 1. Define a neural network structure: number of input units, number of hidden units, number of layers, etc...
 2. Initialize the model's parameters
 3. Loop
-  a. implement forward propagation
-  b. compute loss
-  c. implement backward propagation to get the gradients
-  d. update the parameters with gradient descent
+  1. implement forward propagation
+  2. compute loss
+  3. implement backward propagation to get the gradients
+  4. update the parameters with gradient descent
 
 ### Defining the neural network structure
 For now, let's assume we stick with the simplest NN model with only one layer containing a single unit. This unit is the output unit, receiving the input from an input layer to whom it is connected. So the number of hidden layers is 0 (zero).
