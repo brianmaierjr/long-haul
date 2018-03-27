@@ -23,7 +23,7 @@ toc: true
   {% endif %}
   
   {% if page.toc %}
-    {% capture toc %}{% include toc.md %}{% endcapture %}
+    {% capture toc %} {% include toc.md %} {% endcapture %}
     {{ toc | markdownify }}
   {% endif %}
   
