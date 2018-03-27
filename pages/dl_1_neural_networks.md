@@ -9,8 +9,6 @@ tags:
     - Tag 2
 ---
 
-{% include tags.html tags=page.tags %}
-
 | **Week**                   | **Content**                   | **Introduced Concepts** |
 | 1                   | The first week focuses on theoretical aspects, different types of NN and possible appliances. There is no programming assignment in this week yet.                   | DL as an empirical process<br>GPU performance<br>structured/unstructured data<br>ReLU<br>Convolutional Neural Networks (CNN)<br>Recurrent Neural Networks (RNN) |
 | 2                   | In the second week you will learn how to see Logistic Regression with one unit as the simplest form of a neural network. You will learn what an activation function is and why you should use one.                   | logistic regression<br>hidden layers/units<br>activation function (Sigmoid-Function)<br>logistic loss<br>cost function<br>computation graph<br>forward- and backpropagation<br>Gradient Descent<br>Numpy<br>vectorization |
