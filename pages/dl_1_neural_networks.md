@@ -61,14 +61,14 @@ To fit the line optimally we usually take a bunch of labelled sample instances (
 To define what "optimal" means we need a **loss function** that tells us big the error is if a single training instance is treated as belongig to the class. Generally, you can choose whatever loss function you like, for example the [Mean Squared Error](https://en.wikipedia.org/wiki/Mean_squared_error) function, which is defined as follows (note that $$y^{(i)}$$ refers to the $$i$$-th trainings sample):
 
 $$
-\mathcal{L}(y^{(i)}, \hat{y}^{(i)}) = \frac{1}{2}(\hat{y}^{(i)} - y^{(i)})^2
+\mathcal{L}(\hat{y}^{(i)}, y^{(i)}) = \frac{1}{2}(\hat{y}^{(i)} - y^{(i)})^2
 $$
 
 In linear regression however the [Log Loss Function](http://wiki.fast.ai/index.php/Log_Loss) is used for logistic regression:
 
 $$
 \begin{equation}
-\mathcal{L}(y^{(i)}, \hat{y^{(i)}}) = -{(y^{(i)}\log(\hat{y^{(i)}}) + (1 - y^{(i)})\log(1 - \hat{y}^{(i)}))}
+\mathcal{L}(\hat{y^{(i)}}, y^{(i)}) = -{(y^{(i)}\log(\hat{y^{(i)}}) + (1 - y^{(i)})\log(1 - \hat{y}^{(i)}))}
 \label{loss}
 \end{equation}
 $$
