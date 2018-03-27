@@ -1,7 +1,6 @@
 ---
 tags: 
 ---
-{% for tag in collection.products %}
-    {{ product.title }}
+{% for tag in include.tags %}
+    <span class="badge badge-secondary">{{tag}}</span>
 {% endfor %}
-<span class="badge badge-secondary">New</span>
