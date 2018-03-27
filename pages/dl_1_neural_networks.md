@@ -167,7 +167,7 @@ $$
 Having found our optimal values for $$\Theta$$ we can now predict the membership of unknown instances by their probability. To calculate the probability we simply compute forward propagation again with the optimized $$\Theta$$ and the sample's feature vector.
 
 $$
-\sigma (w^T \cdot x^{(i)})
+\sigma (w^T \cdot x^{(i)})=
 \begin{cases}
     \ge 0.5  & x^{(i)} \text{belongs to class}\\
     < 0.5    & x^{(i)} \text{does not belong to class}
