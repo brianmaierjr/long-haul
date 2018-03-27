@@ -58,7 +58,7 @@ As seen in [Andrew's introductory course in ML]({% link pages/ml_intro.md %}) a 
 
 To fit the line optimally we usually take a bunch of labelled sample instances (i.e. samples where we know the class already). Such a training instance can be represented by the tuple $$(x,y)$$, where $$x$$ is said feature vector and $$y$$ either the number zero (instance does not belong to class) or one (instance belongs to class). Logistic Regression tries to approximate the separating line so that the overall error of all training instances is minimal. After the optimal parameters to separate the training instances have been learned, the same parameters can be applied to unlabeled (unknown) instances to decide whether a given instance belongs to the class or not. This can be done by calculating the probability that a single instance belongs to the class. An unlabelled instance can be represented by the tuple $$(x,\hat{y})$$, whereas $$x$$ is again a feature vector and $$\hat{y}$$ the probability $$P(y=1 \vert x)$$ that the instance belongs to the class (given $$x$$).
 
-To define what "optimal" means we need a **loss function** that tells us big the error is if a single training instance is treated as belongig to the class. By error we mean the discrepancy between the prediction ($$\hat{y}^{(i)}$$) and the actual class ($$y^{(i)}$$). Note that $$y^{(i)}$$ refers to the $$i$$-th trainings sample Generally, you can choose whatever loss function you like, for example the [Mean Squared Error](https://en.wikipedia.org/wiki/Mean_squared_error) function, which is defined as follows:
+To define what "optimal" means we need a **loss function** that tells us big the discrepancy between the prediction ($$\hat{y}^{(i)}$$) and the actual class ($$y^{(i)}$$) is for a single training sample. Note that $$y^{(i)}$$ refers to the label for the $$i$$-th trainings sample. Generally, you can choose whatever loss function you like, for example the [Mean Squared Error](https://en.wikipedia.org/wiki/Mean_squared_error) function, which is defined as follows:
 
 $$
 \mathcal{L}(\hat{y}^{(i)}, y^{(i)}) = \frac{1}{2}(\hat{y}^{(i)} - y^{(i)})^2
@@ -73,7 +73,7 @@ $$
 \end{equation}
 $$
 
-The **cost function** calculates the average error (_cost_) over all $$m$$ training instances classified with the current parameters:
+The **cost function** calculates the average los (i.e. _cost_) over all $$m$$ training instances classified with the current parameters:
 
 $$
 \begin{equation}
@@ -100,18 +100,18 @@ Let's say for example that we want to predict housing prices by observing the fe
 For now, let's assume we stick with the simplest NN model with only one layer containing a single unit. This unit is the output unit, receiving the input from an input layer to whom it is connected. So the number of hidden layers is 0 (zero).
 Let's now further assume we observe $$n$$ features. A single feature vector can therefore be defined with an $$(n \times 1)$$ vector. If we stack the feature vectors of all $$m$$ training examples we get a training matrix $$M$$ with dimensions $$(n \times m)$$
 Smiliarly, we have the labels of all trainings samples, which are either $$0$$ or $$1$$. We can stack those and get a label vector $$y$$ of dimensions $$(1 \times m)$$
-Because we only have a single node and we try to fit a straight line between the points, we only have two parameters to optimize: the weights for the individual features (giving us the slope of the line) and the bias (giving us the y-intersect). 
+Because we only have a single node and we try to fit a straight line between the points, we only have two parameters to optimize: the weights for the individual features (giving us the slope of the line) and the bias (giving us the y-intersect or _threshold_). 
 We can represent the weights as an $$(n \times 1)$$ vector $$(w_1, w_2)$$ and the bias as a scaler $$b$$. To sum up, we have now the following parameters:
 
-| Symbol | Meaning | Type/Dimensions |
+| Symbol | Meaning | Dimensions |
 |---|---|---|
 |$$n$$|number of features|scalar|
 |$$m$$|number of training samples|scalar|
-|$$X$$|training sample (feature vectors)|$$(n \times m)$$|
-|$$y$$|training labels|$$(1 \times m)$$|
+|$$X$$|training sample matrix (one feature vector oer training sample)|$$(n \times m)$$|
+|$$y$$|training label vector|$$(1 \times m)$$|
 |$$w$$|weight vector (one weight per feature)|$$(n \times 1)$$|
 |$$b$$|bias (threshold)|scalar|
-|$$\Theta$$|parameter matrix containing the weights and the bias|$$(n \times 2)$$|
+|$$\Theta$$|parameter matrix containing the weights and the bias (one row with weight and bias per feature)|$$(n \times 2)$$|
 
 ### Initializing the parameters
 Because we do not know the optimal parameters from the beginning, we need to initialize them to reasonable values and then optimize them through training. So let's initialize the parameters $$w$$ and $$b$$ with zeroes. We will see later, why that's not a good idea for Deep-NN, but for a NN with only one node this works.
@@ -132,7 +132,7 @@ $$
 
 ![Sigmoid-Function]({% link assets/img/articles/ml/dl_1/sigmoid.png %})
 
-This function produces only values within the interval $$[0,1]$$. If $$z$$ is a large positive number, then $$\sigma (z) \approx 1$$. If $$z$$ is a small or large negative number, then $$\sigma (z) \approx 1$$. If $$z=0$$ then $$\sigma (z) = 0.5 By putting the cell state through the activation function we get the **activation** of the neuron. We can do this for all training samples simultaeously by computing:
+This function produces only values within the interval $$[0,1]$$. If $$z$$ is a large positive number, then $$\sigma (z) \approx 1$$. If $$z$$ is a small or large negative number, then $$\sigma (z) \approx 1$$. If $$z=0$$ then $$\sigma (z) = 0.5$$ By putting the cell state through the activation function we get the **activation** of the neuron. We can do this for all training samples simultaeously by computing:
 
 $$
 A=\sigma (w^T \cdot X)
@@ -163,8 +163,16 @@ $$
 \Theta=\Theta - \alpha \cdot d\Theta
 $$
 
-### Making predictions on unknown samples
-Having found our optimal values for $$\Theta$$ we can now predict the membership of an unknown sample by its probability. To calculate the probability we simply compute forward propagation again with the optimized $$\Theta$$ and the sample's feature vector.
+### Making predictions on unknown instances
+Having found our optimal values for $$\Theta$$ we can now predict the membership of unknown instances by their probability. To calculate the probability we simply compute forward propagation again with the optimized $$\Theta$$ and the sample's feature vector.
+
+$$
+\sigma (w^T \cdot x^{(i)})
+\begin{cases}
+    >= 0.5 \rightarrow x^{(i)} belongs to class\\
+    < 0.5 \rightarrow x^{(i)} does not belong to class
+\end{cases}
+$$
 
 ## Shallow Neural Networks
 The explanations above were made for a single neuron. However, we can now expand this example to a NN using a **hidden layer** with several neurons and apply the sampe principles. We still keep our single neuron as the output layer. The only change we make is that instead of a weight vector $$w$$ we now use a **weight matrix** $$W^{[]i}$$ holding the weights for each neuron in the layer $$i$$. Since we have 
