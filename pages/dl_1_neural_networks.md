@@ -60,13 +60,17 @@ To fit the line optimally we usually take a bunch of labelled sample instances (
 
 To define what "optimal" means we need a **loss function** that tells us big the error is if a single training instance is treated as belongig to the class. Generally, you can choose whatever loss function you like, but in linear regression the [Log Loss Function](http://wiki.fast.ai/index.php/Log_Loss) is used for logistic regression:
 
-$$\mathcal{L}(y, \hat{y}) = -{(y\log(\hat{y}) + (1 - y)\log(1 - \hat{y}))}$$
+$$
+\begin{equation}
+\mathcal{L}(y, \hat{y}) = -{(y\log(\hat{y}) + (1 - y)\log(1 - \hat{y}))}
+\end{equation}
+$$
 
 The **cost function** calculates the total error (_cost_) over all $$m$$ instances classified with the current parameters:
 
-$$\mathcal{J}=\frac{1}{m} \sum_{i=1}^m(\mathcal{L}y^{(i)}, \hat{y}^{(i)})$$
+$$J=\frac{1}{m} \sum_{i=1}^m(\mathcal{L}y^{(i)}, \hat{y}^{(i)})$$
 
-A NN can perform Logistic regression exactly like this. In fact, traditional binary Logistic Regression can be seen as a NN in its simplest form: with only one single node and therefore only two parameters to learn:
+A NN can perform Logistic regression exactly like this. In fact, traditional binary Logistic Regression can be seen as a NN in its simplest form: with only one single **neuron** (a.k.a. _unit_ or _cell_) and therefore only two parameters to learn:
 
 (example image here)
 
@@ -107,3 +111,8 @@ $$z=w^T \cdot x$$
 This cell state needs to go through an **activation function** first before it can be used for classification. We will see why we need an activation function and what activation functions there are. For now, let's just use the **Sigmoid** function which is defined as:
 
 $$\sigma (z)=\frac{1}{z + e^{-z}}$$
+
+By putting the cell state through the activation function we get the **activation** of the neuron.
+
+### Computing the loss
+According to the above 
