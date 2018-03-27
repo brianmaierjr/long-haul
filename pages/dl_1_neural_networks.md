@@ -64,4 +64,4 @@ $$\mathcal{L}(y, \hat{y}) = -{(y\log(\hat{y}) + (1 - y)\log(1 - \hat{y}))}$$
 
 The **cost function** calculates the total error (_cost_) over all $$m$$ instances classified with the current parameters:
 
-$$\mathcal{J}=\frac{1}{m} \sum_{i=1}^m(\mathcal{L}(y^{(i)}, \hat{y}^{(i)})$$
+    $$\mathcal{J}=\frac{1}{m} \sum_{i=1}^m(\mathcal{L}y^{(i)}, \hat{y}^{(i)})$$
