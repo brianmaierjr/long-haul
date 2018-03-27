@@ -68,7 +68,11 @@ $$
 
 The **cost function** calculates the total error (_cost_) over all $$m$$ instances classified with the current parameters:
 
-$$J=\frac{1}{m} \sum_{i=1}^m(\mathcal{L}y^{(i)}, \hat{y}^{(i)})$$
+$$
+\begin{equation}
+J=\frac{1}{m} \sum_{i=1}^m(\mathcal{L}y^{(i)}, \hat{y}^{(i)}) \label{cost}
+\end{equation}
+$$
 
 A NN can perform Logistic regression exactly like this. In fact, traditional binary Logistic Regression can be seen as a NN in its simplest form: with only one single **neuron** (a.k.a. _unit_ or _cell_) and therefore only two parameters to learn:
 
@@ -115,4 +119,4 @@ $$\sigma (z)=\frac{1}{z + e^{-z}}$$
 By putting the cell state through the activation function we get the **activation** of the neuron.
 
 ### Computing the loss
-According to the formulas for the [loss]($$\ref{loss}$$) and the cost 
+According to the formulas for the loss ($$\ref{loss}$$) and the cost ($$\ref{cost}$$)
