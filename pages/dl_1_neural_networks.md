@@ -95,3 +95,8 @@ We can represent the weights as an $$(n \times 1)$$ vector $$(w_1, w_2)$$ and th
 |$$w$$|weight vector (one weight per feature)|$$(n \times 1)$$|
 |$$b$$|bias|scalar|
 
+### Initializing the parameters
+Because we do not know the optimal parameters from the beginning, we need to initialize them to reasonable values and then optimize them through training. So let's initialize the parameters $$w$$ and $$b$$ with zeroes. We will see later, why that's not a good idea for Deep-NN, but for a NN with only one node this works.
+We now have $$b=0$$ and $$w=(0, 0)$$.
+
+### Forward propagation
