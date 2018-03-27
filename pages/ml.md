@@ -3,7 +3,7 @@ layout: article
 title: Machine Learning
 image: ml_title.jpg
 intro: | 
-    Machine Learning has captivated me since I first heard about it. I find it fascinating how I can teach my computer something without having to explicitly program it for it.
+    Machine Learning has fascinated me since I first heard about it. The idea of being able to teach my computer something without having to explicitly program it is electrifying.
     A lot of what I know I have learned from the following sources:
     
     - Free and paid courses on [Coursera](https://www.coursera.org/)
