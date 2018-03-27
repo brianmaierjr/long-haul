@@ -28,15 +28,9 @@ To make the search harder, it all should be free (as hosting on my own NAS is). 
 
 # Enter Jekyll
 
-<img src="{{ '/assets/img/posts/jekyll_logo.png' }}" alt="Jekyll logo"> 
-
-![Jekyll logo](/assets/img/posts/jekyll_logo.png){:class="img-responsive"}
-
-
 ![Jekyll logo](/assets/img/posts/jekyll_logo.png)
 
-
-And then came [Jekyll](https://jekyllrb.com/). Jekyll is a static site generator and the underlying technology used by [GitHub Pages]](https://pages.github.com/). It does not need a database and you can write your content using [Markdown](https://en.wikipedia.org/wiki/Markdown). Jekyll uses the [Liquid Templating Language](http://shopify.github.io/liquid/) and [Front Matter](https://jekyllrb.com/docs/frontmatter/) that you can use to add some logic to your site. Your files are then compiled by GH Pages and served as plain old HTML pages. And since all the files reside in a normal GitHub repository, I don't have to worry about things like backup or versioning anymore. I can even apply the same workflow for blogging like I apply for coding (or as Tom Preston-Warner expressed it: [Blogging Like a Hacker](http://tom.preston-werner.com/2008/11/17/blogging-like-a-hacker.html)). The few dynamic features I used, like comments, can easily be replaced by third-party services like [Disqus](disqus.com). Having never used Jekyll before, I found [this tutorial](https://www.smashingmagazine.com/2014/08/build-blog-jekyll-github-pages/) insightful. I don't have any long-term experience yet. Time will show how it all turns out, but what I have seen so far looks promising.
+And then came [Jekyll](https://jekyllrb.com/). Jekyll is a static site generator and the underlying technology used by [GitHub Pages](https://pages.github.com/). It does not need a database and you can write your content using [Markdown](https://en.wikipedia.org/wiki/Markdown). Jekyll uses the [Liquid Templating Language](http://shopify.github.io/liquid/) and [Front Matter](https://jekyllrb.com/docs/frontmatter/) that you can use to add some logic to your site. Your files are then compiled by GH Pages and served as plain old HTML pages. And since all the files reside in a normal GitHub repository, I don't have to worry about things like backup or versioning anymore. I can even apply the same workflow for blogging like I apply for coding (or as Tom Preston-Warner expressed it: [Blogging Like a Hacker](http://tom.preston-werner.com/2008/11/17/blogging-like-a-hacker.html)). The few dynamic features I used, like comments, can easily be replaced by third-party services like [Disqus](disqus.com). Having never used Jekyll before, I found [this tutorial](https://www.smashingmagazine.com/2014/08/build-blog-jekyll-github-pages/) insightful. I don't have any long-term experience yet. Time will show how it all turns out, but what I have seen so far looks promising.
 
 # Migrating from WP to GH Pages
 Migration is never an easy endeavour, especially considering all the assets (text, images, code blocks, CSS,...). So I tried to automate as much as possible. Jekyll is really trying to help out here by providing a [wide range of available importers](http://import.jekyllrb.com/). Alas, the provided Wordpress-Importer was only able to generate HTML files, not Markdown. And it only imports posts and pages, no assets!
