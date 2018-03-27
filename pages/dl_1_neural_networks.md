@@ -110,7 +110,7 @@ We can represent the weights as an $$(n \times 1)$$ vector $$(w_1, w_2)$$ and th
 |$$X$$|training sample (feature vectors)|$$(n \times m)$$|
 |$$y$$|training labels|$$(1 \times m)$$|
 |$$w$$|weight vector (one weight per feature)|$$(n \times 1)$$|
-|$$b$$|bias|scalar|
+|$$b$$|bias (threshold)|scalar|
 |$$\Theta$$|parameter matrix containing the weights and the bias|$$(n \times 2)$$|
 
 ### Initializing the parameters
@@ -130,7 +130,9 @@ $$
 \end{equation}
 $$
 
-By putting the cell state through the activation function we get the **activation** of the neuron. We can do this for all training samples simultaeously by computing:
+![Sigmoid-Function]({% link assets/img/articles/ml/dl_1/sigmoid.png %})
+
+This function produces only values within the interval $$[0,1]$$. If $$z$$ is a large positive number, then $$\sigma (z) \approx 1$$. If $$z$$ is a small or large negative number, then $$\sigma (z) \approx 1$$. If $$z=0$$ then $$\sigma (z) = 0.5 By putting the cell state through the activation function we get the **activation** of the neuron. We can do this for all training samples simultaeously by computing:
 
 $$
 A=\sigma (w^T \cdot X)
