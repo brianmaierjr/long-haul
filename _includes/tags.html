@@ -2,6 +2,6 @@
 
 <p style="text-align:center">
 {% for tag in include.tags %}
-<span class="badge badge-secondary">{{tag | remove: '<p>' | remove: '</p>'}}</span>
+<span class="badge badge-secondary">{{tag}}</span>
 {% endfor %}
 </p>
