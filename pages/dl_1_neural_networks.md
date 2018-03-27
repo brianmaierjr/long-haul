@@ -130,7 +130,7 @@ A=\sigma (w^T \cdot X)
 $$
 
 ### Computing the loss
-According to the formulas for the loss ($$\ref{loss}$$) and the cost ($$\ref{cost}$$) we can now compute the cost for the current iteration over all training samples as follows (note that $$a^{(i)}=\sigma(w^T \cdot x^{(i)})$$ refers to the activation of the neuron for the $$i$$-th training sample:
+According to the formulas for the loss ($$\ref{loss}$$) and the cost ($$\ref{cost}$$) we can now compute the cost for the current iteration over all training samples as follows (note that $$a^{(i)}=\sigma(w^T \cdot x^{(i)})$$ refers to the activation of the neuron for the $$i$$-th training sample):
 
 $$
 J=-\frac{1}{m} \sum_{i=1}^m(y\log(a^{(i)}) + (1 - y)\log(1 - a^{(i)}))
@@ -145,4 +145,11 @@ $$
 
 $$
 \frac{\partial J}{\partial b}=\frac{1}{m}\sum_{i=1}^m(a^{(i)}-y^{(i)})
+$$
+
+### Updating the parameters
+To update the parameters [Gradient Descent](https://en.wikipedia.org/wiki/Gradient_descent) GD is commonly used. We can choose a fixed learning rate $$\alpha$$ arbitrarily. However, choosing this value wisely is crucial: if it is too big, we might never reach the optimal values, because GD will "overshoot" it. If we choose $$\alpha$$ too small, GD might be very slow. We learn more on it in [part 2 about hyperparameter tuning]({% link pages/dl_2_improving_deep_neural_networks.md %}).
+
+$$
+\Theta=w-\alpha \cdot d\Theta
 $$
