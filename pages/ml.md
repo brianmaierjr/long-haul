@@ -20,12 +20,12 @@ eta: true
 * Introduction to Machine Learning (11 weeks)
 * Deep Learning (16 weeks)
     * [Neural Networks and Deep Learning]({% link pages/dl_1_neural_networks.md %}) (weeks 1-4)
-    * Improving Deep Neural Networks
+    * [Improving Deep Neural Networks]({% link pages/dl_2_improving_deep_neural_networks.md %}) (weeks 5-7)
     * Structuring ML projects
     * Convolutional Neural Networks
     * Sequence Models        
 
-This structure roughly follows Andrew Ng's courses on [Machine Learning](https://www.coursera.org/learn/machine-learning)/[Deep Learning](https://www.coursera.org/specializations/deep-learning) on Coursera.
+This structure roughly follows Andrew Ng's courses on [Machine Learning](https://www.coursera.org/learn/machine-learning)/[Deep Learning](https://www.coursera.org/specializations/deep-learning) on Coursera. A lot of the content is also taken from his slides, but I addedmy own other images here and there.
 
 ## Why the hassle?
 
