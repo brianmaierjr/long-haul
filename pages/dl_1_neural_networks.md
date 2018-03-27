@@ -88,6 +88,7 @@ Because we only have a single node and we try to fit a straight line between the
 We can represent the weights as an $$(n \times 1)$$ vector $$(w_1, w_2)$$ and the bias as a scaler $$b$$. To sum up, we have now the following parameters:
 
 | Symbol | Meaning | Type/Dimensions |
+|---|---|---|
 |$$n$$|number of features|scalar|
 |$$m$$|number of training samples|scalar|
 |$$X$$|training sample (feature vectors)|$$(n \times m)$$|
