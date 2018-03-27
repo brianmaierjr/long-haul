@@ -5,7 +5,8 @@
     <li class="badge badge-secondary">{{tag}}</li>
     {% endfor %}
 </ul>
-
+<p>
 {% for tag in include.tags %}
 <span class="badge badge-secondary">{{tag | remove: '<p>' | remove: '</p>'}}</span>
 {% endfor %}
+</p>
