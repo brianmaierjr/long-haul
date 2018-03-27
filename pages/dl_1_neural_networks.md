@@ -81,4 +81,17 @@ Let's say for example that we want to predict housing prices by observing the fe
   d. update the parameters with gradient descent
 
 ### Defining the neural network structure
-For now, let's assume we stick with the simplest NN model with only one layer containing a single unit. This unit is the output unit, receiving the input from an input layer to whom it is connected. So the number of hidden layers is 0 (zero)
+For now, let's assume we stick with the simplest NN model with only one layer containing a single unit. This unit is the output unit, receiving the input from an input layer to whom it is connected. So the number of hidden layers is 0 (zero).
+Let's now further assume we observe $$n$$ features. A single feature vector can therefore be defined with an $$(n \times 1)$$ vector. If we stack the feature vectors of all $$m$$ training examples we get a training matrix $$M$$ with dimensions $$(n \times m)$$
+Smiliarly, we have the labels of all trainings samples, which are either $$0$$ or $$1$$. We can stack those and get a label vector $$y$$ of dimensions $$(1 \times m)$$
+Because we only have a single node and we try to fit a straight line between the points, we only have two parameters to optimize: the weights for the individual features (giving us the slope of the line) and the bias (giving us the y-intersect). 
+We can represent the weights as an $$(n \times 1)$$ vector $$(w_1, w_2)$$ and the bias as a scaler $$b$$. To sum up, we have now the following parameters:
+
+| Symbol | Meaning | Type/Dimensions |
+|$$n$$|number of features|scalar|
+|$$m$$|number of training samples|scalar|
+|$$X$$|training sample (feature vectors)|$$(n \times m)$$|
+|$$y$$|training labels|$$(1 \times m)$$|
+|$$w$$|weight vector (one weight per feature)|$$(n \times 1)$$|
+|$$b$$|bias|scalar|
+
