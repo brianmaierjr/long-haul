@@ -209,8 +209,12 @@ $$
 
 When using a single neuron for logistic we have initialized the parameters $$w$$ and $$b$$ with zeroes. This does not work for NN with more than one neuron anymore. The reason for this is that if the weights and biases were all initialized with zeroes, every node in the layer would **compute exactly the same thing** in forward propagation. Consequently, the gradients in backprop would also be the same. Of course this is not what we want. We want every neuron to compute something different. For that reason it is important to **initialize the weights with random values**. There are different variations of how this could be done, for example **Xavier-Initialization** or **He-Initialization**. Most frameworks like TensorFlow or Keras readily provide implementations for these variations.
 
+## Deep Neural Networks
+
+We started with a single neuron for Logistic Regression. We expanded this example to a shallow NN with one hidden layer containing several neurons. We can now take this further and construct a deep NN with several hidden layers.
+
 ## Activation functions
-You might wonder why we used an activation function (the Sigmoid-function $$\sigma$$) at all. Why couldn't we just take the cell state $$Z^{[i]}$$? Well, we could do this, but then the end result in the output layer would be the combination of several linear functions ($$ W^{[i]} X + b^{[i]} $$, see $$\ref{forwardprop}$$), which is itself a linear combination. The NN would then not be better than Logistic Regression. So the goal of using an activation function is to **break linearity**.
+You might have wondered why we used an activation function (the Sigmoid-function $$\sigma$$) at all. Why couldn't we just take the cell state $$Z^{[i]}$$? Well, we could do this, but then the end result in the output layer would be the combination of several linear functions ($$ W^{[i]} X + b^{[i]} $$, see $$\ref{forwardprop}$$), which is itself a linear combination. The NN would then not be better than Logistic Regression. So the goal of using an activation function is to **break linearity**.
 
 Apart from the Sigmoid-Function there are several other activation functions. To name the most common:
 
