@@ -56,7 +56,7 @@ As seen in [Andrew's introductory course in ML]({% link pages/ml_intro.md %}) a 
 
 (example image here)
 
-To fit the line optimally we usually take a bunch of labelled sample instances (i.e. samples where we know the class already). Such a training instance can be represented by the tuple $$(x,y)$$, where $$x$$ is said feature vector and $$y$$ either the number zero (instance does not belong to class) or one (instance belongs to class). Logistic Regression tries to approximate the separating line so that the overall error of all training instances is minimal. After the optimal parameters to separate the training instances have been learned, the same parameters can be applied to unlabeled (unknown) instances to decide whether a given instance belongs to the class or not. This can be done by calculating the probability that a single instance belongs to the class. An unlabelled instance can be represented by the tuple $$(x,\hat{y})$$, whereas $$x$$ is again a feature vector and $$\hat{y}$$ the probability $$P(y=1 \vert x)$$ that the instance belongs to the class (given $$x$$).
+To fit the line optimally we usually take a bunch of **labelled sample** instances (i.e. samples where we know the class already). Such a training instance can be represented by the tuple $$(x,y)$$, where $$x$$ is said feature vector and $$y$$ either the number zero (instance does not belong to class) or one (instance belongs to class). Logistic Regression tries to approximate the separating line so that the overall error of all training instances is minimal. After the optimal parameters to separate the training instances have been learned, the same parameters can be applied to unlabeled (unknown) instances to decide whether a given instance belongs to the class or not. This can be done by calculating the probability that a single instance belongs to the class. An **unlabelled instance** can be represented by the tuple $$(x,\hat{y})$$, whereas $$x$$ is again a feature vector and $$\hat{y}$$ the probability $$P(y=1 \vert x)$$ that the instance belongs to the class (given $$x$$).
 
 To define what "optimal" means we need a **loss function** that tells us big the discrepancy between the prediction ($$\hat{y}^{(i)}$$) and the actual class ($$y^{(i)}$$) is for a single training sample. Note that $$y^{(i)}$$ refers to the label for the $$i$$-th trainings sample. Generally, you can choose whatever loss function you like, for example the [Mean Squared Error](https://en.wikipedia.org/wiki/Mean_squared_error) function, which is defined as follows:
 
@@ -68,7 +68,7 @@ In linear regression however the [Log Loss Function](http://wiki.fast.ai/index.p
 
 $$
 \begin{equation}
-\mathcal{L}(\hat{y}^{(i)}, y^{(i)}) = -{(y^{(i)}\log(\hat{y}^{(i)}) + (1 - y^{(i)})\log(1 - \hat{y}^{(i)}))}
+\mathcal{L}(\hat{y}^{(i)}, y^{(i)}) = - y^{(i)}  \log(\hat{y}^{(i)}) - (1-y^{(i)} )  \log(1-\hat{y}^{(i)})
 \label{loss}
 \end{equation}
 $$
@@ -82,19 +82,23 @@ J=\frac{1}{m} \sum_{i=1}^m(\mathcal{L}y^{(i)}, \hat{y}^{(i)})
 \end{equation}
 $$
 
-By Logistic Regression we try find the parameters $$w$$ and $$b$$ that minimize the overall cost $$J$$. A NN can perform Logistic regression exactly the same way. In fact, traditional binary Logistic Regression can be seen as a NN in its simplest form: with only one single **neuron** (a.k.a. _unit_ or _cell_) and therefore only two parameters to learn:
+By Logistic Regression we try find the parameters $$w$$ and $$b$$ that minimize the overall cost $$J$$. A NN can perform Logistic regression exactly the same way. In fact, traditional binary Logistic Regression can be seen as a NN in its simplest form: with only one single **neuron** (a.k.a. _unit_ or _cell_) and therefore only two parameters to learn. For instance, if we want to build a classifier that classifies images into cat pictures ($$y=1$$) or no cat pictures ($$y=0$$). We can unroll the image's pixels into a feature vector, where each feature corresponds to the RGB-value of an individual pixel. I.e. if the image is 64x64 pixels, we get $$64 \cdot 64\cdot 3=12288$$ features. The one-neuron NN is then as follows:
 
-(example image here)
+![Sigmoid-Function]({% link assets/img/articles/ml/dl_1/logistic_regression.png %})
 
 Let's say for example that we want to predict housing prices by observing the features of a set of known houses where we already know the price. The features of an individual house taken into account might be its size, number of bedrooms, zip code, wealth of the neighborhood and so on. Those features must be transformed into a numeric representation somehow in order to be used as a feature vector. We can then train above NN. The general methodology to build a NN is usually as follows (we will describe the unknown terms below):
 
-1. Define a neural network structure: number of input units, number of hidden units, number of layers, etc...
+1. Define a neural network architecture: number of input units, number of hidden units, number of layers, etc...
 2. Initialize the model's parameters
 3. Loop
   1. implement forward propagation
   2. compute loss
   3. implement backward propagation to get the gradients
   4. update the parameters with gradient descent
+
+This process is usually iterative, empirical process in that we try to find the optimal hyperparameters (e.g. network architecture) by trial and error. We will learn some tricks to make this a guided process in [part 2]({% link pages/dl_2_improving_deep_neural_networks.md %}).
+
+![Sigmoid-Function]({% link assets/img/articles/ml/dl_1/logistic_regression.png %})
 
 ### Defining the neural network structure
 For now, let's assume we stick with the simplest NN model with only one layer containing a single unit. This unit is the output unit, receiving the input from an input layer to whom it is connected. So the number of hidden layers is 0 (zero).
@@ -118,8 +122,8 @@ Because we do not know the optimal parameters from the beginning, we need to ini
 We now have $$b=0$$ and $$w=(0, 0)$$.
 
 ### Forward propagation
-We can now compute the cell state $$z$$ by calculating:
-$$z=w^T \cdot x$$
+We can now compute the **cell state** $$z^{(i)}$$ for a given sample instance $$x^{(i)}$$ by calculating:
+$$z^{(i)}=w^T x^{(i)} + b$$
 
 This cell state needs to go through an **activation function** first before it can be used for classification. We will see later why we need an activation function and what activation functions there are. For now, let's just use the **Sigmoid** function which is defined as:
 
@@ -132,10 +136,10 @@ $$
 
 ![Sigmoid-Function]({% link assets/img/articles/ml/dl_1/sigmoid.png %})
 
-This function produces only values within the interval $$[0,1]$$. If $$z$$ is a large positive number, then $$\sigma (z) \approx 1$$. If $$z$$ is a small or large negative number, then $$\sigma (z) \approx 1$$. If $$z=0$$ then $$\sigma (z) = 0.5$$ By putting the cell state through the activation function we get the **activation** of the neuron. We can do this for all training samples simultaeously by computing:
+This function produces only values within the interval $$[0,1]$$. If $$z$$ is a large positive number, then $$\sigma (z) \approx 1$$. If $$z$$ is a small or large negative number, then $$\sigma (z) \approx 1$$. If $$z=0$$ then $$\sigma (z) = 0.5$$ By putting the cell state through the activation function we get the **activation** $$ a^{(i)} = \hat{y}^{(i)}=\sigma(z^{(i)})=\sigma(w^T x^{(i)} + b $$of the neuron. We can do this for all training samples simultaeously by computing:
 
 $$
-A=\sigma (w^T \cdot X)
+A=\sigma (w^T \cdot X + b)
 $$
 
 ### Computing the loss
@@ -179,9 +183,9 @@ The explanations above were made for a single neuron. However, we can now expand
 The computations are then as follows (similar to the equations for a single neuron):
 
 $$
-Z^{[1]}=W^{[1]} \cdot X + b^{[1]} \\
+Z^{[1]}=W^{[1]} X + b^{[1]} \\
 A^{[1]}=\sigma(Z^{[1]}) \\
-Z^{[2]}=W\cdot X + b^{[2]} \\
+Z^{[2]}=W^{[1]} X + b^{[2]} \\
 A^{[2]}=\sigma(Z^{[2]})
 $$
 
@@ -189,7 +193,7 @@ Or more generally:
 
 $$
 \begin{equation}
-A^{[i]}=\sigma(W^{[i]} \cdot X + b^{[i]})
+A^{[i]}=\sigma(W^{[i]} X + b^{[i]})
 \label{forwardprop}
 \end{equation}
 $$
