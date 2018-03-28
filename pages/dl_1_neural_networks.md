@@ -170,7 +170,7 @@ $$
 We have seen that by Logistic Regression we try find the parameters $$w$$ and $$b$$ that minimize the overall cost $$J$$. A NN can perform Logistic regression exactly the same way. In fact, traditional binary Logistic Regression can be seen as a NN in its simplest form: with only one single **neuron** (a.k.a. _unit_ or _cell_) and therefore only two parameters to learn. For instance, if we want to build a classifier that classifies images into cat pictures ($$y=1$$) or no cat pictures ($$y=0$$). We can unroll the image's pixels into a feature vector, where each feature corresponds to the RGB-value of an individual pixel. I.e. if the image is 64x64 pixels, we get $$64 \cdot 64\cdot 3=12288$$ features. The one-neuron NN is then as follows:
 
 <figure>
-	![Sigmoid-Function]({% link assets/img/articles/ml/dl_1/logistic_regression.png %})
+	<img src="{% link assets/img/articles/ml/dl_1/logistic_regression.png %}" alt="Logistic Regression"> 
 	<figcaption>Example: Logistic Regression with a single neuron (Credits: Coursera)</figcaption>
 </figure>
 
