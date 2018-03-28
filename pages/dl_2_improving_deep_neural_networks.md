@@ -10,30 +10,7 @@ previous:
 next: 
     url: /ml/deep-learning/3
     title: Part 3: Structuring ML projects
-tags:
-    - probability distributions
-    - bias/variance
-    - over-/underfitting
-    - regularization
-    - L2-Regularization
-    - dropout
-    - early stopping
-    - data augmentation
-    - input normalization
-    - weight decay
-    - exploding/vanishing gradient
-    - Mini-Batch Gradient Descent
-    - Exponentially Weighted Average
-    - Momentum
-    - RMSprop
-    - Adam
-    - learning rate decay
-    - local optima
-    - softmax
-    - pandas & caviar
-    - hyperparameter tuning
-    - batch norm
-    - TensorFlow
+
 toc: true
 ---
 
