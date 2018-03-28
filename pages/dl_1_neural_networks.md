@@ -151,11 +151,11 @@ $$
 We can calculate the partial derivative as follows:
 
 $$
-\frac{\partial J}{\partial w}=\frac{1}{m}X(A-Y)^T
+dw = \frac{\partial J}{\partial w}=\frac{1}{m}X(A-Y)^T
 $$
 
 $$
-\frac{\partial J}{\partial b}=\frac{1}{m}\sum_{i=1}^m(a^{(i)}-y^{(i)})
+db = \frac{\partial J}{\partial b}=\frac{1}{m}\sum_{i=1}^m(a^{(i)}-y^{(i)})
 $$
 
 ### Updating the parameters
@@ -204,6 +204,10 @@ A^{[i]}=\sigma(W^{[i]} X + b^{[i]})
 \label{forwardprop}
 \end{equation}
 $$
+
+### Random initialization
+
+When using a single neuron for logistic we have initialized the parameters $$w$$ and $$b$$ with zeroes. This does not work for NN with more than one neuron anymore. The reason for this is that if the weights and biases were all initialized with zeroes, every node in the layer would **compute exactly the same thing** in forward propagation. Consequently, the gradients in backprop would also be the same. Of course this is not what we want. We want every neuron to compute something different. For that reason it is important to **initialize the weights with random values**. There are different variations of how this could be done, for example **Xavier-Initialization** or **He-Initialization**. Most frameworks like TensorFlow or Keras readily provide implementations for these variations.
 
 ## Activation functions
 You might wonder why we used an activation function (the Sigmoid-function $$\sigma$$) at all. Why couldn't we just take the cell state $$Z^{[i]}$$? Well, we could do this, but then the end result in the output layer would be the combination of several linear functions ($$ W^{[i]} X + b^{[i]} $$, see $$\ref{forwardprop}$$), which is itself a linear combination. The NN would then not be better than Logistic Regression. So the goal of using an activation function is to **break linearity**.
