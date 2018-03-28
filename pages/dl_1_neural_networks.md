@@ -4,6 +4,8 @@ title: "Deep Learning (1/5): Neural Networks and Deep Learning"
 intro: | 
     In this course you will learn about the basics of Neural Networks (NN). You will get to know the nuts and bolts of neural networks. Starting out with simple Logistic Regression with a single node you gradually add complexity by expanding this to a one-layer network and finally a deep network with multiple layers. You will also get a short introduction of Python, IPython notebooks and Numpy in the first programming assignment.
 permalink: /ml/deep-learning/1
+next:
+    url: pages/dl_2_improving_deep_neural_networks.md
 tags:
     - Logistic Regression
     - Gradient Descent
