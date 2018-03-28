@@ -2,7 +2,7 @@
 layout: article
 title: "Deep Learning (2/5): Improving Deep Neural Networks"
 intro: | 
-    This course focuses on common problems you might encounter when working on your own DL-projects. The course introduces some useful recipes that might help you when your algorithm is not performing as well as it should. It also introduces best practices when training your own NN and some useful techniques. You will deepen your understanding of how to optimize your hyperparameters and convergence speed. In the last week you get into touch with a DL-Framework (TensorFlow) for the first time.
+    This course focuses on common problems you might encounter when working on DL-projects. The course includes some useful recipes that might help you where to tune your algorithm when it does not perform the way it should. It also introduces some best practices for training your own NN and also some useful techniques to speed up the learning process.
 permalink: /ml/deep-learning/2
 previous:
     url: /ml/deep-learning/1
@@ -10,9 +10,35 @@ previous:
 next: 
     url: /ml/deep-learning/3
     title: Part 3: Structuring ML projects
+tags:
+    - probability distributions
+    - bias/variance
+    - over-/underfitting
+    - regularization
+    - L2-Regularization
+    - dropout
+    - early stopping
+    - data augmentation
+    - input normalization
+    - weight decay
+    - exploding/vanishing gradient
+    - Mini-Batch Gradient Descent
+    - Exponentially Weighted Average
+    - Momentum
+    - RMSprop
+    - Adam
+    - learning rate decay
+    - local optima
+    - softmax
+    - pandas & caviar
+    - hyperparameter tuning
+    - batch norm
+    - TensorFlow
 ---
 
-| **Week**                   | **Content**                   | **Introduced Concepts** |
-| 1                   | Week 1 focuses on the various hyperparameters of a model. You also learn how to recognize problems with your algorithm and where they are rooted.                   | probability distributions<br>bias and variance<br>over- and underfitting<br>regularisation techniques (L2, Dropout, Early Stopping)<br>data augmentation<br>input normalization<br>weight decay<br>exploding/vanishing gradients |
-| 2                   | Week 2 introduces some optimization algorithms that can speed up the overall learning process.                   | Mini-Batch Gradient Descent<br>Exponentially Weighted Average<br>Momentum<br>RMSprop<br>Adam<br>Learning Rate Decay<br>Local optima |
-| 3                   | Week 3 wraps up on hyperparameters and how to find optimal values for them. It also introduces Softmax as an alternative activation function for multiclass-classification.                   | Pandas & Caviar<br>Hyperparameter Tuning<br>Batch Norm<br>TensorFlow |
+{% include toc.md %}
+
+## Course overview
+**Week 1** introduces the various hyperparameters of a model and how to choose reasonable values for them. You will also learn how to identify problematic behavior of algorithm and where it may be rooted.
+**Week 2** introduces some optimization algorithms that may speed up the overall learning process. 
+**Week 3** wraps up on hyperparameters and how to find optimal values for them. It also introduces Softmax as an alternative activation function for multiclass-classification. This is also the week where you get to know a DL-Framework (TensorFlow) for the first time.
