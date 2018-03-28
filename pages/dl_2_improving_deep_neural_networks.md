@@ -4,12 +4,6 @@ title: "Deep Learning (2/5): Improving Deep Neural Networks"
 intro: | 
     This course focuses on common problems you might encounter when working on DL-projects. The course includes some useful recipes that might help you where to tune your algorithm when it does not perform the way it should. It also introduces some best practices for training your own NN and also some useful techniques to speed up the learning process.
 permalink: /ml/deep-learning/2
-previous:
-    url: /ml/deep-learning/1
-    title: Part 1: Neural Networks and Deep Learning
-next: 
-    url: /ml/deep-learning/3
-    title: Part 3: Structuring ML projects
 tags:
     - probability distributions
     - bias/variance
