@@ -159,7 +159,11 @@ db = \frac{\partial J}{\partial b}=\frac{1}{m}\sum_{i=1}^m(a^{(i)}-y^{(i)})
 $$
 
 ### Updating the parameters
-To update the parameters [Gradient Descent](https://en.wikipedia.org/wiki/Gradient_descent) GD is commonly used. We can choose a fixed learning rate $$\alpha$$ arbitrarily. However, choosing this value wisely is crucial: if it is too big, we might never reach the optimal values, because GD will "overshoot" it. If we choose $$\alpha$$ too small, GD might be very slow. We learn more on it in [part 2 about hyperparameter tuning]({% link pages/dl_2_improving_deep_neural_networks.md %}).
+To update the parameters [Gradient Descent](https://en.wikipedia.org/wiki/Gradient_descent) GD is commonly used. We can choose a fixed learning rate $$\alpha$$ arbitrarily. However, choosing this value wisely is crucial: if it is too big, we might never reach the optimal values, because GD will "overshoot" it. If we choose $$\alpha$$ too small, GD might be very slow. The following animations illustrate this.
+
+![Sigmoid-Function]({% link assets/img/articles/ml/dl_1/sgd.gif %}) ![Sigmoid-Function]({% link assets/img/articles/ml/dl_1/sgd_bad.gif %})
+
+We learn more on it in [part 2 about hyperparameter tuning]({% link pages/dl_2_improving_deep_neural_networks.md %}). For now let's assume we chose a reasonable value for $$\alpha$$ and can therefore update the parameters as follows:
 
 $$
 \Theta=\Theta - \alpha d\Theta
