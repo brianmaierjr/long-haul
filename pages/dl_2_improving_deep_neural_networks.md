@@ -34,6 +34,7 @@ tags:
     - hyperparameter tuning
     - batch norm
     - TensorFlow
+toc: true
 ---
 
 {% include toc.md %}
