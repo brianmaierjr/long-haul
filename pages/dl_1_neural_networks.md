@@ -212,6 +212,6 @@ Apart from the Sigmoid-Function there are several other activation functions. To
 
 |Name|Definition|Description|
 |---|---|---|
-|Tanh| $$a= \frac{e^z-e^-z}{e^z+e^-z}$$ | Similar to Sigmoid, but the values are in the interval $$[-1, 1]$$|
+|Tanh| $$a= \frac{e^z-e^{-z}}{e^z+e^{-z}}$$ | Similar to Sigmoid, but the values are in the interval $$[-1, 1]$$|
 |ReLU (Rectified Linear Unit)| $$a=max(0,z)$$ | The derivatives of this function are not defined for $$z=0$$, but this does not matter in practice|
 |Leaky ReLU|$$a=max(0.01z,z)$$| The coefficient $$0.01$$ is arbitrary and could be chosen greater/smaller. However, this value is often used in practice|
