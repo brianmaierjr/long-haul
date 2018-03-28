@@ -6,6 +6,7 @@ intro: |
 permalink: /ml/deep-learning/1
 next:
     url: /pages/dl_2_improving_deep_neural_networks.md
+    title: Part 2
 tags:
     - Logistic Regression
     - Gradient Descent
