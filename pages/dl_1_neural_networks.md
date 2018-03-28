@@ -137,11 +137,11 @@ $$
 This function produces only values within the interval $$[0,1]$$. If $$z$$ is a large positive number, then $$\sigma (z) \approx 1$$. If $$z$$ is a small or large negative number, then $$\sigma (z) \approx 1$$. If $$z=0$$ then $$\sigma (z) = 0.5$$ By putting the cell state through the activation function we get the **activation** $$ a^{(i)} = \hat{y}^{(i)}=\sigma(z^{(i)})=\sigma(w^T x^{(i)} + b) $$ of the neuron. We can do this for all training samples simultaneously by computing:
 
 $$
-A=\sigma (w^T \cdot X + b)
+A=\sigma (w^T X + b)
 $$
 
 ### Computing the loss
-According to the formulas for the loss ($$\ref{loss}$$) and the cost ($$\ref{cost}$$) we can now compute the cost for the current iteration over all training samples as follows (note that $$a^{(i)}=\sigma(w^T \cdot x^{(i)})$$ refers to the activation of the neuron for the $$i$$-th training sample):
+According to the formulas for the loss ($$\ref{loss}$$) and the cost ($$\ref{cost}$$) we can now compute the cost for the current iteration over all training samples as follows (note that $$a^{(i)}=\sigma(w^T x^{(i)} + b)$$ refers to the activation of the neuron for the $$i$$-th training sample):
 
 $$
 J=-\frac{1}{m} \sum_{i=1}^m(y\log(a^{(i)}) + (1 - y)\log(1 - a^{(i)}))
@@ -162,7 +162,7 @@ $$
 To update the parameters [Gradient Descent](https://en.wikipedia.org/wiki/Gradient_descent) GD is commonly used. We can choose a fixed learning rate $$\alpha$$ arbitrarily. However, choosing this value wisely is crucial: if it is too big, we might never reach the optimal values, because GD will "overshoot" it. If we choose $$\alpha$$ too small, GD might be very slow. We learn more on it in [part 2 about hyperparameter tuning]({% link pages/dl_2_improving_deep_neural_networks.md %}).
 
 $$
-\Theta=\Theta - \alpha \cdot d\Theta
+\Theta=\Theta - \alpha d\Theta
 $$
 
 ### Putting it all together
@@ -178,7 +178,7 @@ We have seen that by Logistic Regression we try find the parameters $$w$$ and $$
 Having found our optimal values for $$\Theta$$ we can now predict the membership of unknown instances by their probability. To calculate the probability we simply compute forward propagation again with the optimized $$\Theta$$ and the sample's feature vector.
 
 $$
-\sigma (w^T \cdot x^{(i)})=
+\sigma (w^T x^{(i)} + b)=
 \begin{cases}
     \ge 0.5  & x^{(i)} \text{ belongs to class}\\
     < 0.5    & x^{(i)} \text{ does not belong to class}
@@ -192,7 +192,7 @@ The computations are then as follows (similar to the equations for a single neur
 $$
 Z^{[1]}=W^{[1]} X + b^{[1]} \\
 A^{[1]}=\sigma(Z^{[1]}) \\
-Z^{[2]}=W^{[1]} X + b^{[2]} \\
+Z^{[2]}=W^{[2]} X + b^{[2]} \\
 A^{[2]}=\sigma(Z^{[2]})
 $$
 
@@ -206,7 +206,7 @@ A^{[i]}=\sigma(W^{[i]} X + b^{[i]})
 $$
 
 ## Activation functions
-You might wonder why we used an activation function (the Sigmoid-function $$\sigma$$) at all. Why couldn't we just take the cell state $$Z^{[i]}$$? Well, we could do this, but then the end result in the output layer would be the combination of several linear functions ($$ W^{[i]} \cdot X + b^{[i]} $$, see $$\ref{forwardprop}$$), which is itself a linear combination. The NN would then not be better than Logistic Regression. So the goal of using an activation function is to **break linearity**.
+You might wonder why we used an activation function (the Sigmoid-function $$\sigma$$) at all. Why couldn't we just take the cell state $$Z^{[i]}$$? Well, we could do this, but then the end result in the output layer would be the combination of several linear functions ($$ W^{[i]} X + b^{[i]} $$, see $$\ref{forwardprop}$$), which is itself a linear combination. The NN would then not be better than Logistic Regression. So the goal of using an activation function is to **break linearity**.
 
 Apart from the Sigmoid-Function there are several other activation functions. To name the most common:
 
@@ -214,4 +214,4 @@ Apart from the Sigmoid-Function there are several other activation functions. To
 |---|---|---|
 |Tanh| $$a= \frac{e^z-e^-z}{e^z+e^-z}$$ | Similar to Sigmoid, but the values are in the interval $$[-1, 1]$$|
 |ReLU (Rectified Linear Unit)| $$a=max(0,z)$$ | The derivatives of this function are not defined for $$z=0$$, but this does not matter in practice|
-|Leaky ReLU|$$a=max(0.01\cdot z,z)$$| The coefficient $$0.01$$ is arbitrary and could be chosen greater/smaller. However, this value is often used in practice|
+|Leaky ReLU|$$a=max(0.01z,z)$$| The coefficient $$0.01$$ is arbitrary and could be chosen greater/smaller. However, this value is often used in practice|
