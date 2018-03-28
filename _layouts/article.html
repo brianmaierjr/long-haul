@@ -1,9 +1,6 @@
 ---
 layout: default
 comments: true
-tldr: true
-eta: true
-toc: true
 ---
 <div class="post">
   {% if page.image %}
@@ -23,6 +20,8 @@ toc: true
   {% endif %}
   
   <div>{{ content }}</div>
+  
+  {% include navigation.html %}
 
   {% include disqus.html %}
   </div>
