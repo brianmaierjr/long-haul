@@ -186,7 +186,14 @@ $$
 $$
 
 ## Shallow Neural Networks
-The explanations above were made for a single neuron. However, we can now expand this example to a NN using a **hidden layer** with several neurons and apply the sampe principles. We still keep our single neuron as the output layer. The only change we make is that instead of a weight vector $$w$$ we now use a **weight matrix** $$W^{[i]}$$ holding the weights for each neuron in the layer $$i$$. Since we have 
+The explanations above were made for a single neuron. However, we can now expand this example to a NN using a **hidden layer** with several neurons and apply the sampe principles. We still have a single neuron as the output layer. A shallow NN with two features (i.e. two neurons in the input layer), one hidden layer and a single neuron in the output layer (i.e. binary classification) might therefore look like this:
+
+<figure>
+	<img src="{% link assets/img/articles/ml/dl_1/shallow_nn.png %}" alt="Shallow NN"> 
+	<figcaption>Example: Shallow Neural Network with one hidden layer (Credits: Coursera)</figcaption>
+</figure>
+
+The only change we make is that instead of a weight vector $$w$$ we now use a **weight matrix** $$W^{[i]}$$ holding the weights for each neuron in the layer $$i$$. Since we have 
 The computations are then as follows (similar to the equations for a single neuron):
 
 $$
