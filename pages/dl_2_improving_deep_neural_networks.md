@@ -226,9 +226,9 @@ Normalizing the inputs leads to the input features being on a similar scale and 
 	<figcaption>Cost convergence with and without input normalization (Credits: Coursera (with adjustments)</figcaption>
 </figure>
 
-## Vanishing/Exploding gradients
+## Initialization
 
-The problem with very deep NN is that for each layer $$l$$ we have a weight matrix $$W^{[l]}$$ with values that can be big (greater than 1) or small (less than 1). Because each layer multiplies the previous layer's activation with its own weight matrix, this can lead to **very high** (exploding gradient) or **very small** (vanishing gradient) for $$\hat{y}$$. This applies if all (or a lot) of the weight matrices contain big values and consequently the value for $$\hat{y}$$ exponentially increases/decreases. A similar argument can be used to show that also the gradients will exonentially increase/decrease.
+The problem with very deep NN is that for each layer $$l$$ we have a weight matrix $$W^{[l]}$$ with values that can be big (greater than 1) or small (less than 1). Because each layer multiplies the previous layer's activation with its own weight matrix, this can lead to very high or very small values for $$\hat{y}$$. This applies if all (or a lot) of the weight matrices contain big values and consequently the value for $$\hat{y}$$ exponentially increases/decreases. A similar argument can be used to show that also the gradients will exonentially increase/decrease (**exploding or vanishing gradients**).
 
 A partial solution for this problem is a careful initialization of the parameters for the NN. To better understand this let's observe the following example of a single neuron:
 
@@ -240,17 +240,21 @@ $$
 z = w^T x = w_1x_1 + w_2x_2 + ... + w_nx_n
 $$
 
-Tp prevent $$z$$ from becoming very large we have to make sure the single summands don't become too large. We can do this by multiplying the weight matrix with its variance:
+To prevent $$z$$ from becoming very large we have to make sure the single summands don't become too large. We can do this by multiplying the weight matrix with its variance:
 
 $$
 W^{[l]} = W^{[l]} \cdot \sqrt{\frac{2}{n^{[l-1]}})}
 $$
 
-This variant is often used in conjunction with a ReLU activation function. There are other variants for other activation functions, such as  **Xavier initialization** for $$tanh$$ activation function:
+This variant is called **He initialization** is often used in conjunction with a ReLU activation function. There are other variants for other activation functions, such as  **Xavier initialization** for $$tanh$$ activation function:
 
 $$
 W^{[l]} = W^{[l]} \cdot \sqrt{\frac{1}{n^{[l-1]}}}
 $$
+
+The following picture illustrate the different results for different initializations. Note that for zero-initialization the classifier predicted $$0$$ (does not belong to class) for all instances!
+
+|![Zero initialization]({% link assets/img/articles/ml/dl_2/initialization_zero.png %})|![Random initialization]({% link assets/img/articles/ml/dl_2/initialization_random.png %})|![He initialization]({% link assets/img/articles/ml/dl_2/initialization_he.png %})|
 
 ## Model Optimization
 It is often hard to find the best model because model training is time-intensive and it can therefore take some time before you get some feedback. To speed up the training process there are a few algorithms.
@@ -277,8 +281,13 @@ Despite having an additional loop, training with MBGD is usually much faster tha
 
 There are two extrema for choosing the size $$s$$ of a single mini-batch:
 
-* $$£s=m$$: This corresponds to normal Gradient Descent whereas each training sample is processed individually. This is not recommended because one epoch would take too long.
+* $$s=m$$: This corresponds to **normal Gradient Descent** whereas each training sample is processed individually. This is not recommended because one epoch would take too long.
 * $$s=1$$: This is called **stochastic Gradient Descent**, which is sometimes done, but we lose the performance advantage of a vectorized implementation
+
+<figure>
+	<img src="{% link assets/img/articles/ml/dl_2/gd_stochastic_mbgdm.png %}" alt="Exponentially weighted average">
+	<figcaption>Stochastic gradient descent vs. gradient descent vs. mini-batch gradient descent (Credits: Coursera)</figcaption>
+</figure>
 
 Generally you should choose a value between 1 and $$m$$ for $$s$$. Powers of 2 (64, 128, 256, ...) are often chosen because they offer some computational advantages. But more important is that a single mini-batch fits into your computer's memory.
 
@@ -489,3 +498,33 @@ a^{[L]} = \frac{e^{z^{[L]}}}{ \sum_{j=1}^C t_i }
 $$
 
 In contrast to the other activations (Sigmoid, Tanh, ...) softmax is a function from vector to vector. The sum of all elements in the activation value is 1. The term _softmax_ indicates the classifier's ability to express membership of an instance with a class not just binary but by probability. In that respect, sigmoid is kind of a special form of softmax for only two classes.
+
+
+<div class="alert alert-success" role="alert">
+  <h4 class="alert-heading">TLDR</h4>
+  <h5>Regularization</h5>
+  <ul>
+    <li>Regularization will help you reduce overfitting.</li>
+    <li>L2 regularization and Dropout are two very effective regularization techniques.</li>
+    <li>L2-regularization in cost computation: A regularization term is added to the cost</li>
+    <li>L2-regularization in backprop: There are extra terms in the gradients with respect to weight matrices</li>
+    <li>weight decay: Weights are pushed to smaller values</li>
+    <li>Dropout (randomly eliminate nodes): only use dropout during training. Don't use dropout during test time. Apply dropout both during forward and backward propagation</li>
+  </ul>
+  <h5>Initialization</h5>
+  <ul>
+    <li>Different initializations lead to different results</li>
+    <li>Random initialization is used to break symmetry and make sure different hidden units can learn different things</li>
+    <li>Don't intialize to values that are too large</li>
+    <li>He initialization works well for networks with ReLU activations.</li>
+  </ul>
+  <h5>Optimization</h5>
+  <ul>
+    <li>The difference between gradient descent, mini-batch gradient descent and stochastic gradient descent is the number of examples you use to perform one update step.</li>
+    <li>You have to tune a learning rate hyperparameter α</li>
+    <li>With a well-turned mini-batch size, usually it outperforms either gradient descent or stochastic gradient descent (particularly when the training set is large).</li>
+    <li>Shuffling and Partitioning are the two steps required to build mini-batches</li>
+    <li>Momentum takes past gradients into account to smooth out the steps of gradient descent. It can be applied with batch gradient descent, mini-batch gradient descent or stochastic gradient descent.</li>
+    <li>You have to tune a momentum hyperparameter  ββ  and a learning rate  αα .</li>
+  </ul>
+</div>
