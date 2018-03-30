@@ -15,9 +15,20 @@ var messages = {
  */
 gulp.task('jekyll-build', function (done) {
     browserSync.notify(messages.jekyllBuild);
-    return cp.spawn( jekyll , ['build'], {stdio: 'inherit'})
+    return cp.spawn(jekyll, ['build', '--incremental'], {stdio: 'inherit'})
         .on('close', done);
 });
+
+/**
+ * Jekyll serve
+ * + handles permalinks and pretty urls better than BrowserSync
+ * - manual refresh
+ * - browser does not open automatically
+ */
+gulp.task('jekyll-serve', function(done){
+    return cp.spawn(jekyll, ['serve', '--incremental'], {stdio: 'inherit'})
+        .on('close', done);
+})
 
 /**
  * Rebuild Jekyll & do page reload
@@ -66,4 +77,4 @@ gulp.task('watch', function () {
  * Default task, running just `gulp` will compile the sass,
  * compile the jekyll site, launch BrowserSync & watch files.
  */
-gulp.task('default', ['browser-sync', 'watch']);
+gulp.task('default', ['watch', 'jekyll-serve']/*['browser-sync', 'watch']*/);

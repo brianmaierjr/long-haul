@@ -1,28 +1,38 @@
-title: Long Haul
-description: Long Form Jekyll theme built with SASS / COMPASS / SUSY
+title: Dani's Braindump
+description: My thoughts about the world
 
-url: http://brianmaierjr.github.com/long-haul
+url: https://tiefenauer.github.io
 baseurl: ""
 paginate_path: "blog/page:num/"
 permalink: blog/:title/
 
 markdown: kramdown
 highlighter: rouge
-gems: [jekyll-paginate]
+gems: [jekyll-paginate, jemoji]
 paginate: 5
+
+# kramdown:
+#   parse_block_html: true
 
 navigation:
  - title: Home
    url: /index.html
  - title: About
    url: /about
+ - title: Machine Learning
+   url: /ml
  - title: Contact
    url: /contact
 
+# plugins:
+#   - jemoji
+ 
 social:
-   github: brianmaierjr
-   twitter: brianmaierjr
-   facebook: brianmaierjr
-   email: brimaidesigns@gmail.com
-
-google_analytics: "UA-58263416-1"
+   github: tiefenauer
+   twitter: danitiefenauer
+   facebook: daniel.tiefenauer
+   linkedin: danieltiefenauer
+   xing: Daniel_Tiefenauer
+   email: daniel@tiefenauer.info
+      
+google_analytics: "UA-56931568-3"
