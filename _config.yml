@@ -2,7 +2,7 @@ title: Communs Lyon
 description: Connaissance autour des communs à Lyon
 
 url: liut.me
-baseurl: "/commun-lyon"
+baseurl: "/communs-lyon"
 paginate_path: "blog/page:num/"
 permalink: blog/:title/
 
