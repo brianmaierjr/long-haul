@@ -1,8 +1,8 @@
-title: Long Haul
-description: Long Form Jekyll theme built with SASS / COMPASS / SUSY
+title: Communs Lyon
+description: Connaissance autour des communs à Lyon
 
-url: http://brianmaierjr.github.com/long-haul
-baseurl: "/long-haul"
+url: liut.me
+baseurl: "/commun-lyon"
 paginate_path: "blog/page:num/"
 permalink: blog/:title/
 
@@ -20,9 +20,8 @@ navigation:
    url: /contact
 
 social:
-   github: brianmaierjr
-   twitter: brianmaierjr
-   facebook: brianmaierjr
-   email: brimaidesigns@gmail.com
+   github: slaapme
+   twitter: slaapme
+   facebook: fabriceliut
+   email: liut.fabrice@gmail.com
 
-google_analytics: "UA-58263416-1"
