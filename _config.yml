@@ -1,7 +1,7 @@
-title: Long Haul
-description: Long Form Jekyll theme built with SASS / COMPASS / SUSY
+title: 박정웅의 블로그
+description: 평소 관심있는 분야, 코딩중 이슈 사항을 공유하는 공간입니다.
 
-url: http://brianmaierjr.github.com/long-haul
+url: https://parkjungwoong.github.io/
 baseurl: ""
 paginate_path: "blog/page:num/"
 permalink: blog/:title/
@@ -20,9 +20,7 @@ navigation:
    url: /contact
 
 social:
-   github: brianmaierjr
-   twitter: brianmaierjr
-   facebook: brianmaierjr
-   email: brimaidesigns@gmail.com
+   github: myuoong
+   email: myuoong@gmail.com
 
-google_analytics: "UA-58263416-1"
+google_analytics: ""
