@@ -1,0 +1,65 @@
+---
+layout: post
+title:  "Jekyll사용시 폰트 변경법"
+date:   2018-09-25
+description: SCSS 파일을 변경하여 폰트 변경하는 방법
+---
+사용하는 테마에 따라 다를수 있지만
+내가 사용하는 [Long-haul][Long-haul] 테마에서는 scss파일로 관리한다. (아니 사실 그렇게 보인다.)
+scss는 잘 모르지만 gulpfile.js 를 보니 scss파일을 변경해서 해야될거 같이 생겼다.
+root 디렉토리에 있는 <b>gulpfile.js</b> 내용을 살펴보
+
+{% highlight javascript %}
+gulp.task('sass', function () {
+    return gulp.src('assets/scss/style.scss') //이 파일을 읽어
+        .pipe(sass({
+            includePaths: ['scss'],
+            onError: browserSync.notify
+        }))
+        .pipe(prefix(['last 3 versions'], { cascade: true }))
+				.pipe(cssnano())
+        .pipe(gulp.dest('_site/assets/css')) //여기
+        .pipe(browserSync.reload({stream:true})) 
+        .pipe(gulp.dest('assets/css')); //여기로 보내는 작업을함
+});
+{% endhighlight %}
+
+미리 말해두지만 나는 gulp, scss에 대해서 잘 알지 못한다.
+하지만 경험상 assert/scss/style.scss 에서 파일을 읽어 gulp.dest('경로') 로 뿌려주는거 같고
+명령어 인자로 sass를 받는거 같이 생겼으니 `gulp sass` 로 실행할거 같음..
+
+그럼 진짜 그런지 assert/scss/style.scss의 파일을 변경하고 명령어를 실행해본다.
+
+`assert/scss/style.scss` 내용을 살펴보면
+
+{% highlight scss %}
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,800);
+@import url(https://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic);
+// Import fonts 나눔고딕 컨C컨V
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+{% endhighlight %}
+
+앗 그런데 폰트설정관련 비스무리한것들이 안보인다..
+
+{% highlight scss %}
+// Site configuration
+@import "config"; 
+{% endhighlight %}
+import 문 바로 아래를 보니 공통 설정값을 따로 관리하는듯한 놈이 보인다.
+
+`assert/scss/_config.scss` 내용을 살펴보면 제일 밑에 폰트관련 변수? 설정이 보인다.
+
+{% highlight scss %}
+//'Nanum Gothic'을 추가 한다.
+$sans-serif: "Open Sans", Helvetica, Arial, 'Nanum Gothic', sans-serif;
+$serif: "PT Serif", Georgia, Times, 'Nanum Gothic', serif;
+{% endhighlight %}
+
+import와 폰트 설정이 끝났고 이제 gulp명령어를 실행시켜보자
+`gulp sass`
+
+뭔가 동작 후 _site/asserts/css/style.css 파일에 폰트관련 설정이 추가된걸 확인
+크롬 디버거로 font-family 값에 Nanum Gothic 설정 추가, 폰트 파일 로드 확인되면 폰트가 추가된것이다.
+
+
+[Long-haul]: https://github.com/brianmaierjr/long-haul

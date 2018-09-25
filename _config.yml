@@ -16,11 +16,9 @@ navigation:
    url: /index.html
  - title: About
    url: /about
- - title: Contact
-   url: /contact
 
 social:
-   github: myuoong
+   github: parkjungwoong
    email: myuoong@gmail.com
 
 google_analytics: ""
