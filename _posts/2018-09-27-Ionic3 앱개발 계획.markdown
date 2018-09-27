@@ -1,0 +1,36 @@
+---
+layout: post
+title:  "Ionic3 기반 앱 개발 계획"
+date:   2018-09-26
+description: Ionic3, NodeJS를 이용한 앱 개발 탬플릿 개발을 위한 계획
+---
+2016년쯤 Ionic으로 앱개발할 땐 버전1.. 그것도 베타 정도 였던거 같은데 벌써 버전3까지 나왔다.
+사이드 프로젝트에서 앱개발을 맡게되어 어떤걸로할까 고민중에.. 예전 Ionic으로 만든 앱이 생각보다 네이티브급 성능을 보여줬기에
+Ionic으로 개발해보기로 했다.
+TypeScript를 제외한 나머지 과제들은 이미 해본것들이지만 워낙 오래전(2년전..) 기억들이라 어디서 부터 시작할지 정리해 보았다.
+
+## 선행 과제
+* Ionic <b>3</b>
+    * AngularJS <b>4</b>
+    * TypeScript
+* NodeJS <b>8</b>
+
+## 도전 과제
+* RestAPI 통신이 가능한 APP 템블릿
+* 로그인 기능
+* 간단한 리스트 뷰
+
+## 계획
+1. Ionic 개발 환경 구축
+2. Ionic 리스트 뷰
+3. Ionic 로그인 폼
+4. NodeJS Web Server (간단한 JSON값 주고 받는)
+5. Ionic HTTP통신 기능
+6. Ionic 로컬 저장소 기능
+
+## 참고 링크
+[Ionic Doc(영문)] [Ionic Ref], [Ionic 강의(YouTube)] [Ionic YouTube], [TypeScript(한글)] [TypeScript Ref], 
+
+[Ionic Ref]: https://ionicframework.com/docs/intro/installation/
+[Ionic YouTube]: https://www.youtube.com/user/thruthesky/featured
+[TypeScript Ref]: https://typescript-kr.github.io/
