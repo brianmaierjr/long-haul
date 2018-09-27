@@ -55,8 +55,13 @@ $sans-serif: "Open Sans", Helvetica, Arial, 'Nanum Gothic', sans-serif;
 $serif: "PT Serif", Georgia, Times, 'Nanum Gothic', serif;
 {% endhighlight %}
 
-import와 폰트 설정이 끝났고 이제 gulp명령어를 실행시켜보자
-`gulp sass`
+import와 폰트 설정이 끝났고 이제 명령어를 실행시켜보자
+{% highlight bash %}
+gulp sass
+bundle exec jekyll build
+bundle exec jekyll serve
+{% endhighlight %}
+
 
 뭔가 동작 후 _site/asserts/css/style.css 파일에 폰트관련 설정이 추가된걸 확인
 크롬 디버거로 font-family 값에 Nanum Gothic 설정 추가, 폰트 파일 로드 확인되면 폰트가 추가된것이다.
