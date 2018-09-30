@@ -1,0 +1,54 @@
+---
+layout: post
+title:  "Ionic3 개발 환경 설정"
+date:   2018-09-30
+description: Ionic3 개발 환경 설정과 기본 예제를 만들어본다.
+---
+#### 1.Ionic 개발 도구 설치
+Ionic은 CLI을 통해 개발환경을 제공하기 때문에 아래와 같은 개발 도구를 설치가 필요하다. 
+
+{% highlight bash %}
+//Node 설치
+//MacOS의 경우 Xcode설치
+sudo npm install -g ionic cordova //Ionic CLI Tool을 npm을 통해 설치
+{% endhighlight %}
+
+[Node 설치 참고] [NodeInstallLink]  
+[Xcode 설치 참고] [XcodeLink] (MacOS의 경우)
+
+#### 2.설치 확인
+npm과 ionic 설치 확인 후 ionic으로 생성한 앱을 브라우저 상에서 실행해보자
+{% highlight bash %}
+//현재 설치된 버전이 나오면 정상
+npm -v
+ionic -v
+
+//ionic helloWorld라는 앱이름으로 blank 테마로 앱 생성
+ionic start helloWorld blank
+cd helloWorld
+ionic serve //브라우저로 실행
+{% endhighlight %}
+
+#### 3.결과물 확인
+`serve`명령어로 실행시 크롬 브라우저를 통해서 앱의 예상 결과물을 실시간으로 확인가능하다.
+크롬 브라우저에서 <span style="color: red">동그라미</span> 친 부분 클릭 시 스마트폰 해상도로 변경할수 있다.
+<figure>
+	<img src="{{ '/assets/img/post/20180930_img1.png' | prepend: site.baseurl }}" alt="크롬디버그방법"> 
+	<figcaption>크롬 브라우저를 통한 디버그</figcaption>
+</figure>
+
+
+> ###### 브라우저에서 빈화면의 앱이 보인다면 개발환경 세팅이 완료된것이다.
+> ###### 다음은 많이 쓰이는 리스트 뷰를 만들어 보도록 하자.
+
+[NodeInstallLink]: https://nodejs.org/en/
+[XcodeLink]: https://developer.apple.com/kr/xcode/
+
+
+
+
+
+
+
+
+

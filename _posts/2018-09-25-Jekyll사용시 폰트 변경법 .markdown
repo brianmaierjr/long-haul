@@ -36,7 +36,7 @@ gulp.task('sass', function () {
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,800);
 @import url(https://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic);
 // Import fonts 나눔고딕 컨C컨V
-@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url(https://fonts.googleapis.com/earlyaccess/nanumgothic.css);
 {% endhighlight %}
 
 앗 그런데 폰트설정관련 비스무리한것들이 안보인다..
