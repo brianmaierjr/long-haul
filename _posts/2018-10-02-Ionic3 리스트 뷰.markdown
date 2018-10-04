@@ -1,0 +1,69 @@
+---
+layout: post
+title:  "Ionic3 (2) 리스트 뷰"
+date:   2018-10-02
+description: Ionic3 리스트 뷰
+---
+#### 1.Ionic UI 컴포넌트
+Ionic에서는 많은 UI컴포넌트를 제공하고 있다.\\
+기본 제공해주는 컴포넌트만 20가지가 넘기 때문에 개발시간을 굉장히 단축시킬수 있음!
+개발에 앞서 [기본 컴포넌트] [IonicComponetLink]를 먼저 살펴보는걸 추천!
+
+#### 2. List View
+앞 글에서 blank 프로젝트를 생성했다면 다음과 같은 구조의 프로젝트가 생성되었을 것이다.
+<figure>
+	<img src="{{ '/assets/img/post/20181002_img1.png' | prepend: site.baseurl }}" alt="프로젝트 구조"> 
+	<figcaption>프로젝트 구조</figcaption>
+</figure>
+
+이 글에선 List View를 만들어 보는것이기 때문에 네모칸에 있는 파일만 보도록하자!
+자세한 프로젝트 구조는 나중에 다시 정리하여 살펴보도록한다.
+
+* home.ts 파일을 열어 string 배열을 추가해보자
+{% highlight javascript %}
+import { Component } from '@angular/core';
+import { NavController } from 'ionic-angular';
+
+@Component({
+  selector: 'page-home',
+  templateUrl: 'home.html'
+})
+export class HomePage {
+
+  items: string[] = ['1','2','3']; //리스트로 보여줄 string 배열
+
+  constructor(public navCtrl: NavController) {}
+}
+{% endhighlight %}
+
+* 다음으로 home.html 파일을 열어 list view를 추가해보자, 기존 ion-content 부분을 지우고 list view를 추가한다. 
+{% highlight html %}
+<ion-content>
+  <ion-list>
+    <button ion-item *ngFor="let item of items">
+      { { item } }
+    </button>
+  </ion-list>
+</ion-content>
+{% endhighlight %}
+
+<figure>
+	<img src="{{ '/assets/img/post/20181002_img2.png' | prepend: site.baseurl }}" alt="리스트 "> 
+	<figcaption>List View 완성</figcaption>
+</figure>
+
+* ionic serve 명령어를 실행시키면 브라우저를 통해서 위 그림과 같이 List View가 나오는걸 볼수있다. 
+* 더 많은 list형태는 [여기] [ListComponet]에서 확인해보록 하자.
+
+> ###### 다음은 Form 입력과 입력값 유효성 검사에 대해서 알아보도록 한다.
+
+[IonicComponetLink]: https://ionicframework.com/docs/components/#overview
+[ListComponet]: https://ionicframework.com/docs/components/#lists
+
+
+
+
+
+
+
+
