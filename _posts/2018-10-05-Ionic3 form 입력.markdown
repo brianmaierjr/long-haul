@@ -1,0 +1,136 @@
+---
+layout: post
+title:  "Ionic3 (3) 입력 form"
+date:   2018-10-05
+description: Ionic3 form 입력과 유효성 검사에 대해 알아본다.
+---
+#### 1.Ionic input 컴포넌트
+앞 글에서 Ionic에서 많은 UI컴포넌트를 지원한다고 소개하였다.\\
+[Input 컴포넌트] [InputComponetLink]를 먼저 살펴보는걸 추천!
+
+#### 2. Input View 생성
+앞 글에서 blank 프로젝트를 생성했다면 다음과 같은 구조의 프로젝트가 생성되었을 것이다.
+<figure>
+	<img src="{{ '/assets/img/post/20181002_img1.png' | prepend: site.baseurl }}" alt="프로젝트 구조"> 
+	<figcaption>프로젝트 구조</figcaption>
+</figure>
+
+이 글에도 네모칸에 있는 파일만 보도록하자!
+
+* home.ts 파일을 열어 Input 변수값을 담을 변수와 addItem이라는 함수를 추가하였다.
+{% highlight javascript %}
+import { Component } from '@angular/core';
+import { NavController } from 'ionic-angular';
+
+@Component({
+  selector: 'page-home',
+  templateUrl: 'home.html'
+})
+export class HomePage {
+
+  items: string[] = ['1','2','3'];
+  newItem:string; //입력값을 저장할 변수
+  constructor(public navCtrl: NavController) {}
+  
+  //리스트의 마지막에 Input 값을 추가
+  addItem(){
+    this.items.push(this.newItem);
+    this.newItem = '';
+  }
+}
+{% endhighlight %}
+
+* 다음으로 home.html 파일을 열어 input View를 추가해보자 
+{% highlight html %}
+<ion-content>
+ <!-- 입력란을 추가한다.-->
+ <ion-list>
+    <ion-item>
+      <ion-label fixed>item name</ion-label>
+      <ion-input [(ngModel)]="newItem" type="text"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <button ion-button full (click)="addItem()">add item</button>
+  <hr>
+  <!-- END 입력란을 추가한다.-->
+  <ion-list>
+    <button ion-item *ngFor="let item of items">
+      { { item } }
+    </button>
+  </ion-list>
+</ion-content>
+{% endhighlight %}
+
+<figure>
+	<img src="{{ '/assets/img/post/20181005_img1.png' | prepend: site.baseurl }}" alt="Input 예시 화"> 
+	<figcaption>Input 값이 리스트 마지막에 추가되었다.</figcaption>
+</figure>
+
+* ionic serve 명령어를 실행 후 Input값 입력후 'add item' 버튼을 클릭해보자.\\
+리스트의 마지막에 입력값이 추가되었는가?\\
+성공했다 입력값 유효성 검사를 추가해보록하자.
+
+#### 3. Input 유효성 검사
+AngulrJS에서 form 유효성 검사를 쉽게 해줄수 있는 기능을 지원한다.\\
+자세한 예시는 [여기][FormCheckLink]에서 확인가능하다.\\
+이 글에서는 최대한 간단하게 구현해보도록한다.
+{% highlight javascript %}
+
+import { Component } from '@angular/core';
+import {AlertController, NavController} from 'ionic-angular';
+// AlertController 를 import 한다.
+
+@Component({
+  selector: 'page-home',
+  templateUrl: 'home.html'
+})
+export class HomePage {
+
+  items: string[] = ['1','2','3'];
+
+  newItem:string;
+
+  constructor(public navCtrl: NavController
+             ,public alertCtrl: AlertController) //생성자에 AlertController를 추가한다.
+  {}
+  //리스트의 마지막에 새로운 행 추가
+  addItem(){
+    if( this.checkInput() ) {
+      //입력값이 빈값일 경우 alet창 출력
+      this.alertCtrl.create({
+        title: 'Alert',
+        subTitle: 'item name is empty',
+        buttons:['확인']
+      }).present();
+    } else {
+      this.items.push(this.newItem);
+    }
+    this.newItem = '';
+  }
+
+  //입력값이 유효한지 검사
+  checkInput() : boolean{
+    return this.newItem === undefined || this.newItem.trim().length == 0;
+  }
+}
+{% endhighlight %}
+
+* 실행 결과를 확인해보자, item name 입력창이 빈값인 상태에서 add item 버튼을 클릭하였을때 경고창이 출력되면 성공이다.
+
+<figure>
+	<img src="{{ '/assets/img/post/20181005_img2.png' | prepend: site.baseurl }}" alt="Input 예시 화"> 
+	<figcaption>Input 값이 빈값이면 alert창이 출력된다.</figcaption>
+</figure>
+
+> ###### 다음은 RestAPI서버와 연동을 위한 HTTP 요청 기능을 추가해도록 하자.
+
+[InputComponetLink]: https://ionicframework.com/docs/components/#inputs
+[FormCheckLink]: https://www.joshmorony.com/advanced-forms-validation-in-ionic-2/
+
+
+
+
+
+
+
