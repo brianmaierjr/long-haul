@@ -123,7 +123,7 @@ export class HomePage {
 	<figcaption>Input 값이 빈값이면 alert창이 출력된다.</figcaption>
 </figure>
 
-> ###### 다음은 RestAPI서버와 연동을 위한 HTTP 요청 기능을 추가해도록 하자.
+> ###### 다음은 HTTP 요청 기능을 테스트할 NodeJS서버를 만들어 보도록하자.
 
 [InputComponetLink]: https://ionicframework.com/docs/components/#inputs
 [FormCheckLink]: https://www.joshmorony.com/advanced-forms-validation-in-ionic-2/
