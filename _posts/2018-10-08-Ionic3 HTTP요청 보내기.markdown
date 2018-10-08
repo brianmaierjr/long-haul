@@ -1,0 +1,121 @@
+---
+layout: post
+title:  "Ionic3 (5) HTTP 요청"
+date:   2018-10-08
+description: Ionic3 Http 요청 기능 추가하기
+---
+#### 1.HttpClientModule 세팅
+Ionic에서 HTTP Clinet 구현을 위해 AngulrJS에서 제공하는 [HttpClientModule] [HttpClientModuleLink]을 사용하였다.
+
+HttpClientModule 사용을 위해서는 먼저 import를 해야된다.\\
+`프로젝트경로/src/app/app.module.ts` 파일을 열어 아래와 같이 수정한다.
+
+{% highlight javascript %}
+import { HttpClientModule} from "@angular/common/http";//HttpClientModule을 추가한다. 
+
+imports: [
+    BrowserModule,
+    HttpClientModule, //HttpClientModule을 추가한다.
+    IonicModule.forRoot(MyApp)
+  ]
+{% endhighlight %}
+
+#### 2. Http요청 메소드 작성
+###### <span style="color: red">여기서는 삽입, 조회를 모두 get방식으로 처리하였지만 실제 운영에서는 RestAPI 형식에 맞는 http Method를 사용해야된다.</span>
+아래 코드와 같이 HttpClient를 이용하여 Http요청 처리를 할 수 있다.
+`request(url,param)` 이라는 함수는 요청 주소와 파라미터를 받아 서버에 Get방식으로 전송한다.\\
+이 함수를 이용하여 `addItem()`, `getItem()` 이라는 함수를 만들어 각각 서버에 저장, 조회 기능을 추가하였다.
+
+{% highlight javascript %}
+import { Component } from '@angular/core';
+import {AlertController, NavController} from 'ionic-angular';
+import {HttpClient} from "@angular/common/http"; //HttpClient 추가한다.
+
+@Component({
+  selector: 'page-home',
+  templateUrl: 'home.html'
+})
+export class HomePage {
+
+  items: string[] = [];
+
+  newItem:string;
+
+  constructor(public navCtrl: NavController
+             ,public alertCtrl: AlertController
+             ,public http: HttpClient) { //HttpClient 추가한다.
+    this.getItem(); //페이지가 로드 되면 서버로 부터 값을 요청한다.
+  }
+
+  //리스트의 마지막에 새로운 행 추가
+  addItem(){
+    if( this.checkInput() ) {
+      this.alertCtrl.create({
+        title: 'Alert',
+        subTitle: 'item name is empty',
+        buttons:['확인']
+      }).present();
+    } else {
+      this.request('addItem','item='+this.newItem);//서버에 값 저장
+      this.items.push(this.newItem);
+    }
+    this.newItem = '';
+  }
+
+  //입력값이 유효한지 검사
+  checkInput() : boolean{
+    return this.newItem === undefined || this.newItem.trim().length == 0;
+  }
+
+  //서버로 부터 값 가져오기
+  getItem(){
+    this.request('getItem','').then( (res:any[]) => {
+      res.forEach( item => {
+        this.items.push(item.item);
+      });
+    });
+  }
+
+  //http Get
+  request(url,param){
+    return this.http.get('http://localhost:3000/'+url+'?'+param).toPromise();
+  }
+}
+{% endhighlight %}
+
+#### 3. 동작 확인
+앞 코드에서 아래 처럼 각각 초기값을 주었다.\\
+앱에선 `items` 배열이 빈 값이라 리스트에는 빈값이 출력되어야하지만\\
+페이지 로드시 `getItem()`함수를 통해 서버의 `fakeItems` 값을 가져와 `items` 배열에 넣도록 수정하였다.
+{% highlight javascript %}
+items: string[] = []; //Ionic 앱에서 리스트 값의 초기값
+
+var fakeItems = [{item:'1'}]; //NodeJS서버에서 앱으로 보내줄 데이터 초기값
+});
+{% endhighlight %}
+
+<figure>
+	<img src="{{ '/assets/img/post/20181008_img1.png' | prepend: site.baseurl }}" alt="리스트"> 
+	<figcaption>fakeItems 배열에 있던 값이 앱상에서 확인</figcaption>
+</figure>
+
+다음으로 서버에 입력값이 저장되는지 확인해보자\\
+'서버에 저장!' 이라는 값을 입력 후 add item 버튼을 눌렀다.\\
+이후 앱을 새로고침하여도 기존 입력값이 남아있는걸 확인 할 수 있다.\\
+페이지 로드시 서버의 값을 가져오도록 되어있기 때문이다.
+<figure>
+	<img src="{{ '/assets/img/post/20181008_img2.png' | prepend: site.baseurl }}" alt="리스트"> 
+	<figcaption>새로고침 후 입력값 확인</figcaption>
+</figure>
+
+> ###### 다음은 서버가 아닌 로컬 데이터 저장소를 이용하여 입력값을 저장해보자
+
+
+
+[HttpClientModuleLink]: https://angular.io/guide/http
+
+
+
+
+
+

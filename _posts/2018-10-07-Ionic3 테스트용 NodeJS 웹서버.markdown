@@ -42,7 +42,8 @@ const server = http.createServer((req, res) => {
     //응답 설정
     res.statusCode = 200;
     res.setHeader('Content-Type', 'application/json');
-
+    res.setHeader("Access-Control-Allow-Origin", "*");
+    
     //요청값 파싱
     var q = url.parse(req.url, true).query;
     var path = url.parse(req.url, true).pathname;
