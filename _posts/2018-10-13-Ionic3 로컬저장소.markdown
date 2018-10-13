@@ -1,0 +1,126 @@
+---
+layout: post
+title:  "Ionic3 (6) 로컬 저장소"
+date:   2018-10-13
+description: Ionic3 로컬 저장소를 이용해보기
+---
+#### 1. IonicStorageModule 세팅
+로컬 저장소를 이용하기 위해서 [IonicStorageModule][IonicStorageModuleLink]를 이용한다.\\
+`IonicStorageModule`는 빌드된 OS에 따라 최적의 스토리지를 이용하여 KEY/VALUE형태로 사용할수 있게 지원한다.\\
+네이티브로 빌드될 경우 SQLITE, 그외 상황에 따라 LocalStorage, IndexedDB, WebSQL 을 사용한다.
+
+`IonicStorageModule` 사용을 위해서는 먼저 import를 해야된다.\\
+`프로젝트경로/src/app/app.module.ts` 파일을 열어 아래와 같이 수정한다.
+
+{% highlight javascript %}
+import {IonicStorageModule} from "@ionic/storage"; //IonicStorageModule을 추가한다. 
+
+imports: [
+    BrowserModule,
+    HttpClientModule, 
+    IonicStorageModule.forRoot(), //IonicStorageModule을 추가한다.
+    IonicModule.forRoot(MyApp)
+  ]
+{% endhighlight %}
+
+#### 2. 저장 메소드 작성
+[이전글][이전글Link]에서는 리스트 목록 작성시 HTTP통신을 통해 서버에 저장하도록 하였다.\\
+여기서는 해당 메소드 `addItem()`, `getItem()` 을 HTTP 통신 -> 로컬 저장으로 변경해보자.\\
+`request()` 메소드를 삭제하고 그자리에 `Storage`를 이용하여 로컬에 저장해보자.
+최종 코드는 아래와 같다.
+
+{% highlight javascript %}
+import { Component } from '@angular/core';
+import {AlertController, NavController} from 'ionic-angular';
+import { Storage } from '@ionic/storage'; //Import Storage
+
+@Component({
+  selector: 'page-home',
+  templateUrl: 'home.html'
+})
+export class HomePage {
+
+  items: string[] = [];
+
+  newItem:string;
+
+  constructor(public navCtrl: NavController
+             ,public alertCtrl: AlertController
+             ,private storage: Storage) { //Storage선언
+    this.getItem();
+  }
+
+  //리스트의 마지막에 새로운 행 추가
+  addItem(){
+    if( this.checkInput() ) {
+      this.alertCtrl.create({
+        title: 'Alert',
+        subTitle: 'item name is empty',
+        buttons:['확인']
+      }).present();
+    } else {
+      this.items.push(this.newItem);
+      this.storage.set('item', this.items); //로컬에 item이라는 키값으로 저장
+
+    }
+    this.newItem = '';
+  }
+
+  //입력값이 유효한지 검사
+  checkInput() : boolean{
+    return this.newItem === undefined || this.newItem.trim().length == 0;
+  }
+
+  //로컬에서 값 가져오기
+  getItem(){
+    //item이라는 키값으로 로컬 데이터 조회
+    this.storage.get('item').then((val) => {
+      if(val) {
+        val.forEach( item => {
+          this.items.push(item);
+        });
+      }
+    });
+  }
+}
+{% endhighlight %}
+
+#### 3. 동작 확인
+ionic serve 명령어를 통해 웹브라우저에서 실행 후 몇개의 값을 넣어보자\
+이후 크롬 디버깅옵션을 키고 Application 탭을 선택하면 아래와 같은 화면을 볼 수 있다.\
+key에 item, value에 입력한 값이 보인다면 정상적으로 동작한것이다.\
+만약 보이지 않는다면 하단 새로고침 버튼을 클릭하거나, IndexDB, LocalStorage 탭을 선택하여 보도록하자.
+<figure>
+	<img src="{{ '/assets/img/post/20181013_img1.png' | prepend: site.baseurl }}" alt="결과확인"> 
+	<figcaption>크롬 디버깅을 통해서 로컬에 저장됨을 확인</figcaption>
+</figure>
+
+<hr>
+개발환경 구축부터 로컬저장소까지 총 6가지 계획을 갖고 Ionic3에 대해서 간단하게 알아보았다.\\
+Ionic은 네이티브 앱 개발 경험이 없는 웹개발 개발자라면 정말 매력적인 기술이라고 생각한다.\\
+적은 러닝커브와 빠른 개발이 가능하여 프로토타입이나 개발 인력이 적은 곳에서 사용하기 적합하다.\\
+다만 아이폰의 경우 거의 네이티브에 가까운 앱 성능을 보여주지만 안드로이드의 경우 약간은 아쉬운 모습을 보여주었다.
+
+본 글은 Ionic을 맛보기 위한 글로 실제 운영을 위한 앱개발에 있어서는 부족함이 있지만 앞으로 Ionic으로 앱 개발을하며 발생한 이슈들에 대해서 포스팅할 예정이다.
+
+* Ionic 맛보기 링크
+1. [Ionic 개발 환경 구축] [개발환경구축]
+2. [Ionic 리스트 뷰] [리스트뷰]
+3. [Ionic 입력 폼] [입력폼]
+4. [NodeJS Web Server (간단한 JSON값 주고 받는)] [WebServer]
+5. [Ionic HTTP요청 기능] [HTTP요청기능]
+6. [Ionic 로컬 저장소 기능] [로컬저장소기능]
+
+[IonicStorageModuleLink]: https://ionicframework.com/docs/storage/
+[이전글Link]: https://parkjungwoong.github.io/blog/Ionic3-HTTP%EC%9A%94%EC%B2%AD-%EB%B3%B4%EB%82%B4%EA%B8%B0/
+
+[개발환경구축]: https://parkjungwoong.github.io/blog/Ionic3-%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD-%EC%84%A4%EC%A0%95/
+[리스트뷰]: https://parkjungwoong.github.io/blog/Ionic3-%EB%A6%AC%EC%8A%A4%ED%8A%B8-%EB%B7%B0/
+[입력폼]: https://parkjungwoong.github.io/blog/Ionic3-form-%EC%9E%85%EB%A0%A5/
+[WebServer]: https://parkjungwoong.github.io/blog/Ionic3-%ED%85%8C%EC%8A%A4%ED%8A%B8%EC%9A%A9-NodeJS-%EC%9B%B9%EC%84%9C%EB%B2%84/
+[HTTP요청기능]: https://parkjungwoong.github.io/blog/Ionic3-HTTP%EC%9A%94%EC%B2%AD-%EB%B3%B4%EB%82%B4%EA%B8%B0/
+[로컬저장소기능]: https://parkjungwoong.github.io/blog/Ionic3-%EB%A1%9C%EC%BB%AC%EC%A0%80%EC%9E%A5%EC%86%8C/
+
+
+
+
