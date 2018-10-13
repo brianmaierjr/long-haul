@@ -27,8 +27,7 @@ imports: [
 [이전글][이전글Link]에서는 리스트 목록 작성시 HTTP통신을 통해 서버에 저장하도록 하였다.\\
 여기서는 해당 메소드 `addItem()`, `getItem()` 을 HTTP 통신 -> 로컬 저장으로 변경해보자.\\
 `request()` 메소드를 삭제하고 그자리에 `Storage`를 이용하여 로컬에 저장해보자.
-최종 코드는 아래와 같다.
-
+[최종 코드] [finCode]는 아래와 같다.
 {% highlight javascript %}
 import { Component } from '@angular/core';
 import {AlertController, NavController} from 'ionic-angular';
@@ -113,6 +112,7 @@ Ionic은 네이티브 앱 개발 경험이 없는 웹개발 개발자라면 정�
 
 [IonicStorageModuleLink]: https://ionicframework.com/docs/storage/
 [이전글Link]: https://parkjungwoong.github.io/blog/Ionic3-HTTP%EC%9A%94%EC%B2%AD-%EB%B3%B4%EB%82%B4%EA%B8%B0/
+[finCode]: https://github.com/parkjungwoong/ionic3Ex
 
 [개발환경구축]: https://parkjungwoong.github.io/blog/Ionic3-%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD-%EC%84%A4%EC%A0%95/
 [리스트뷰]: https://parkjungwoong.github.io/blog/Ionic3-%EB%A6%AC%EC%8A%A4%ED%8A%B8-%EB%B7%B0/
