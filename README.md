@@ -28,7 +28,7 @@ If you really enjoy Long Haul and want to give me credit somewhere on the intern
 4. [Install Bundler](http://bundler.io/)
 5. Run `bundle install`
 6. Install gulp dependencies by running `npm install`
-7. Run Jekyll and watch files by running `gulp`
+7. Run Jekyll and watch files by running `bundle exec gulp`
 8. Customize and watch the magic happen!
 
 ## Site Settings
