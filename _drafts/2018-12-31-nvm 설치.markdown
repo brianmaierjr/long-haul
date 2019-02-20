@@ -1,0 +1,15 @@
+---
+layout: post
+title:  "brew를 이용한 NVM 설치 방법"
+date:   2018-12-31
+description: brew, zsh 사용 환경에서 NVM 설치
+---
+#### 1. NVM 설치
+{% highlight bash %}
+$ brew install nvm
+
+$ brew info nvm
+//관련 내용으로 따라서 진행
+
+
+{% endhighlight %}
