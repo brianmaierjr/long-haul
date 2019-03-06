@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Ionic3 FCM 연동(1)"
-date:   2018-12-01
+title:  "Ionic3 FCM 연동"
+date:   2018-12-13
 description: ionic3 환경에서 FCM 연동 및 테스트 방법
 ---
 #### 1. ionic 앱 생성
@@ -18,12 +18,7 @@ ionic cordova platform add android
 #### 2. firebase 프로젝트 생성
 [파이어베이스 콘솔] [콘솔주소]에 접속해서 firebase 프로젝트를 생성하여 google-services.json파일을 다운 받는다.
  
-다운 받은 파일을 프로젝트 최상위 경로(config.xml파일과 같은 위치)에 복사한다.
-
-<figure>
-	<img src="{{ '/assets/img/post/20181008_img1.png' | prepend: site.baseurl }}" alt="리스트"> 
-	<figcaption>fakeItems 배열에 있던 값이 앱상에서 확인</figcaption>
-</figure> 
+다운 받은 파일을 프로젝트 최상위 경로(config.xml 파일과 같은 위치)에 복사한다.
 
 #### 3. firebase 플러그인 설치
 [파이어베이스 플러그인] [파베플러그인주소] 참고하여 플러그인을 설치한다.
@@ -37,6 +32,7 @@ npm install --save @ionic-native/firebase
 {% highlight bash %}
 ionic cordova build android
 {% endhighlight %}
+
 빌드가 성공하면 일단 문제는 없는것이다.\\
 이제 코드를 작성 후 토큰값을 받아보자!
 
@@ -45,12 +41,8 @@ this.firebase.getToken()
   .then(token => console.log(`The token is ${token}`)) //이 값을 이용해서 푸시를 받을 수 있다.
   .catch(error => console.error('Error getting token', error));
 {% endhighlight %}
-적당한 곳에 위 코드를 작성 후 받은 토큰 값을 복사하자
 
-{% highlight bash %}
-ionic cordova build android
-{% endhighlight %}
-
+이제 파이어베이스 콘솔에서 푸시를 보내면 앱에서 푸시 알림을 확인 할 수 있다.
 
 [콘솔주소]: https://console.firebase.google.com/
 [파베플러그인주소]: https://ionicframework.com/docs/native/firebase/
