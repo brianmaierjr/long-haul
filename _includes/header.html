@@ -1,6 +1,6 @@
  <div class="header">
      <div class="container">
-         <h2 class="logo"><a href="{{ site.baseurl }}/">{{ site.title }}</a></h2>
+         <h3 class="logo"><a href="{{ site.baseurl }}/">{{ site.title }}</a></h3>
          <nav class="nav-collapse">
              <ul class="noList">
                  {% for link in site.navigation %}{% assign current = nil %}{% if page.url contains link.url or forloop.first and page.url == '/' or page.url == 'index.html' %}{% assign current = 'current' %}{% endif %}
