@@ -1,7 +1,7 @@
-title: MAContents Tech Blog.
-description: 콘텐츠솔루션 전투력 쩌는 개발자들
+title: MACONTENTS Tech Blog.
+description: 콘텐츠보안팀 '짠다'
 
-url: http://brianmaierjr.github.com/long-haul
+url: https://macontents.github.io
 baseurl: ""
 paginate_path: "blog/page:num/"
 permalink: blog/:title/
