@@ -1,7 +1,7 @@
-title: MAContents Tech Blog.
-description: 콘텐츠솔루션 전투력 쩌는 개발자들
+title: 콘텐츠보안팀 Tech Blog.
+description: Program '짠다' 블로그
 
-url: http://brianmaierjr.github.com/long-haul
+url: https://macontents.github.io
 baseurl: ""
 paginate_path: "blog/page:num/"
 permalink: blog/:title/
@@ -14,15 +14,11 @@ paginate: 5
 navigation:
   - title: Home
     url: /index.html
-  - title: About
-    url: /about
-  - title: Contact
-    url: /contact
 
 social:
   github: macontents
   twitter: 
   facebook: 
-  email: yoda@markany.com
+  email: wizard0113@naver.com
 
 google_analytics: "UA-58263416-1"
