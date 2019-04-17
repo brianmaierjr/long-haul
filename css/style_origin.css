@@ -676,7 +676,7 @@ html {
   box-sizing: inherit; }
 
 body {
-  font-family: "PT Serif", NanumGothic, Georgia, Times, serif;
+  font-family: "PT Serif", Georgia, Times, serif;
   line-height: 1.75;
   font-size: 112.5%;
   color: #111;
