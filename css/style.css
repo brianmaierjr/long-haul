@@ -1159,3 +1159,8 @@ CONTACT PAGE STYLING
     width: 48%;
     float: right;
     margin-right: 0; } }
+	
+  /***************
+GRAVATAR STYLING
+***************/
+	.gravatar{border-radius:50%;margin-left:10px}
