@@ -49,4 +49,9 @@ Nullam quis risus eget urna mollis ornare vel eu leo. Cras mattis consectetur pu
 
 우리가 흔하게 접하는 웹에서 사용되는 에디터(네이버, 다음, 구글 등)이 대부분 이지웍 에디터에 속하며 기본적으로 HTML을 이용하여 스타일을 적용하여 문장을 꾸미는 형태를 취하게 된다. 그래서 하루패드와 같은 마크다운 에디터의 View 영역의 내용을 복사하여 붙여넣기를 하면 대체적으로 View영역에서 보이는 그대로 복사되는 편이다. 다만, 붙여넣기 이후에 문장들을 수정하려고 할 떄 문제가 되는데, 이는 스타일이 포함된 태그가 수정과정에서 변형되면서 전체적인 영향을 끼치는 탓이다. 티스토리 블로그에서는 쉽지 않고... 워드프레스의 경우에는 마크다운으로 작성된 포스트를 HTML로 변환해주는 기능을 활용하는 것이 좋다. 결론은, 복사해서 붙여넣기하면 가급적이면 본문은 수정하지 않는 것이 좋다.
 
+본인 게시글에 Facebook 댓글Plugin 을 붙이고자 한다면 아래 코드를 markdown 파일 하단에 넣어주세요.
+```
+<div class="fb-comments" data-href="https://macontents.github.io" data-width="700" data-numposts="10"></div>
+```
+
 <div class="fb-comments" data-href="https://macontents.github.io" data-width="700" data-numposts="10"></div>
