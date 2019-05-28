@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://macontents.github.io/sitemap.xml

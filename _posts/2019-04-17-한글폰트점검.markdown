@@ -51,7 +51,7 @@ Nullam quis risus eget urna mollis ornare vel eu leo. Cras mattis consectetur pu
 
 본인 게시글에 Facebook 댓글Plugin 을 붙이고자 한다면 아래 코드를 markdown 파일 하단에 넣어주세요.
 ```
-<div class="fb-comments" data-href="https://macontents.github.io" data-width="700" data-numposts="10"></div>
+<div class="fb-comments" data-href="https://macontents.github.io/md파일명" data-width="700" data-numposts="10"></div>
 ```
 
-<div class="fb-comments" data-href="https://macontents.github.io" data-width="700" data-numposts="10"></div>
+<div class="fb-comments" data-href="https://macontents.github.io/2019-04-17-한글폰트점검.markdown" data-width="700" data-numposts="10"></div>
