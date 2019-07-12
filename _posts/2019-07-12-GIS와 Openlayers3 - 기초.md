@@ -53,7 +53,7 @@ TMS도 마찬가지로 미리 맵을 다운받기에는 상당한 시간과 메�
 파일 생성갯수가 제한이 있으므로 미처 지도 이미지를 다 받지 못합니다.
 그래서 우리는 지도 이미지를 로컬이 아닌 국토지리정보원의 vWorld 지도 이미지를 사용해 봅니다.
 
-<img src="https://github.com/macontents/macontents.github.io/blob/master/images/2019-07-12-GIS-4-1.JPG?raw=true" width="500" height="300">
+<img src="https://github.com/macontents/macontents.github.io/blob/master/images/2019-07-12-GIS-4-1.JPG?raw=true" width="500" height="300"><br>
 크롬으로 vWorld 사이트의 지도 이미지를 염탐해 봅니다.
 개발자 도구의 Network 탭을 보시면 여러장의 png 지도 이미지를 받은 것을 보실 수 있습니다.
 그 중하나의 주소를 자세히 보면 "http://xdworld.vworld.kr:8080/2d/Base/service/8/217/100.png" 를 확인하실 수 있습니다.
@@ -67,7 +67,7 @@ TMS도 마찬가지로 미리 맵을 다운받기에는 상당한 시간과 메�
 Openlayers를 이용하여 맵을 표현하려면 기본적으로 이클립스로 개발하여 톰캣 서버를 이용해야 jsp 페이지 한장을 확인하실 수 있습니다.
 물론 귀찮으므로 https://liveweave.com/ 사이트에서 예제 또는 기능 테스트를 할 수 있도록 합니다.
 사이트에 접속하여 화면 구성을 보면
-<img src="https://github.com/macontents/macontents.github.io/blob/master/images/2019-07-12-GIS-5-1.JPG?raw=true" width="500" height="300">
+<img src="https://github.com/macontents/macontents.github.io/blob/master/images/2019-07-12-GIS-5-1.JPG?raw=true" width="500" height="300"><br>
 HTML 구역
 ````
 <!DOCTYPE html>
