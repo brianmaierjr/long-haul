@@ -1,0 +1,111 @@
+---
+layout: post
+title:  "elsticsearch 6.4->7.2로 업그래이드 하기"
+date:   2019-07-17
+description: elsticsearch 6.4->7.2로 업그래이드 하기
+---
+
+## 6.4 -> 7.2 버전으로 변경
+여기서는 전체 노드 중지 후 업그래이드 하는 방법을 설명합니다.
+
+## 작업 프로세스
+1. elasticsearch 7.2 버전 다운로드 및 설정
+    ```
+    curl -L -O https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.2.0-linux-x86_64.tar.gz
+    tar -xvf elasticsearch-7.2.0-linux-x86_64.tar.gz
+    
+    cd elasticsearch-7.2.0-linux-x86_64/conf
+    vi elasticsearch.yml
+    ```
+    
+    _elasticsearch.yml_
+    
+    ```
+    #모든 노드가 동일한 클러스터명을 갖고 있어야된다.
+    cluster.name: 클러스터명
+   
+    #노드 이름은 겹치지 않도록 한다. 
+    node.name: ${HOSTNAME}
+    
+    #노드 설정은 각자 환경에 맞게 설정
+    node.master: true
+    node.data: true
+    
+    #!중요! - 6.4버전에서 사용했던 경로와 동일하게 수정
+    path.data: /home/user/data
+    path.logs: /home/user/log
+    
+    #네트워크 정보 기입
+    network.host: _site:ipv4_
+    network.bind_host: _site:ipv4_
+    http.port: 9200
+    
+    #클러스터를 구성하는 노드가 특정 포트로 통신해야된다면 설정
+    transport.port: 9301
+    
+    #클러스터를 구성할 노드가 다른 호스트에 있다면 작성, 자기 자신을 포함하여 작성
+    #network.host or network.bind.host 설정 내용과 동일해야됨
+    discovery.seed_hosts: ["10.0.0.5","10.0.0.4"]
+    #클러스터를 구성할 노드의 노드명, node.name 설정 내용과 동일해야됨
+    cluster.initial_master_nodes: ["nodev7","nodev6"]
+    
+    #그 외 필요한 설정은 각자 환경에 맞게 작성
+    ```
+    
+    _jvm.options_
+    ```
+    #기존에 사용하던 파일로 변경
+    cp -p 기존 새로운
+    ```
+    
+    사용중인 플러그인이 있다면 업그래이드
+    ```
+    bin/elasticsearch-plugin 스크립트를 사용하여 기존 설치된 플러그인들을 업데이트
+    ```
+    
+2. 샤드 할당 중지
+    ```
+    PUT _cluster/settings
+    {
+      "persistent": {
+        "cluster.routing.allocation.enable": "primaries"
+      }
+    }
+    ```
+    
+3. 색인 중지
+    ```
+    POST _flush/synced
+    ```    
+4. 전체 노드 셧다운
+5. 7.2 버전으로 실행
+6. 로그 확인
+    ```
+    [WARN ][o.e.c.c.ClusterFormationFailureHelper] [node-v6] master not discovered yet, this node has not previously joined a bootstrapped (v7+) cluster, and this node must discover master-eligible nodes [node-v7-1, node-v7-2] to bootstrap a cluster: have discovered []; discovery will continue using [ip주소:9301, ip주소:9301] from hosts providers and [{node-v6}{aqGBm9tgR1ORRxJ-SYOJXg}{UP7OA0DaQFyQn1e47Hq3Yg}{ip주소}{ip주소:9301}{ml.machine_memory=4125224960, xpack.installed=true, ml.max_open_jobs=20}] from last-known cluster state; node term 0, last-accepted version 0 in term 0
+    ```    
+7. 차례로 다른 노드 실행
+8. 2번 설정 원복
+     ```
+     PUT _cluster/settings
+     {
+       "persistent": {
+         "cluster.routing.allocation.enable": null
+       }
+     }
+     ```
+9. 클러스터 정보 확인
+    ```
+    GET http://~~:9200/_cluster/health?pretty=true
+    ```
+    
+## 네트워크 문제로 안될경우 확인 사항
+* 포트 리슨중인지 확인
+    ```
+    netstate -anp | grep 포트 번호
+    ```
+    
+* elasticsearch 설정 확인
+    ```
+    # 이 설정은 7버전부터 필수 설정으로 변경되었으니 누락되었다면 작성 필요
+    cluster.initial_master_nodes: 
+    ```
