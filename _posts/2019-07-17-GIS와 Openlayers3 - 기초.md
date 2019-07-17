@@ -41,7 +41,7 @@ HTML 구역
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ol3/3.17.1/ol.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ol3/3.17.1/ol.css" type="text/css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ol3/3.17.1/ol.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/proj4js/2.2.2/proj4.js"></script>
 </head>
