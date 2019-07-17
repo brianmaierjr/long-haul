@@ -14,14 +14,15 @@ GIS를 본격적으로 해보실 분은 이 사이트를 즐겨찾기를 등록 
 #### 2. Openlayers3 라이브러리 호출
 
 앞서 말씀드린 예제 실습 사이트 https://liveweave.com/ 에서 Openlayers3 라이브러리를 호출 합니다.
-호출시 라이브러리의 주소는 https://openlayers.org/en/v3.19.1/build/ol.js 입니다.
+호출시 Openlayers3의 라이브러리 주소는 https://cdnjs.cloudflare.com/ajax/libs/ol3/3.17.1/ol.js 입니다.
+사용시 필요한 css와 proj4 좌표체계 변환 라이브러리도 함께 호출 합니다.
 
 HTML 구역
 ````
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ol3/3.17.1/ol.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ol3/3.17.1/ol.css" type="text/css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ol3/3.17.1/ol.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/proj4js/2.2.2/proj4.js"></script>
 </head>
