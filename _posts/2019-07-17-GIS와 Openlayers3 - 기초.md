@@ -79,7 +79,7 @@ proj4.defs( "EPSG:5186", "+proj=tmerc +lat_0=38 +lon_0=127 +k=1 +x_0=200000 +y_0
 
 var baseLayer= new ol.layer.Tile({ // TMS 레이어
   source: new ol.source.OSM({
-    url: 'http://xdworld.vworld.kr:8080/2d/Base/service/{z}/{x}/{y}.png'
+    url: "http://xdworld.vworld.kr:8080/2d/Base/service/{z}/{x}/{y}.png"
   }) 
 });
 
