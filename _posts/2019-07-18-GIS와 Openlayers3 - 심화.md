@@ -67,7 +67,7 @@ map.addLayer( vectorLayer );
 
 전체적인 소스 코드로는
 JSP 구역
-````
+```
 proj4.defs( "EPSG:5186", "+proj=tmerc +lat_0=38 +lon_0=127 +k=1 +x_0=200000 +y_0=600000 +ellps=GRS80 +units=m +no_defs" ); // 5186 좌표선언
 
 var baseLayer= new ol.layer.Tile({ // TMS 레이어
@@ -122,7 +122,7 @@ for( var i=0; i<3; i++ ) {
 
   map.addLayer( vectorLayer );
 }
-````
+```
 
 이며 결과 화면으로는
 
@@ -167,10 +167,10 @@ setZoom( 18 ) 로 지도의 줌 레벨을 18단계로 당긴다는 내용 입니
 
 결과로는
 소스 적용 전
-<img src="https://github.com/macontents/macontents.github.io/blob/master/images/2019-07-18-GIS-2-1.JPG?raw=true" width="500" height="300"><br>
+<br><img src="https://github.com/macontents/macontents.github.io/blob/master/images/2019-07-18-GIS-2-1.JPG?raw=true" width="500" height="300"><br>
 
 소스 적용 후
-<img src="https://github.com/macontents/macontents.github.io/blob/master/images/2019-07-18-GIS-2-2.JPG?raw=true" width="500" height="300"><br>
+<br><img src="https://github.com/macontents/macontents.github.io/blob/master/images/2019-07-18-GIS-2-2.JPG?raw=true" width="500" height="300"><br>
 
 위와같이 지도를 보는 시점이 변경되게 됩니다.
 
