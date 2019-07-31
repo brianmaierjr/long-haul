@@ -1,0 +1,95 @@
+---
+layout: post
+title:  "Spring Batch의 핵심 개념 요약"
+date:   2019-07-31
+description: Spring Batch에서 사용하는 핵심 개념
+---
+
+> 본 내용은 [Spring Batch 4.1 버전](https://docs.spring.io/spring-batch/4.1.x/reference/html/index.html) 가이드 문서를 기준으로 작성되었습니다.
+
+## 목차
+- [구성](#구성)
+- [처리 흐름](#처리-흐름)
+- [Job](#job)
+- [Job Instance](#job-instance)
+- [Job Execution](#job-execution)
+- [Step](#step)
+- [Step Execution](#step-execution)
+- [Execution Context](#execution-context)
+- [Job Repository](#job-repository)
+- [Job Launcher](#job-launcher)
+- [Item Reader](#item-reader)
+- [Item Writer](#item-writer)
+
+## 구성
+<figure>
+	<img src="{{ 'https://docs.spring.io/spring-batch/4.1.x/reference/html/images/spring-batch-layers.png'}}" alt="결과확인"> 
+	<figcaption>Spring Batch 계층 구조</figcaption>
+</figure>
+
+   * Application : 개발자가 직접 작성한 비지니스 코드
+   * Batch Core : 배치 수행에 필요한 작업 제어
+   * Batch Infra : application, core에서 모두 사용되며, 읽고 쓰기 위한 자원들
+   
+   
+## 처리 흐름
+<figure>
+	<img src="{{ 'https://docs.spring.io/spring-batch/4.1.x/reference/html/images/spring-batch-reference-model.png'}}" alt="결과확인"> 
+	<figcaption>Batch Stereotypes</figcaption>
+</figure>
+
+   1. Job Launcher가 Job을 실행한다.
+   2. Job은 여러개의 Step을 갖을 수 있으며 Job에 정의된 Step들이 실행 된다.
+   3. Step은 ItemReader, ItemProcessor, ItemWriter를 갖을 수 있으며 이를 수행한다.
+   4. 각 단계에서 Job repository에서 필요한 정보를 가져올 수 있다.
+   
+## Job
+<figure>
+	<img src="{{ 'https://docs.spring.io/spring-batch/4.1.x/reference/html/images/job-heirarchy.png'}}" alt="결과확인"> 
+	<figcaption>Job Hierarchy</figcaption>
+</figure>
+
+Job은 Step 인스턴스의 컨테이 (Step의 동작에 관여)\\
+Step의 결합, 순서, 재시작, 등 지정
+   
+## Job Instance
+논리적 작업의 실행 개념, job인스턴스는 여러개의 Job Execution을 갖을 수 있음(Job Execution 묶음 단위)\\
+다른 Job instance와 구분은 Job parameter로 구분\\
+Job instance = Job + Job Parameter\\
+(ex) 1시간 마다 쿠폰을 보내는 Job이 있을 경우, 1시 발송 Job, 2시 발송 Job 은 같은 Job을 하지만 Job paramter가 다르기에 다른 job instance이다. 
+
+## Job Execution
+Job의 실행을 나타내며 실행 중 발생하는 값의 일차 저장 매커니즘 (시작, 종료 시간, 상태, 등)\\
+Job Execution의 완료는 성공 또는 실패어야 한다.
+
+## Step
+<figure>
+	<img src="{{ 'https://docs.spring.io/spring-batch/4.1.x/reference/html/images/jobHeirarchyWithSteps.png'}}" alt="결과확인"> 
+	<figcaption>Job Hierarchy With Steps</figcaption>
+</figure>
+
+Step은 배치의 순차 처리 단위, 실제 작업 처리 정보가 담겨있음\\
+하나의 Job에 여러개의 Step이 있을 수 있음
+
+## Step Execution
+Step을 실행하는 단일 시도, 이전 Step이 실패하면 Step Execuption은 생성되지 않는다.\\
+트랜젝션에 대한 데이터가 포함되어 있다.
+
+## Execution Context
+StepExecution, JobExecution 객체 범위에서 접근할 수 있는 상태 저장소\\
+Key/Value 형태이다.
+
+## Job Repository
+Job Launcher, Job, Step에 CRUD 작업을 제공
+
+## Job Launcher
+Job과 Job Parameter를 받는 인터페이스로 Job Repository로 부터 실행할 Job을 조회 후 Job을 실행 시키는 형식
+
+## Item Reader
+Step에 대한 Input을 제공하며 읽을 데이터가 없으면 null을 반환한다.
+
+## Item Writer
+Step에 대한 Output을 제공, 한티임에 하나의 배치, chunk 만큼 출력한다.
+
+## Item Processor
+비지니스 로직을 처리하며 Reader로 읽은 항목이 무효인 경우 null 반환햐야 한다.
