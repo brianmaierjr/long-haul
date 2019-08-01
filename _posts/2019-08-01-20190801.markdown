@@ -1,0 +1,232 @@
+---
+layout: post
+title:  "Spring Batch 설정과 실행"
+date:   2019-08-01
+description: Spring Batch 설정과 실행
+---
+
+> 본 내용은 [Spring Batch 4.1 버전](https://docs.spring.io/spring-batch/4.1.x/reference/html/index.html) 가이드 문서를 기준으로 작성되었습니다.
+
+## 목차
+- [재시작](#재시작)
+- [Job 인터셉트](#job-인터셉트)
+- [파라미터 검사](#파라미터-검사)
+- [자바 Config](#자바-config)
+- [Job Repository](#job-repository)
+- [Job Launcher](#job-launcher)
+- [Job 실행](#job-실행)
+
+Job 객체는 Step을 위한 단순한 컨테이너처럼 보일 수 있지만, 개발자가 알아야 하는 많은 구성 옵션이 있다. 더욱이, Job의 실행 방법과 그 실행 중 메타 데이터가 어떻게 저장될 것인지에 대한 많은 고려사항이 있다.
+
+``` java
+@Bean
+public Job footballJob() {
+    return this.jobBuilderFactory.get("footballJob")
+                     .start(playerLoad())
+                     .next(gameLoad())
+                     .next(playerSummarization())
+                     .end()
+                     .build();
+}
+```
+
+일반적으로 Job과 Job에 해당되는 Step들은 JobRepository를 사용한다. JobRepository의 설정은 BatchConfigurer에 의해 핸들링 된다.
+
+## 재시작
+``` java
+@Bean
+public Job footballJob() {
+    return this.jobBuilderFactory.get("footballJob")
+                     .preventRestart() //재시작 방지
+                     ...
+                     .build();
+}
+```
+Job이 중단된 시점부터 다시 시작하는것이 가장 좋은 방향이지만, 이를 웒치 않을 경우 **preventRestart**를 지정하면 된다.\\
+만약 재시작이 불가한 Job을 다시 수행할 경우 **JobRestartException** 이 발생한다.\\
+재시작의 판단 기준은 JobInstance에 완료되지 않은 JobExecution이 있을 경우이다.
+
+## Job 인터셉트
+``` java
+public interface JobExecutionListener {
+
+    void beforeJob(JobExecution jobExecution);
+
+    void afterJob(JobExecution jobExecution);
+
+}
+
+@Bean
+public Job footballJob() {
+    return this.jobBuilderFactory.get("footballJob")
+                     .listener(sampleListener()) //인터셉터 등록
+                     ...
+                     .build();
+}
+```
+JobExecutionListener 인터페이스를 구현 후 listener에 등록, Job 실행, 끝을 핸들링할때 사용하며, afterJob은 성공, 실패와 상관없이 수행된다.
+
+``` java
+// afterJob에서 JobExecution의 경과 확인 예시
+public void afterJob(JobExecution jobExecution){
+    if( jobExecution.getStatus() == BatchStatus.COMPLETED ){
+        //job success
+    }
+    else if(jobExecution.getStatus() == BatchStatus.FAILED){
+        //job failure
+    }
+}
+```
+
+## 파라미터 검사
+**DefaultJobParametersValidator** 을 상속 받아서 구현할 수 있다. 
+``` java
+@Bean
+public Job job1() {
+    return this.jobBuilderFactory.get("job1")
+                     .validator(parametersValidator())
+                     ...
+                     .build();
+}
+```
+
+## 자바 Config
+**@EnableBatchProcessing** 어노테이션과 **두개의 빌더(JobBuilderFactory, StepBuilderFactory)** 사용하여 설정 할 수 있다.\\
+**@EnableBatchProcessing** 어노테이션은 다른 스프링의 Enable**과 비슷하게 동작하며 배치 Job을 구성하는 기본 설정을 제공한다.\\
+기본 구성은 StepScope에 따라 인스턴스가 생성될때 autowire할 수 있는 몇가지 Bean이 포함된다.
+
+* JobRepository - bean name "jobRepository"
+* JobLauncher - bean name "jobLauncher"
+* JobRegistry - bean name "jobRegistry"
+* PlatformTransactionManager - bean name "transactionManager"
+* JobBuilderFactory - bean name "jobBuilders"
+* StepBuilderFactory - bean name "stepBuilders"
+
+또한 **BatchConfigurer**는 Spring Batch의 코어 설정 인터페이스로 커스텀이 필요하다면 이 인터페이스를 구현하면 된다.\\
+일반적으로 **DefaultBatchConfigurer**을 상속 받아 필요한 설정만 재정의한다.\\
+이후 JobBuilderFactory, StepBuilderFactory를 통ㅇ해 배치 작업을 구성한다.
+
+``` java
+@Configuration
+@EnableBatchProcessing
+@Import(DataSourceConfiguration.class)
+public class AppConfig {
+
+    @Autowired
+    private JobBuilderFactory jobs;
+
+    @Autowired
+    private StepBuilderFactory steps;
+
+    @Bean
+    public Job job(@Qualifier("step1") Step step1, @Qualifier("step2") Step step2) {
+        return jobs.get("myJob").start(step1).next(step2).build();
+    }
+
+    @Bean
+    protected Step step1(ItemReader<Person> reader,
+                         ItemProcessor<Person, Person> processor,
+                         ItemWriter<Person> writer) {
+        return steps.get("step1")
+            .<Person, Person> chunk(10)
+            .reader(reader)
+            .processor(processor)
+            .writer(writer)
+            .build();
+    }
+
+    @Bean
+    protected Step step2(Tasklet tasklet) {
+        return steps.get("step2")
+            .tasklet(tasklet)
+            .build();
+    }
+}
+```
+
+## Job Repository
+**@EnableBatchProcessing**을 사용하고 DataSource 정의되면 기본적으로 JDBC 기반의 DataSource가 없으면 Map 기반의 JobReository는 자동으로 생성된다.\\
+커스텀 설정을 원할 경우 BatchConfigurer 인터페이스 구현을 하면된다.
+
+``` java
+...
+// This would reside in your BatchConfigurer implementation
+@Override
+protected JobRepository createJobRepository() throws Exception {
+    JobRepositoryFactoryBean factory = new JobRepositoryFactoryBean();
+    factory.setDataSource(dataSource);
+    factory.setTransactionManager(transactionManager);
+    factory.setIsolationLevelForCreate("ISOLATION_SERIALIZABLE");
+    factory.setTablePrefix("BATCH_");
+    factory.setMaxVarCharLength(1000);
+    return factory.getObject();
+}
+...
+```
+**FactoryBean**을 사용할 경우 자동으로 transactional advice가 생성 된다.\\
+Create* 메서드의 기본 isolation level 설정은 **SERIALIZABLE**로 두 프로세스가 같은 Job을 동시에 수행할때 하나만 성공할 수 있도록 한다.\\
+일반적으로 Create* 메서드의 수행시간은 굉장히 짧기 떄문에 문제되지 않는다.\\
+그 외 In-memory Repository 설정을 지원하며, RDB가 아닌 다른 것을 사용하기 원한다면 SimpleJobRepository의 DAO를 구현하는 방법이 있다.
+
+## Job Launcher
+**@EnableBatchProcessing**을 사용하면 기본적으로 **JobRegistry**가 제공되며 커스텀을 원할 경우 SimpleJobLauncher 구현하면된다.\\
+또한 비동기 처리가 필요할 경우 TaskExecutor 인터페이스를 구현해야된다.
+
+``` java
+...
+// This would reside in your BatchConfigurer implementation
+@Override
+protected JobLauncher createJobLauncher() throws Exception {
+        SimpleJobLauncher jobLauncher = new SimpleJobLauncher();
+        jobLauncher.setJobRepository(jobRepository);
+        jobLauncher.afterPropertiesSet();
+        return jobLauncher;
+}
+...
+```
+
+<figure>
+	<img src="{{ 'https://docs.spring.io/spring-batch/4.1.x/reference/html/images/job-launcher-sequence-sync.png'}}" alt=""> 
+	<figcaption>Job Launcher 순서도</figcaption>
+</figure>
+
+JobExecution이 생성되면 Job의 실행 메소드로 전달되며, 최종적으로 JobExecution을 호출자에게 반환하게 된다.
+
+<figure>
+	<img src="{{ 'https://docs.spring.io/spring-batch/4.1.x/reference/html/images/job-launcher-sequence-async.png'}}" alt=""> 
+	<figcaption>Job Launcher 순서도 (비동기)</figcaption>
+</figure>
+
+Job Launcher가 비동기로 동작할 경우 프로세스이다.
+
+## Job 실행
+Job을 커맨드라인 환경에서 실행 할 경우, **CommandLineJobRunner** 를 이용하여 구현한다.(필수 옵션은 아니며 방법중 하나라는 것)\\
+실행시 첫번째와 두번째 인자는 applicationConext, 실행할 job명 이며, 이 두개는 필수이다. 세번째 인자부터는 Job Parameter로 매핑되며 형식은 key=value이다.\\
+실행 결과 반환은 ExitCodeMapper 인터페이스를 구현한다.
+
+``` java
+public interface ExitCodeMapper {
+
+    public int intValue(String exitCode);
+
+}
+```
+
+웹에서 실행할 경우 Controller에서 JobLauncher를 호출하면된다.(이것 또한 개발자의 구현 방법에 따라 다르지만 일반적인 구현 형태는 JobLauncher를 호출하면 된다.)
+
+``` java
+@Controller
+public class JobLauncherController {
+
+    @Autowired
+    JobLauncher jobLauncher;
+
+    @Autowired
+    Job job;
+
+    @RequestMapping("/jobLauncher.html")
+    public void handle() throws Exception{
+        jobLauncher.run(job, new JobParameters());
+    }
+}
+```
