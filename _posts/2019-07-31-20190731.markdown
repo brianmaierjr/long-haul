@@ -20,6 +20,7 @@ description: Spring Batch에서 사용하는 핵심 개념
 - [Job Launcher](#job-launcher)
 - [Item Reader](#item-reader)
 - [Item Writer](#item-writer)
+- [Job Scope, Step Scope](#job-scope,-step-scope)
 
 ## 구성
 <figure>
@@ -93,3 +94,7 @@ Step에 대한 Output을 제공, 한티임에 하나의 배치, chunk 만큼 출
 
 ## Item Processor
 비지니스 로직을 처리하며 Reader로 읽은 항목이 무효인 경우 null 반환햐야 한다.
+
+## Job Scope, Step Scope
+Bean의 생성 시점을 Scope의 실행 시점으로 지연\\
+(ex)Job Scope => 해당 Job 실행시 Bean 생성
