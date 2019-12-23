@@ -6,16 +6,16 @@
 
 주제 : imageView에 image url로 실시간 이미지 가져오기.
 
-#  1. imageView란?
+###  1. imageView란?
 가. 안드로이드 어플리케이션에서 image를 보여줄 수 있는 컴포넌트.
 
  
-#  2. 권한 설정하기
+###  2. 권한 설정하기
 < uses-permission android:name="android.permission.INTERNET" /> 을 추가한다.
 실시간으로 외부의 이미지를 가져오기 필요한 인터넷 권한이다.
 
 
-#  3. 레이아웃 설정
+###  3. 레이아웃 설정
 해당 엑티비티 레이아웃에 ImageView 컴포넌트를 추가하여 준다.
 
 < ImageView
