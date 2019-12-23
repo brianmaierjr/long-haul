@@ -28,8 +28,8 @@
 
 소스코드 
 
- 	final ImageView imageView = new ImageView(this);
-
+ 	.
+	final ImageView imageView = new ImageView(this);
    	new Thread(new Runnable() {
     	public void run() {
         	Bitmap bm = null;
