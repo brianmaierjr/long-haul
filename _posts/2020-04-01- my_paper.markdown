@@ -1,10 +1,12 @@
 ---
 layout: post
-title:  "Investimento Estrangeiro Direto: greenfield por fusões e aquisições, volatilidade e seus efeitos no crescimento econômico brasileiro"
+title:  "IDE no Brasil"
 date:   2020-04-01
 ---
 
-# Resumo
+# Investimento Estrangeiro Direto: greenfield por fusões e aquisições, volatilidade e seus efeitos no crescimento econômico brasileiro
+
+### Resumo
 
 Os fluxos de investimento estrangeiro direto (IDE) no Brasil aumentaram de forma
 expressiva a partir da década de 1990. Diante desse cenário, muitos pesquisadores
