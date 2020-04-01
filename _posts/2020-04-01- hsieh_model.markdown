@@ -20,14 +20,14 @@ U(c, s) = c^\beta(1 - s)
 
 Where:
 
-$$c \rightarrow$$ consumption   \$
-$$s \rightarrow$$ time spent at school   \$
+$$c \rightarrow$$ consumption   \\
+$$s \rightarrow$$ time spent at school   \\
 $$\beta \rightarrow$$ trade between consumption and accumulation of human capital  
 
 People working in a region $$r$$ and occupation $$i$$ is paid a net wage of $$(1 - \tau_{ir}^w)w_{ir}$$. 
 
 
-$$w_{ir}\rightarrow$$ the net wage per efficiency unit of labor    \
+$$w_{ir}\rightarrow$$ the net wage per efficiency unit of labor    \\
 $$\tau_{ir}^w \rightarrow$$ is a distortion specific for occupation $$i$$ and location $$r$$  
 
 
