@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Contacte Marcos J Ribeiro
+title: Entre em contato com Marcos J Ribeiro
 ---
 
 <div id="contact">
