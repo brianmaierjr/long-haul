@@ -20,8 +20,8 @@ U(c, s) = c^\beta(1 - s)
 
 Where:
 
-$$c \rightarrow$$ consumption   \
-$$s \rightarrow$$ time spent at school   \
+$$c \rightarrow$$ consumption   \$
+$$s \rightarrow$$ time spent at school   \$
 $$\beta \rightarrow$$ trade between consumption and accumulation of human capital  
 
 People working in a region $$r$$ and occupation $$i$$ is paid a net wage of $$(1 - \tau_{ir}^w)w_{ir}$$. 
@@ -72,7 +72,7 @@ $$A_r \rightarrow$$ total factor productivity
 
 
 
-## Firm's problem
+#### Firm's problem
 
 The firm's problem can be written as:
 
