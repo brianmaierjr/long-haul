@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Contact Long Haul
+title: Contacte Marcos J Ribeiro
 ---
 
 <div id="contact">
