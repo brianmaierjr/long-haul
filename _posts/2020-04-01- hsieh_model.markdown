@@ -20,7 +20,7 @@ U(c, s) = c^\beta(1 - s)
 
 Where:
 
-$c \rightarrow$ consumption   \
+$$c \rightarrow$$ consumption   \
 $s \rightarrow$ time spent at school   \
 $\beta \rightarrow$ trade between consumption and accumulation of human capital  
 
