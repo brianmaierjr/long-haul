@@ -41,11 +41,11 @@ The formation of human capital of a worker in a region $$r$$ is given by:
 h_r(e,s) = H_{tr}^\varphi s^\phi e^\eta
 \end{equation}
 
-$$e \rightarrow$$ consumption of educational goods   \
-$$s \rightarrow$$ time spent in school               \
-$$H_{tr} \rightarrow$$ aggregate human capital of teachers        \
-$$\phi_i \rightarrow$$ elasticity of human capital with respect to time in school     \
-$$\eta \rightarrow$$ elasticity of education goods in the human capital function      \
+$$e \rightarrow$$ consumption of educational goods   \\
+$$s \rightarrow$$ time spent in school               \\
+$$H_{tr} \rightarrow$$ aggregate human capital of teachers        \\
+$$\phi_i \rightarrow$$ elasticity of human capital with respect to time in school     \\
+$$\eta \rightarrow$$ elasticity of education goods in the human capital function      \\
 $$\varphi \rightarrow$$ elasticity of teacher human capital in the human capital function
 
 
@@ -55,10 +55,10 @@ Abilities dispersion is modeled as multivariated Fréchet distribution. Let $$\e
 F(\epsilon_1, ..., \epsilon_N) = exp\left[-\left( \sum_{i=1}^N \epsilon_i^{-\frac{\bar{\mathbb{\theta}}}{1-\rho}} \right)^{1-\rho}  \right]
 \end{equation}
 
-$$\bar{\mathbb{\theta}} \rightarrow$$ skill dispersion    \
+$$\bar{\mathbb{\theta}} \rightarrow$$ skill dispersion    \\
 $$\rho \rightarrow \rho \in [0, 1]$$ gives the correlation of individual skills 
 
-let $$\theta = \frac{\bar{\mathbb{\theta}}}{1-\rho}$$. \\
+let $$\theta = \frac{\bar{\mathbb{\theta}}}{1-\rho}$$. 
 
 The representative firm has the following production function:
 \begin{equation}\label{eq4}
@@ -66,7 +66,7 @@ Y = \sum_{r=1}^R\sum_{i=1}^N A_r H_{ir}
 \end{equation}
 
 
-$$Y \rightarrow$$ output    \
+$$Y \rightarrow$$ output    \\
 $$A_r \rightarrow$$ total factor productivity
 
 
