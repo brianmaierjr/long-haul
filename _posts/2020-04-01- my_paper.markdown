@@ -9,12 +9,14 @@ date:   2020-04-01
 Os fluxos de investimento estrangeiro direto (IDE) no Brasil aumentaram de forma
 expressiva a partir da década de 1990. Diante desse cenário, muitos pesquisadores
 vem se esforçando no sentido de descobrir quais seus efeitos na economia brasileira,
-principalmente no crescimento econômico. Porém, muitas dessas pesquisas não levam em consideração três aspectos essenciais: i) as condições locais do Brasil; ii) as
+principalmente no crescimento econômico. Porém, muitas dessas pesquisas não levam 
+em consideração três aspectos essenciais: i) as condições locais do Brasil; ii) as
 duas modalidades de IDE, que são via greenfield e por fusões e aquisições (F&As);
 iii) e a volatilidade do IDE. Sendo assim, nessa pesquisa avaliou-se os efeitos do
 IDE no crescimento econômico brasileiro entre 1996 e 2018, considerando esses três
 aspectos. Para cumprir esse objetivo utilizou-se o modelo econométrico SVAR do
-tipo AB. Os principais resultados permitem inferir que o IDE sozinho não influencia o crescimento brasileiro de forma satisfatória. No entanto o capital humano,
+tipo AB. Os principais resultados permitem inferir que o IDE sozinho não influencia 
+o crescimento brasileiro de forma satisfatória. No entanto o capital humano,
 qualidade institucional, e desenvolvimento do mercado financeiro potencializam seus
 efeitos positivos. Além disso, verificou-se que o IDE via greenfield exerceu impacto
 positivo no crescimento brasileiro. Por outro lado, o efeito do IDE por F&As foi
@@ -22,4 +24,5 @@ nulo. Ademais, a volatilidade do IDE também n~eo influencia o crescimento brasi
 
 
 ### Link do paper:
-[paper](https://github.com/mj-ribeiro/mj-ribeiro.github.io/blob/master/eco3.pdf)
+[paper](https://mj-ribeiro.github.io/eco3.pdf)
+
