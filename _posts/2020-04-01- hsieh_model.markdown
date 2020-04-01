@@ -7,5 +7,7 @@ date:   2020-04-01
 ### Hsieh Model to missalocation in labor market
 
 
-[link](C:/Users/user/Downloads/marcos.ipynb)
+##### Link:
+
+[Model](https://github.com/mj-ribeiro/mj-ribeiro.github.io/blob/master/codes_py/marcos.ipynb)
 
