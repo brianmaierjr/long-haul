@@ -4,3 +4,8 @@
 <script src="{{ '/assets/js/dropcap.min.js' | prepend: site.baseurl }}"></script>
 <script src="{{ '/assets/js/responsive-nav.min.js' | prepend: site.baseurl }}"></script>
 <script src="{{ '/assets/js/scripts.js' | prepend: site.baseurl }}"></script>
+{% if page.mathjax %}
+<script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+{% endif %}
