@@ -1,7 +1,7 @@
-title: Long Haul
+title: Marcos Ribeiro
 description: Long Form Jekyll theme built with SASS / COMPASS / SUSY
 
-url: http://brianmaierjr.github.com/long-haul
+url: https://mj-ribeiro.github.io/
 baseurl: ""
 paginate_path: "blog/page:num/"
 permalink: blog/:title/
@@ -12,17 +12,16 @@ plugins: [jekyll-paginate]
 paginate: 5
 
 navigation:
-  - title: Home
+  - title: Início
     url: /index.html
-  - title: About
+  - title: Sobre
     url: /about
-  - title: Contact
+  - title: Contato
     url: /contact
 
 social:
-  github: brianmaierjr
-  twitter: brianmaierjr
-  facebook: brianmaierjr
-  email: brimaidesigns@gmail.com
+  github: mj-ribeiro
+  facebook: https://www.facebook.com/Marcos.Junio.mindstrike
+  email: mjribeiro@usp.br
 
 google_analytics: "UA-58263416-1"
