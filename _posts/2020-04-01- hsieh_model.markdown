@@ -77,7 +77,7 @@ $$A_r \rightarrow$$ total factor productivity
 The firm's problem can be written as:
 
 \begin{equation}\label{eq5}
-\mathop{\text{Max}}_{H_{ir}}\quad \sum_{r=1}^R\sum_{i=1}^N A_r H_{ir} - \sum_{r=1}^R\sum_{i=1}^N w_{ir}H_{ir}
+\text{Max} H_{ir} \quad \sum_{r=1}^R\sum_{i=1}^N A_r H_{ir} - \sum_{r=1}^R\sum_{i=1}^N w_{ir}H_{ir}
 \end{equation}
 CPO:\
 \begin{equation*}
