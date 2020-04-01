@@ -19,3 +19,7 @@ qualidade institucional, e desenvolvimento do mercado financeiro potencializam s
 efeitos positivos. Além disso, verificou-se que o IDE via greenfield exerceu impacto
 positivo no crescimento brasileiro. Por outro lado, o efeito do IDE por F&As foi
 nulo. Ademais, a volatilidade do IDE também n~eo influencia o crescimento brasileiro.
+
+
+### Link do paper:
+[paper](https://github.com/mj-ribeiro/mj-ribeiro.github.io/blob/master/eco3.pdf)
