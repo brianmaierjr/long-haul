@@ -94,13 +94,62 @@ If the condition in equation 6 is satisfied, so $$H_{ir}^d = x \in \mathbb{R_+}$
 
 
 
-
-```python
-5+5 
-```
+#### Worker's problem
 
 
-```python
+Given the occupational choice $i$ for which the individual has an idiosyncratic ability $$\epsilon$$, and taking wage $w_{ir}$ as given, each worker chooses consumption $$c$$, $$e$$ and time spent in school $s$ to solve the following problem:
 
-```
+\begin{equation}\label{eq7}
+\begin{gathered}  
+\mathop{\text{Max}}_{c, s, e} \quad c^\beta (1 - s) \\
+ st. \quad c = (1-\tau_{ir}^w)h_{r}(e, s)\epsilon w_{ir} - (1+ \tau_{ir}^h)e
+\end{gathered}
+\end{equation}	
+
+CPOs:  \
+
+\begin{equation}
+U_s = \beta c^{\beta - 1} c_s - \beta c^{\beta-1}c_s - c^{\beta}=0
+\end{equation*}
+rearranging the terms we have:
+\begin{equation}\label{eq8}
+\beta c^{\beta - 1} c_s (1-s) - c^\beta = 0
+\end{equation}
+
+
+
+This give me $$c$$, $$s^*$$ and $$e$$:
+
+\begin{equation}\label{eq10}
+c = \beta [ (1-\tau_{ir}^w) H_{tr}^\varphi \phi s^{\phi-1} e^\eta \epsilon w_{ir} (1-s)]
+\end{equation}
+
+
+\begin{equation}\label{eq14}
+s^* = \left(1 + \frac{1-\eta}{\beta \phi}\right)^{-1}
+\end{equation}
+
+
+\begin{equation}\label{eq15}
+e = \left[\eta \frac{(1-\tau_{ir}^w)}{(1+ \tau_{ir}^h)}H_{tr}^\varphi \left(1 + \frac{1-\eta}{\beta \phi}\right)^{-\phi} \epsilon w_{ir} \right]^{\frac{1}{1-\eta}}
+\end{equation}
+
+Finally, we get the indirect utility function:
+
+\begin{equation}\label{eq16}
+D = \left[ \eta^\eta(1-\eta)^{1-\eta} \frac{1-\tau_{ir}^w }{(1+ \tau_{ir}^h)^\eta} w_{ir} \epsilon H_{tr}^\varphi s^\phi  (1-s)^{\frac{1-\eta}{\beta}}\right]^{ \frac{\beta}{1-\eta}} 
+\end{equation}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
