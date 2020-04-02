@@ -1,6 +1,5 @@
 ---
 layout: post
-mathjax: true
 title:  "IDE no Brasil"
 date:   2020-04-01
 ---
