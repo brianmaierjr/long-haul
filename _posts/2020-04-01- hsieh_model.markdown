@@ -101,16 +101,17 @@ Given the occupational choice $i$ for which the individual has an idiosyncratic 
 
 \begin{equation}\label{eq7}
 \begin{gathered}  
-\mathop{\text{Max}}_{c, s, e} \quad c^\beta (1 - s) \\
+{\text{Max}_{c, s, e} \quad c^\beta (1 - s) \\
  st. \quad c = (1-\tau_{ir}^w)h_{r}(e, s)\epsilon w_{ir} - (1+ \tau_{ir}^h)e
 \end{gathered}
 \end{equation}	
 
-CPOs:  \
+CPOs:  
 
 \begin{equation}
 U_s = \beta c^{\beta - 1} c_s - \beta c^{\beta-1}c_s - c^{\beta}=0
-\end{equation*}
+\end{equation}
+
 rearranging the terms we have:
 \begin{equation}\label{eq8}
 \beta c^{\beta - 1} c_s (1-s) - c^\beta = 0
