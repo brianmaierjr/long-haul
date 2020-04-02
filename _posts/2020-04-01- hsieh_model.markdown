@@ -100,10 +100,11 @@ If the condition in equation 6 is satisfied, so $$H_{ir}^d = x \in \mathbb{R_+}$
 Given the occupational choice $i$ for which the individual has an idiosyncratic ability $$\epsilon$$, and taking wage $w_{ir}$ as given, each worker chooses consumption $$c$$, $$e$$ and time spent in school $s$ to solve the following problem:
 
 \begin{equation}\label{eq7}
-\begin{gathered}  
 {\text{Max}_{c, s, e} \quad c^\beta (1 - s) \\
- st. \quad c = (1-\tau_{ir}^w)h_{r}(e, s)\epsilon w_{ir} - (1+ \tau_{ir}^h)e
-\end{gathered}
+\end{equation}
+
+\begin{equation}
+\text{st:} \quad c = (1-\tau_{ir}^w)h_{r}(e, s)\epsilon w_{ir} - (1+ \tau_{ir}^h)e
 \end{equation}	
 
 CPOs:  
