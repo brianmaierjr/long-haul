@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "TESTE"
+title:  "Modelo GARCH"
 date:   2020-04-01
 ---
 
-### Teste
+### Estimando o modelo GARCH de forma simples no R
 
 [clique aqui](https://rpubs.com/mj-ribeiro/593384)
