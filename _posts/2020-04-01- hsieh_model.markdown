@@ -154,6 +154,7 @@ We can interpret $$\tilde{w}_{ir}$$ as a liquid reward for a person with mean ab
 For a given region, the average quality of workers in occupation $$i$$, including
 both human capital and idiosyncratic abilities, is:
 
+$$\text{E}[h(e_{ir}, s_i)\epsilon_i] = \gamma \left[ H_{tr}^\varphi  \left(  \frac{1- \tau_{ir}^w}{1+ \tau_{ir}^h}\right)^{\eta} \eta^{\eta} s_i^{\phi} p_{ir}^{-\frac{1}{\theta}} \right]^\frac{1}{1-\eta}$$
 
 
 
