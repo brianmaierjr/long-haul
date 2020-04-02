@@ -148,14 +148,12 @@ $$\tilde{w}_{ir}= \frac{1-\tau_{ir}^w}{(1+ \tau_{ir}^h)^\eta} w_{ir} H_{tr}^\var
 We can interpret $$\tilde{w}_{ir}$$ as a liquid reward for a person with mean ability from region $$r$$ and occupation $$i$$. So, $$\tilde{w}_{ir}$$ is composed by wage per efficiency unit in the occupation $$w_{ir}$$ schooling, teacher's human capital and frictions. 
 
 
-
 #### Proposition 2
+
 
 For a given region, the average quality of workers in occupation $$i$$, including
 both human capital and idiosyncratic abilities, is:
 
-
-Where $$\gamma = \Gamma(1-(\theta(1-\rho))^{-1}(1-\eta)^{-1})$$ is related to the mean of the Fréchet distribution for abilities.
 
 
 
