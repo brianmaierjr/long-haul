@@ -9,5 +9,5 @@ date:   2020-04-01
 
 ##### Link da aplicação:
 
-[paper]https://rpubs.com/mj-ribeiro/593384)
+[paper](https://rpubs.com/mj-ribeiro/593384)
 
