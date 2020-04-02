@@ -154,8 +154,6 @@ We can interpret $$\tilde{w}_{ir}$$ as a liquid reward for a person with mean ab
 For a given region, the average quality of workers in occupation $$i$$, including
 both human capital and idiosyncratic abilities, is:
 
-Where $$\gamma = \gamma(1-(\theta(1-\rho))^{-1}(1-\eta)^{-1})$$ is related to the mean of the Fréchet distribution for abilities.
-
 
 
 
