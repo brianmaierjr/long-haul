@@ -133,8 +133,8 @@ D = \left[ \eta^\eta(1-\eta)^{1-\eta} \frac{1-\tau_{ir}^w }{(1+ \tau_{ir}^h)^\et
 
 #### Proposition 1
 
-\begin{prop}
- Aggregating among people, the solution of individual's occupational choice problem allows us to write:
+
+Aggregating among people, the solution of individual's occupational choice problem allows us to write:
  
 \begin{equation}\label{eq17}
 p_{ir} =  \frac{\tilde{w}_{ir}^\theta} {\sum_{j=1}^N \tilde{w}_{jr}^\theta}
@@ -146,7 +146,6 @@ where $$p_{ir}$$ is the fraction of people that work in occupation $$i$$ in regi
 \end{equation}
 
 We can interpret $$\tilde{w}_{ir}$$ as a liquid reward for a person with mean ability from region $$r$$ and occupation $$i$$. So, $$\tilde{w}_{ir}$$ is composed by wage per efficiency unit in the occupation $$w_{ir}$$ schooling, teacher's human capital and frictions. 
-\end{prop}
 
 
 
