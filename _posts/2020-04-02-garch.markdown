@@ -1,0 +1,13 @@
+---
+layout: post
+title:  "Implementando o GARCH no R"
+date:   2020-04-01
+---
+
+
+
+
+##### Link da aplicação:
+
+[paper]https://rpubs.com/mj-ribeiro/593384)
+
