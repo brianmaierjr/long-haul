@@ -149,24 +149,6 @@ We can interpret $$\tilde{w}_{ir}$$ as a liquid reward for a person with mean ab
 
 
 
-#### Proposition 2
-
-For a given region, the average quality of workers in occupation $$i$$, including
-both human capital and idiosyncratic abilities, is:
-
-
-$$ \mathbb{E}[h(e_{ir}, s_i)\epsilon_i] = \gamma \left[ H_{tr}^\varphi  \left(  \frac{1- \tau_{ir}^w}{1+ \tau_{ir}^h}\right)^{\eta} \eta^{\eta} s_i^{\phi} p_{ir}^{-\frac{1}{\theta}} \right]^\frac{1}{1-\eta} $$
-
-\noindent Where $$\gamma= \Gamma(1-(\theta(1-\rho))^{-1}(1-\eta)^{-1})$$ is related to the mean of the Fréchet distribution for abilities.
-
-
-#### Proposition 3
-
-Let $$W_{ir}$$ be the gross average earnings in occupation $$i$$ in region $$r$$. Then:
-
-
-$$ W_{ir} = w_{ir}\mathbb{E}[h(e_{ir}, s_{i})\epsilon_i] = \frac{(1-s)^{-1/\beta}}{(1-\tau_{ir}^w)}\gamma \eta \left( \sum_{s=1}^N \tilde{w}_{sr}^\theta  \right)^{\frac{1}{\theta(1-\eta)}}$$
-
 
 
 
