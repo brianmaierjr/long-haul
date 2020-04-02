@@ -168,6 +168,16 @@ $$ W_{ir} = w_{ir}\mathbb{E}[h(e_{ir}, s_{i})\epsilon_i] = \frac{(1-s)^{-1/\beta
 
 
 
+#### Problem
+
+
+So, the problem consist in minimize equation below,  using Nelder-Mead algorithm. The implementation of model in Python language can be view in my [GitHub](https://github.com/mj-ribeiro/Math-Statistics-in-Python/blob/master/Hsieh_model.py). Other algorithms can be used, for example genetic algorithm.
+
+
+$$Dist = \sum_{i=1, r=1}^{N, R} \left(  \frac{W_{ir}^M - W_{ir}^T}{W_{ir}^T}  \right)^2 + \sum_{i=1, r=1}^{N, R} \left(  \frac{p_{ir}^M - p_{ir}^T}{p_{ir}^T}  \right)^2$$ 
+
+where $$p_{ir}^M$$ and $$W_{ir}^M$$ are given by equations \ref{eq17} and \ref{eq27} respectively. On the other hand, $$p_{ir}^T$$ and $$W_{ir}^T$$ are given by PNAD data. The superscript indicate model and target statistics. 
+We assume that $$\tau_{1r}^h = 0$$, $$\tau_{1r}^w=\tau_1^w, \, \forall r$$. And $$A_R=1$$, i.e, the TPF of the last region is nomalized to 1.
 
 
 
