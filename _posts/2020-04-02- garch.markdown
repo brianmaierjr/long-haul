@@ -1,8 +1,10 @@
 ---
 layout: post
-title:  "Implementando o GARCH no R"
-date:   2020-04-01
+title: "Implementando o GARCH no R"
+date: 2020-04-01
 ---
+
+#### Bem vindo
 
 Esse é um exemplo da aplicação do modelo GARCH(1,1) aos retornos do Ibovespa.
 
