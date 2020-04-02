@@ -142,9 +142,9 @@ p_{ir} =  \frac{\tilde{w}_{ir}^\theta} {\sum_{j=1}^N \tilde{w}_{jr}^\theta}
 
 where $$p_{ir}$$ is the fraction of people that work in occupation $$i$$ in region $$r$$ and:
 
-\begin{equation}
-\tilde{w}_{ir}= \frac{1-\tau_{ir}^w}{(1+ \tau_{ir}^h)^\eta} w_{ir} H_{tr}^\varphi s_i^{\phi_i}  (1-s_i)^{\frac{1-\eta}{\beta}}
-\end{equation}
+
+$$\tilde{w}_{ir}= \frac{1-\tau_{ir}^w}{(1+ \tau_{ir}^h)^\eta} w_{ir} H_{tr}^\varphi s_i^{\phi_i}  (1-s_i)^{\frac{1-\eta}{\beta}}$$
+
 
 We can interpret $$\tilde{w}_{ir}$$ as a liquid reward for a person with mean ability from region $$r$$ and occupation $$i$$. So, $$\tilde{w}_{ir}$$ is composed by wage per efficiency unit in the occupation $$w_{ir}$$ schooling, teacher's human capital and frictions. 
 
