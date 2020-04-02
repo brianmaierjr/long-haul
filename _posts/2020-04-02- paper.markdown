@@ -7,20 +7,20 @@ date:   2020-04-02
 ### Investimento Estrangeiro Direto: greenfield por fusões e aquisições, volatilidade e seus efeitos no crescimento econômico brasileiro
 
 Os fluxos de investimento estrangeiro direto (IDE) no Brasil aumentaram de forma
-expressiva a partir da d´ecada de 1990. Diante desse cen´ario, muitos pesquisadores
-vem se esfor¸cando no sentido de descobrir quais seus efeitos na economia brasileira,
-principalmente no crescimento econ^omico. Por´em, muitas dessas pesquisas n~ao levam em 
-considera¸c~ao tr^es aspectos essenciais: i) as condi¸c~oes locais do Brasil; ii) as
-duas modalidades de IDE, que s~ao via greenfield e por fus~oes e aquisi¸c~oes (F&As);
+expressiva a partir da década de 1990. Diante desse cenário, muitos pesquisadores
+vem se esforçando no sentido de descobrir quais seus efeitos na economia brasileira,
+principalmente no crescimento econômico. Porém, muitas dessas pesquisas não levam em 
+consideração três aspectos essenciais: i) as condições locais do Brasil; ii) as
+duas modalidades de IDE, que são via greenfield e por fusões e aquisiçõoes (F&As);
 iii) e a volatilidade do IDE. Sendo assim, nessa pesquisa avaliou-se os efeitos do
-IDE no crescimento econ^omico brasileiro entre 1996 e 2018, considerando esses tr^es
-aspectos. Para cumprir esse objetivo utilizou-se o modelo econom´etrico SVAR do
-tipo AB. Os principais resultados permitem inferir que o IDE sozinho n~ao influencia 
-o crescimento brasileiro de forma satisfat´oria. No entanto o capital humano,
+IDE no crescimento econômico brasileiro entre 1996 e 2018, considerando esses três
+aspectos. Para cumprir esse objetivo utilizou-se o modelo econométrico SVAR do
+tipo AB. Os principais resultados permitem inferir que o IDE sozinho não influencia 
+o crescimento brasileiro de forma satisfatória. No entanto o capital humano,
 qualidade institucional, e desenvolvimento do mercado financeiro potencializam seus
-efeitos positivos. Al´em disso, verificou-se que o IDE via greenfield exerceu impacto
+efeitos positivos. Além disso, verificou-se que o IDE via greenfield exerceu impacto
 positivo no crescimento brasileiro. Por outro lado, o efeito do IDE por F&As foi
-nulo. Ademais, a volatilidade do IDE tamb´em n~ao influencia o crescimento brasileiro.
+nulo. Ademais, a volatilidade do IDE também não influencia o crescimento brasileiro.
 
 
 
