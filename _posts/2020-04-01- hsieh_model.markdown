@@ -154,7 +154,7 @@ We can interpret $$\tilde{w}_{ir}$$ as a liquid reward for a person with mean ab
 For a given region, the average quality of workers in occupation $$i$$, including
 both human capital and idiosyncratic abilities, is:
 
-$$\text{E}[h(e_{ir}, s_i)\epsilon_i] = \gamma \left[ H_{tr}^\varphi  \left(  \frac{1- \tau_{ir}^w}{1+ \tau_{ir}^h}\right)^{\eta} \eta^{\eta} s_i^{\phi} p_{ir}^{-\frac{1}{\theta}} \right]^\frac{1}{1-\eta}$$
+$$\mathbb{E}[h(e_{ir}, s_i)\epsilon_i] = \gamma \left[ H_{tr}^\varphi  \left(  \frac{1- \tau_{ir}^w}{1+ \tau_{ir}^h}\right)^{\eta} \eta^{\eta} s_i^{\phi} p_{ir}^{-\frac{1}{\theta}} \right]^\frac{1}{1-\eta}$$
 
 
 
@@ -176,7 +176,7 @@ So, the problem consist in minimize equation below,  using Nelder-Mead algorithm
 
 $$Dist = \sum_{i=1, r=1}^{N, R} \left(  \frac{W_{ir}^M - W_{ir}^T}{W_{ir}^T}  \right)^2 + \sum_{i=1, r=1}^{N, R} \left(  \frac{p_{ir}^M - p_{ir}^T}{p_{ir}^T}  \right)^2$$ 
 
-where $$p_{ir}^M$$ and $$W_{ir}^M$$ are given by equations \ref{eq17} and \ref{eq27} respectively. On the other hand, $$p_{ir}^T$$ and $$W_{ir}^T$$ are given by PNAD data. The superscript indicate model and target statistics. 
+where $$p_{ir}^M$$ and $$W_{ir}^M$$ are given by equations in Proposition 1 and Proposition 3 respectively. On the other hand, $$p_{ir}^T$$ and $$W_{ir}^T$$ are given by PNAD data. The superscript indicate model and target statistics. 
 We assume that $$\tau_{1r}^h = 0$$, $$\tau_{1r}^w=\tau_1^w, \, \forall r$$. And $$A_R=1$$, i.e, the TPF of the last region is nomalized to 1.
 
 
