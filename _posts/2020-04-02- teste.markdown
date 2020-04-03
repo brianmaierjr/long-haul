@@ -6,7 +6,7 @@ date:   2020-04-01
 
 #### Estimando o modelo GARCH de forma simples no R
 
-Nesse artigo, mostro como estimar, de forma simples, o modelo GARCH utilizando-se as bibliotecas fgarch e rugarch do R.
+Nesse artigo mostro como estimar, de forma simples, o modelo GARCH utilizando-se as bibliotecas fgarch e rugarch do R.
 Divirta-se.
 
 
