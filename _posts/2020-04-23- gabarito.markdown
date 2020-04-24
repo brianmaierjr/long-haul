@@ -2,13 +2,16 @@
 layout: post
 mathjax: true
 title: "Gabarito da Lista 1 de Macroeconomia" 
-date:   2020-04-23
+date:   2020-04-24
 ---
 ### Gabarito da Lista 1
 
 Este é um gabarito de algumas questões da lista 1. Este gabarito foi solicitado por alguns alunos na monitoria.
 Lembrem-se de que as questões devem ser resolvidas passo a passo. Questões somente com resposta final não são válidas. 
-Caso tenham dúvidas, sugestões ou encontrem erros nas soluções enviem um email para mjribeiro@usp.br.
+Caso tenham dúvidas, sugestões ou encontrem erros nas soluções enviem um email para mjribeiro@usp.br. 
+Algumas dessas questões foram resolvidas utilizando a linguagem de programação Python. Os algoritmos que criei podem
+ser visto na minha [página](https://github.com/mj-ribeiro/Math-Statistics-in-Python) do github. 
+Acesse o multiplier_income.py e o coin_suply_demand.py.
 
 
 ###### Link:
