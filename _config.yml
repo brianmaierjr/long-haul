@@ -16,8 +16,7 @@ navigation:
     url: /index.html
   - title: Sobre
     url: /about
-  - title: Contato
-    url: /contact
+
 
 social:
   github: mj-ribeiro
