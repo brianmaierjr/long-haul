@@ -11,5 +11,5 @@ Lembrem-se de que as questões devem ser resolvidas passo a passo. Questões som
 Caso tenham dúvidas, sugestões ou encontrem erros nas soluções enviem um email para mjribeiro@usp.br.
 
 
-###### Link do paper:
+###### Link:
 [Gabarito](https://mj-ribeiro.github.io/gab.pdf)
