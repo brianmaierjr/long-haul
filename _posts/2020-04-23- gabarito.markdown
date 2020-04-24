@@ -4,3 +4,6 @@ mathjax: true
 title: "Gabarito da Lista 1 de Macroeconomia" 
 date:   2020-04-02
 ---
+
+Este é um gabarito das questões da lista 1. Lembrem-se de que as questões devem ser resolvidas passo a passo. 
+Questões somente com resposta final não são válidas. 
