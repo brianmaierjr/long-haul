@@ -2,7 +2,7 @@
 layout: post
 mathjax: true
 title: "Gabarito da Lista 1 de Macroeconomia" 
-date:   2020-04-02
+date:   2020-04-23
 ---
 ### Gabarito da Lista 1
 
