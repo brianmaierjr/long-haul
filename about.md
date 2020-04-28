@@ -8,4 +8,6 @@ Fiz mestrado em Economia Aplicada na Universidade Federal de Viçosa.
 Atualmente faço doutorado em Economia Aplicada na FEARP-USP.
 Atuo nas áreas de crescimento econômico, finanças e economia computacional.
 
+[Lattes](http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K8457340D4)
+
 ![presentation](\assets\img\mjr_rj.jpg "Apresentação no Rio de Janeiro")
