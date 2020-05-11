@@ -181,7 +181,7 @@ where $$p_{ir}^M$$ and $$W_{ir}^M$$ are given by equations in Proposition 1 and 
 We assume that $$\tau_{1r}^h = 0$$, $$\tau_{1r}^w=\tau_1^w, \, \forall r$$. And $$A_R=1$$, i.e, the TPF of the last region is nomalized to 1. The complete resolution of the Hsieh model can be view in this [link](https://mj-ribeiro.github.io/hsieh.pdf)
 
 
-
+However, we reformulate the human capital equation and recalculated the model. The new version can be see [here](https://mj-ribeiro.github.io/hsiehv2.pdf).
 
 
 
