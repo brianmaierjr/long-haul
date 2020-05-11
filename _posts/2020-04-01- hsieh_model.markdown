@@ -2,7 +2,7 @@
 layout: post
 mathjax: true
 title: "Hsieh model" 
-date:   2020-04-02
+date:   2020-05-11
 ---
 
 ### Hsieh Model to missalocation in labor market
