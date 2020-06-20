@@ -19,6 +19,7 @@ If you really enjoy Long Haul and want to give me credit somewhere on the intern
 - Estimated Reading Time for posts
 - Stylish Drop Cap on posts
 - A Better Type Scale for all devices
+- Disqus Commenting
 
 ## Setup
 
@@ -42,6 +43,7 @@ The main settings can be found inside the `_config.yml` file:
 - **navigation:** these are the links in the main site navigation
 - **social** diverse social media usernames (optional)
 - **google_analytics** Google Analytics key (optional)
+- **disqus shortname** Your Disqus shortname (optional)
 
 ## License
 

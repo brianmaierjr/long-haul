@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "Example Post Formatting"
-date:   2014-12-15
+title: "Example Post Formatting"
+date: 2014-12-15
 description: This is a post description for meta purposes. This is also the excerpt of the article that shows up on the index/home page. Change this in the post YAML.
+comments: true
 ---
 
 <p class="intro"><span class="dropcap">C</span>urabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Vestibulum id ligula porta felis euismod semper. Donec sed odio dui. Aenean lacinia bibendum nulla sed consectetur.</p>
@@ -24,20 +25,23 @@ description: This is a post description for meta purposes. This is also the exce
 Nullam quis risus eget urna mollis ornare vel eu leo. Cras mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
 
 ## Unordered List
-* List Item
-* Longer List Item
-  * Nested List Item
-  * Nested Item
-* List Item
+
+- List Item
+- Longer List Item
+  - Nested List Item
+  - Nested Item
+- List Item
 
 ## Ordered List
+
 1. List Item
 2. Longer List Item
-    1. Nested OL Item
-    2. Another Nested Item
+   1. Nested OL Item
+   2. Another Nested Item
 3. List Item
 
 ## Definition List
+
 <dl>
   <dt>Coffee</dt>
   <dd>Black hot drink</dd>
