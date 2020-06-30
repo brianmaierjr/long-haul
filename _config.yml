@@ -1,3 +1,6 @@
+remote_theme: mmistakes/minimal-mistakes
+minimal_mistakes_skin: "mint"
+
 title: 박정웅의 블로그
 description: 평소 관심있는 분야, 코딩중 이슈 사항을 공유하는 공간입니다.
 
