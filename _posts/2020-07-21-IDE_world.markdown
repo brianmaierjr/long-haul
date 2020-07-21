@@ -8,9 +8,6 @@ date:   2020-07-21
 ### Efeitos do Investimento Estrangeiro Direto e das Características dos Países Hospedeiros no Crescimento Econômico
 
 
-
-
-
 Resumo: O objetivo deste artigo foi verificar a possibilidade de relacionamento 
 positivo entre investimento estrangeiro direto (IDE) e crescimento econômico. 
 Mais que isto, verificou-se a possibilidade do impacto do IDE ser diferente de 
@@ -33,3 +30,7 @@ conditioned to the characteristics of the countries that receive FDI. Namely, ho
 countries with higher levels of human capital, larger size of the financial market, greater degree of trade openness and better institutional quality can better absorb FDI, transforming it into growth.
 Keywords: foreign direct investment, economic growth, human capital. 
 JEL: E22, F43, O43, O5
+
+
+Link:  [paper](https://mj-ribeiro.github.io/ide_wd.pdf)
+
