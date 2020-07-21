@@ -4,6 +4,16 @@ mathjax: true
 title: "Hsieh model" 
 date:   2020-05-11
 ---
+<head>
+    <meta charset="UTF-8"/>
+    <style>
+        p{
+            text-align: justify;
+            text-indent: 50px;
+        }
+    </style>
+</head>
+
 
 ### Hsieh Model to missalocation in labor market
 

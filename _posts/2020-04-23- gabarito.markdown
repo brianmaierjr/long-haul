@@ -4,6 +4,20 @@ mathjax: true
 title: "Gabarito da Lista 1 de Macroeconomia" 
 date:   2020-04-24
 ---
+<head>
+    <meta charset="UTF-8"/>
+    <style>
+        body{
+            background-color: hsla(195,81%,93%, 0.6);
+            color: rgba(0,0,0,1);
+        }
+        p{
+            text-align: justify;
+            text-indent: 50px;
+        }
+    </style>
+</head>
+
 ### Gabarito da Lista 1
 
 Este é um [gabarito](https://mj-ribeiro.github.io/gab.pdf) de algumas questões da lista 1. Este gabarito foi solicitado por alguns alunos na monitoria.

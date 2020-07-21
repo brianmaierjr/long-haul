@@ -3,6 +3,16 @@ layout: post
 title:  "IDE no Brasil"
 date:   2020-04-02
 ---
+<head>
+    <meta charset="UTF-8"/>
+    <style>
+        p{
+            text-align: justify;
+            text-indent: 50px;
+        }
+    </style>
+</head>
+
 
 ### Investimento Estrangeiro Direto: greenfield por fusões e aquisições, volatilidade e seus efeitos no crescimento econômico brasileiro
 
