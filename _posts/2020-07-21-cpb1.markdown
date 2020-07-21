@@ -4,6 +4,15 @@ mathjax: true
 title: "Curva de Phillips para o Brasil"
 date:   2020-07-21
 ---
+<head>
+        body{
+	    margin:0; padding:20px;
+        }
+        p{
+            text-align: justify;
+            text-indent: 50px;
+        }
+</head>
 
 
 <script>
