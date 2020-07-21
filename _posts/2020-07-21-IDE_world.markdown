@@ -4,6 +4,20 @@ mathjax: true
 title: "Efeitos do IDE no crescimento" 
 date:   2020-07-21
 ---
+<head>
+    <meta charset="UTF-8"/>
+    <style>
+        body{
+            background-color: hsla(195,81%,93%, 0.6);
+            color: rgba(0,0,0,1);
+        }
+        p{
+            text-align: justify;
+            text-indent: 50px;
+        }
+    </style>
+</head>
+
 ### Efeitos do Investimento Estrangeiro Direto e das Características dos Países Hospedeiros no Crescimento Econômico
 
 
