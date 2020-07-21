@@ -1,8 +1,7 @@
 ---
 layout: post
 mathjax: true
-title: "Efeitos do Investimento Estrangeiro Direto e das Características dos Países Hospedeiros no Crescimento Econômico
-" 
+title: "Efeitos do IDE no crescimento" 
 date:   2020-07-21
 ---
 ### Efeitos do Investimento Estrangeiro Direto e das Características dos Países Hospedeiros no Crescimento Econômico
