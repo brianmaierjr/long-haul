@@ -1,0 +1,35 @@
+---
+layout: post
+mathjax: true
+title: "Efeitos do Investimento Estrangeiro Direto e das Características dos Países Hospedeiros no Crescimento Econômico
+" 
+date:   2020-07-21
+---
+### Efeitos do Investimento Estrangeiro Direto e das Características dos Países Hospedeiros no Crescimento Econômico
+
+
+
+
+
+Resumo: O objetivo deste artigo foi verificar a possibilidade de relacionamento 
+positivo entre investimento estrangeiro direto (IDE) e crescimento econômico. 
+Mais que isto, verificou-se a possibilidade do impacto do IDE ser diferente de 
+acordo com o grupo de renda no qual o país hospedeiro está. Utilizando o Método 
+dos Momentos Generalizados (GMM) System, em uma amostra composta por 80 países 
+que vai de 1996 até 2015, os resultados indicam que o IDE contribuiu para o 
+crescimento econômico. Porém, o efeito positivo é encontrado de forma 
+condicionada às características dos países que recebem o IDE. A saber, países 
+hospedeiros com maiores níveis de capital humano, maior tamanho do mercado 
+financeiro, maior grau de abertura comercial e melhor qualidade institucional 
+conseguem melhor absorver o IDE, transformando-o em crescimento. 
+ 
+Abstract: This article aimed to verify the possibility of a positive relationship 
+between foreign direct investment (FDI) and economic growth. More than that, 
+there was a possibility that the impact of FDI would be different across the 
+income group in which the host country is. Using the Generalized Moments Method 
+(GMM) System, in a sample of 80 countries from 1996 to 2015, the results indicate 
+that FDI contributed to economic growth. However, the positive effect is found 
+conditioned to the characteristics of the countries that receive FDI. Namely, host 
+countries with higher levels of human capital, larger size of the financial market, greater degree of trade openness and better institutional quality can better absorb FDI, transforming it into growth.
+Keywords: foreign direct investment, economic growth, human capital. 
+JEL: E22, F43, O43, O5
