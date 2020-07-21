@@ -5,6 +5,7 @@ title: "Curva de Phillips para o Brasil"
 date:   2020-07-21
 ---
 <head>
+	<style>
         body{
 	    margin:0; padding:20px;
         }
@@ -12,6 +13,7 @@ date:   2020-07-21
             text-align: justify;
             text-indent: 50px;
         }
+        </style>
 </head>
 
 
