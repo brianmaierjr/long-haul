@@ -7467,8 +7467,8 @@ date:   2020-07-22
 <style type="text/css">
     .main-container {
         max-width: 940px;
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: 10px;
+        margin-right: 10px;
     }
 
     code {
