@@ -1,0 +1,338 @@
+---
+layout: post
+mathjax: true
+title: "Misallocation in brasilian labor market" 
+date:   2020-07-22
+---
+
+In this presentation we employ the modified Hsieh's model to verify if there are misallocation in brasilian labor market.
+
+```python
+import os
+os.getcwd()
+os.chdir('D:\\Git projects\\college_works\\Thesis')
+
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy.optimize import minimize
+from math import gamma
+import time
+import pandas as pd
+```
+
+
+```python
+
+def par():
+    global beta, eta, varphi, theta, rho, i, r, gamma1, phi, kappa, alfa, psi, sig, pi, nu
+    beta = 0.69
+    eta = 0.25
+    varphi = 0.25
+    theta = 3.44
+    rho = 0.19
+    alfa = 0.6
+    kappa = np.divide(1, (1- eta) )
+    nu = 1 + np.multiply(alfa, np.multiply(varphi, kappa))
+    pi = 1 - np.multiply(np.multiply( (1 - alfa), varphi), kappa )
+    sig = np.divide(np.multiply(eta, kappa), pi )
+    psi = np.multiply(np.power(eta, eta), np.power( (1-eta), (1-eta) ) )
+    i = 7
+    r = 27
+    gamma1 = gamma(   1 - np.multiply( np.divide(1, np.multiply(theta, (1-rho)) ), np.divide(1, (1 - eta) ) ) )   
+    phi = np.array([0.138, 0.174, 0.136, 0.1, 0.051, 0.084, 0.168]).reshape(i, 1)
+   
+
+
+```
+
+
+```python
+
+def taus2():
+    par()
+        
+    tau_h = np.random.uniform(low=-0.99, high=40, size=(i,r))
+    tau_h[0, :] = 0
+
+    tau_w = np.random.uniform(low=-0.99, high=0.999, size=(i,r))
+    tau_w[0, : ] = tau_w[0, 0]
+    
+    w =np.random.uniform(low=0.001, high=30, size=(i,r))
+    w[:, r-1] = 1
+    
+    x1 = np.array( [tau_w, tau_h, w] )
+    
+    return x1
+
+x1 = taus2()
+```
+
+
+$$s^* = \left(1 + \frac{1-\eta}{\beta \phi}\right)^{-1}$$
+
+
+
+
+```python
+def sf( ):
+    global s
+    s = np.power( (1+ np.divide( (1-eta), ( np.multiply(beta, phi) ) ) ), -1 )
+    s = s.reshape(i, 1)
+    return s
+```
+
+The fraction of teachers, $p_{tr}$, can be written as:
+
+
+
+$$p_{tr} = \frac{ \left[ \frac{1- \tau^w_{tr}}{(1 + \tau^h_{tr})^\eta} w_{tr} s_t^{\phi_t}(1-s_t)^{\frac{1-\eta}{\beta}} \right]^\theta} 
+{\sum_{j=1}^N \left[ \frac{1 - \tau_{jr}^w}{(1 + \tau_{jr}^h)^\eta} w_{jr} s_j^{\phi_j} (1-s_j)^{\frac{1-\eta}{\beta}} \right]^\theta } $$
+
+
+
+```python
+def p_trf(x1):    
+    s = sf( )    
+    A = np.divide( (1 - x1[0]) , np.power( ( 1 + x1[1] ), eta) )     
+    b = np.power(s, phi ) 
+    B = np.multiply(b.reshape(i,1), x1[2] )     
+    C = np.power( (1 - s), np.divide((1-eta), beta) )
+    d = np.multiply(np.multiply(A, B), C )
+    k = np.power(d, theta)
+    p_tr = np.divide( k[i-1], np.sum(k, axis=0) )
+    return p_tr
+ 
+```
+
+The teacher's human capital is given by:
+
+\begin{equation}
+	H_{tr} = p_{tr}^{\frac{\nu}{\pi}} (s_t^{\phi_t} \eta^\eta)^{\frac{\kappa}{\pi}} 
+\left( \frac{1-\tau_{tr}^w}{1+ \tau_{tr}^h} w_{tr}\right)^\sigma \gamma^\frac{1}{\pi}
+\end{equation}
+
+Where $\kappa = 1/(1 - \eta)$, $\pi = 1-(1-\alpha)\varphi\kappa$,  $\nu = 1+ \alpha\varphi\kappa -\theta\kappa$, and $\sigma = \frac{\eta \kappa}{\pi}$.
+
+
+
+
+```python
+  
+def H_trf(x1):    
+    p_tr = p_trf(x1)  
+    A = np.power(np.multiply( np.divide( (1 - x1[0]), (1 + x1[1]) ), x1[2] ), sig )    
+    A = A[i-1]     
+    P = np.multiply(np.power(p_tr, (nu/pi)), np.power(eta, sig ) )
+    g = np.divide(np.multiply(phi[i-1], kappa ), pi )
+    C = np.multiply( np.power(s[i-1], g ), np.power(gamma1, np.divide(1, pi) ) )
+    H_tr = np.multiply(np.multiply(P, A), C )       
+    return H_tr
+
+```
+
+\begin{equation*}
+\tilde{w}_{ir}= \psi  \left( \frac{1-\tau_{ir}^w }{(1+ \tau_{ir}^h)^\eta} w_{ir} \right)   (p_{tr}^{\alpha}H_{tr}^{1-\alpha})^{\varphi} s_i^{\phi_i}  (1-s_i)^{\frac{1-\eta}{\beta}} 
+\end{equation*}
+where $\psi = \eta^\eta(1-\eta)^{1-\eta}$. 
+We can interpret $\tilde{w}_{ir}$ as a liquid reward for a person with mean ability from region $r$ and occupation $i$. So, $\tilde{w}_{ir}$ is composed by wage per efficiency unit in the occupation $w_{ir}$ schooling, teacher's human capital and frictions. 
+
+
+```python
+def w_tilf(x1):
+    H_tr = H_trf(x1) 
+    p_tr = p_trf(x1)                 
+    C = np.power((1 - s), np.divide( (1-eta), beta )).reshape(7, 1)
+    pp = np.power(s, phi)        
+    A = np.multiply(psi, np.multiply( np.divide( (1 - x1[0]), np.power( (1 + x1[1]), eta ) ), x1[2] ) )    
+    b = np.power(np.multiply(np.power(p_tr, alfa), np.power(H_tr, (1-alfa) ) ), varphi )    
+    B = np.multiply(b, pp.reshape(7,1))
+    w_til =  np.multiply(np.multiply(A, B), C )
+    return w_til 
+
+```
+
+\begin{equation}\label{eq17}
+p_{ir} =  \frac{\tilde{w}_{ir}^\theta} {\sum_{j=1}^N \tilde{w}_{jr}^\theta}
+\end{equation}
+
+Where $p_{ir}$ is the fraction of people that work in occupation $i$ in region $r$
+
+
+```python
+
+def p_irf(x1):    
+    w_til = w_tilf(x1)
+    w_til2 = np.power(w_til, theta) 
+    w_r = w_til2.sum(axis = 0)    
+    p_ir = np.divide(w_til2 , w_r ) 
+    return np.array(p_ir), np.array(w_r)
+
+```
+
+Let $W_{ir}$ be the gross average earnings in occupation $i$ in region $r$. Then:
+
+\begin{equation}\label{eq27}
+W_{ir} = w_{ir}\mathbb{E}[h(e_{ir}, s_{i})\epsilon_i] = \frac{(1-s_i)^{-1/\beta}}{(1-\tau_{ir}^w)}\gamma \eta \left( \sum_{i=1}^N \tilde{w}_{ir}^\theta  \right)^{\frac{1}{\theta(1-\eta)}}
+\end{equation}
+
+Where $\gamma= \Gamma(1-(\theta(1-\rho))^{-1}(1-\eta)^{-1})$ is related to the mean of the Fréchet distribution for abilities.
+
+
+
+
+```python
+def Wf(x1):
+    p_ir, w_r = p_irf(x1)         
+    z = np.multiply(np.multiply(gamma1, eta), np.power(w_r, np.divide(1, np.multiply(theta, (1 - eta)) ) ) )
+    A = np.divide( np.power( (1 - s), (-1/beta) ), ( 1 - x1[0] )  )                
+    W = np.multiply(A, z)
+    return W, p_ir
+
+```
+
+Now I need import PNAD data.
+
+
+
+```python
+def simul():
+    global p_t, W_t
+    p_t = pd.read_csv('pt.csv', sep=';')
+    p_t = p_t.iloc[0:7]
+    p_t.set_index('ocup', inplace=True)
+    p_t = np.array(p_t)
+    
+    W_t = pd.read_csv('wt.csv', sep=';')
+    W_t.set_index('ocup', inplace=True)
+    W_t = np.array(W_t)
+    
+    return p_t, W_t
+
+simul()
+
+```
+
+
+
+
+    (array([[0.0492, 0.0469, 0.0533, 0.0426, 0.0416, 0.034 , 0.0465, 0.0408,
+             0.0464, 0.0428, 0.0487, 0.0437, 0.04  , 0.0307, 0.0322, 0.0471,
+             0.0578, 0.0501, 0.0624, 0.0677, 0.0708, 0.088 , 0.0641, 0.0774,
+             0.0722, 0.0586, 0.0756],
+            [0.0261, 0.025 , 0.0429, 0.0343, 0.0227, 0.0311, 0.0365, 0.0327,
+             0.0309, 0.0277, 0.0325, 0.0444, 0.0388, 0.0256, 0.0366, 0.0322,
+             0.0477, 0.0442, 0.0812, 0.0708, 0.0545, 0.0538, 0.0533, 0.0422,
+             0.0564, 0.0396, 0.1182],
+            [0.0559, 0.0539, 0.0824, 0.0728, 0.055 , 0.0679, 0.0606, 0.049 ,
+             0.058 , 0.0506, 0.0665, 0.0587, 0.0562, 0.0478, 0.0564, 0.0626,
+             0.0619, 0.059 , 0.0747, 0.0794, 0.0694, 0.0778, 0.0721, 0.0634,
+             0.0626, 0.0584, 0.1093],
+            [0.3626, 0.4172, 0.3952, 0.4285, 0.3918, 0.4172, 0.3859, 0.3979,
+             0.405 , 0.4346, 0.4246, 0.4454, 0.4466, 0.4147, 0.4188, 0.4201,
+             0.3903, 0.4204, 0.4666, 0.4239, 0.3789, 0.3294, 0.3921, 0.4007,
+             0.3509, 0.4193, 0.4612],
+            [0.18  , 0.1487, 0.0974, 0.1017, 0.1536, 0.0778, 0.1759, 0.1535,
+             0.1337, 0.0841, 0.0804, 0.0826, 0.0866, 0.1604, 0.1537, 0.1407,
+             0.1119, 0.1023, 0.0122, 0.0305, 0.0804, 0.0746, 0.0893, 0.1041,
+             0.1434, 0.0819, 0.0106],
+            [0.279 , 0.2106, 0.2662, 0.2376, 0.2762, 0.2589, 0.2241, 0.2401,
+             0.2558, 0.2875, 0.2908, 0.2643, 0.2728, 0.2509, 0.2454, 0.2382,
+             0.2779, 0.2714, 0.2505, 0.278 , 0.2863, 0.3198, 0.2789, 0.2549,
+             0.25  , 0.2919, 0.1588],
+            [0.0472, 0.0978, 0.0625, 0.0824, 0.059 , 0.1131, 0.0706, 0.086 ,
+             0.0703, 0.0727, 0.0565, 0.0608, 0.059 , 0.07  , 0.057 , 0.0591,
+             0.0526, 0.0526, 0.0525, 0.0496, 0.0596, 0.0567, 0.0502, 0.0573,
+             0.0645, 0.0502, 0.0664]]),
+     array([[2.71, 2.81, 3.07, 2.7 , 2.71, 2.71, 2.9 , 2.91, 2.65, 2.63, 2.67,
+             2.6 , 2.57, 2.49, 2.61, 2.75, 2.84, 2.78, 3.12, 3.19, 2.99, 2.96,
+             2.89, 3.03, 2.77, 2.94, 3.46],
+            [3.23, 3.03, 3.66, 3.76, 3.09, 3.23, 3.34, 3.29, 3.33, 3.16, 3.26,
+             3.03, 3.09, 3.39, 3.39, 3.18, 3.18, 3.27, 3.45, 3.35, 3.33, 3.3 ,
+             3.3 , 3.33, 3.23, 3.2 , 3.84],
+            [2.43, 2.46, 2.74, 2.62, 2.29, 2.57, 2.5 , 2.63, 2.17, 2.17, 2.38,
+             2.37, 2.25, 2.1 , 2.43, 2.34, 2.5 , 2.41, 2.69, 2.73, 2.71, 2.71,
+             2.61, 2.72, 2.48, 2.43, 3.13],
+            [2.01, 1.88, 2.09, 2.  , 1.8 , 1.96, 1.92, 1.73, 1.59, 1.66, 1.76,
+             1.62, 1.76, 1.72, 1.78, 1.7 , 1.88, 1.95, 2.11, 2.11, 2.11, 2.22,
+             2.03, 2.02, 2.02, 2.01, 2.23],
+            [1.88, 1.49, 1.39, 1.53, 1.45, 1.69, 1.59, 1.16, 0.99, 1.06, 1.29,
+             1.15, 1.32, 1.37, 1.19, 1.21, 1.63, 1.72, 1.7 , 2.  , 1.85, 2.05,
+             1.92, 2.1 , 2.11, 1.98, 2.05],
+            [2.15, 1.82, 2.17, 1.95, 1.83, 1.94, 1.96, 1.81, 1.69, 1.64, 1.71,
+             1.59, 1.8 , 1.74, 1.78, 1.85, 2.07, 2.16, 2.23, 2.26, 2.2 , 2.3 ,
+             2.14, 2.18, 2.24, 2.17, 2.29],
+            [2.76, 2.85, 2.89, 2.8 , 2.63, 3.06, 2.75, 2.79, 2.7 , 2.43, 2.65,
+             2.74, 2.57, 2.62, 2.77, 2.63, 2.78, 2.75, 2.82, 2.78, 2.81, 2.89,
+             2.79, 3.03, 2.85, 2.82, 3.23]]))
+
+
+
+So, the problem consist in minimize equation below,  using L-BFGS-B. Others algorithms can be used, for example genetic algorithm.
+
+
+\begin{equation}\label{eq28}
+Dist = \sum_{i=1, r=1}^{N, R} \left(  \frac{W_{ir}^M - W_{ir}^T}{W_{ir}^T}  \right)^2 + \sum_{i=1, r=1}^{N, R} \left(  \frac{p_{ir}^M - p_{ir}^T}{p_{ir}^T}  \right)^2 
+\end{equation}
+
+
+```python
+def obj(x1):
+    
+    x1 = x1.reshape((3, i, r)) 
+    x1[0, 0, : ] = x1[0, 0, 0]    
+    x1[1, 0, :] = 0
+    x1[2, :, r-1] = 1
+            
+    W, p_ir = Wf(x1)
+    
+    D =  (np.power(np.divide( (W-W_t), W_t ), 2) + np.power(np.divide( (p_ir-p_t), p_t ), 2) ).sum()
+    D = np.log(D)
+    
+    return D
+
+```
+
+
+```python
+%time obj(taus2())
+```
+
+    Wall time: 997 µs
+    
+
+
+
+
+    9.752787989108473
+
+
+
+### Constraints
+
+
+```python
+
+
+# optimization
+
+Bd = ((-0.99, 0.999), )*189 + ((-0.99, 40), )*189 + ((0.001, 30), )*189
+Bd = np.array(Bd)
+
+def hessp(x, l):
+    return np.zeros((3, i, r))
+
+```
+
+
+```python
+## Nelder Mead
+
+def callback(x):
+    fobj = obj(x)
+    print(f'\033[1;033mObjetivo: {np.around(fobj, 4)}') 
+
+if __name__ == '__main__':
+
+    %time sol2 = minimize(obj, x1,  method='Nelder-Mead', callback=callback, options={'maxiter':1e6})
+
+```
