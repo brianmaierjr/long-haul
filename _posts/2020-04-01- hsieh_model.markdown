@@ -9,7 +9,6 @@ date:   2020-05-11
     <style>
         p{
             text-align: justify;
-            text-indent: 50px;
         }
     </style>
 </head>
