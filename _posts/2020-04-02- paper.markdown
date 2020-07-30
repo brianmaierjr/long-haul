@@ -3,12 +3,12 @@ layout: post
 title:  "IDE no Brasil"
 date:   2020-04-02
 ---
+
 <head>
     <meta charset="UTF-8"/>
     <style>
         p{
             text-align: justify;
-            text-indent: 50px;
         }
     </style>
 </head>
@@ -34,7 +34,5 @@ nulo. Ademais, a volatilidade do IDE também não influencia o crescimento brasi
 
 
 
-
-###### Link do paper:
-[paper](https://mj-ribeiro.github.io/eco3.pdf)
+[Link do paper](https://mj-ribeiro.github.io/eco3.pdf)
 
