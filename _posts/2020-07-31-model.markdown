@@ -2,6 +2,7 @@
 layout: post
 mathjax: true
 title: "Misallocation in brasilian labor market - Model"
+author: MARCOS J RIBEIRO
 date:   2020-07-31
 ---
 
