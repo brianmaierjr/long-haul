@@ -15,4 +15,4 @@ date:   2020-08-27
     </style>
 </head>
 
-[Apresentação]()
+[Apresentação](https://mj-ribeiro.github.io/econometria.pdf)
