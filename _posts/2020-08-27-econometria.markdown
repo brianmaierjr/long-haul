@@ -18,8 +18,8 @@ date:   2020-08-27
 
 
 
-### [Apresentação](https://mj-ribeiro.github.io/econometria.pdf) da aula 1 \\
+##### [Apresentação](https://mj-ribeiro.github.io/econometria.pdf) da aula 1 
 
-### [Livro](https://mj-ribeiro.github.io/book.pdf) do Wooldridge
+##### [Livro](https://mj-ribeiro.github.io/book.pdf) do Wooldridge
 
-### [GitHub](https://github.com/mj-ribeiro/Econometry) da disciplina
+##### [GitHub](https://github.com/mj-ribeiro/Econometry) da disciplina
