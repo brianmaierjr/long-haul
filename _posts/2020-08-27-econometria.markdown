@@ -25,3 +25,5 @@ date:   2020-09-01
 ##### [GitHub](https://github.com/mj-ribeiro/Econometry) da disciplina
 
 ##### [Lista 1](https://edisciplinas.usp.br/pluginfile.php/5632942/mod_resource/content/1/lista_1-econometria.pdf)
+
+##### [Gabarito da Lista 1](https://edisciplinas.usp.br/pluginfile.php/5671477/mod_resource/content/1/gab_lista1.txt)
