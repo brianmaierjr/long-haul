@@ -3,7 +3,7 @@ layout: post
 mathjax: true
 title: "Econometria"
 author: MARCOS J RIBEIRO
-date:   2020-09-01
+date:   2020-09-14
 ---
 
 
