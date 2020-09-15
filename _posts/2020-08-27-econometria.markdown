@@ -3,7 +3,7 @@ layout: post
 mathjax: true
 title: "Econometria"
 author: MARCOS J RIBEIRO
-date:   2020-09-14
+date:   2020-09-15
 ---
 
 
@@ -29,3 +29,5 @@ date:   2020-09-14
 ##### [Lista 1](https://edisciplinas.usp.br/pluginfile.php/5632942/mod_resource/content/1/lista_1-econometria.pdf)
 
 ##### [Gabarito da Lista 1](https://edisciplinas.usp.br/pluginfile.php/5671477/mod_resource/content/1/gab_lista1.txt)
+
+##### [Lista 2](https://edisciplinas.usp.br/pluginfile.php/5679125/mod_resource/content/1/lista2_econ.pdf)
