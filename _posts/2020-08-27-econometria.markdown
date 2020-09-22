@@ -17,19 +17,22 @@ date:   2020-09-15
 </head>
 
 
-
-##### [Apresentação](https://mj-ribeiro.github.io/econometria.pdf) da aula 1 
-
 ##### [GitHub](https://github.com/mj-ribeiro/Econometry) da disciplina
 
+#### Notas de aula
 
-##### [Lista 1](https://edisciplinas.usp.br/pluginfile.php/5632942/mod_resource/content/1/lista_1-econometria.pdf)
+[Apresentação](https://mj-ribeiro.github.io/econometria.pdf) da aula 1 
 
-##### [Gabarito da Lista 1](https://edisciplinas.usp.br/pluginfile.php/5671477/mod_resource/content/1/gab_lista1.txt)
+[Aula 5](https://edisciplinas.usp.br/pluginfile.php/5703120/mod_resource/content/1/aula5.pdf)
 
-##### [Lista 2](https://edisciplinas.usp.br/pluginfile.php/5679125/mod_resource/content/1/lista2_econ.pdf)
 
-##### [Notas da aula 5](https://edisciplinas.usp.br/pluginfile.php/5703120/mod_resource/content/1/aula5.pdf)
+#### Listas de exercícios
+
+[Lista 1](https://edisciplinas.usp.br/pluginfile.php/5632942/mod_resource/content/1/lista_1-econometria.pdf)
+
+[Gabarito da Lista 1](https://edisciplinas.usp.br/pluginfile.php/5671477/mod_resource/content/1/gab_lista1.txt)
+
+[Lista 2](https://edisciplinas.usp.br/pluginfile.php/5679125/mod_resource/content/1/lista2_econ.pdf)
 
 
 #### Livros
