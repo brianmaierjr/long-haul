@@ -17,9 +17,13 @@ date:   2020-09-15
 </head>
 
 
-##### [GitHub](https://github.com/mj-ribeiro/Econometry) da disciplina
+#### GitHub
+
+[GitHub](https://github.com/mj-ribeiro/Econometry) da disciplina
+
 
 #### Notas de aula
+
 
 [Apresentação](https://mj-ribeiro.github.io/econometria.pdf) da aula 1 
 
@@ -27,6 +31,7 @@ date:   2020-09-15
 
 
 #### Listas de exercícios
+
 
 [Lista 1](https://edisciplinas.usp.br/pluginfile.php/5632942/mod_resource/content/1/lista_1-econometria.pdf)
 
