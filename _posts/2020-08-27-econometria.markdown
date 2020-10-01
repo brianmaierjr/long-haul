@@ -37,7 +37,7 @@ date:   2020-09-30
 
 [Lista 2](https://edisciplinas.usp.br/pluginfile.php/5679125/mod_resource/content/1/lista2_econ.pdf)
 
-[Lista 3](https://edisciplinas.usp.br/pluginfile.php/5728413/mod_resource/content/1/Lista3_econ.pdf)
+[Lista 3](https://edisciplinas.usp.br/pluginfile.php/5728866/mod_resource/content/1/Lista3_econ.pdf)
 
 #### Gabarito
 
