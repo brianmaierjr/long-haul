@@ -25,9 +25,9 @@ date:   2020-09-30
 #### Notas de aula
 
 
-[Apresentação](https://mj-ribeiro.github.io/econometria.pdf) da aula 1 
+[Aula Introdutória](https://mj-ribeiro.github.io/econometria.pdf) 
 
-[Aula 5](https://edisciplinas.usp.br/pluginfile.php/5703120/mod_resource/content/1/aula5.pdf)
+[Aula 5](https://mj-ribeiro.github.io/aula5.pdf)
 
 
 #### Listas de exercícios
