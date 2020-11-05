@@ -157,6 +157,11 @@ dd {
   margin: 0;
 }
 
+.post .highlight, .post img{
+  box-shadow: 2px 2px 20px #000000 !important;
+  border-radius: 25% !important;
+}
+
 
 /***************
 PAGE STYLES
@@ -386,7 +391,7 @@ FOOTER STYLING
 	}
 
 	.copy, .footer-links {
-		font-size: .8em;
+		font-size: .6em;
 	}
 
 	.copy {
