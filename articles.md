@@ -4,7 +4,7 @@ title: Your New Jekyll Site
 ---
 
 <div id="articles">
-  <h1>Articles</h1>
+  <h2>Articles</h2>
   <ul class="posts noList">
     {% for post in site.posts %}
       <li>
