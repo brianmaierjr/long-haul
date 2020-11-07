@@ -7,56 +7,56 @@
 
     <!-- Open Graph Meta -->
     <meta content="{{ site.title }}" property="og:site_name">
-    {% if page.title %}
+    {%- if page.title -%}
       <meta content="{{ page.title }}" property="og:title">
-    {% else %}
+    {%- else -%}
       <meta content="{{ site.title }}" property="og:title">
-    {% endif %}
-    {% if page.title %}
+    {%- endif -%}
+    {%- if page.title -%}
       <meta content="article" property="og:type">
-    {% else %}
+    {%- else -%}
       <meta content="website" property="og:type">
-    {% endif %}
-    {% if page.description %}
+    {%- endif -%}
+    {%- if page.description -%}
       <meta content="{{ page.description }}" property="og:description">
-    {% else %}
+    {%- else -%}
       <meta content="{{ site.description }}" property="og:description">
-    {% endif %}
-    {% if page.url %}
+    {%- endif -%}
+    {%- if page.url -%}
       <meta content="{{ site.url }}{{ page.url }}" property="og:url">
-    {% endif %}
-    {% if page.date %}
+    {%- endif -%}
+    {%- if page.date -%}
       <meta content="{{ page.date | date_to_xmlschema }}" property="article:published_time">
       <meta content="{{ site.url }}/about/" property="article:author">
-    {% endif %}
-    {% if page.image %}
+    {%- endif -%}
+    {%- if page.image -%}
       <meta content="{{ site.url }}/assets/img/{{ page.image }}" property="og:image">
-    {% else %}
+    {%- else -%}
       <meta content="{{ '/assets/img/touring.jpg' | prepend: site.url }}" property="og:image">
-    {% endif %}
+    {%- endif -%}
 
     <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@{{ site.social.twitter }}">
     <meta name="twitter:creator" content="@{{ site.social.twitter }}">
-    {% if page.title %}
+    {%- if page.title -%}
       <meta name="twitter:title" content="{{ page.title }}">
-    {% else %}
+    {%- else -%}
       <meta name="twitter:title" content="{{ site.title }}">
-    {% endif %}
-    {% if page.url %}
+    {%- endif -%}
+    {%- if page.url -%}
       <meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
-    {% endif %}
-    {% if page.description %}
+    {%- endif -%}
+    {%- if page.description -%}
       <meta name="twitter:description" content="{{ page.description }}">
-    {% else %}
+    {%- else -%}
       <meta name="twitter:description" content="{{ site.description }}">
-    {% endif %}
-    {% if page.image %}
+    {%- endif -%}
+    {%- if page.image -%}
       <meta name="twitter:image:src" content="{{ site.url }}/assets/img/{{ page.image }}">
-    {% else %}
+    {%- else -%}
       <meta name="twitter:image:src" content="{{ '/assets/img/touring.jpg' | prepend: site.url }}">
-    {% endif %}
+    {%- endif -%}
 
 
     <!-- Favicon -->
@@ -73,5 +73,5 @@
     <!-- Modernizr -->
     <script src="{{ "/assets/js/modernizr.custom.15390.js" | prepend: site.baseurl }}" type="text/javascript"></script>
 
-    {% if site.google_analytics %} {% include google_analytics.html %} {% endif %}
+    {%- if site.google_analytics -%} {%- include google_analytics.html -%} {%- endif -%}
 </head>

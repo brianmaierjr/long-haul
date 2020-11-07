@@ -8,7 +8,7 @@
 
 		<div class="footer-links">
 			<ul class="noList">
-				{% if site.social.facebook %}
+				{%- if site.social.facebook -%}
 				<li>
 					<a
 						href="https://www.facebook.com/{{ site.social.facebook }}"
@@ -39,7 +39,7 @@
 						</svg>
 					</a>
 				</li>
-				{% endif %} {% if site.social.twitter %}
+				{%- endif -%} {%- if site.social.twitter -%}
 				<li>
 					<a
 						href="https://twitter.com/{{ site.social.twitter }}"
@@ -70,7 +70,7 @@
 						</svg>
 					</a>
 				</li>
-				{% endif %} {% if site.social.linkedin %}
+				{%- endif -%} {%- if site.social.linkedin -%}
 				<li>
 					<a
 						href="https://www.linkedin.com/in/{{ site.social.linkedin }}"
@@ -101,7 +101,7 @@
 						</svg>
 					</a>
 				</li>
-				{% endif %} {% if site.social.github %}
+				{%- endif -%} {%- if site.social.github -%}
 				<li>
 					<a href="https://github.com/{{ site.social.github }}" target="_blank">
 						<svg
@@ -129,7 +129,7 @@
 						</svg>
 					</a>
 				</li>
-				{% endif %} {% if site.social.email %}
+				{%- endif -%} {%- if site.social.email -%}
 				<li>
 					<a href="mailto:{{ site.social.email }}" target="_blank">
 						<svg
@@ -157,7 +157,7 @@
 						</svg>
 					</a>
 				</li>
-				{% endif %}
+				{%- endif -%}
 			</ul>
 		</div>
 	</div>
