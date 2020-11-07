@@ -7,8 +7,7 @@ paginate_path: "blog/page:num/"
 permalink: blog/:title/
 
 # Header Option
-# header: normal
-header: large
+# header: large
 
 markdown: kramdown
 highlighter: rouge
