@@ -50,7 +50,7 @@ If you'd like your header to be larger use the option below to make it take up h
 
 - **header:** large
 
-![preview Long Haul](/preview-large.jpg)
+![preview Long Haul](/preview-large.png)
 
 ## License
 
