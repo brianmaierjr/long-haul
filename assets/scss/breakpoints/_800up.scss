@@ -108,6 +108,17 @@ HEADER STYLING
 	}
 }
 
+// Large Header Size
+
+.header--large {
+	height: 50vh;
+
+	.container {
+		top: 90%;
+		transform: translateY(-100%);
+	}
+}
+
 
 /***************
 MENU STYLING

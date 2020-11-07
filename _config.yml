@@ -6,6 +6,10 @@ baseurl: ""
 paginate_path: "blog/page:num/"
 permalink: blog/:title/
 
+# Header Option
+# header: normal
+header: large
+
 markdown: kramdown
 highlighter: rouge
 plugins: [jekyll-paginate]
