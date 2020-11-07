@@ -399,6 +399,11 @@ FOOTER STYLING
 
 			li {
 				display: inline-block;
+				margin-right: 8px;
+
+				&:last-child {
+					margin-right: 0;
+				}
 
 				a {
 					display: inline-block;
@@ -492,3 +497,25 @@ POST LIST STYLING
 	}
 }
 
+
+/***************
+DARK THEME STYLING
+***************/
+
+@media (prefers-color-scheme: dark) {
+	body {
+		background-color: black;
+		color: white;
+	}
+
+	.posts li .date {
+		color: white;
+	}
+	.postNav {
+		border-top: 1px solid lighten(black, 10%);
+		border-bottom: 1px solid lighten(black, 10%);
+	}
+	.footer .container {
+		border-top-color: lighten(black, 10%);
+	}
+}

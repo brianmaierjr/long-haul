@@ -244,3 +244,18 @@ CONTACT PAGE STYLING
     margin-right: 0;
 	}
 }
+
+/***************
+DARK THEME STYLING
+***************/
+
+@media (prefers-color-scheme: dark) {
+	body {
+		background-color: black;
+		color: white;
+	}
+	.content:after,
+	.post .featuredImage:before {
+		background: black;
+	}
+  }
