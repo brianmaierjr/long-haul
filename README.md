@@ -46,7 +46,7 @@ The main settings can be found inside the `_config.yml` file:
 
 ### Header Option
 
-If you'd like your header to be larger use the option below to make it take up half of the vertical space on screens sized 800px wide and up. Preview image below.
+If you'd like your header to be larger then you can use the option below in you `config.yml` to make it take up half of the vertical space on screens 800px wide and up. *Preview image below.*
 
 - **header:** large
 
