@@ -44,6 +44,14 @@ The main settings can be found inside the `_config.yml` file:
 - **social** diverse social media usernames (optional)
 - **google_analytics** Google Analytics key (optional)
 
+### Header Option
+
+If you'd like your header to be larger use the option below to make it take up half of the vertical space on screens sized 800px wide and up. Preview image below.
+
+- **header:** large
+
+![preview Long Haul](/preview-large.jpg)
+
 ## License
 
 This is [MIT](LICENSE) with no added caveats, so feel free to use this Jekyll theme on your site without linking back to me or using a disclaimer.
