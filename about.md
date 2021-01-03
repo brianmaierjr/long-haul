@@ -1,10 +1,10 @@
 ---
 layout: default
-title: About BE LAB
+title: About & Contact
 ---
 
 <div class="post">
-	<h1 class="pageTitle">About BE LAB</h1>
+	<h1 class="pageTitle">About the BELAB </h1>
 	<img src="{{ '/assets/img/Cute Weddell Seal.jpg' | prepend: site.baseurl }}" alt="">
 	<p class="intro"> 설명 1  </p>
 	<p> 설명 2 </p>
