@@ -1,8 +1,8 @@
 title: Behavioral Ecology Laboratory, KOPRI
 description: Long Form Jekyll theme built with SASS / COMPASS / SUSY
 
-url: http://chani3218.github.io
-baseurl: "/long-haul"
+url: http://chani3218.github.io/
+baseurl: "/belab"
 paginate_path: "blog/page:num/"
 permalink: blog/:title/
 
