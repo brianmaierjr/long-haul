@@ -20,7 +20,7 @@ title: About & Contact
 
 
 <div id="contact">
-  <h1 class="pageTitle">Members</h1>
+  <h1 class="pageTitle">Contact</h1>
   <div class="contactContent">
     <p class="intro">This is an example Contact page. If you want to make changes then do so in the <code>contact.html</code> file.</p>
     <p>The form is provided by <a href="http://formspree.io/">Formspree.</a> Follow the directions on their site to set up the form for use.</p>
