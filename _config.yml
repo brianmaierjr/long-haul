@@ -12,7 +12,7 @@ header: large
 markdown: kramdown
 highlighter: rouge
 plugins: [jekyll-paginate]
-paginate: 7
+paginate: 3
 
 navigation:
   - title: Home
