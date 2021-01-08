@@ -7,17 +7,7 @@ date:   2021-01-08
 ---
 
 
-<head>
-    <meta charset="UTF-8"/>
-    <style>
-        p{
-            text-align: justify;
-        }
-    </style>
-</head>
 
-
-<!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
