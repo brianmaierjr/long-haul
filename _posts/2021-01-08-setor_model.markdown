@@ -8,10 +8,6 @@ date:   2021-01-08
 
 
 
-<html>
-<head><meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>plots_setor_model</title><script type="text/javascript" src="http://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=ZIKg4ezUhqp02pTsB8WVkcaYt-U7k60J9H9usrBSFbBmhAufQGFZR6F11K7xoijbA3zKSuWCibfcCisLAVp0ODZ5yMZKcVlmSBxU_ZT2dGuk6BlmYkD56hifuYe7tu4D" charset="UTF-8"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 
 
