@@ -20,7 +20,7 @@ date:   2021-01-21
 ### Misallocation of talent, human capital formation, and development in Brazil
 
 
-Abstract
+
 In this article, we elaborate a general equilibrium model to study why the relative salary
 of teachers is higher in regions with low and middle income in Brazil and how it affects the
 product. In this model, occupational choices, especially for teachers, are affected by distortions in 
