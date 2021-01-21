@@ -1,7 +1,7 @@
 ---
 layout: post
 mathjax: true
-title: "Efeitos do IDE no crescimento" 
+title: "Misallocation of talent in Brazil" 
 date:   2021-01-21
 ---
 <head>
@@ -29,3 +29,8 @@ on the formation of human capital. After calibrating the model, using the Genera
 Moments Method, for the Brazilian scenario, it was found that there is a misallocation
 of talent in the Brazilian economy and reallocating more skilled people to the teaching
 occupation could increase GDP by 68.28 %.
+
+
+Link: [Misallocation of talent in Brazil](https://mj-ribeiro.github.io/master/miss.pdf)
+
+ 
