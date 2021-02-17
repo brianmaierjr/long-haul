@@ -14,3 +14,4 @@ Atuo nas áreas de crescimento econômico, finanças e economia computacional. T
 
 ![presentation](\assets\img\mjr_rj.jpg "Apresentação no Rio de Janeiro")
 
+![alien](\assets\img\fundo2.png)
