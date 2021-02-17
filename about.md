@@ -15,3 +15,6 @@ Atuo nas áreas de crescimento econômico, finanças e economia computacional. T
 ![presentation](\assets\img\mjr_rj.jpg "Apresentação no Rio de Janeiro")
 
 ![alien](\assets\img\fundo2.png)
+
+
+[![alien]\assets\img\fundo2.png)](https://www.youtube.com/watch?v=Wvgkn_e0Iz4&feature=youtu.be&ab_channel=AlienEconomista "alien")
