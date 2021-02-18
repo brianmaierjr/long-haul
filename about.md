@@ -8,9 +8,9 @@ Sou o Marcos Júnio Ribeiro. Graduei em Economia pela Universidade Federal de S�
 Fiz mestrado em Economia Aplicada na Universidade Federal de Viçosa.
 Atualmente faço doutorado em Economia Aplicada na FEARP-USP.
 Atuo nas áreas de crescimento econômico, finanças e economia computacional. 
-Também sou o criador do canal [Alien Economista](bit.ly/3pyTjomAlienEconomista) no YouTube.
+Também sou o criador do canal [Alien Economista](https://www.youtube.com/channel/UChWkFzZwrWrfQgZ2PIEJbhg) no YouTube.
 
-[Lattes](bit.ly/3bji6Yi)
+[Lattes](http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K8457340D4)
 
 
 ![presentation](\assets\img\mjr_rj.jpg "Apresentação no Rio de Janeiro")
