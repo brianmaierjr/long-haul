@@ -18,7 +18,7 @@ date:   2021-01-21
 </head>
 
 
-#### Curso de R - Do zero ao domínio absoluto
+### Curso de R - Do zero ao domínio absoluto
 
 
 Já que não acontece uma invasão alienígena para salvar a economia brasileira, o alien economista salva vc com um super curso de R com tudo que 
@@ -27,4 +27,36 @@ para ser o maior canal de estatística computacional do Brasil e levar o conheci
 condições de comprar cursos caros. 
 
 
+##### Aula 1
+
 [![cr1](\assets\img\cr1.jpg)](https://www.youtube.com/watch?v=dEKycN4fWG4&t=792s&ab_channel=AlienEconomista)
+
+##### Aula 2
+
+[![cr2](\assets\img\cr2.jpg)](https://www.youtube.com/watch?v=c79lNPVRMFE&ab_channel=AlienEconomistaAlienEconomista)
+
+
+
+### R para iniciantes
+
+##### Mapa do COVID 19 no R
+
+[![map](\assets\img\map.jpg)](https://www.youtube.com/watch?v=UmpXfz1APK0&t=531s&ab_channel=AlienEconomista)
+
+
+##### Regressão Linear em R
+
+[![reg](\assets\img\reg.png)](https://www.youtube.com/watch?v=Cj3weAzVoJE&t=2s&ab_channel=AlienEconomista)
+
+
+##### Extrair a PNAD no R
+
+[![reg](\assets\img\pnad.png)](https://www.youtube.com/watch?v=b9REgdZb8-g&t=149s&ab_channel=AlienEconomista)
+
+
+
+
+
+
+
+
