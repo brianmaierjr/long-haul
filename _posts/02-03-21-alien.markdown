@@ -2,7 +2,7 @@
 layout: post
 mathjax: true
 title: "Alien Economista" 
-date:   2021-01-21
+date:   2021-03-02
 ---
 <head>
     <meta charset="UTF-8"/>
