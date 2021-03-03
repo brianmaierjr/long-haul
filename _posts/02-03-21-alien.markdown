@@ -1,0 +1,30 @@
+---
+layout: post
+mathjax: true
+title: "Alien Economista" 
+date:   2021-01-21
+---
+<head>
+    <meta charset="UTF-8"/>
+    <style>
+        body{
+            background-color: hsla(195,81%,93%, 0.6);
+            color: rgba(0,0,0,1);
+        }
+        p{
+            text-align: justify;
+        }
+    </style>
+</head>
+
+
+#### Curso de R - Do zero ao domínio absoluto
+
+
+Já que não acontece uma invasão alienígena para salvar a economia brasileira, o alien economista salva vc com um super curso de R com tudo que 
+você precisa saber para se tornar um cientista de dados. Eu, Marcos Ribeiro, Idealizei o canal [Alien Economista](https://www.youtube.com/channel/UChWkFzZwrWrfQgZ2PIEJbhg)
+para ser o maior canal de estatística computacional do Brasil e levar o conhecimento que adquiri em programação, ao longo de cinco anos, de forma gratuita  aos estudantes que não tem 
+condições de comprar cursos caros. 
+
+
+[![cr1](\assets\img\cr1.jpg)](https://www.youtube.com/watch?v=dEKycN4fWG4&t=792s&ab_channel=AlienEconomista)
