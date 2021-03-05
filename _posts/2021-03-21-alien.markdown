@@ -59,7 +59,9 @@ Para acessar as vídeo aulas clique nas imagens.
 [![reg](\assets\img\pnad.png)](https://www.youtube.com/watch?v=b9REgdZb8-g&t=149s&ab_channel=AlienEconomista)
 
 
+##### GGTOP no R
 
+[![ggplot](\assets\img\ggplot.jpg)](https://www.youtube.com/watch?v=gGTEU_LoLK0&list=PLzndrG2kgb_YrNJ0mi9bwHK5-Ggj6RcDz&index=8&ab_channel=AlienEconomista)
 
 
 
