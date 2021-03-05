@@ -32,17 +32,24 @@ Esse conhecimento irá dar um boost na sua carreira acadêmica e profissional e 
 
 Para acessar as vídeo aulas clique nas imagens.
 
-##### Aula 1
-
-[![cr1](\assets\img\cr1.jpg)](https://www.youtube.com/watch?v=dEKycN4fWG4&t=792s&ab_channel=AlienEconomista)
-
 ##### Aula 2
 
 [![cr2](\assets\img\cr2.jpg)](https://www.youtube.com/watch?v=c79lNPVRMFE&ab_channel=AlienEconomistaAlienEconomista)
 
 
+##### Aula 1
+
+[![cr1](\assets\img\cr1.jpg)](https://www.youtube.com/watch?v=dEKycN4fWG4&t=792s&ab_channel=AlienEconomista)
+
+
 
 ### R para iniciantes
+
+
+##### GGTOP no R
+
+[![ggplot](\assets\img\ggplot.jpg)](https://www.youtube.com/watch?v=gGTEU_LoLK0&list=PLzndrG2kgb_YrNJ0mi9bwHK5-Ggj6RcDz&index=8&ab_channel=AlienEconomista)
+
 
 ##### Mapa do COVID 19 no R
 
@@ -57,12 +64,6 @@ Para acessar as vídeo aulas clique nas imagens.
 ##### Extrair a PNAD no R
 
 [![reg](\assets\img\pnad.png)](https://www.youtube.com/watch?v=b9REgdZb8-g&t=149s&ab_channel=AlienEconomista)
-
-
-##### GGTOP no R
-
-[![ggplot](\assets\img\ggplot.jpg)](https://www.youtube.com/watch?v=gGTEU_LoLK0&list=PLzndrG2kgb_YrNJ0mi9bwHK5-Ggj6RcDz&index=8&ab_channel=AlienEconomista)
-
 
 
 
