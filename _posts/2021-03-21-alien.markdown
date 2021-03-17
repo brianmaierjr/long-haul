@@ -2,7 +2,7 @@
 layout: post
 mathjax: true
 title: "Alien Economista" 
-date:   2021-03-09
+date:   2021-03-16
 ---
 <head>
     <meta charset="UTF-8"/>
@@ -31,6 +31,12 @@ ao longo de dez anos, de forma gratuita aos estudantes que não tem condições 
 Esse conhecimento irá dar um boost na sua carreira acadêmica e profissional e fazer você ser CADA VEZ MELHOR.
 
 Para acessar as vídeo aulas clique nas imagens.
+
+
+##### Aula 4
+
+[![cr4](\assets\img\cr4.jpg)](https://www.youtube.com/watch?v=QJimCXTcMos&ab_channel=AlienEconomista)
+
 
 ##### Aula 3
 
