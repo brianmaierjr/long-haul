@@ -6,6 +6,8 @@ If you really enjoy Long Haul and want to give me credit somewhere on the intern
 
 #### [View Demo](http://brianmaierjr.com/long-haul)
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/bd29f13b-3754-46d7-9a39-48db2e174b99/deploy-status)](https://app.netlify.com/sites/long-haul/deploys)
+
 ## Features
 
 - Minimal, Type Focused Design
