@@ -36,7 +36,7 @@ By definition, however, each expenditure for a sector, represents an income for 
 
 <figure>
 	<img src="/assets/img/sankey_all.jpg" alt="" style="width:600px;"> 
-	<figcaption>Fig2. - Income and Expenditures (R$ M)  </figcaption>
+	<figcaption>Fig2. - Income and Expenditures (R$ )  </figcaption>
 </figure>
 
 
