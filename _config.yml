@@ -1,7 +1,7 @@
-title: Long Haul
-description: Long Form Jekyll theme built with SASS / COMPASS / SUSY
+title: Rafael Cattan
+description: Hi, I'm Rafael Cattan an economist and data-science enthusiast
 
-url: http://long-haul.netlify.app
+url: https://rsocattan.github.io/
 paginate_path: "blog/page:num/"
 permalink: blog/:title/
 
@@ -22,13 +22,13 @@ navigation:
     url: /contact
 
 social:
-  github: brianmaierjr
-  twitter: brianmaierjr
-  facebook: brianmaierjr
-  email: brimaidesigns@gmail.com
-  linkedin: brianmaierjr
+ # github: brianmaierjr
+#  twitter: brianmaierjr
+ # facebook: brianmaierjr
+  email: rsocattan@gmail.com
+  linkedin: https://www.linkedin.com/in/rafael-cattan-aa98ba177/
 
 google_analytics: "UA-58263416-1"
 
 disqus:
-    shortname: brianmaierjr
+    shortname: rsocattan
