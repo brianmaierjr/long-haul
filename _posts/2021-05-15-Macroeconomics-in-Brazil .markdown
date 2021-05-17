@@ -25,7 +25,7 @@ Let's first check-out which are the most important transaction. With some cleani
 
 
 <figure>
-	<iframe src="C:/Users/User/Documents/WEB5/rsocattan.github.io/assets/img" frameborder="0" height="400" width="430"></iframe>
+	<img src="/assets/img/flows.jpg" alt="" style="width:600px;"> s/img" frameborder="0" height="400" width="430"></iframe>
 	<figcaption>Fig1. - Key Flows (% GDP) figcaption</figcaption>
 </figure>
 
@@ -35,12 +35,22 @@ By definition, however, each expenditure for a sector, represents an income for 
 
 
 <figure>
-	<img src="/assets/img/sankey_all.jpg" alt="" style="width:600px;"> 
+<iframe src="/assets/img/sanks.html" frameborder="0" height="400" width="430"></iframe>
 	<figcaption>Fig2. - Income and Expenditures (R$ )  </figcaption>
 </figure>
 
 
-A number of features could be highlighted from this result. I'll only highlight those which illustrate how actual data and economic growth theory diverge. First, we can see that 
+
+A number of features could be highlighted from this result. I'll only highlight those which illustrate how actual data and economic growth theory diverge. **First**, we can see that GDP which is net value added is a source of income not only for firms, but also for banks, households, and even government (this last one, only for accounting purposes). Given that most macroeconomic growth models only rely on firms output, we can see that the real macroeconomic accounting system is significantly more complex than most theoretical representations of it. 
+
+**Second**, interests and wealth (which aggregates capital-related income) are an important income source for banks, as expected, but also for households, and firms. This stresses a financial source of income which derives from balance sheet relations. For instance, if households hold firms' equities or government bonds, this will influence their income sources, and, consequently, their expenditures's level. 
+
+**Third** Transfers play a key role on households disposable income determination. We can see that this source of income is similar to wages in absolute levels, meaning that a proper representation of households on macroeconomic models, should not overlook the distributive role played by the goverment. 
+
+**Forth** Firms, households, the government, an even banks invest (i.e. consume fixed capital). Most growth models embody none but firms as those responsible for capital accumulation. Investments play a crucial role on economic dynamics in the short and - depending on your your theoretical background - in the long run.
+
+
+Models that try to reproduce macroeconomic systems realistically have e
 
 
 
