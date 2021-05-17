@@ -8,13 +8,7 @@ date: '2021-05-17'
 ## This is Brazil
 
 <figure>
-	<img src="/assets/img/flows.jpg" alt=""> 
+	<img src="/assets/img/flows.jpg" alt="" style="width:200px;"> 
 	<figcaption>Fig1. - This is an example figcaption</figcaption>
 </figure>
 
-{%- highlight html -%}
-<figure>
-	<img src="/assets/img/flows.jpg" alt=""> 
-	<figcaption>Fig1. - This is an example figcaption</figcaption>
-</figure>
-{%- endhighlight -%}
