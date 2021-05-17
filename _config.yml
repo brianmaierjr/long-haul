@@ -11,16 +11,14 @@ permalink: blog/:title/
 markdown: kramdown
 highlighter: rouge
 plugins: [jekyll-paginate]
-paginate: 5
+paginate: 5 # post per page
 
 navigation:
   - title: Home
     url: /index.html
   - title: About
     url: /about
-  - title: Contact
-    url: /contact
-
+    
 social:
  # github: brianmaierjr
 #  twitter: brianmaierjr
