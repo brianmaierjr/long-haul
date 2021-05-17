@@ -1,9 +1,8 @@
 ---
+layout: post
 title: "Brazil's Macroeconomics"
-description: This post presents important features of the Brazilian economy macroeconomic
-  system.
+description: This post presents important features of the Brazilian economy macroeconomic system. I think.
 date: '2021-05-17'
-
 ---
 
 ## This is Brazil
@@ -18,6 +17,6 @@ also this
 
 
 <figure>
-	<img src="/assets/img/flows.pdf" alt=""> 
+	<img src="/assets/img/flows.png" alt=""> 
 	<figcaption>Fig1. - This is an example figcaption</figcaption>
 </figure>
