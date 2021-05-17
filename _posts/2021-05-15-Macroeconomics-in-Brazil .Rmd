@@ -5,54 +5,115 @@ date:   2021-05-17
 description: This post presents important features of the Brazilian economy macroeconomic system.
 ---
 
-sys
+```{r setup, include=FALSE}
 
-<p class="intro"><span class="dropcap">C</span>urabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Vestibulum id ligula porta felis euismod semper. Donec sed odio dui. Aenean lacinia bibendum nulla sed consectetur.</p>
+library(tis)
+library(cowplot)
+library(readxl)
+library(xlsx)
+library(urca)
+library(dynlm)
 
-# Heading 1
+library(heatmaply)
+library(kableExtra)
+library(reshape)
+library(reshape2)
+library(plotly)
 
-## Heading 2
+library(Hmisc)
+library(dplyr)
+require(gridExtra)
+library(tibble)
 
-### Heading 3
+library(hrbrthemes)
+library(viridis)
+library(plotly)
+#library(d3heatmap)
 
-#### Heading 4
+require(gplots)
+require(RColorBrewer)
+require(heatmaply)
+library(data.table)
+library(ggplot2)
+library(magrittr)
+library(plyr)
+library(ggpubr)
 
-##### Heading 5
+library(tidyverse)
+library(ggraph)
+library("ggplot2")
+library("plyr")
+library("scales")
+library("likert")
+library("ggsci")
+library("sfcr")
 
-###### Heading 6
 
-<blockquote>Aenean lacinia bibendum nulla sed consectetur. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum. Nulla vitae elit libero, a pharetra augue. Curabitur blandit tempus porttitor. Donec sed odio dui. Cras mattis consectetur purus sit amet fermentum.</blockquote>
+knitr::opts_chunk$set(echo=TRUE)
+load(paste0(getwd(),"/SNADATA.RData"))
 
-Nullam quis risus eget urna mollis ornare vel eu leo. Cras mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+```
 
-## Unordered List
-* List Item
-* Longer List Item
-  * Nested List Item
-  * Nested Item
-* List Item
+## R Markdown
 
-## Ordered List
-1. List Item
-2. Longer List Item
-    1. Nested OL Item
-    2. Another Nested Item
-3. List Item
+This webpage shows key macroeconomic features of Brazilian economy. These features were mostly studied during my Ph.D project. Understanding them helps to understand economic cycles and growth.
 
-## Definition List
-<dl>
-  <dt>Coffee</dt>
-  <dd>Black hot drink</dd>
-  <dt>Milk</dt>
-  <dd>White cold drink</dd>
-</dl>
 
-Donec id elit non mi porta gravida at eget metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas faucibus mollis interdum. Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
 
-Cras justo odio, dapibus ac facilisis in, egestas eget quam. Curabitur blandit tempus porttitor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec id elit non mi porta gravida at eget metus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
 
-Maecenas faucibus mollis interdum. Maecenas faucibus mollis interdum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Etiam porta sem malesuada magna mollis euismod. Vestibulum id ligula porta felis euismod semper. Cras mattis consectetur purus sit amet fermentum.
+## Agents and transactions
 
-Sed posuere consectetur est at lobortis. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+In order to understand the macroeconomic features we need to ask which are the agents and how they earn and expend their financial inflows.
 
-Curabitur blandit tempus porttitor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas faucibus mollis interdum. Nullam id dolor id nibh ultricies vehicula ut id elit.
+Agents are classifiend in accordance with the Brazilian Institute of Geography and Statistics (IBGE) as:
+
+1. Households
+2. Non-Financial Corporations
+3. Financial Corporations
+4. Government
+5. Foreing Sector
+
+
+The agents relate to eachother through two channels: a) transactions, and b) balance sheet.
+
+Let's first check-out which are the transaction. With some cleaning procedures below we illustrate their average values in relation to GDP: 
+
+
+
+
+```{r first, anchor="figure", fig.cap = "**Economic Transactions (% GDP)** ",fig.align='center', echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
+
+d3 %>%  
+  
+  ggplot( aes(x = reorder(names, -mean),
+              y = mean,
+              fill=mean)) +
+  
+  
+  geom_bar(stat = "identity")+
+  
+
+  
+  geom_errorbar(aes(ymin=min, ymax=max),
+                width=.2) +
+  
+  
+  
+  coord_flip()+
+  
+  scale_fill_gradient2(low=LtoM(4), mid='snow3', 
+                       high=MtoH(4), space='Lab')+
+  
+  labs(fill="%")+
+  
+  
+  theme(axis.title.x=element_blank(),
+        axis.title.y=element_blank(),
+        axis.ticks.x=element_blank(),
+        panel.background = element_rect(fill = "white", colour = "white",
+                                        size = 2, linetype = "solid"),
+        panel.grid.major = element_line(size = 0.1, linetype = 'solid',
+                                        colour = "grey96") 
+  )
+
+```
