@@ -16,6 +16,8 @@ navigation:
     url: /index.html
   - title: Sobre
     url: /about
+  - title: Pesquisa
+    url: /pesquisa
  
 
 social:
