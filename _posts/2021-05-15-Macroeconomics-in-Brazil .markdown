@@ -8,7 +8,7 @@ date: '2021-05-17'
 ## This is Brazil
 
 <figure>
-	<img src="/assets/img/flows.jpg" alt="" style="width:200px;"> 
+	<img src="/assets/img/flows.jpg" alt="" style="width:400px;"> 
 	<figcaption>Fig1. - This is an example figcaption</figcaption>
 </figure>
 
