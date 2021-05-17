@@ -25,7 +25,7 @@ Let's first check-out which are the most important transaction. With some cleani
 
 
 <figure>
-	<img src="/assets/img/flows.jpg" alt="" style="width:600px;"> s/img" frameborder="0" height="400" width="430"></iframe>
+	<img src="/assets/img/flows.jpg" alt="" style="width:600px;"/img src>
 	<figcaption>Fig1. - Key Flows (% GDP) figcaption</figcaption>
 </figure>
 
