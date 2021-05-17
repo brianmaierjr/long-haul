@@ -25,7 +25,7 @@ Let's first check-out which are the most important transaction. With some cleani
 
 
 <figure>
-	<img src="/assets/img/flows.jpg" alt="" style="width:600px;"/img src>
+	 <img src="/assets/img/flows.jpg" alt="" style="width:600px;" />
 	<figcaption>Fig1. - Key Flows (% GDP) figcaption</figcaption>
 </figure>
 
@@ -35,7 +35,7 @@ By definition, however, each expenditure for a sector, represents an income for 
 
 
 <figure>
-<iframe src="/assets/img/sanks.html" frameborder="0" height="400" width="430"></iframe>
+<iframe src="/assets/img/sanks.html" frameborder="0" height="600" width="630" display:block></iframe>
 	<figcaption>Fig2. - Income and Expenditures (R$ )  </figcaption>
 </figure>
 

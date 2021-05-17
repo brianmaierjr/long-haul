@@ -488,7 +488,7 @@ s3<-links4%>%
   unique()
 
 
-links4%>%
+sanks<-links4%>%
   filter(!value<0) %>%
   plot_ly(
     type = "sankey",
@@ -500,6 +500,13 @@ links4%>%
       target = links4$IDtarget,
       value = links4$value))
 
+
+library(htmlwidgets)
+
+saveWidget(sanks,
+           "sanks.html",
+           selfcontained = F,
+           libdir = paste0(getwd()))
 
 
 
