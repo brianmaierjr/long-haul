@@ -1,7 +1,6 @@
 
 
 
-
 library(tis)
 library(cowplot)
 library(readxl)
@@ -46,16 +45,134 @@ library("sfcr")
 
 
 # the data
-knitr::opts_chunk$set(echo=TRUE)
+
 load(paste0(getwd(),"/SNADATA.RData"))
 
-getwd()
+
 
 #PLOTS
 
-# SANKEY RSC-----
+# 1 key flows -----
+
+d3 %>%  
+  
+  ggplot( aes(x = reorder(names, -mean),
+              y = mean,
+              fill=mean)) +
+  
+  
+  geom_bar(stat = "identity")+
+  
+  
+  
+  geom_errorbar(aes(ymin=min, ymax=max),
+                width=.2) +
+  
+  
+  
+  coord_flip()+
+  
+  scale_fill_gradient2(low=LtoM(4), mid='snow3', 
+                       high=MtoH(4), space='Lab')+
+  
+  labs(fill="%")+
+  
+  
+  theme(axis.title.x=element_blank(),
+        axis.title.y=element_blank(),
+        axis.ticks.x=element_blank(),
+        panel.background = element_rect(fill = "white", colour = "white",
+                                        size = 2, linetype = "solid"),
+        panel.grid.major = element_line(size = 0.1, linetype = 'solid',
+                                        colour = "grey96") 
+  )
+
+
+
+ggsave("flows.png")
+
+
+# 2 heatmap -------
+
+
+
+# average share by sector
+dfheat<-data.frame(t(data.frame(lapply(FLOWS2, function(x) apply(x[,c("row",
+                                                                      "governo",
+                                                                      "financeiras",
+                                                                      "firmas",
+                                                                      "familias",
+                                                                      "goods_services")]/FLOWS2$GDP$total_renda,2,mean)))))
+
+
+# naming col for melt
+dfheat$transactions<-names(FLOWS2)
+
+
+# RENAMING
+#rownames(dfheat)<-names2[-which(names2=="Government Consumption")]
+colnames(dfheat)<-c("RoW",
+                    "Government",
+                    "Banks",
+                    "NFC",
+                    "Households",
+                    "Goods/Services",
+                    "Transactions")
+
+
+
+
+
+
+# rescaling
+dfheatn<-data.frame(t(data.frame(apply(dfheat[,1:ncol(dfheat)-1],1,function(x) (x)/sd(x)))))
+dfheatn$transactions<-rownames(dfheat)
+
+
+
+
+
+# PLOT
+
+melt(dfheatn ,id.vars = "transactions") %>% 
+  
+  mutate(value, round(value,2)) %>% 
+  
+  
+  ggplot(aes(x=variable, y=transactions, fill= value)) + 
+  
+  geom_tile() +
+  
+  scale_fill_gradient2(low="red",
+                       mid="white",
+                       high="green") +
+  
+  
+  theme(axis.title.x=element_blank(),
+        axis.ticks.x=element_blank(),
+        axis.text=element_text(size=7),
+        axis.title=element_text(size=7,face="bold"),
+        legend.title = element_blank(),
+        panel.background = element_rect(fill = "white", colour = "white",
+                                        size = 2, linetype = "solid"),
+        panel.grid.major = element_line(size = 0.1, linetype = 'solid',
+                                        colour = "grey96"),
+        plot.margin = unit(c(.8,.8,.8,.8),"cm")
+  ) 
+
+
+
+
+
+
+# 3 SANKEY RSC-----
 
 RESOURCES2<-RESOURCES
+
+
+RESOURCES2$GDP<-FLOWS$GDP
+
+
 
 #TRANSFERS
 #lapply(FLOWS, function(x) which(x$governo<0))
@@ -149,7 +266,7 @@ links2<-data.frame(lapply(RESOURCES2, function(x) x[18,]) %>%
 
 
 
-
+links2
 
 # From these flows we need to create a node data frame: it lists every entities involved in the flow
 nodes2 <- data.frame(
@@ -186,10 +303,12 @@ plot_ly(
 
 
 
-# SANKEY USES -----
+# 4 SANKEY USES -----
 # USES
 USES2<-USES
 
+#GDP
+USES2$GDP<-FLOWS$GDP
 
 #TRANSFERS
 #lapply(FLOWS, function(x) which(x$governo<0))
@@ -319,7 +438,7 @@ plot_ly(
 
 
 
-#SANKEY BIND -----
+# 5 SANKEY BIND -----
 
 # BINDING
 
@@ -329,13 +448,26 @@ links3a$target<-paste0(links3$target,".U")
 
 links4<-rbind(links2,links3a)[,c(1:3)]
 
-links
+
+
+links4 %>% 
+  filter(target=="Firms") %>%
+  
+  select(value) %>% sum()
+
+
+links4 %>% 
+  filter(source=="Firms") %>%
+  
+  select(value) %>% sum()
+
+
 
 # With networkD3, connection must be provided using id, not using real name like in the links dataframe.. So we need to reformat it.
 links4$IDsource <- match(links4$source, c(nodes2$name,
                                           nodes3$name,
                                           links3a$target))-1 
-links4
+
 links4$IDtarget <- match(links4$target, c(nodes2$name,
                                           nodes3$name,
                                           links3a$target))-1
@@ -346,9 +478,39 @@ links4$IDtarget <- match(links4$target, c(nodes2$name,
 links4$IDtarget[31:nrow(links4)]<-as.numeric(links4$target[31:nrow(links4)])+4
 
 
-# renaming target cols
 
-links4$target<- sub(".U","",links4$target)
+
+# renaming target cols
+links4$target<- sub(".U","",links4$target,fixed = TRUE)
 
  
+# nodes
+s1<-unique(links4[order(links4$IDsource,decreasing = F),1])[1:5]
+ord<-links4%>%
+  filter(IDsource>4)%>%
+  select(IDsource)%>%
+  order()
 
+s2<-unique(links4[ord,1])
+
+s3<-links4%>%
+  filter(IDtarget>10) %>%
+  select(target) %>%
+  unique()
+
+
+links4%>%
+  filter(!value<0) %>%
+  plot_ly(
+    type = "sankey",
+    arrangement = "snap",
+    node = list(label=c(s1,s2,as.character(s3$target)),
+                pad = 10), # 10 Pixel
+    link = list(
+      source = links4$IDsource,
+      target = links4$IDtarget,
+      value = links4$value))
+
+
+
+ggsave("sankey_all.jpg")
