@@ -46,6 +46,8 @@ library("sfcr")
 
 # the data
 
+setwd("C:/Users/User/Documents/WEB5/rsocattan.github.io/assets/img")
+
 load(paste0(getwd(),"/SNADATA.RData"))
 
 
@@ -450,19 +452,6 @@ links4<-rbind(links2,links3a)[,c(1:3)]
 
 
 
-links4 %>% 
-  filter(target=="Firms") %>%
-  
-  select(value) %>% sum()
-
-
-links4 %>% 
-  filter(source=="Firms") %>%
-  
-  select(value) %>% sum()
-
-
-
 # With networkD3, connection must be provided using id, not using real name like in the links dataframe.. So we need to reformat it.
 links4$IDsource <- match(links4$source, c(nodes2$name,
                                           nodes3$name,
@@ -513,4 +502,4 @@ links4%>%
 
 
 
-ggsave("sankey_all.jpg")
+
