@@ -8,9 +8,16 @@ date: '2021-05-17'
 
 ## This is Brazil
 
-![GitHub Logo](/images/flows.pdf)
+![GitHub Logo](/img/flows.pdf)
 Format: ![Alt Text](url)
 
 
 
 
+also this 
+
+
+<figure>
+	<img src="/assets/img/flows.pdf" alt=""> 
+	<figcaption>Fig1. - This is an example figcaption</figcaption>
+</figure>
