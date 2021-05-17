@@ -1,24 +1,19 @@
 ---
 layout: default
-title: About Long Haul
+title: About Rafael Cattan
 ---
 
 <div class="post">
 	<h1 class="pageTitle">About Long Haul</h1>
-	<img src="{{ '/assets/img/touring.jpg' }}" alt="">
-	<p class="intro">Long Haul is a minimal, long form <a href="http://jekyllrb.com">Jekyll</a> Theme. It can be used as is or customized to your hearts desire.</p>
-	<p>Long Haul was created in honor of all the hard working touring bicycles that have traversed the globe time and time again. Take it for a spin.</p>
-	<h2>Features</h2>
+	<img src="{{ '/assets/img/CATTAN.jpg' }}" alt="">
+	<p class="intro"> Hi, I'm Rafael Cattan, an economist interested in economic dynamics, Stock-Flow consistente modelling, econometrics, and in how we are goind to overcome climate change. </p>
+	<p>I hold a Ph.D in Economics at the University of Campinas <a href="https://www.eco.unicamp.br/">UNICAMP</a>, where I have conducted a research on growth, cycles and climate change. The research was focused on themes as diverse as the role of finance on capitalist dynamics, how fiscal policy could have curtailed an economic crisis in Brazil, and how the macroeconomic system interacts with the environmental system under a non-optimizing framework.</p>
+	<h2>Interests and Expertise</h2>
 	<ul>
-		<li>Built with SASS + GULP + BROWSERSYNC + AUTOPREFIXER</li>
-  		<li>SVG Social Icons from <a href="http://customizr.net/icons/">Customizr</a></li>
-  		<li><a href="http://responsive-nav.com/">Responsive Nav Menu</a></li>
-  		<li><a href="https://github.com/snaptortoise/jekyll-rss-feeds">XML Feed for RSS Readers</a></li>
-  		<li>Contact Form via <a href="http://formspree.io/">Formspree</a></li>
-      <li>5 Post Loop with excerpt on Home Page</li>
-  		<li>Previous / Next Post Navigation</li>
-      <li>Estimated Reading Time for posts</li>
-  		<li><a href="https://github.com/adobe-webplatform/dropcap.js">Drop Cap</a> on posts</li>
-  		<li><a href="http://typecast.com/blog/a-more-modern-scale-for-web-typography">A Better Type Scale</a></li>
+		<li>Economic growth and cycles</li>
+  		<li>Stock-flow consistent modelling</li>
+  		<li>Macroeconometrics</li>
+  		<li>Ecological Economics</li>
+
   	</ul>
 </div>
