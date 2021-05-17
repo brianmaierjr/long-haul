@@ -7,16 +7,14 @@ date: '2021-05-17'
 
 ## This is Brazil
 
-![GitHub Logo](/img/flows.pdf)
-Format: ![Alt Text](url)
-
-
-
-
-also this 
-
-
 <figure>
-	<img src="/assets/img/flows.png" alt=""> 
+	<img src="/assets/img/flows.jpg" alt=""> 
 	<figcaption>Fig1. - This is an example figcaption</figcaption>
 </figure>
+
+{%- highlight html -%}
+<figure>
+	<img src="/assets/img/flows.jpg" alt=""> 
+	<figcaption>Fig1. - This is an example figcaption</figcaption>
+</figure>
+{%- endhighlight -%}
