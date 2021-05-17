@@ -25,7 +25,7 @@ Let's first check-out which are the most important transaction. With some cleani
 
 
 <figure>
-	<img src="/assets/img/flows.jpg" alt="" style="width:600px;"> 
+	<iframe src="C:/Users/User/Documents/WEB5/rsocattan.github.io/assets/img" frameborder="0" height="400" width="430"></iframe>
 	<figcaption>Fig1. - Key Flows (% GDP) figcaption</figcaption>
 </figure>
 
@@ -40,6 +40,7 @@ By definition, however, each expenditure for a sector, represents an income for 
 </figure>
 
 
+A number of features could be highlighted from this result. I'll only highlight those which illustrate how actual data and economic growth theory diverge. First, we can see that 
 
 
 
