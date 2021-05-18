@@ -1,6 +1,6 @@
 
 
-
+library(htmlwidgets)
 library(tis)
 library(cowplot)
 library(readxl)
@@ -501,12 +501,74 @@ sanks<-links4%>%
       value = links4$value))
 
 
-library(htmlwidgets)
+
 
 saveWidget(sanks,
            "sanks.html",
            selfcontained = F,
            libdir = paste0(getwd()))
+
+
+
+
+
+
+
+
+# crisis -----
+
+getwd()
+options(java.parameters = "-Xmx8000m")
+crisis<-data.frame(read.xlsx("global2.xlsx",1))
+
+#renaming
+names(crisis)[10]<-"GDP"
+names(crisis)[5]<-"banking"
+
+
+
+cp<-aggregate(banking ~ Year, crisis, sum) %>%
+  
+  
+  ggplot(.,aes(y=banking,
+               x=Year,
+               fill=banking)) +
+  
+  scale_fill_gradient2(low="royalblue",
+                       mid="lightskyblue1",
+                       midpoint=1,
+                       high="#cb4154" )+
+  
+  geom_bar(stat="identity")+
+  
+  theme_classic()+
+  
+  annotate("text",
+           x=c(1930,1971),
+           y=c(30),
+           label=c("1929 Crash",
+                   "Bretton Woods Ends"),
+           size=3)+
+  
+  
+  geom_vline(xintercept =c(1930,1971),
+             size=.3,
+             alpha=.5)+
+  
+  labs(y="crisis",
+       fill="Nº")
+
+
+cp2<-ggplotly(cp)
+       
+cp2
+
+saveWidget(cp2,
+           "crisis.html",
+           selfcontained = F,
+           libdir = paste0(getwd()))
+
+
 
 
 
