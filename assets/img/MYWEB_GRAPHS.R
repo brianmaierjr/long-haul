@@ -553,7 +553,8 @@ cp<-aggregate(banking ~ Year, crisis, sum) %>%
   
   geom_vline(xintercept =c(1971),
              size=.3,
-             alpha=.5)+
+             alpha=.5,
+             linetype="dashed")+
   
   labs(y="crisis",
        fill="Nº")
@@ -571,4 +572,161 @@ saveWidget(cp2,
 
 
 
+# stocks x growth ---------
 
+#data
+gdp<-data.frame(read.xlsx("world.xlsx",1))[1:49,]
+
+# where are the .. ?
+apply(gdp,2,function(x) which(x==".."))
+
+
+# cleaned
+gdp<-gdp[,-which(colnames(gdp)=="li")]
+
+
+#combining growht and stocks in separate dfs
+s<-list()
+
+for (i in 1:ncol(gdp)){
+  
+  s[[i]]<-data.frame(time=gdp$Time, Growth=gdp[,i],stocks=gdp$stocks)
+
+}
+
+#renaming
+names(s)<-colnames(gdp)
+
+
+
+names(s)<-c("Time",
+            "High Inc",
+            "Low & Mid Income",
+            "Lower Mid Income",
+            "Upper Mid Income",
+            "Stocks")
+
+
+
+# plotting
+gdpstocsk<-s[names(s) %nin% c("Time","Stocks")] %>% 
+
+
+  
+  bind_rows(.,.id="df") %>% 
+  
+  
+  mutate(Prices=stocks/4)%>% 
+    
+  select(!stocks) %>%  
+    
+  
+  reshape2::melt(.,id.vars=c("time","df")) %>%
+
+
+  ggplot(aes(x=time,
+             y=value/4,
+             color=variable)) +
+
+  geom_line() +
+    
+    scale_y_continuous(
+      
+      # Features of the first axis
+      name = "GDP",
+      
+      # Add a second axis and specify its features
+      sec.axis = sec_axis( trans=~.*4, name="Stocks")
+    ) +
+  
+  
+  labs(color="")+
+
+
+  facet_wrap(~df) +
+  
+  theme_bw()
+
+
+
+
+saveWidget(ggplotly(gdpstocsk),
+           "gdp_stocks_ts.html",
+           selfcontained = F,
+           libdir = paste0(getwd()))
+
+
+
+
+
+# stocks prices plots ----
+
+
+
+s[names(s) %nin% c("Time","Stocks")] %>% 
+  
+  
+  
+  bind_rows(.,.id="df") %>% 
+  
+  
+  mutate(Prices=stocks)%>% 
+  
+  select(!stocks) %>%  
+  
+  filter(df=="High Inc")%>%
+  
+  ggplot(aes(x=Growth,
+             y=Prices,
+             color=time)) + 
+  
+  
+  scale_color_gradient2(low="blue",
+                        mid="white",
+                        midpoint = median(gdp$Time),
+                        high="red")+
+  
+  
+  geom_point() +
+  
+  
+  labs(color="")+
+  
+  
+  geom_smooth(method = "glm",
+              color="black",
+              size=.5)+
+  
+  
+  facet_wrap(~df) +
+  
+  theme_classic2()
+
+
+
+# stocks x prices qrt US
+
+# data
+g1<-data.frame(read.xlsx("us.xls",1))
+
+is.na(g1)
+
+#outliers
+outs<-apply(g1[,c(2,3)], 2, function(x) quantile(x, probs=c(.01, .99), na.rm = FALSE))
+
+
+ga<-g1$gdp[g1$gdp>outs[1,1] & g1$gdp<outs[2,1]]
+sa<-g1$shares[g1$shares>outs[1,2] & g1$shares<outs[2,2]]
+
+
+
+data.frame(growth=ga,
+           prices=sa) %>%
+  
+  
+  ggplot(aes(x=growth,
+             y=prices))+
+  
+  geom_smooth(method = "glm")+
+  
+  geom_point()
