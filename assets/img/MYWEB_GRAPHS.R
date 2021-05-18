@@ -545,13 +545,13 @@ cp<-aggregate(banking ~ Year, crisis, sum) %>%
   
   annotate("text",
            x=c(1930,1971),
-           y=c(30),
+           y=c(25,30),
            label=c("1929 Crash",
                    "Bretton Woods Ends"),
            size=3)+
   
   
-  geom_vline(xintercept =c(1930,1971),
+  geom_vline(xintercept =c(1971),
              size=.3,
              alpha=.5)+
   
