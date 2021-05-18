@@ -30,7 +30,7 @@ Financial crisis are not only a long-lasting characteristic of capitalist econom
 <body>
     <div align="center">
 <figure>
-<iframe src="/assets/img/sanks.html" frameborder="0" height="600" width="630" display:block></iframe>
+<iframe src="/assets/img/crisis.html" frameborder="0" height="600" width="630" display:block></iframe>
 	<figcaption>Fig1. - Banking Crisis (absolute)  </figcaption>
 </figure>
     </div>
@@ -79,7 +79,7 @@ Let's first check-out which are the most important transaction. With some cleani
 
 <figure>
 	 <img src="/assets/img/flows.jpg" alt="" style="width:600px;" />
-	<figcaption>Fig1. - Key Flows (% GDP) figcaption</figcaption>
+	<figcaption>Fig2. - Key Flows (% GDP) figcaption</figcaption>
 </figure>
 
 
@@ -91,7 +91,7 @@ By definition, however, each expenditure for a sector, represents an income for 
     <div align="center">
 <figure>
 <iframe src="/assets/img/sanks.html" frameborder="0" height="600" width="630" display:block></iframe>
-	<figcaption>Fig2. - Income and Expenditures (R$ )  </figcaption>
+	<figcaption>Fig3. - Income and Expenditures (R$ )  </figcaption>
 </figure>
     </div>
 </body>
