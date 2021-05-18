@@ -17,7 +17,7 @@ Therefore, depending on the assumptions you make-that is, what you consider rele
 
 
 
-Some real verbal problems, however, are often neglected by standard economic theory. One of these is the role of finance in economic dynamics. Often guaranteeing perfect competition, little emphasis is placed on crisis, fluctuations in demand, bubbles, and continuous unemployment of resources (including labor!).
+Some real world problems, however, are often neglected by standard economic theory. One of these is the role of finance in economic dynamics. Often guaranteeing perfect competition, little emphasis is placed on crisis, fluctuations in demand, bubbles, and continuous unemployment of resources (including labor!).
 
 
 
@@ -60,7 +60,7 @@ In this paper I will examine what should be of interest in developing a SFC mode
 
 In order to understand the macroeconomic features we need to ask which are the agents and how they earn and expend their financial inflows.
 
-Agents are classifiend in accordance with the Brazilian Institute of Geography and Statistics (IBGE) as:
+Agents are classified in accordance with the Brazilian Institute of Geography and Statistics (IBGE) as:
 
 1. Households
 2. Non-Financial Corporations
@@ -69,7 +69,7 @@ Agents are classifiend in accordance with the Brazilian Institute of Geography a
 5. Foreing Sector
 
 
-The agents relate to eachother through two channels: a) transactions, and b) balance sheet. That is, they relate through **flows** (e.g., consumption, interest payments, government transfers) and through financial **stocks** (shares, bonds, deposits, etc.).  
+The agents relate to each other through two channels: a) transactions, and b) balance sheet. That is, they relate through **flows** (e.g., consumption, interest payments, government transfers) and through financial **stocks** (shares, bonds, deposits, etc.).  
 
 Let's first check-out which are the most important transaction. With some cleaning procedures, below we illustrate their average values in relation to GDP: 
 
@@ -81,7 +81,7 @@ Let's first check-out which are the most important transaction. With some cleani
 
 
 
-By definition, however, each expenditure for a sector, represents an income for another. So it is key to understand if those transactions represent income sources our expenditures, for each sector. In order to understand that, we have calculted each sector source of income, and their respective expenditures. The results are illustrate in the diagram below:
+By definition, however, each expenditure for a sector, represents an income for another. So it is key to understand if those transactions represent income sources our expenditures, for each sector. In order to understand that, we have calculated the source of income for each sector, and their respective expenditures. The results are illustrate in the diagram below:
 
 
 <body>
