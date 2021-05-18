@@ -8,52 +8,49 @@ date: '2021-05-17'
 
 ### Why do we need a macroeconomic model?
 
-Economic models are a representation of reality. In order to understand the observed trends in the economy - such as crisis, how income grows, why people are unemployed, or why prices are soaring, we need to abstract a number of elements and focus on others. 
+Economic models are a representation of reality. To understand observed trends in the economy - such as the crisis, how income grows, why people are unemployed or why prices are rising, we need to abstract a number of elements and focus on others. 
 
-What to neglect and what to consider is a crucial part of building economic models and determinant of the conclusions that will be drawn from them. Notwithstanding, we share the view of George E. P. Box that  *"All models are wrong, but some are useful”*. 
-
-
-Hence, depending on the assumptions that you make - that is, what you consider relevant and how you explain it - you derive explanations for real events. For instance, if you have a theory for unemployment, you may be able to propose solutions for high unemployment rates.
+What to neglect and what to consider is a crucial part of building economic models and determining the conclusions that will be drawn from them. Nevertheless, we share the view of George E. P. Box that *"All models are wrong, but some are useful "*. 
 
 
-
-Some real worl problems, however, are often neglegtec by the standard economic theory. One of them is the role of finance in economic dynamics. By often guaranteing  perfect competition, little emphasis is put on crisis, demand fluctuations, bubbles, and continuous unemployment of resources (including labor!).
+Therefore, depending on the assumptions you make-that is, what you consider relevant and how you explain it-you get explanations for real events. For example, if you have a theory for unemployment, you may be able to propose solutions for high unemployment rates.
 
 
 
+Some real verbal problems, however, are often neglected by standard economic theory. One of these is the role of finance in economic dynamics. Often guaranteeing perfect competition, little emphasis is placed on crisis, fluctuations in demand, bubbles, and continuous unemployment of resources (including labor!).
 
-In the real world, however, we indeed observe all of those elements. Post-Keynesian economics tries to bridge the gap between economic theory and reality. One of the key aspects of this post-Keynesian economics is the key role played by financial markets, and the role played by money. (If you are curious about this research agenda I encourage you to visit [this](https://www.postkeynesian.net/) website, or to watch [this](https://www.youtube.com/watch?v=DEROFQIao4o) talk from Marc Lavoie). 
 
-Financial crisis are not only a long-lasting characteristic of capitalist economies, but they became more frequent for the past 40 years. By retrieving data from the Harvard Business School [website](https://www.hbs.edu/behavioral-finance-and-financial-stability/data/Pages/global.aspx), have calculated the number of banking crisis, by year, since 1800:
+
+In the real world, however, we do indeed observe all of these elements. Post-Keynesian economics attempts to bridge the gap between economic theory and reality. One of the key aspects of this post-Keynesian economics is the key role played by financial markets, and the role played by money. (If you are curious about this research agenda, I encourage you to visit [this](https://www.postkeynesian.net/) website, or watch [this](https://www.youtube.com/watch?v=DEROFQIao4o) lecture by Marc Lavoie). 
+
+Financial crises are not only an enduring feature of capitalist economies, but have become more frequent in the last 40 years. By retrieving data from the Harvard Business School [website](https://www.hbs.edu/behavioral-finance-and-financial-stability/data/Pages/global.aspx), they calculated the number of banking crises, per year, since 1800:
 
 
 <body>
     <div align="center">
 <figure>
 <iframe src="/assets/img/crisis.html" frameborder="0" height="600" width="630" display:block></iframe>
-	<figcaption>Fig1. - Banking Crisis (absolute)  </figcaption>
+	<figcaption>Fig1. - Banking Crisis (absolute) </figcaption>
 </figure>
     </div>
-</body>
+</figcaption>
 
 
 
+This is no coincidence, since in 1971 the gold standard was abandoned and a new era of capitalism - at least in terms of how monetary and fiscal authorities can act.
 
-This is no coincidence, given that, in 1971, the gold standard was abandoned.
-
-
-
+The underestimation of the nexus of real activity with financial markets is therefore extremely relevant to understanding macroeconomic dynamics. But how can we embody all these features? 
 
 
+A growing body of post-Keynesian literature has adopted a modeling framework that precisely covers the importance of financial instruments for economic dynamics in the so-called Stock-Flow Consistent Modeling (SFC).
 
-But how can we embody all those features? A growing body of the post-Keynesian literature has adopted a modelling framework which cover precisely the importance of financial instruments for economic dynamics in the so-called Stock-Flow consistent modelling (SFC).
-
-By employing a tight accounting system in which every expenditure for a sector represents an income for another (**flow consistency**),  every financial instrument represents an asset for somebody, and a liability for somebody else (**stock-consitency**). And that, every positive (negative) financial balance accumulates into wealth (debt) (**stock-flow consitency**).
-
-
-Indeed, a number of works are already employing some of those features to develop empirical models. See examples for [England](https://www.bankofengland.co.uk/-/media/boe/files/working-paper/2016/a-dynamic-model-of-financial-balances-for-the-uk.pdf), [Denmark](http://www.levyinstitute.org/publications/an-empirical-stock-flow-consistent-macroeconomic-model-for-denmark), and [Italy](http://www.levyinstitute.org/publications/a-stock-flow-consistent-quarterly-model-of-the-italian-economy).
+SFC models are characterized by posing a rigid accounting system in which every expenditure for one sector represents an income for another (**consistent flow**), every financial instrument represents an asset for someone, and a liability for someone else (**consistent stock**). And that, every positive (negative) financial balance accumulates into wealth (debt) (**stock-flow-consistency**).
 
 
+In fact, several papers are already employing some of these features to develop empirical models. See examples for [England](https://www.bankofengland.co.uk/-/media/boe/files/working-paper/2016/a-dynamic-model-of-financial-balances-for-the-uk.pdf), [Denmark](http://www.levyinstitute.org/publications/an-empirical-stock-flow-consistent-macroeconomic-model-for-denmark), and [Italy](http://www.levyinstitute.org/publications/a-stock-flow-consistent-quarterly-model-of-the-italian-economy).
+
+
+In this paper I will examine what should be of interest in developing a SFC model for Brazil. This will be done by exposing the most relevant transactions, and the most relevant financial instruments in the Brazilian economy, according to the data.
 
 
 
