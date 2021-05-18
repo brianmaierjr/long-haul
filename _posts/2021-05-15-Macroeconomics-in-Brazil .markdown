@@ -13,17 +13,19 @@ Economic models are a representation of reality. To understand observed trends i
 What to neglect and what to consider is a crucial part of building economic models and determining the conclusions that will be drawn from them. Like any analytical tool, economic models have limits and advantages. Nevertheless, we share the view of George E. P. Box that *"All models are wrong, but some are useful "*. 
 
 
-Therefore, depending on the assumptions you make-that is, what you consider relevant and how you explain it-you get explanations for real events. For example, if you have a theory for unemployment, you may be able to propose solutions for high unemployment rates. Similarly, if inflation is surging, what would be the economic policy recommendation?
+Economic models have different purposes. One of them is economic policy design. For example, if your model studies employment, you should be able to determine the causes of unemployment, and to propose solutions. Economic models help to understand, thence, economic relations through theoretical abstractions.
 
 
-
-Some real real problems, however, are often neglected by the standard economic theory. One of these problems is the role of finance in economic dynamics. Often, little emphasis is placed on the role of financial instruments, prices, and bubbles, on  the "real" economy. We wont't get into the details for this, but this drawback has been througly critizised from within the doming neoclassical analystis. 
-
-Nobel prize laureate [Paul Romer](https://paulromer.net/the-trouble-with-macro/WP-Trouble.pdf), for instance, has been an active critic of the current state of modern neoclassical macroeconomics. The author cites as an example the following quote from a renowned colleague: *"although in the interest of disclosure, I must admit that I am myself less than totally convinced of the importance of money outside the case
-of large inflations"*.
+Some real real problems, however, are often neglected by the standard economic theory. One of these problems is the role of finance in economic dynamics. Financial markets include credit creation by banks, the issue of bonds by the treasury, and even interest-beargin deposits. And
 
 
-In 2008, for instance, why "nobody saw it coming"? Most analysts couldn't grasp the nature of the financial-real crisis because crucial imbalances inside the economy are largely overlooked by the traditional modelling tools. 
+Often, little emphasis is placed on the role of financial instruments, prices, and bubbles, on  the "real" economy. In fact, until recently, most growth models neglected financial aspects of the economy and assume that money is simply a means to exchange real goods. 
+
+
+Nobel prize laureate [Paul Romer](https://paulromer.net/the-trouble-with-macro/WP-Trouble.pdf), for instance, has been an active critic of the current state of modern neoclassical macroeconomics, including the omission of finance. The author cites as an example the following quote from a renowned colleague: *"although in the interest of disclosure, I must admit that I am myself less than totally convinced of the importance of money outside the case of large inflations"*.
+
+
+In 2008, we could see that financial markets play a much important role on macroeconomic outcomes. But why "nobody saw it coming"? Most analysts couldn't grasp the nature of the financial-real crisis because crucial imbalances inside the economy are largely overlooked by the traditional modelling tools. 
 
 
 The 2008, however, was not an isolated case.  Financial crisis are a long-lasting characteristic of capitalism, and but they became increasingly frequent for the past 40 years. By retrieving data from the Harvard Business School [website](https://www.hbs.edu/behavioral-finance-and-financial-stability/data/Pages/global.aspx), I have calculated the number of banking crisis, by year, since 1800:
@@ -39,8 +41,7 @@ The 2008, however, was not an isolated case.  Financial crisis are a long-lastin
 </body>
 
 
-
-Post-Keynesian economics tries to bridge the gap between economic theory and reality. One of the key aspects of this post-Keynesian economics is the key role played by financial markets, and the role played by money itself. (If you are curious about this research agenda I encourage you to visit [this](https://www.postkeynesian.net/) website, or to watch [this](https://www.youtube.com/watch?v=DEROFQIao4o) talk from Marc Lavoie)
+Among the alternatives to incorporate financial aspects into macroeconomic analysis we highlight the post-Keynesian approach. One of the key aspects of the post-Keynesian economics is the key role played by financial markets, and the role played by money itself. (If you are curious about this research agenda I encourage you to visit [this](https://www.postkeynesian.net/) website, or to watch [this](https://www.youtube.com/watch?v=DEROFQIao4o) talk from Marc Lavoie)
 
 Understading the real activity nexus to financial markets is, thus, of extreme relevance to understand macroeconomic dynamics. But how can we embody all those features in an econonomic model? 
 
