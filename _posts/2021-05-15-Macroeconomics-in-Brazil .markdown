@@ -10,10 +10,15 @@ date: '2021-05-17'
 
 Economic models are a representation of reality. To understand observed trends in the economy - such as financial crisis, how income grows, why people are unemployed or why prices are rising, we need to abstract a number of elements and focus on others. 
 
-What to neglect and what to consider is a crucial part of building economic models and determining the conclusions that will be drawn from them. Like any analytical tool, economic models have limits and advantages. Nevertheless, we share the view of George E. P. Box that *"All models are wrong, but some are useful "*. 
 
 
-Economic models have different purposes. One of them is economic policy design. For example, if your model studies employment, you should be able to determine the causes of unemployment, and to propose solutions. Economic models help to understand, thence, economic relations through theoretical abstractions.
+What to neglect and what to consider is a crucial part of building economic models. The more elements (or endogenous variables) a model incorporates, the harder it is to see the model's insights. We share the view, however, of George E. P. Box that *"All models are wrong, but some are useful "*. 
+
+
+Economic models have different purposes. One of them is economic policy design. Given that economic models are often a mathematical framework, they can provide insights in respect to what incentives could the government give in order to overcome observed problems.
+
+
+%daqui!
 
 
 Some real real problems, however, are often neglected by the standard economic theory. One of these problems is the role of finance in economic dynamics. Financial markets include credit creation by banks, the issue of bonds by the treasury, and even interest-beargin deposits. And
