@@ -990,7 +990,7 @@ debt_p<-plot_ly(debt)%>%
   
   
   add_trace(x = 2005,
-            y = 10,
+            y = 13,
             type = 'scatter',
             mode = 'text',
             text = "Pre 2008",
