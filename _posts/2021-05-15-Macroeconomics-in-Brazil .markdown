@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "A note on Macroeconomic modelling"
-description: This post highlights important gaps on mainstream macroeconomic modelling and illustrate the argument on real data.
+description: This post highlights important gaps on mainstream macroeconomic modelling and illustrate the argument with real data.
 date: '2021-05-17'
 ---
 
