@@ -12,28 +12,25 @@ Economic models are a representation of reality. To understand observed trends i
 
 
 
-What to neglect and what to consider is a crucial part of building economic models. The more elements (or endogenous variables) a model incorporates, the harder it is to see the model's insights. We share the view, however, of George E. P. Box that *"All models are wrong, but some are useful "*. 
+What to neglect and what to consider is a crucial part of building economic models. The more elements (or endogenous variables) a model incorporates, the harder it is to see the model's insights. 
 
 
-Economic models have different purposes. One of them is economic policy design. Given that economic models are often a mathematical framework, they can provide insights in respect to what incentives could the government give in order to overcome observed problems.
+We share the view, however, of George E. P. Box that *"All models are wrong, but some are useful "*. That is,
 
 
-%daqui!
+Economic models have different purposes. One of them is economic policy design. Given that economic models are often a mathematical framework, they can provide numerical insights in respect to what incentives could the government give in order to overcome observed problems.
 
 
-Some real real problems, however, are often neglected by the standard economic theory. One of these problems is the role of finance in economic dynamics. Financial markets include credit creation by banks, the issue of bonds by the treasury, and even interest-beargin deposits. And
+Some real real problems, however, are often neglected by the standard economic theory. One of these problems is the role of finance in economic dynamics. Financial markets include credit creation by banks, the issue of bonds by the treasury, and even interest-beargin deposits. And most of these elements are absent in the mainstream analysis of cycles and growth.
 
 
-Often, little emphasis is placed on the role of financial instruments, prices, and bubbles, on  the "real" economy. In fact, until recently, most growth models neglected financial aspects of the economy and assume that money is simply a means to exchange real goods. 
+The Nobel prize laureate [Paul Romer](https://paulromer.net/the-trouble-with-macro/WP-Trouble.pdf), for instance, became a vocal critic of the current state of modern neoclassical macroeconomics, including the omission of finance. The author cites as an example the following quote from a renowned colleague: *"although in the interest of disclosure, I must admit that I am myself less than totally convinced of the importance of money outside the case of large inflations"*.
 
 
-Nobel prize laureate [Paul Romer](https://paulromer.net/the-trouble-with-macro/WP-Trouble.pdf), for instance, has been an active critic of the current state of modern neoclassical macroeconomics, including the omission of finance. The author cites as an example the following quote from a renowned colleague: *"although in the interest of disclosure, I must admit that I am myself less than totally convinced of the importance of money outside the case of large inflations"*.
+In 2008, for instance. we could see that financial markets are not neutral in the economic process. But why "nobody saw it coming"? Most analysts couldn't grasp the nature of the financial-real crisis because crucial imbalances inside the economy are largely overlooked by the traditional modelling tools. 
 
 
-In 2008, we could see that financial markets play a much important role on macroeconomic outcomes. But why "nobody saw it coming"? Most analysts couldn't grasp the nature of the financial-real crisis because crucial imbalances inside the economy are largely overlooked by the traditional modelling tools. 
-
-
-The 2008, however, was not an isolated case.  Financial crisis are a long-lasting characteristic of capitalism, and but they became increasingly frequent for the past 40 years. By retrieving data from the Harvard Business School [website](https://www.hbs.edu/behavioral-finance-and-financial-stability/data/Pages/global.aspx), I have calculated the number of banking crisis, by year, since 1800:
+And the 2008 crisis was not an isolated case.  Financial crisis are a long-lasting characteristic of capitalism, but they became more frequent for the past 40 years, since the end of the Bretton Woods agreement. By retrieving data from the Harvard Business School [website](https://www.hbs.edu/behavioral-finance-and-financial-stability/data/Pages/global.aspx), I have calculated the number of banking crisis, by year, since 1800:
 
 
 <body>
@@ -44,6 +41,51 @@ The 2008, however, was not an isolated case.  Financial crisis are a long-lastin
       </figure>
     </div>
 </body>
+
+
+
+Morever, the increasing frequency of financial crisis, is not the only justification for including more realistic, non-efficient, financial markets into macroeconomic modelling. Modern financialised economies are greatly influenced by endogenous monetary components such as credit cycles, equities, housing and even commodities market - all of them integral part of the financial system. 
+
+In order to illustrate how the "real" economy and the financial economy have strong co-movements, I have calculated a financial composite index, which is a simple average of shares prices, residential and commodities prices (All of them available in the St. Luis Fed [website] (https://fred.stlouisfed.org/)). Then, I have contrasted this composite with the industrial production in the US from 1992 until today. 
+
+The results are illustrated below:
+
+
+<body>
+    <div align="center">
+      <figure>
+  <iframe src="/assets/img/composite_index.html" frameborder="0" height="600" width="630"    display:block></iframe>
+	 <figcaption>Fig4. - Industrial Production and Composite (index)  </figcaption>
+      </figure>
+    </div>
+</body>
+
+
+It is possible to see a strong correlation between the two series both in upward and downward economic cycles. Although not conclusive, this highlights a real-financial connection that I believe to be missing on neoclassical economics. 
+
+The positive association between the series is also clear by plotting their growth rates for the same period:
+
+
+
+<body>
+    <div align="center">
+      <figure>
+  <iframe src="/assets/img/composite_growth.html" frameborder="0" height="600" width="630"    display:block></iframe>
+	 <figcaption>Fig4. - Industrial Production and Composite (growth)  </figcaption>
+      </figure>
+    </div>
+</body>
+
+
+
+
+The question is wheter financial cycles determine real business cycles, if business cycles determine financial cycles, or if the series are co-determined. 
+
+
+
+
+
+
 
 
 Among the alternatives to incorporate financial aspects into macroeconomic analysis we highlight the post-Keynesian approach. One of the key aspects of the post-Keynesian economics is the key role played by financial markets, and the role played by money itself. (If you are curious about this research agenda I encourage you to visit [this](https://www.postkeynesian.net/) website, or to watch [this](https://www.youtube.com/watch?v=DEROFQIao4o) talk from Marc Lavoie)

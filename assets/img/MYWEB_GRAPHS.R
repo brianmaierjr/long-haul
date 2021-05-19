@@ -1,5 +1,5 @@
-
-
+install.packages("ggcorrplot")
+library(ggcorrplot)
 library(htmlwidgets)
 library(tis)
 library(cowplot)
@@ -517,7 +517,7 @@ saveWidget(sanks,
 
 # crisis -----
 
-getwd()
+
 options(java.parameters = "-Xmx8000m")
 crisis<-data.frame(read.xlsx("global2.xlsx",1))
 
@@ -574,8 +574,13 @@ saveWidget(cp2,
 
 # stocks x growth ---------
 
+
 #data
 gdp<-data.frame(read.xlsx("world.xlsx",1))[1:49,]
+
+
+cor(gdp$hi,gdp$stocks)
+
 
 # where are the .. ?
 apply(gdp,2,function(x) which(x==".."))
@@ -612,7 +617,6 @@ names(s)<-c("Time",
 gdpstocsk<-s[names(s) %nin% c("Time","Stocks")] %>% 
 
 
-  
   bind_rows(.,.id="df") %>% 
   
   
@@ -621,7 +625,7 @@ gdpstocsk<-s[names(s) %nin% c("Time","Stocks")] %>%
   select(!stocks) %>%  
     
   
-  reshape2::melt(.,id.vars=c("time","df")) %>%
+  reshape2::melt(.,id.vars=c("time","df")) %>% print()
 
 
   ggplot(aes(x=time,
@@ -648,6 +652,8 @@ gdpstocsk<-s[names(s) %nin% c("Time","Stocks")] %>%
   theme_bw()
 
 
+gdpstocsk
+
 
 
 saveWidget(ggplotly(gdpstocsk),
@@ -660,8 +666,6 @@ saveWidget(ggplotly(gdpstocsk),
 
 
 # stocks prices plots ----
-
-
 
 s[names(s) %nin% c("Time","Stocks")] %>% 
   
@@ -704,12 +708,11 @@ s[names(s) %nin% c("Time","Stocks")] %>%
 
 
 
-# stocks x prices qrt US
+# stocks x prices qrt US ----
 
 # data
 g1<-data.frame(read.xlsx("us.xls",1))
 
-is.na(g1)
 
 #outliers
 outs<-apply(g1[,c(2,3)], 2, function(x) quantile(x, probs=c(.01, .99), na.rm = FALSE))
@@ -730,3 +733,224 @@ data.frame(growth=ga,
   geom_smooth(method = "glm")+
   
   geom_point()
+
+
+
+
+
+
+# stocks, housing, comm, ind -----
+# data
+g2<-data.frame(read.xlsx("fredgraph_g_qrt2.xls",1))
+
+
+g3<-data.frame(apply(g2[,-1], 2, function(x) x[x>quantile(x, probs=c(.01, .99))[1] & x<quantile(x, probs=c(.01, .99))[2]]))
+
+g3
+
+names(g2)<-c("Time",
+             "Shares",
+             "Housing",
+             "Production",
+             "Commodities")
+
+
+names(g3)<-c("Shares",
+             "Housing",
+             "Production",
+             "Commodities")
+
+
+hsc<-g2 %>%
+  
+  reshape2::melt(.,id.vars="Production") %>% 
+  
+  filter(!variable=="Time") %>%
+
+  ggplot(aes(x=Production,
+             y=value,
+             color=variable))+
+  
+
+  geom_point()+
+  
+  
+  geom_smooth(method = "glm",
+              color="black",
+              size=.5)+
+  
+    
+  facet_wrap(.~variable,
+             nrow = 2)+
+  
+  labs(color="",
+       y="%"
+       
+       )
+
+
+ggplotly(hsc)
+
+
+
+
+
+# stocks, housing, prices level=====
+
+g4<-data.frame(read.xlsx("fredgraph_index_qrt.xls",1))
+
+
+s3
+
+s3<-list()
+
+for (i in 1:ncol(g4)){
+  
+  s3[[i]]<-data.frame(time=g4$time, variable=g4[,i], industrial=g4$industrial)
+  
+}
+
+
+names(s3)<-colnames(g4)
+
+
+
+# plotting
+
+s3[names(s3) %nin% c("time","industrial")] %>% 
+  
+  
+  bind_rows(.,.id="df") %>% 
+  
+
+  reshape2::melt(.,id.vars=c("time","df")) %>%  
+  
+  
+  mutate(value2=log(value))%>%
+  
+  ggplot(aes(x=time,
+             y=value2,
+             color=variable,
+             group=variable)) +
+  
+  geom_line() +
+  
+  # scale_y_continuous(
+  #   
+  #   # Features of the first axis
+  #   name = "GDP",
+  #   
+  #   # Add a second axis and specify its features
+  #   sec.axis = sec_axis( trans=~.*4, name="Stocks")
+  # ) +
+  # 
+  # 
+  labs(color="")+
+  
+  
+  facet_wrap(~df) +
+  
+  theme_bw()
+
+
+
+
+
+
+
+# composite index ------
+
+comp<-data.frame(comp=apply(g4[,c(2,3,5)],1,mean))
+g4$comp<-comp$comp
+
+
+
+
+hsc<-plot_ly(g42,
+        x=~time,
+        y=~comp,
+        type="scatter",
+        mode="lines",
+        name="Composite") %>%
+  
+  
+  add_lines(x=~time,
+            y=~industrial,
+            yaxis = "y2",
+            name="Industrial") %>%
+  
+  layout(yaxis2=list(
+    overlaying = "y",
+    side = "right",
+    title = "Industrial Index"),
+    
+    yaxis=list(title="Composite Index"),
+    
+    xaxis=list(title=''))
+
+
+
+
+saveWidget(ggplotly(hsc),
+           "composite_index.html",
+           selfcontained = F,
+           libdir = paste0(getwd()))
+
+
+
+
+# composite index growth 
+
+gg4<- data.frame(apply(g4[,-1],2,function(x) (diff(x)/x[2:length(x)])*100))
+  
+
+#removing outliers?
+gg42<-data.frame(apply(gg4[,-1], 2, function(x) x[x>quantile(x, probs=c(.005, .995))[1] & x<quantile(x, probs=c(.01, .99))[2]]))
+
+  
+
+hsc_g<-ggplot(data=data.frame(gg42),
+              aes(x=comp,
+             y=industrial,
+             color=industrial
+             )) +
+  
+  
+  geom_point() +
+  
+  
+  geom_smooth(method="glm",
+              color="black",
+              size=.5
+              ) +
+  
+  ylim(c(-6,4))+
+  
+  scale_color_gradient2(low="white",
+                       mid="royalblue",
+                       high="white",
+                       midpoint=0.6)+
+  
+  
+  labs(color="%",
+       y="Industrial",
+       x="Composite")+
+  
+  theme_classic()
+
+
+
+hsc2<-ggplotly(hsc_g)
+hsc2
+
+
+saveWidget(ggplotly(hsc2),
+           "composite_growth.html",
+           selfcontained = F,
+           libdir = paste0(getwd()))
+
+
+
+
+
+
