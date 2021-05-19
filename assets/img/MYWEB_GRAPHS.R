@@ -952,5 +952,89 @@ saveWidget(ggplotly(hsc2),
 
 
 
+# debt x gfcg ------
 
+debt<-data.frame(read.xlsx("debt_gdp.xls",1))
+
+debt$recs<-ifelse(debt$recs>0,1,0)
+
+names(debt) <-c("Time","Investments", "Debt",
+                "GDP","Recessions")
+
+
+
+# plot
+
+debt_p<-plot_ly(debt)%>%
+  
+  
+  add_trace(x=~Time,
+           y=~Debt,
+           type="scatter",
+           mode="lines",
+           name="Debt",
+           alpha=.7) %>%
+  
+  add_trace(x=~Time,
+             y=~Investments,
+             type="scatter",
+             mode="lines",
+             name="Investments",
+            alpha=.7) %>%
+  
+  add_bars(x=~Time,
+           y=~Recessions*17,
+           name='Recessions',
+           marker=list(color="darkgrey"),
+           alpha=.1) %>%
+  
+  
+  add_trace(x = 2005,
+            y = 10,
+            type = 'scatter',
+            mode = 'text',
+            text = "Pre 2008",
+            textposition = 'top',
+            textfont = list(color = '#000000', size = 10),
+            showlegend=F
+            ) %>%
+  
+  
+  add_trace(x = 1995,
+            y = 10,
+            type = 'scatter',
+            mode = 'text',
+            text = "Pre Dot-Com",
+            textposition = 'top',
+            textfont = list(color = '#000000', size = 10),
+            showlegend=F
+  )%>%
+  
+  add_trace(x = 1965,
+            y = 15,
+            type = 'scatter',
+            mode = 'text',
+            text = "Pre 69-70",
+            textposition = 'top',
+            textfont = list(color = '#000000', size = 10),
+            showlegend=F
+  )%>%
+  layout(yaxis2=list(
+    overlaying = "y",
+    side = "right",
+    title = "Debt (growth rate)"),
+    
+    yaxis=list(title="Investments (growth rate)",
+               range=c(-10,20)),
+    
+    xaxis=list(title=''),
+    bargap=.0)
+ 
+
+debt_p
+
+saveWidget(debt_p,
+           "debt_gdp.html",
+           selfcontained = F,
+           libdir = paste0(getwd()))
 

@@ -77,12 +77,28 @@ The positive association between the series is also clear by plotting their grow
 </body>
 
 
+Another important source of imbalances in the real economy comes from credit. Credit cycles, which are normally fueled by increasing asset prices, play an important role to determine investments. Unlike most DSGE models, however, credit constraints exits, and agents become overindebted - and even go bankrutp.
 
 
-The question is wheter financial cycles determine real business cycles, if business cycles determine financial cycles, or if the series are co-determined. 
+Below we illustrate the relation between investments and nonfinancial corporations indebtement (securities + loans) in the US:
+
+
+<body>
+    <div align="center">
+      <figure>
+  <iframe src="/assets/img/debt_gdp.html" frameborder="0" height="600" width="630"    display:block></iframe>
+	 <figcaption>Fig5. - Investments, Debt and Recessions (% growth)  </figcaption>
+      </figure>
+    </div>
+</body>
 
 
 
+
+
+The question is wheter financial cycles determine real business cycles, if business cycles determine financial cycles, or if the series are co-determined. The workhorse of current neoclassical macroeconomics are DSGE models. In this framework, events such as economic crisis, when not ruled out by construction, are exogenous shocks, and not breeded withing the economic system.
+
+Surprisingly this drawback was only recognised after the 2008  great financial crisis by neoclassical economists. Joseph Stiglitz [said] (https://watermark.silverchair.com/grx057.pdf?token=AQECAHi208BE49Ooan9kkhW_Ercy7Dm3ZL_9Cf3qfKAc485ysgAAAqAwggKcBgkqhkiG9w0BBwagggKNMIICiQIBADCCAoIGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMyGsjZH08CxN0HlbaAgEQgIICU4PGQpCmXG-i-cmub5b-Bn7l-Ifc-aK2CcB-3a1OKYq3Sc0DmoE7nY8yeVlCFT8XdBnLu4VfLdYHzaCZNQMxBq6e5wEcmLOuDvX2636Yma3PYjqhaX203rrffNuGQ8AjNh376GaTQcdJtjr16jmD9fPLR6OHMFvUZkc4vkmfHtVGxmk7_M2RVRTrOflcMX9sYoQzwOa4I3O1wM4lI8T6f5TkojBZiFxo_CdyfZkaVqb2-vbs09eXCd3Yq8HSYHaK2crCCK9QrEgUSO1Q0V39o6EMrU8Z0V2aCN7mxABHYDbyyud5pYamISOiYiW0hJPPz6imRuZ7qdVr4amnKo9mWDy8pnS5Ouw63wF_2ksexjna29aWb-0x6tZCVGrHcH3eRcSgwaNtiWanO2C7vx89kWBgq4mgEmHmn2MSithayE5cycBxcHA73rTRGIcRyY-Iw9QuBvdPHYd2ec85tgKcVOljhAReL5evjs--GqqARVo21_4m1l-tioUecKf1PByhHqPIgWo1MYOGyr4UAe4jluj3yuKp2ocws9cLaRdoy3Ma9krWyon5ZeRT-Tz_p6MnyMAQp3gebJcvM88De3n2n9jlzPLQXc9mFL-ZEuWHWK8hPTEbR1p1BlEf6xZvxtE_5ccsm6fLKsg2BGfYzEIv9UJtm_SACaUWIHok3ty55PSYv-99bJUUyNsvuKL9XDbu5SQBjac7gnc-x1wTznPd_MZw25cZuAJtGlmtJ--GBm_fJG9Ll92nK9fM-tFFPPJk6bstlB7qJSPQAJsxItSil0zIZec) the following about DSGE models: **Dynamic Stochastic General Equilibrium (DSGE) models, which have played such an important role in modern discussions of macroeconomics, in my judgement fail to serve the functions which a well-designed macroeconomic model should perform**
 
 
 
