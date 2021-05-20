@@ -105,7 +105,7 @@ The relation between indebtment and GDP dynamics can also be framed by the secto
 <body>
     <div align="center">
       <figure>
-  <iframe src="/assets/img/nlphtml" frameborder="0" height="600" width="630"    display:block></iframe>
+  <iframe src="/assets/img/nlp.html" frameborder="0" height="600" width="630"    display:block></iframe>
 	 <figcaption>Fig5. - Net Lending and GDP (% growth)  </figcaption>
       </figure>
     </div>
