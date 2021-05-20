@@ -5,6 +5,13 @@ description: This post presents important features of the Brazilian economy macr
 date: '2021-05-17'
 ---
 
+### Integrating Money and Finance into Macro modelling <a name="brmodel"></a>
+
+Understading the real activity nexus to financial markets is, thus, of extreme relevance to understand macroeconomic dynamics. But how can we embody all those features in an econonomic model? 
+
+
+A growing body of the post-Keynesian literature has adopted a modelling framework which cover precisely the importance of financial instruments for economic dynamics in the so-called Stock-Flow consistent modelling (SFC). More on this subject will be addressed on the next
+
 
 SFC models are characterised by placing a tight accounting system in which every expenditure for a sector represents an income for another (**flow consistency**),  every financial instrument represents an asset for somebody, and a liability for somebody else (**stock-consitency**). And that, every positive (negative) financial balance accumulates into wealth (debt) (**stock-flow consitency**).
 

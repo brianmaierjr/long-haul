@@ -41,7 +41,8 @@ library("scales")
 library("likert")
 library("ggsci")
 library("sfcr")
-
+library(corrplot)
+library(RColorBrewer)
 
 
 # the data
@@ -625,7 +626,7 @@ gdpstocsk<-s[names(s) %nin% c("Time","Stocks")] %>%
   select(!stocks) %>%  
     
   
-  reshape2::melt(.,id.vars=c("time","df")) %>% print()
+  reshape2::melt(.,id.vars=c("time","df")) %>% 
 
 
   ggplot(aes(x=time,
@@ -1037,4 +1038,91 @@ saveWidget(debt_p,
            "debt_gdp.html",
            selfcontained = F,
            libdir = paste0(getwd()))
+
+
+
+
+
+# net lending x growth ------
+
+#data
+nl<-data.frame(read.xlsx("NL_DEBT_GDP.xls",1))
+
+
+# creating binary positives and negative changes 
+nl[2:nrow(nl),"pos"]<-ifelse(diff(nl$households)>0,0,1)
+
+#new df with binary
+nl2<-data.frame(hh=diff(nl$households),
+                bus=diff(nl$business),
+                gdp=nl$gdp[2:nrow(nl)],
+                post=nl$pos[2:nrow(nl)])
+
+
+#plt
+
+nlp<-nl %>% 
+  
+  ggplot(.,aes(x=gdp,
+               y=households,
+               color=households))+
+    
+    geom_point() +
+  
+  scale_color_gradient2(low="white",
+                        mid="royalblue",
+                        midpoint = 0.02,#mean(lm(nl$gdp~nl$households)$fitted.values),
+                        high="white")+
+  
+    geom_smooth(method = "lm",
+                size=.5,
+                color="black") +
+  
+  labs(color="",
+       y="Households",
+       x="GDP")+
+  
+  theme_classic2()
+
+
+nlp
+
+saveWidget(ggplotly(nlp),
+           "nlp.html",
+           selfcontained = F,
+           libdir = paste0(getwd()))
+
+
+
+
+
+
+# histogram nl gdp -----
+source("http://www.sthda.com/upload/rquery_cormat.r")
+
+
+
+#data
+M<-data.frame(NL_PVT=nl$business[2:240],
+              NL_HH=nl$households[2:240],
+              GDP=nl$gdp[2:240],
+              NLa_PVT=nl2$bus,
+              NLa_HH=nl2$hh)
+
+
+#plots
+
+corrp<-ggplotly(ggcorrplot(cor(M), hc.order = TRUE, type = "lower",
+           lab = TRUE,
+           colors=c("red","white","blue")))
+
+
+
+#saving
+saveWidget(ggplotly(corrp),
+           "corrp.html",
+           selfcontained = F,
+           libdir = paste0(getwd()))
+
+
 
