@@ -118,7 +118,7 @@ The negative relation between corroborated by comparing the correlation between 
 <body>
     <div align="center">
       <figure>
-  <iframe src="/assets/img/corrp.html" frameborder="0" height="600" width="630"    display:block></iframe>
+  <iframe src="/assets/img/corrp.html" frameborder="0" height="450" width="450"    display:block></iframe>
 	 <figcaption>Fig5. - Net Lending and GDP (corelation)  </figcaption>
       </figure>
     </div>
