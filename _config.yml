@@ -18,6 +18,8 @@ navigation:
     url: /index.html
   - title: About
     url: /about
+  - title: My CV
+    url: /mycv
     
 social:
  # github: brianmaierjr
