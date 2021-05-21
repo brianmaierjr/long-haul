@@ -19,7 +19,7 @@ navigation:
   - title: About
     url: /about
   - title: My CV
-    url: /mycv2
+    url: /rc_cv
     
 social:
  # github: brianmaierjr
