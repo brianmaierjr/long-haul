@@ -9,7 +9,7 @@ layout: default
 <body>
     <div align="center">
       <figure>
-  <iframe src="/assets/img/rc_cv.jpeg" frameborder="0" height="350" width="500"    display:block></iframe>
+  <iframe src="/assets/img/cv2.jpg" frameborder="0" height="700" width="1000"    display:block></iframe>
 	 <figcaption>Fig1. - Banking Crisis (absolute)  </figcaption>
       </figure>
     </div>
