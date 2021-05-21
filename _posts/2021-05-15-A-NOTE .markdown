@@ -12,23 +12,19 @@ Economic models are a representation of reality. To understand observed trends i
 
 
 
-What to neglect and what to consider is a crucial part of building economic models. The more elements (or endogenous variables) a model incorporates, the harder it is to see the model's insights. On the other hand, the less variables you employ, the more insightful the model is, albeit more information you loose. For this reasone, we share the view, however, of George E. P. Box that *"All models are wrong, but some are useful "*.
+What to neglect and what to consider is a crucial part of building economic models. The more elements (or endogenous variables) a model incorporates, the harder it is to see the model's insights. On the other hand, the less variables you employ, the more insightful the model is, albeit more information you loose. For this reason, we share the view of George E. P. Box that *"All models are wrong, but some are useful "*.
 
 
-Economic models have different purposes. One of them is designing economic policies. Given that economic models are often a mathematical framework, they can provide numerical insights in respect to identifying a problem, proposing solutions, and estimating the impacts.
+Economic models have different purposes. One of them is designing economic policies. Given that economic models are often a mathematical framework, they can provide numerical estimates of policy options. And often they do are used by government departments, such as the Central Bank, to base policy-decisions.
 
 
-Some real world problems, however, are often neglected by the standard economic theory, which is know as neoclassical economics. One of these problems is the role of finance on economic dynamics. Financial markets include several agents and instruments. The creation of credit by banks, the issue of bonds by national treasuries, and even interest-beargin deposits, are all part of the financial system. Notwishstanding, most of these elements are absent in the mainstream macroeconomic modelling, specially those of economic cycles and growth.
+Some real world problems, however, are often neglected by the standard economic theory, which is know as neoclassical economics. One of these problems is the role of finance on economic dynamics. Financial markets include several agents and instruments. Apart from the stock market, the creation of credit by banks, the issue of bonds by national treasuries, and even interest-beargin deposits, are all part of the financial system. Notwishstanding, most of these elements are absent in the mainstream macroeconomic modelling, specially in cycles and growth analysis.
 
-
-The Nobel prize laureate [Paul Romer](https://paulromer.net/the-trouble-with-macro/WP-Trouble.pdf), for instance, has been a vocal critic of the current state of modern neoclassical macroeconomics. The author cites as an example the following quote from a renowned colleague to highlight one of the key drawbacks of this theoretical approach: *"although in the interest of disclosure, I must admit that I am myself less than totally convinced of the importance of money outside the case of large inflations"*. 
-
-In this perspective, money is usually a means of exchanging goods. When considered, banking credit is normally demanded according to the agents future income streams, being of little relevance for the overall macroeconomic analysis. This was particularly true before the 2008 Great Financial Crisis.
 
 But is money, or any other financial instruement irrelevant to understand  economic cycles?
 
 
-In 2008, for instance. we could see that financial markets are not neutral in the economic process.  And the 2008 crisis was not an isolated case.  Financial crisis are a long-lasting characteristic of capitalism, but they became more frequent for the past 40 years, since the end of the Bretton Woods agreement. By retrieving data from the Harvard Business School [website](https://www.hbs.edu/behavioral-finance-and-financial-stability/data/Pages/global.aspx), I have calculated the number of banking crisis, by year, since 1800:
+By retrieving data from the Harvard Business School [website](https://www.hbs.edu/behavioral-finance-and-financial-stability/data/Pages/global.aspx), I have calculated the number of banking crisis, by year, since 1800:
 
 
 <body>
@@ -40,8 +36,20 @@ In 2008, for instance. we could see that financial markets are not neutral in th
     </div>
 </body>
 
+We can see both that banking crisis are a natural element of the economic system - being observed since the 19th century - but also that they frequency increased significantly, becoming increasingly more frequent during the past 40 years, when the Bretton Woods agreement came to an end. 
 
-So why "nobody saw it coming"? The workhorse of current neoclassical macroeconomics are DSGE models. In this framework, events such as economic crisis, when not ruled out by construction, are exogenous shocks, and not breeded withing the economic system.
+
+In 2008, for instance. we could see the remarkable influence of financial markets in the whole economic system, affecting production, employment, and several other 'real' elements of the economy for years.
+
+
+
+So why "nobody saw it coming"? 
+
+The workhorse of current neoclassical macroeconomics are DSGE models. In this framework, events such as economic crisis, when not ruled out by construction, are exogenous shocks, and not breeded withing the economic system. 
+
+
+The Nobel prize laureate [Paul Romer](https://paulromer.net/the-trouble-with-macro/WP-Trouble.pdf), for instance, has been a vocal critic of the current state of modern neoclassical macroeconomics. The author cites as an example the following quote from a renowned colleague to highlight one of the key drawbacks of this theoretical approach: *"although in the interest of disclosure, I must admit that I am myself less than totally convinced of the importance of money outside the case of large inflations"*. 
+
 
 Surprisingly this drawback of standard neoclassical modelling, was only recognised after the 2008 great financial crisis by neoclassical economists. Joseph Stiglitz [said](https://watermark.silverchair.com/grx057.pdf?token=AQECAHi208BE49Ooan9kkhW_Ercy7Dm3ZL_9Cf3qfKAc485ysgAAAqAwggKcBgkqhkiG9w0BBwagggKNMIICiQIBADCCAoIGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMyGsjZH08CxN0HlbaAgEQgIICU4PGQpCmXG-i-cmub5b-Bn7l-Ifc-aK2CcB-3a1OKYq3Sc0DmoE7nY8yeVlCFT8XdBnLu4VfLdYHzaCZNQMxBq6e5wEcmLOuDvX2636Yma3PYjqhaX203rrffNuGQ8AjNh376GaTQcdJtjr16jmD9fPLR6OHMFvUZkc4vkmfHtVGxmk7_M2RVRTrOflcMX9sYoQzwOa4I3O1wM4lI8T6f5TkojBZiFxo_CdyfZkaVqb2-vbs09eXCd3Yq8HSYHaK2crCCK9QrEgUSO1Q0V39o6EMrU8Z0V2aCN7mxABHYDbyyud5pYamISOiYiW0hJPPz6imRuZ7qdVr4amnKo9mWDy8pnS5Ouw63wF_2ksexjna29aWb-0x6tZCVGrHcH3eRcSgwaNtiWanO2C7vx89kWBgq4mgEmHmn2MSithayE5cycBxcHA73rTRGIcRyY-Iw9QuBvdPHYd2ec85tgKcVOljhAReL5evjs--GqqARVo21_4m1l-tioUecKf1PByhHqPIgWo1MYOGyr4UAe4jluj3yuKp2ocws9cLaRdoy3Ma9krWyon5ZeRT-Tz_p6MnyMAQp3gebJcvM88De3n2n9jlzPLQXc9mFL-ZEuWHWK8hPTEbR1p1BlEf6xZvxtE_5ccsm6fLKsg2BGfYzEIv9UJtm_SACaUWIHok3ty55PSYv-99bJUUyNsvuKL9XDbu5SQBjac7gnc-x1wTznPd_MZw25cZuAJtGlmtJ--GBm_fJG9Ll92nK9fM-tFFPPJk6bstlB7qJSPQAJsxItSil0zIZec) the following about DSGE models: **Dynamic Stochastic General Equilibrium (DSGE) models, which have played such an important role in modern discussions of macroeconomics, in my judgement fail to serve the functions which a well-designed macroeconomic model should perform**
 

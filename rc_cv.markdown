@@ -1,5 +1,4 @@
 ---
-title: My CV
 layout: default
 ---
 
