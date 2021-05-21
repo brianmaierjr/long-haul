@@ -9,7 +9,7 @@ layout: default
 <body>
     <div align="center">
       <figure>
-  <iframe src="/assets/img/cv3.jpg" frameborder="0" height="700" width="1000"    display:block></iframe>
+  <iframe src="/assets/img/cv75.jpg" frameborder="0" height="700" width="1000"    display:block></iframe>
       </figure>
     </div>
 </body>
