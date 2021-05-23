@@ -15,13 +15,16 @@ Economic models are a representation of reality. To understand observed trends i
 What to neglect and what to consider is a crucial part of building economic models. The more elements (or endogenous variables) a model incorporates, the harder it is to see the model's insights. On the other hand, the less variables you employ, the more insightful the model is, albeit more information you loose. For this reason, we share the view of George E. P. Box that *"All models are wrong, but some are useful "*.
 
 
-Economic models have different purposes. One of them is designing economic policies. Given that economic models are often a mathematical framework, they can provide numerical estimates of policy options. And often they do are used by government departments, such as the Central Bank, to base policy-decisions.
+Economic models have different purposes. One of them is designing economic policies. Given that economic models are often a mathematical framework, they can provide numerical estimates of policy options. And often they do are used by government departments, such as Central Banks, to base policy-decisions.
 
 
-Some real world problems, however, are often neglected by the standard economic theory, which is know as neoclassical economics. One of these problems is the role of finance on economic dynamics. Financial markets include several agents and instruments. Apart from the stock market, the creation of credit by banks, the issue of bonds by national treasuries, and even interest-beargin deposits, are all part of the financial system. Notwishstanding, most of these elements are absent in the mainstream macroeconomic modelling, specially in cycles and growth analysis.
+Some real-world problems, however, are often neglected by standard economic theory, which is known as neoclassical economics. One such problem is the role of finance in economic dynamics. 
+
+Financial markets include various agents and instruments. In addition to the stock market, credit creation by banks, the issuance of bonds by the national treasury and even interest deposits are part of the financial system. Nevertheless, most of these elements are absent in most neoclassical macroeconomic modelling.
 
 
-But is money, or any other financial instruement irrelevant to understand  economic cycles?
+But is money, or any other financial instruction, irrelevant for understanding business cycles?
+
 
 
 By retrieving data from the Harvard Business School [website](https://www.hbs.edu/behavioral-finance-and-financial-stability/data/Pages/global.aspx), I have calculated the number of banking crisis, by year, since 1800:
@@ -31,33 +34,30 @@ By retrieving data from the Harvard Business School [website](https://www.hbs.ed
     <div align="center">
       <figure>
   <iframe src="/assets/img/crisis.html" frameborder="0" height="600" width="630"    display:block></iframe>
-	 <figcaption>Fig1. - Banking Crisis (absolute)  </figcaption>
+	 <figcaption>Fig1. - Number of Banking Crisis by year </figcaption>
       </figure>
     </div>
 </body>
 
-We can see both that banking crisis are a natural element of the economic system - being observed since the 19th century - but also that they frequency increased significantly, becoming increasingly more frequent during the past 40 years, when the Bretton Woods agreement came to an end. 
+We can see that banking crises have been a common element of the economic system at least since the 19th century. Moreover, we can see a significant increase in their frequency during the last 40 years.
 
+In 2008, for instance, we could see the perverse effect of a serious economic crisis, of international scale, whose effects on economic activity were felt for years.
 
-In 2008, for instance. we could see the remarkable influence of financial markets in the whole economic system, affecting production, employment, and several other 'real' elements of the economy for years.
+So why did "nobody see this coming"?
 
-
-
-So why "nobody saw it coming"? 
-
-The workhorse of current neoclassical macroeconomics are DSGE models. In this framework, events such as economic crisis, when not ruled out by construction, are exogenous shocks, and not breeded withing the economic system. 
+The workhorse of current neoclassical macroeconomics are DSGE models. In this framework, events such as economic crisis, when not ruled out by construction, are exogenous shocks, and not breeded withing the economic system. Albeit seemingly sophisticated, DSGE models could not foresee the 2008 crisis, I support, due to the lack of a proper integration of finance into economic modelling.
 
 
 The Nobel prize laureate [Paul Romer](https://paulromer.net/the-trouble-with-macro/WP-Trouble.pdf), for instance, has been a vocal critic of the current state of modern neoclassical macroeconomics. The author cites as an example the following quote from a renowned colleague to highlight one of the key drawbacks of this theoretical approach: *"although in the interest of disclosure, I must admit that I am myself less than totally convinced of the importance of money outside the case of large inflations"*. 
 
 
-Surprisingly this drawback of standard neoclassical modelling, was only recognised after the 2008 great financial crisis by neoclassical economists. Joseph Stiglitz [said](https://watermark.silverchair.com/grx057.pdf?token=AQECAHi208BE49Ooan9kkhW_Ercy7Dm3ZL_9Cf3qfKAc485ysgAAAqAwggKcBgkqhkiG9w0BBwagggKNMIICiQIBADCCAoIGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMyGsjZH08CxN0HlbaAgEQgIICU4PGQpCmXG-i-cmub5b-Bn7l-Ifc-aK2CcB-3a1OKYq3Sc0DmoE7nY8yeVlCFT8XdBnLu4VfLdYHzaCZNQMxBq6e5wEcmLOuDvX2636Yma3PYjqhaX203rrffNuGQ8AjNh376GaTQcdJtjr16jmD9fPLR6OHMFvUZkc4vkmfHtVGxmk7_M2RVRTrOflcMX9sYoQzwOa4I3O1wM4lI8T6f5TkojBZiFxo_CdyfZkaVqb2-vbs09eXCd3Yq8HSYHaK2crCCK9QrEgUSO1Q0V39o6EMrU8Z0V2aCN7mxABHYDbyyud5pYamISOiYiW0hJPPz6imRuZ7qdVr4amnKo9mWDy8pnS5Ouw63wF_2ksexjna29aWb-0x6tZCVGrHcH3eRcSgwaNtiWanO2C7vx89kWBgq4mgEmHmn2MSithayE5cycBxcHA73rTRGIcRyY-Iw9QuBvdPHYd2ec85tgKcVOljhAReL5evjs--GqqARVo21_4m1l-tioUecKf1PByhHqPIgWo1MYOGyr4UAe4jluj3yuKp2ocws9cLaRdoy3Ma9krWyon5ZeRT-Tz_p6MnyMAQp3gebJcvM88De3n2n9jlzPLQXc9mFL-ZEuWHWK8hPTEbR1p1BlEf6xZvxtE_5ccsm6fLKsg2BGfYzEIv9UJtm_SACaUWIHok3ty55PSYv-99bJUUyNsvuKL9XDbu5SQBjac7gnc-x1wTznPd_MZw25cZuAJtGlmtJ--GBm_fJG9Ll92nK9fM-tFFPPJk6bstlB7qJSPQAJsxItSil0zIZec) the following about DSGE models: **Dynamic Stochastic General Equilibrium (DSGE) models, which have played such an important role in modern discussions of macroeconomics, in my judgement fail to serve the functions which a well-designed macroeconomic model should perform**
+Surprisingly this drawback of standard neoclassical modelling, was only recognised after the 2008 great financial crisis by neoclassical economists. Joseph Stiglitz [said](https://watermark.silverchair.com/grx057.pdf?token=AQECAHi208BE49Ooan9kkhW_Ercy7Dm3ZL_9Cf3qfKAc485ysgAAAqAwggKcBgkqhkiG9w0BBwagggKNMIICiQIBADCCAoIGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMyGsjZH08CxN0HlbaAgEQgIICU4PGQpCmXG-i-cmub5b-Bn7l-Ifc-aK2CcB-3a1OKYq3Sc0DmoE7nY8yeVlCFT8XdBnLu4VfLdYHzaCZNQMxBq6e5wEcmLOuDvX2636Yma3PYjqhaX203rrffNuGQ8AjNh376GaTQcdJtjr16jmD9fPLR6OHMFvUZkc4vkmfHtVGxmk7_M2RVRTrOflcMX9sYoQzwOa4I3O1wM4lI8T6f5TkojBZiFxo_CdyfZkaVqb2-vbs09eXCd3Yq8HSYHaK2crCCK9QrEgUSO1Q0V39o6EMrU8Z0V2aCN7mxABHYDbyyud5pYamISOiYiW0hJPPz6imRuZ7qdVr4amnKo9mWDy8pnS5Ouw63wF_2ksexjna29aWb-0x6tZCVGrHcH3eRcSgwaNtiWanO2C7vx89kWBgq4mgEmHmn2MSithayE5cycBxcHA73rTRGIcRyY-Iw9QuBvdPHYd2ec85tgKcVOljhAReL5evjs--GqqARVo21_4m1l-tioUecKf1PByhHqPIgWo1MYOGyr4UAe4jluj3yuKp2ocws9cLaRdoy3Ma9krWyon5ZeRT-Tz_p6MnyMAQp3gebJcvM88De3n2n9jlzPLQXc9mFL-ZEuWHWK8hPTEbR1p1BlEf6xZvxtE_5ccsm6fLKsg2BGfYzEIv9UJtm_SACaUWIHok3ty55PSYv-99bJUUyNsvuKL9XDbu5SQBjac7gnc-x1wTznPd_MZw25cZuAJtGlmtJ--GBm_fJG9Ll92nK9fM-tFFPPJk6bstlB7qJSPQAJsxItSil0zIZec) the following about DSGE models: "*Dynamic Stochastic General Equilibrium (DSGE) models, which have played such an important role in modern discussions of macroeconomics, in my judgement fail to serve the functions which a well-designed macroeconomic model should perform."*
 
 
-Hence, if your model does not include financial markets, assume perfect functioning financial markets (most pre-2008 models) or simply consider that financial markets only impose frictions and short-term fluctuations on real activity (most post-2008 literature), your conclusions may be misleading.
+Hence, if your model does not include financial markets, assume perfect functioning financial markets (most pre-2008 models) or consider that financial markets only impose frictions and short-term fluctuations on real activity (most post-2008 literature), your conclusions may be misleading.
 
 
-Morever, the increasing frequency of financial crisis, is not the only justification for including more realistic, non-efficient, financial markets into macroeconomic modelling. Modern financialised economies are greatly influenced by endogenous monetary components such as credit cycles, equities, housing and even commodities prices fluctuations  - all of them being an integral part of the financial system. 
+But the increasing frequency of financial crises is not the only argument in favour of modelling more realistic, non-perfect financial markets within economic theory. Modern financial economies are greatly influenced by endogenous monetary components, such as credit cycles, equities, housing and even commodity price fluctuations - all of which are integral parts of the financial system. 
 
 In order to illustrate how the "real" economy and the financial economy have strong co-movements, I have calculated a financial composite index, which is a simple average of shares prices, residential and commodities prices (All of them available in the St. Luis Fed [website](https://fred.stlouisfed.org/)). Then, I have contrasted this composite with the industrial production in the US from 1992 until today. 
 
@@ -68,13 +68,14 @@ The results are illustrated below:
     <div align="center">
       <figure>
   <iframe src="/assets/img/composite_index.html" frameborder="0" height="600" width="630"    display:block></iframe>
-	 <figcaption>Fig4. - Industrial Production and Composite (index)  </figcaption>
+	 <figcaption>Fig. 2 - Industrial Production and Financial Index (index)  </figcaption>
       </figure>
     </div>
 </body>
 
 
-It is possible to see a strong correlation between the two series both in upward and downward economic cycles. Although not conclusive, this highlights a real-financial connection that is largely missed on neoclassical economics. 
+It is possible to see a strong correlation between the two series both in upward and downward economic cycles. Although not conclusive, this exemplifies the potential drawback of omitting the real-financial nexus on macroeconomic modelling.
+
 
 The positive association between the series is also clear by plotting their growth rates for the same period:
 
@@ -83,15 +84,15 @@ The positive association between the series is also clear by plotting their grow
     <div align="center">
       <figure>
   <iframe src="/assets/img/composite_growth.html" frameborder="0" height="600" width="630"    display:block></iframe>
-	 <figcaption>Fig4. - Industrial Production and Composite (growth)  </figcaption>
+	 <figcaption>Fig. 3 - Industrial Production and Composite (growth)  </figcaption>
       </figure>
     </div>
 </body>
 
 
-Another important source of imbalances in the real economy comes from credit. Credit cycles, which are normally fueled by increasing asset prices, play an important role to determine investments. Unlike most DSGE models, however, credit - and other external financing instruments - can be issued independently from available funding (e.g. deposits). 
+Another important source of imbalances in the real economy comes from credit. Credit cycles, which are typically fuelled by rising asset prices, play an important role in determining investment levels. Unlike most DSGE models, however, credit - and other external financing instruments - can be issued independently of available financing (e.g. deposits). 
 
-That is, finance is created endogenous by the banking system and, often, agents become overindebted and financial institutions develop into a greater financial fragility.
+In other words, financing is created endogenously by the financial system. This has a double implication for the economic system. At the same time that agents can lend more than they can pay back, banks can lend beyond the safe level. That is, financial imbalances are created within the economic system..
 
 
 Below we illustrate the relation between investments and nonfinancial corporations indebtement (securities + loans) in the US:
@@ -100,7 +101,7 @@ Below we illustrate the relation between investments and nonfinancial corporatio
 <body>
     <div align="center">
       <figure>
-  <iframe src="/assets/img/debt_gdp.html" frameborder="0" height="600" width="630"    display:block></iframe>
+  <iframe src="/assets/img/debt_gdp.html" frameborder="0" height="600" width="800"    display:block></iframe>
 	 <figcaption>Fig5. - Investments, Debt and Recessions (% growth)  </figcaption>
       </figure>
     </div>
