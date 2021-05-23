@@ -107,7 +107,7 @@ Below we illustrate the relation between investments and nonfinancial corporatio
     </div>
 </body>
 
-We can see that strong credit growth preceded most US recessions since the 1960's, the 2008 one being a remarkable example of private sector leveraging process. 
+We nonfinancial firms' debt grows higher that its average before recessive periods. This pattern was observed on most US recessions since the 1960's, the 2008 being a remarkable example of this leveraging process.
 
 The relation between indebtment and GDP dynamics can also be framed by the sectoral net lending - which represents its borrowing (-) or lending (+) position in each year. Normally, high-growth periods are associated to higher leveraging periods (increasing borrowing needs). Below, I've plotted the change on private business sector net lending positions and GDP growth rates for the US to illustrate this macroeconomic feature:
 
@@ -120,18 +120,24 @@ The relation between indebtment and GDP dynamics can also be framed by the secto
     </div>
 </body>
 
-The negative relation between corroborated by comparing the correlation between GDP and the net lending of households (NL_HH and NLa_HH), and business (NL_PVT, NLa_PVT), as we can see below:
+We can see a clear association between the private sector financial needs (increasing borrowing) and GDP growth.
+
+This negative relation is corroborated by comparing the correlation between GDP and the net lending of households (NL_HH and NLa_HH), and business (NL_PVT, NLa_PVT), as we can see below:
 
 
 
 <body>
+    <div align="center">
+
       <figure>
-  <iframe src="/assets/img/corrp.html" frameborder="0" height="650" width="700"    display:block></iframe>
+  <iframe src="/assets/img/corrp.html" frameborder="0" height="450" width="500"    display:block></iframe>
       </figure>
+          </div>
+
 </body>
 
 
-We can see that, as expected, the more households, and in a minor extend the whole private sector borrows (- sign) in relation to its income, the higher are the economic growth rates. Thats why we see a negative correlation between the two series.
+We can see that, as expected, the more households, and in a minor extent the whole private sector borrows (- sign) in relation to its income, the higher are the economic growth rates. Thats why we see a negative correlation between the two series.
 
 This illustrates, again, that debt and GDP dynamics have a strong an structural relation. As a result, ommiting financial markets from macroeconomic analysis is fundamentally flawed.
 
@@ -141,7 +147,7 @@ But how can we do that?
 Among the alternatives to incorporate financial aspects into macroeconomic analysis we highlight the post-Keynesian approach. One of the key aspects of the post-Keynesian economics is the key role played by financial markets, and the role played by money itself. (If you are curious about this research agenda I encourage you to visit [this](https://www.postkeynesian.net/) website, or to watch [this](https://www.youtube.com/watch?v=DEROFQIao4o) talk from Marc Lavoie)
 
 
-Some fundamental aspects of this approach, alongside illustrative data of will be addressed on the next post. See you [here](#brmodel)
+Some fundamental aspects of this approach, alongside illustrative data of will be addressed on the next post. 
 
 
 
