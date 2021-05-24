@@ -2,7 +2,7 @@
 layout: post
 title: "Brazil's macroeconomics"
 description: This post presents important features of the Brazilian economy macroeconomic system.
-date: '2021-05-17'
+date: '2021-05-24'
 ---
 
 

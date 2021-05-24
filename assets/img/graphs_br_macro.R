@@ -650,3 +650,75 @@ saveWidget(ggplotly(wtw_p),
            libdir = paste0(getwd()))
 
 
+
+
+
+
+# creating year column
+
+NS<-lapply(NET_STOCKS, function(x) cbind(x,year=seq(2004,2017)))
+
+names(NS)<-c(names(NS)[c(1,2,3,4)],"Domestic",names(NS)[6])
+
+
+
+# renaming columns
+for (i in 1:length(NS)){
+  
+  colnames(NS[[i]])<-c(colnames(NS[[i]])[1],
+                       "Total",
+                       "Deposits",
+                       "Bonds",
+                       "Loans",
+                       "Equities",
+                       "Insurances",
+                       "Others",
+                       "year")}
+
+
+#ploting
+stocks_all<-reshape2::melt(NS,id.vars="year") %>% 
+  
+  filter(variable %in% c("Deposits",
+                         "Bonds",
+                         "Loans",
+                         "Equities",
+                         "Insurances",
+                         "Others")) %>%
+  
+  mutate(rel_value=value/FLOWS2$GDP$total_renda[5:18]) %>%
+  
+  ggplot(aes(x=year,
+             y=rel_value,
+             group=variable,
+             fill=variable))+
+  
+  geom_bar(position="stack", stat="identity") + 
+  
+  scale_fill_jco() +
+  
+  labs(fill="",
+       y="%",
+       x="")+
+  
+  facet_wrap(~L1,
+             #   dir = "v",
+             #  scales = "free_y"
+  ) +
+  
+  theme_bw()
+
+
+
+stocks_all
+
+
+
+
+saveWidget(ggplotly(stocks_all) ,
+           "stocks_all.html",
+           selfcontained = F,
+           libdir = paste0(getwd()))
+
+
+
