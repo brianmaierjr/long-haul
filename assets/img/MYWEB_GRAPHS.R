@@ -714,7 +714,6 @@ s[names(s) %nin% c("Time","Stocks")] %>%
 # data
 g1<-data.frame(read.xlsx("us.xls",1))
 
-
 #outliers
 outs<-apply(g1[,c(2,3)], 2, function(x) quantile(x, probs=c(.01, .99), na.rm = FALSE))
 
@@ -1116,7 +1115,7 @@ corrp<-ggplotly(ggcorrplot(cor(M), hc.order = TRUE, type = "lower",
            lab = TRUE,
            colors=c("red","white","blue")))
 
-
+corrp
 
 #saving
 saveWidget(ggplotly(corrp),
@@ -1125,4 +1124,76 @@ saveWidget(ggplotly(corrp),
            libdir = paste0(getwd()))
 
 
+
+
+
+# Volatility analysis ------------
+
+#data
+nas<-data.frame(read_xls("NASDAQCOM.xls",1))
+
+
+
+
+#moments
+mom<-list(Pre=data.frame("Kurtosis"=round(kurtosis(pre_p),2),
+                         "Skewness"=round(skewness(pre_p),2),
+                         x=c(-10),
+                         y=c(0.1),
+                         pre=pre_p),
+          Post=data.frame("Kurtosis"=round(kurtosis(post_p),2),
+                         "Skewness"=round(skewness(post_p),2),
+                         x=c(-10),
+                         y=c(0.1),
+                         post=post_p))
+
+
+reshape2::melt(mom)
+
+data.frame(mpg = 15,wt = 5,lab = "Text",
+           cyl = factor(8,levels = c("4","6","8")))
+
+
+
+reshape2::melt(cbind(pre_p,
+                     post_p))%>% 
+
+ggplot(.,aes(x=value,
+             fill=Var2)) +
+  geom_histogram(aes(y=..density..),
+                 position="identity",
+                 alpha=0.5,
+                 show_guide = FALSE) +
+  
+  geom_density(alpha=0.6) +
+  
+  facet_wrap(.~Var2)+
+  
+  geom_text(data=reshape2::melt(mom) %>%
+              filter(variable %in% c ("Kurtosis"))%>%
+              unique(),
+            aes(x=-10,
+                y=.1,
+                label=paste(variable,value),
+                fill=L1),
+            show.legend  = F
+            )+
+  
+  
+  facet_wrap(.~L1)
+  
+
+    theme_bw()
+  
+
+# geom_vline(cbind(.,
+  #                  meanpre=mean(pre_p),
+  #                  meanpro=mean(post_p)), aes(xintercept=grp.mean, color=sex),
+  #            linetype="dashed")
+
+install.packages("moments")
+library(moments)
+
+mom<-data.frame(lapply(list(pre_p,post_p), function(x) c("Kurtosis"=kurtosis(x),
+                                                      "Skewness"=skewness(x))))
 
