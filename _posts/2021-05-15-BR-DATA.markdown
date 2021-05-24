@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Brazil's Macroeconomics"
+title: "Brazil's macroeconomics"
 description: This post presents important features of the Brazilian economy macroeconomic system.
 date: '2021-05-17'
 ---
@@ -48,7 +48,7 @@ Agents are classifiend in accordance with the Brazilian Institute of Geography a
 2. Non-Financial Corporations
 3. Financial Corporations
 4. Government
-5. Foreing Sector
+5. Rest of the World (RoW)
 6. Non-profit institutions serving households (NPISHs)
 
 
@@ -93,8 +93,58 @@ Many are the insights we can highlight from this figure.
 
 **Forth** firms, households, the government, an even banks invest (i.e. consume fixed capital). Most growth models embody none but firms as the responsibles for capital accumulation. Investments play a crucial role on economic dynamics in the short and - depending on your your theoretical background - in the long run as well. For this reason, it is key to embody some of these features in models that aim to study real phenomena through macroeconomic lens. 
 
+These features represent the key transactions being made in Brazil' macroeconomic system. But many are the transactions that derive from the previous accumulation of wealth. Interest and wealth-related income, as we have seen, are important income sources for households, for instance. 
+
+On the next section we will evaluate how the macroeconomic agents relate to each other through finance.
 
 
-### Financial Stocks
+#### Financial Stocks
 
-TBD
+In Brazil's system of national accounts (SNA), financial instruments are basically:
+
+1. Deposits;
+2. Bonds;
+3. Equities (shares);
+5. Loans;
+6. Insurance reserves;
+6. Others
+
+
+The first question we want to adress is which are the most important financial instruments. Retrieving data from the SNA, and with some manipulation, we could find that deposits are the most signifcant financial instrument in absolute levels, reaching 160 % of GDP, on average, between 2004 and 2017. Being followed by bonds (145 %), loans (121%), equities (95 %), insurance reserves (44 %), and finally by others (22 %), as illustrated below
+
+
+
+<body>
+    <div align="center">
+<figure>
+<iframe src="/assets/img/sanks.html" frameborder="0" height="600" width="630" display:block></iframe>
+	<figcaption>Fig. 3 - Financial Instruments mean value (2004-2017) (% GDP)  </figcaption>
+</figure>
+    </div>
+</body>
+
+
+But how each of these instruments are distributed among the economic agents?
+
+Unfortunately, this information is only available for 2009. So we will first show who owes whom through a matrix which illustrates the net financial debt and assets, in respect to the other economic sectors. This is illustrate on Figure 4, besides their net financial position in respect to itself, so we can see if the sector is a net debtor or creditor in the economy: 
+
+
+
+<body>
+    <div align="center">
+<figure>
+<iframe src="/assets/img/wtw.html" frameborder="0" height="600" width="630" display:block></iframe>
+	<figcaption>Fig. 4 - Sectoral financial wealth (2009) (% GDP). Banks are financial institutions. GOV denotes government. HH stands for households; NFC are non-financial corporations (firms) and RoW denotes the foreing sector.  </figcaption>
+</figure>
+    </div>
+</body>
+
+
+We can see, for example, that banks' are net debtors of households (grey), but are largely net creditors of the government. The high level of deposits in the economy, and the key role played by treasury bonds on the financial markets structure help to explain this feature.
+
+Moreover, we can see that the foreing economy (ROW) is a net debtor or the Brazilian domestic economy, and that most of the foreing participation is with firms (NFC)
+
+
+
+
+
