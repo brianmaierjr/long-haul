@@ -5,15 +5,33 @@ description: This post presents important features of the Brazilian economy macr
 date: '2021-05-17'
 ---
 
-### Integrating Money and Finance into Macro modelling <a name="brmodel"></a>
 
-Understading the real activity nexus to financial markets is, thus, of extreme relevance to understand macroeconomic dynamics. But how can we embody all those features in an econonomic model? 
+### Integrating finance to macro
+
+On the previous post, we have seen that the most usual macroeconomic modelling tool (neoclassical DSGE models) have paid little attention to the real-financial nexus. This was particularly true for pre-2008 models. 
+
+As we have mentioned, however, the post-Keynesian literature is precisly characterised for integrating the real and the monetary aspects of the economic system. In this post, I will illustrate: a) the basic SFC framework; b) how it relates to the observed data from Brazil.
 
 
-A growing body of the post-Keynesian literature has adopted a modelling framework which cover precisely the importance of financial instruments for economic dynamics in the so-called Stock-Flow consistent modelling (SFC). More on this subject will be addressed on the next
 
+
+#### The SFC methodology
 
 SFC models are characterised by placing a tight accounting system in which every expenditure for a sector represents an income for another (**flow consistency**),  every financial instrument represents an asset for somebody, and a liability for somebody else (**stock-consitency**). And that, every positive (negative) financial balance accumulates into wealth (debt) (**stock-flow consitency**).
+
+SFC models are nothing but an accounting framework, but they are usually used on post-Keynesian (PK) analysis, which gives the motion to the accounting structure.
+
+The models normally embody five sectors: firms, households, government, the
+central bank, and private banks. The models are designed to ensure that - as in any real economy - the income inflows to one sector are outflows from other sectors. The same applies to financial transactions. These flows accumulate into debt, if the sector expends more than it ears. Or the flows accumulate into wealth, if the sector inflows outweights its outflows. Thus, the models are stock flow consistent.
+
+Technically, the model are differential or difference system of equations, whose solution can be generally defined as :
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=X_{t&plus;1}=&space;AX_t&space;&plus;&space;Bt" target="_blank"><img src="https://latex.codecogs.com/gif.latex?X_{t&plus;1}=&space;AX_t&space;&plus;&space;Bt" title="X_{t+1}= AX_t + Bt" /></a>
+
+
+That is, the solution depends on the state variables (<a href="https://www.codecogs.com/eqnedit.php?latex=X_{t&plus;1}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?X_{t&plus;1}" title="X_{t+1}" /></a>), its past values (<a href="https://www.codecogs.com/eqnedit.php?latex=X_{t&plus;1}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?X_{t;1}" title="X_{t}" /></a>), and the parameter matrix (A), which relates all variables across time.
+
+From an economic standpoint, this approach contrasts to 
 
 
 Indeed, a number of works are already employing some of those features to develop empirical models. See examples for [England](https://www.bankofengland.co.uk/-/media/boe/files/working-paper/2016/a-dynamic-model-of-financial-balances-for-the-uk.pdf), [Denmark](http://www.levyinstitute.org/publications/an-empirical-stock-flow-consistent-macroeconomic-model-for-denmark), and [Italy](http://www.levyinstitute.org/publications/a-stock-flow-consistent-quarterly-model-of-the-italian-economy).
