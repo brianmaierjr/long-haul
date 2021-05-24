@@ -10,41 +10,37 @@ date: '2021-05-17'
 
 On the previous post, we have seen that the most usual macroeconomic modelling tool (neoclassical DSGE models) have paid little attention to the real-financial nexus. This was particularly true for pre-2008 models. 
 
-As we have mentioned, however, the post-Keynesian literature is precisly characterised for integrating the real and the monetary aspects of the economic system. In this post, I will illustrate: a) the basic SFC framework; b) how it relates to the observed data from Brazil.
+As we have mentioned, however, the post-Keynesian literature is precisly characterised for integrating the real and the monetary aspects of the economic system. In this post, I will illustrate: a) an alternative modelling framework that addresses some of the drawbacks of neoclassical economics, and b) how this new framework relates to the observed data from Brazil.
 
 
 
 
 #### The SFC methodology
 
-SFC models are characterised by placing a tight accounting system in which every expenditure for a sector represents an income for another (**flow consistency**),  every financial instrument represents an asset for somebody, and a liability for somebody else (**stock-consitency**). And that, every positive (negative) financial balance accumulates into wealth (debt) (**stock-flow consitency**).
+A large strand of the post-Keynesian literature has embraced the so-called stock-flow consistent (SFC) modelling. 
 
-SFC models are nothing but an accounting framework, but they are usually used on post-Keynesian (PK) analysis, which gives the motion to the accounting structure.
+SFC models normally embody five sectors: firms, households, government, the
+central bank, and private banks. The models are designed to ensure that - as in any real economy - the income inflows to one sector are outflows from other sectors. The same applies to financial transactions. These flows accumulate into debt, if the sector expends more than it earns. Or the flows accumulate into wealth, if the sector inflows outweights its outflows. Thus, the models are stock flow consistent.
 
-The models normally embody five sectors: firms, households, government, the
-central bank, and private banks. The models are designed to ensure that - as in any real economy - the income inflows to one sector are outflows from other sectors. The same applies to financial transactions. These flows accumulate into debt, if the sector expends more than it ears. Or the flows accumulate into wealth, if the sector inflows outweights its outflows. Thus, the models are stock flow consistent.
-
-Technically, the model are differential or difference system of equations, whose solution can be generally defined as :
-
-<a href="https://www.codecogs.com/eqnedit.php?latex=X_{t&plus;1}=&space;AX_t&space;&plus;&space;Bt" target="_blank"><img src="https://latex.codecogs.com/gif.latex?X_{t&plus;1}=&space;AX_t&space;&plus;&space;Bt" title="X_{t+1}= AX_t + Bt" /></a>
+SFC models are nothing but an accounting framework, but they are usually employed with post-Keynesian (PK) assumptions, which gives the motion to the accounting structure.
 
 
-That is, the solution depends on the state variables (<a href="https://www.codecogs.com/eqnedit.php?latex=X_{t&plus;1}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?X_{t&plus;1}" title="X_{t+1}" /></a>), its past values (<a href="https://www.codecogs.com/eqnedit.php?latex=X_{t&plus;1}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?X_{t;1}" title="X_{t}" /></a>), and the parameter matrix (A), which relates all variables across time.
+Technically, the model are differential or difference system of equations, whose solution depends on the initial state of the system, besides the constant parameters. 
 
-From an economic standpoint, this approach contrasts to 
+This approach constrasts with DSGE models for not relying on constraint optimization schemes. In fact, the very concept of optimality is contested, and the system can have multiple equilibria, non stable equilibrium, or even diverge from a given steady state.
 
+
+SFC models tend to assume realistic behavioural equations in which agents cannot foresee the future (as they normally do in DSGE), and define their decisions on ad-hoc assumptions. Besides that, its stock-flow structure is largely based on the system of national accounts, making this framework useful to replicate and study actual macroeconomic systems.
 
 Indeed, a number of works are already employing some of those features to develop empirical models. See examples for [England](https://www.bankofengland.co.uk/-/media/boe/files/working-paper/2016/a-dynamic-model-of-financial-balances-for-the-uk.pdf), [Denmark](http://www.levyinstitute.org/publications/an-empirical-stock-flow-consistent-macroeconomic-model-for-denmark), and [Italy](http://www.levyinstitute.org/publications/a-stock-flow-consistent-quarterly-model-of-the-italian-economy).
 
 
-In this article I will examine what should be of concern to employ a SFC model for Brazil. This will be done through the exposition of the most relevant transactions, and the most relevant financial instruments of the Brazilian economy according to the data.
+In the next section I will show the core data supporting the SFC methodology, and use the Brazilian economy as an illustrative case. This will allow us to see important connections between financial and real transactions. Also, important features of Brazil's macroeconomic system will be highlighted. 
 
 
+#### Stocks and flows in the Brazilian economy
 
-
-### Agents and transactions
-
-In order to understand the macroeconomic features we need to ask which are the agents and how they earn and expend their financial inflows.
+In order to understand the macroeconomic features of the brazilian economy we need to ask, first, which are the agents and how they earn and expend their financial inflows.
 
 Agents are classifiend in accordance with the Brazilian Institute of Geography and Statistics (IBGE) as:
 
@@ -53,44 +49,49 @@ Agents are classifiend in accordance with the Brazilian Institute of Geography a
 3. Financial Corporations
 4. Government
 5. Foreing Sector
+6. Non-profit institutions serving households (NPISHs)
 
 
 The agents relate to eachother through two channels: a) transactions, and b) balance sheet. That is, they relate through **flows** (e.g., consumption, interest payments, government transfers) and through financial **stocks** (shares, bonds, deposits, etc.).  
 
-Let's first check-out which are the most important transaction. With some cleaning procedures, below we illustrate their average values in relation to GDP: 
-
-
-<figure>
-	 <img src="/assets/img/flows.jpg" alt="" style="width:600px;" />
-	<figcaption>Fig2. - Key Flows (% GDP) figcaption</figcaption>
-</figure>
-
-
-
-By definition, however, each expenditure for a sector, represents an income for another. So it is key to understand if those transactions represent income sources our expenditures, for each sector. In order to understand that, we have calculated each sector source of income, and their respective expenditures. The results are illustrate in the diagram below:
-
+Let's first check-out which are the most important transaction. With some cleaning procedures, below we illustrate their average values between 2000 and 2017, in relation to GDP, and their min-max ranges: 
 
 <body>
     <div align="center">
 <figure>
-<iframe src="/assets/img/sanks.html" frameborder="0" height="600" width="630" display:block></iframe>
-	<figcaption>Fig3. - Income and Expenditures (R$ )  </figcaption>
+<iframe src="/assets/img/key_flows.html" frameborder="0" height="600" width="630" display:block></iframe>
+	<figcaption>Fig. 1 - Transactions mean, max and min values (2000-2017) (% GDP)  </figcaption>
 </figure>
     </div>
 </body>
 
 
 
-A number of features could be highlighted from this result. I'll only highlight those which illustrate how actual data and economic growth theory diverge. **First**, we can see that GDP which is net value added is a source of income not only for firms, but also for banks, households, and even government (this last one, only for accounting purposes). Given that most macroeconomic growth models only rely on firms output, we can see that the real macroeconomic accounting system is significantly more complex than most theoretical representations of it. 
+By definition, however, each expenditure for a sector, represents an income for another. So it is key to understand if those transactions represent income sources or expenditures, for each sector. In order to understand that, we have calculated each sector's source of income, and its respective expenditures. The results are illustrate in the diagram below:
 
-**Second**, interests and wealth (which also aggregates capital-related income) are an important income source for banks, as expected, but also for households, and firms. This stresses a financial source of income which derives from balance sheet relations. For instance, if households hold firms' equities or government bonds, this will influence their income sources, and, consequently, their expenditures's level. This real-financial nexus, although clear in the data (in even in the common sense) is largely neglected on mainstream macroeconomic models.
 
-**Third**, transfers are a relevant share of households' disposable income. We can see that this source of income is similar to wages in absolute levels, meaning that a proper representation of households on macroeconomic models, should not overlook the distributive role played by the goverment. 
+<body>
+    <div align="center">
+<figure>
+<iframe src="/assets/img/sanks.html" frameborder="0" height="600" width="630" display:block></iframe>
+	<figcaption>Fig. 2 - Resources and Uses (R$)  </figcaption>
+</figure>
+    </div>
+</body>
+
+
+
+Many are the insights we can highlight from this figure. 
+
+**First**, an important feature of Figure 2 is that productive activity is not only an important source of income for firms, but also for banks, households, and even the government (this last one, only for accounting purposes). In this sense a proper representation of the BR economy, should not neglect this source of income for banks, and specially for households. The latter category includes informal activities, small business, production of goods for own consumption (e.g. small farming), and even imputed rent, for those who own their property.   
+
+
+**Second**, interests and wealth (which aggregates capital-related income) are an important income source for banks, as expected, but also for households, and firms. This stresses a financial source of income which derives from balance sheet relations. For instance, if households hold firms' equities or government bonds, this will influence their income sources, and, consequently, their expenditures's level. This real-financial nexus, although clear in the data (in even in the common sense) is largely employed on SFC models.
+
+
+**Third**, transfers are a relevant share of households' disposable income. We can see that this source of income is similar to wages in absolute levels, meaning that a proper representation of the Brazilian economy with macroeconomic models should not overlook the distributive role played by the goverment. 
 
 **Forth** firms, households, the government, an even banks invest (i.e. consume fixed capital). Most growth models embody none but firms as the responsibles for capital accumulation. Investments play a crucial role on economic dynamics in the short and - depending on your your theoretical background - in the long run as well. For this reason, it is key to embody some of these features in models that aim to study real phenomena through macroeconomic lens. 
-
-
-
 
 
 
