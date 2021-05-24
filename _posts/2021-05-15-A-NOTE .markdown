@@ -6,7 +6,7 @@ date: '2021-05-17'
 ---
 
 
-### Why do we need a macroeconomic model?
+### Why do we need macroeconomic models?
 
 Economic models are a representation of reality. To understand observed trends in the economy - such as financial crisis, how income grows, why people are unemployed or why prices are rising, we need to abstract a number of elements and focus on others. 
 
@@ -15,7 +15,7 @@ Economic models are a representation of reality. To understand observed trends i
 What to neglect and what to consider is a crucial part of building economic models. The more elements (or endogenous variables) a model incorporates, the harder it is to see the model's insights. On the other hand, the less variables you employ, the more insightful the model is, albeit more information you loose. For this reason, we share the view of George E. P. Box that *"All models are wrong, but some are useful "*.
 
 
-Economic models have different purposes. One of them is designing economic policies. Given that economic models are often a mathematical framework, they can provide numerical estimates of policy options. And often they do are used by government departments, such as Central Banks, to base policy-decisions.
+Economic models have different purposes. One of them is designing economic policies. Given that economic models are often a mathematical framework, they can provide numerical estimates of policy options. And often they are used by government departments, such as Central Banks, to base policy-decisions. For their aggregated nature, these are mostly macroeconomic models.
 
 
 Some real-world problems, however, are often neglected by standard economic theory, which is known as neoclassical economics. One such problem is the role of finance in economic dynamics. 
@@ -23,7 +23,7 @@ Some real-world problems, however, are often neglected by standard economic theo
 Financial markets include various agents and instruments. In addition to the stock market, credit creation by banks, the issuance of bonds by the national treasury and even interest deposits are part of the financial system. Nevertheless, most of these elements are absent in most neoclassical macroeconomic modelling.
 
 
-But is money, or any other financial instruction, irrelevant for understanding business cycles?
+But is money, or any other financial instruction, irrelevant for understanding economic dynamics?
 
 
 
@@ -41,11 +41,11 @@ By retrieving data from the Harvard Business School [website](https://www.hbs.ed
 
 We can see that banking crises have been a common element of the economic system at least since the 19th century. Moreover, we can see a significant increase in their frequency during the last 40 years.
 
-In 2008, for instance, we could see the perverse effect of a serious economic crisis, of international scale, whose effects on economic activity were felt for years.
+In 2008, for instance, we could see the perverse effect of a serious financial crisis, of international scale, whose effects on the economic activity were felt for years.
 
-So why did "nobody see this coming"?
+So why "No one saw this coming"?
 
-The workhorse of current neoclassical macroeconomics are DSGE models. In this framework, events such as economic crisis, when not ruled out by construction, are exogenous shocks, and not breeded withing the economic system. Albeit seemingly sophisticated, DSGE models could not foresee the 2008 crisis, I support, due to the lack of a proper integration of finance into economic modelling.
+The workhorse of current neoclassical macroeconomics are DSGE models. In this framework, events such as economic crisis, when not ruled out by construction, are exogenous shocks, and not breeded withing the economic system. Albeit seemingly sophisticated, DSGE models could not foresee the 2008 crisis, I argue, due to the lack of a proper integration of finance into economic modelling.
 
 
 The Nobel prize laureate [Paul Romer](https://paulromer.net/the-trouble-with-macro/WP-Trouble.pdf), for instance, has been a vocal critic of the current state of modern neoclassical macroeconomics. The author cites as an example the following quote from a renowned colleague to highlight one of the key drawbacks of this theoretical approach: *"although in the interest of disclosure, I must admit that I am myself less than totally convinced of the importance of money outside the case of large inflations"*. 
@@ -57,12 +57,11 @@ Surprisingly this drawback of standard neoclassical modelling, was only recognis
 Hence, if your model does not include financial markets, assume perfect functioning financial markets (most pre-2008 models) or consider that financial markets only impose frictions and short-term fluctuations on real activity (most post-2008 literature), your conclusions may be misleading.
 
 
-But the increasing frequency of financial crises is not the only argument in favour of modelling more realistic, non-perfect financial markets within economic theory. Modern financial economies are greatly influenced by endogenous monetary components, such as credit cycles, equities, housing and even commodity price fluctuations - all of which are integral parts of the financial system. 
+But the increasing frequency of financial crises is not the only argument in favour of modelling more realistic, non-perfect financial markets within economic theory. Modern economies are greatly influenced by endogenous monetary components, such as credit cycles, equities, housing and even commodity price fluctuations - all of which are integral parts of the financial system. 
 
-In order to illustrate how the "real" economy and the financial economy have strong co-movements, I have calculated a financial composite index, which is a simple average of shares prices, residential and commodities prices (All of them available in the St. Luis Fed [website](https://fred.stlouisfed.org/)). Then, I have contrasted this composite with the industrial production in the US from 1992 until today. 
+In order to illustrate how the "real" economy and the financial economy have strong co-movements, I have calculated a financial composite index, which is a simple average of shares, residential and commodities' prices (All of them available in the St. Luis Fed [website](https://fred.stlouisfed.org/)). Then, I have contrasted this composite with the industrial production in the US from 1992 until today. 
 
 The results are illustrated below:
-
 
 <body>
     <div align="center">
@@ -74,7 +73,7 @@ The results are illustrated below:
 </body>
 
 
-It is possible to see a strong correlation between the two series both in upward and downward economic cycles. Although not conclusive, this exemplifies the potential drawback of omitting the real-financial nexus on macroeconomic modelling.
+It is possible to see a strong correlation between the two series both in upward and downward economic cycles. Although not conclusive, this figure exemplifies the potential drawback of omitting the real-financial nexus on macroeconomic modelling.
 
 
 The positive association between the series is also clear by plotting their growth rates for the same period:
@@ -92,10 +91,9 @@ The positive association between the series is also clear by plotting their grow
 
 Another important source of imbalances in the real economy comes from credit. Credit cycles, which are typically fuelled by rising asset prices, play an important role in determining investment levels. Unlike most DSGE models, however, credit - and other external financing instruments - can be issued independently of available financing (e.g. deposits). 
 
-In other words, financing is created endogenously by the financial system. This has a double implication for the economic system. At the same time that agents can lend more than they can pay back, banks can lend beyond the safe level. That is, financial imbalances are created within the economic system..
+In other words, financing is created endogenously by the financial system. This has a double implication for the economic system. At the same time that agents can borrow more than they can pay back, banks can lend beyond the safe level - as we saw in 2008. That is, financial imbalances are created within the economic system, are frequent, and are related to the real economic activity.
 
-
-Below we illustrate the relation between investments and nonfinancial corporations indebtement (securities + loans) in the US:
+This can be further illustrated by comparing nonfinancial corporations debt (securities + loans), to GDP performance. This was done for the US between 1960-2020, and is illustrated below:
 
 
 <body>
@@ -107,7 +105,11 @@ Below we illustrate the relation between investments and nonfinancial corporatio
     </div>
 </body>
 
-We nonfinancial firms' debt grows higher that its average before recessive periods. This pattern was observed on most US recessions since the 1960's, the 2008 being a remarkable example of this leveraging process.
+
+Two results are worth noting. First, debt and investments show strong comovement. That is, produciton depends on debt. Second, iIt is possible to see that high debt growth usually precedes economic recessions.
+
+
+This pattern was observed on most US recessions since the 1960's, the 2008 being a remarkable example of this leveraging process.
 
 The relation between indebtment and GDP dynamics can also be framed by the sectoral net lending - which represents its borrowing (-) or lending (+) position in each year. Normally, high-growth periods are associated to higher leveraging periods (increasing borrowing needs). Below, I've plotted the change on private business sector net lending positions and GDP growth rates for the US to illustrate this macroeconomic feature:
 
@@ -122,8 +124,7 @@ The relation between indebtment and GDP dynamics can also be framed by the secto
 
 We can see a clear association between the private sector financial needs (increasing borrowing) and GDP growth.
 
-This negative relation is corroborated by comparing the correlation between GDP and the net lending of households (NL_HH and NLa_HH), and business (NL_PVT, NLa_PVT), as we can see below:
-
+This negative relation is corroborated by comparing the correlation between GDP and the net lending position of households (NL_HH and NLa_HH), and business (NL_PVT, NLa_PVT), as we can see below:
 
 
 <body>
@@ -139,17 +140,15 @@ This negative relation is corroborated by comparing the correlation between GDP 
 
 We can see that, as expected, the more households, and in a minor extent the whole private sector borrows (- sign) in relation to its income, the higher are the economic growth rates. Thats why we see a negative correlation between the two series.
 
-This illustrates, again, that debt and GDP dynamics have a strong an structural relation. As a result, ommiting financial markets from macroeconomic analysis is fundamentally flawed.
+This illustrates, again, that funding needs and GDP dynamics have a strong an structural relation. As a result, ommiting financial markets from macroeconomic analysis is fundamentally flawed. And is particularly surprising that money and finance - seemingly obvious componens of the economicy system - have been overlooked for so long in macroeconomic modelling.
 
-But how can we do that? 
+Although this seemingly important gap in neoclassical macroeconomic analysis is  being amended by the more recent literature, a robust and long lasting theoretical framework had already framed the role of money on the economic system through alternative lens.
 
 
 Among the alternatives to incorporate financial aspects into macroeconomic analysis we highlight the post-Keynesian approach. One of the key aspects of the post-Keynesian economics is the key role played by financial markets, and the role played by money itself. (If you are curious about this research agenda I encourage you to visit [this](https://www.postkeynesian.net/) website, or to watch [this](https://www.youtube.com/watch?v=DEROFQIao4o) talk from Marc Lavoie)
 
 
 Some fundamental aspects of this approach, alongside illustrative data of will be addressed on the next post. 
-
-
 
 
 
