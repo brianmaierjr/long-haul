@@ -43,7 +43,7 @@ We can see that banking crises have been a common element of the economic system
 In 2008, for instance, we could see the perverse effect of a serious financial crisis, of international scale, whose effects on the economic activity were felt for years. So why "No one saw this coming"?
 
 
-There were three main reactions for the 2008 crisis: a) the "fresh-water" view that that the crisis was led by misguided policy and bad regulation by the government. b) the view that economic theory needed adjustments in order to include financial markets. This was the most common reaction within the economcis profession. And finally, there was the "bad theory" reaction, which understand that ecoonomic regulation and policies are guided by flawled economic theories. I endorse the third view, and will illustrate why.
+There were three main reactions for the 2008 crisis: a) the "fresh-water" view that that the crisis was led by misguided policy and bad regulation by the government. b) the view that economic theory needed adjustments in order to include financial markets. This was the most common reaction within the economcis profession. And finally, there was the "heterodox" reaction, which understand that ecoonomic regulation and policies are guided by flawled economic theories. I endorse the third view, and will illustrate why.
 
 
 The workhorse of current neoclassical macroeconomics are DSGE models. In this framework, events such as economic crisis, when not ruled out by construction, are exogenous shocks, and not breeded withing the economic system. Albeit seemingly sophisticated, DSGE models could not foresee the 2008 crisis, I argue, due to the lack of a proper integration of finance into economic modelling.
