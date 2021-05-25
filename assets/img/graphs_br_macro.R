@@ -583,7 +583,7 @@ key_stocks<-ggplot(agg_stocks_n, aes(x = reorder(instruments, -value),
   theme_classic2()
 
 
-
+key_stocks
 saveWidget(ggplotly(key_stocks),
            "key_stocks.html",
            selfcontained = F,
@@ -654,7 +654,7 @@ saveWidget(ggplotly(wtw_p),
 
 
 
-# creating year column
+# stocks all by instrument ------
 
 NS<-lapply(NET_STOCKS, function(x) cbind(x,year=seq(2004,2017)))
 
@@ -686,7 +686,7 @@ stocks_all<-reshape2::melt(NS,id.vars="year") %>%
                          "Insurances",
                          "Others")) %>%
   
-  mutate(rel_value=value/FLOWS2$GDP$total_renda[5:18]) %>%
+  mutate(rel_value=round(value/FLOWS2$GDP$total_renda[5:18],2)*100) %>%
   
   ggplot(aes(x=year,
              y=rel_value,

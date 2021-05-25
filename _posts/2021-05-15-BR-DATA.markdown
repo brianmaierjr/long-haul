@@ -71,7 +71,7 @@ Let's check out first, which are the most important transactions. With some clea
 However, by definition, every expenditure for one sector represents an income for another. Therefore, it is critical to understand whether these transactions represent sources of income or expenses, for each sector. To understand this, I calculated the source of income for each sector, and its respective expenditure. The results are illustrated in the diagram below:
 
 
-<body>
+<body><a name="sanks"></a>
     <div align="center">
 <figure>
 <iframe src="/assets/img/sanks.html" frameborder="0" height="600" width="630" display:block></iframe>
@@ -84,7 +84,7 @@ However, by definition, every expenditure for one sector represents an income fo
 
 Many are the insights we can highlight from this figure. 
 
-**First**, an important characteristic of Figure 2 is that productive activity (GDP) is not only an important source of income for firms, but also for banks, households and even the government (the latter, for accounting purposes only). In this sense, an adequate representation of the BR economy should not neglect this source of income for banks, and especially for households. This last category includes informal activities, small businesses, production of goods for own consumption (e.g. small agriculture), and even imputed rent, for those who own their own property.   
+**First**, an important characteristic of Figure [2](#sanks) is that productive activity (GDP) is not only an important source of income for firms, but also for banks, households and even the government (the latter, for accounting purposes only). In this sense, an adequate representation of the BR economy should not neglect this source of income for banks, and especially for households. This last category includes informal activities, small businesses, production of goods for own consumption (e.g. small agriculture), and even imputed rent, for those who own their own property.   
 
 
 **Second**, interest and wealth (which adds to capital-related income) are an important source of income for banks, as expected, but also for households and firms. This emphasises a source of financial income that derives from balance sheet relationships. For example, if households own shares in companies or government bonds, this will increase their sources of income and consequently the level of their expenditure. And this real-financial nexus is widely employed in SFC models.
@@ -150,7 +150,7 @@ Moreover, we can see that the foreing economy (ROW) is a net debtor of the Brazi
 Finally, we can see that whereas banks, firms and the government are net debtors, households and the foreign economy are net creditors in Brazil's macroeconomic system.
 
 
-Although Figure [5](#wtw) shows the aggregate balance sheet relations it does not descriminate between instrument. So we have calculated the net financial position, by financial instrument, for each sector between 2004-2017 in Brazil: 
+Although Figure [4](#wtw) shows the aggregate balance sheet relations it does not descriminate between instruments. So we have calculated the net financial position, by financial instrument, for each sector between 2004-2017 in Brazil: 
 
 
 <body>
@@ -161,6 +161,10 @@ Although Figure [5](#wtw) shows the aggregate balance sheet relations it does no
 </figure>
     </div>
 </body>
+
+As expected, Banks are the most important financial intermediary of the economy, holding large levels of both assets and liabilities. Because of the central role palyed by treasury bonds on financial markets, we can see that most if banks' wealth is composed by bonds.
+
+The high level of households wealth is also remarkable, most of it composed by insurance reserves and equities. Given that household have none but credit as a means of finance, loans are their most important liability. And we can see that this instrument grew
 
 
 
