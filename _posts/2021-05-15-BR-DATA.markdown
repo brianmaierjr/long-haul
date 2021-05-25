@@ -153,7 +153,7 @@ Finally, we can see that whereas banks, firms and the government are net debtors
 Although Figure [4](#wtw) shows the aggregate balance sheet relations it does not descriminate between instruments. So we have calculated the net financial position, by financial instrument, for each sector between 2004-2017 in Brazil: 
 
 
-<body>
+<body><a name="stocks_all"></a>
     <div align="center">
 <figure>
 <iframe src="/assets/img/stocks_all.html" frameborder="0" height="600" width="630" display:block></iframe>
@@ -164,7 +164,17 @@ Although Figure [4](#wtw) shows the aggregate balance sheet relations it does no
 
 As expected, Banks are the most important financial intermediary of the economy, holding large levels of both assets and liabilities. Because of the central role palyed by treasury bonds on financial markets, we can see that most if banks' wealth is composed by bonds.
 
-The high level of households wealth is also remarkable, most of it composed by insurance reserves and equities. Given that household have none but credit as a means of finance, loans are their most important liability. And we can see that this instrument grew
+The high level of households wealth is also remarkable, most of it composed by insurance reserves and equities. Given that household have none but credit as a means of finance, loans are their most important liability. And we can see that this instrument grew, approximately 20 percentage points between 2004-2017, a remarkable result from the increase on credit access and labor formalization.
+
+
+Another interesting feature of Figure [5](#stocks_all), in that the domestic economy (mostly non-financial firms) have increased their financial obligations with the foreign sector in loans relatively more than in equities.
+
+A trend that not only highlights a change of firms financing behaviour, but also sheds light in the importance of financial wealth for the macroeconomic agents. From those results, we reestate that finance can not be left aside on macroeconomic modelling. 
+
+In particular, I should argue that an economy with a long history of inflationary processess, foreing debt crisis, and with a growing financial system, can't be properly understood withtouh including some of those important macroeconomic aspects.
+
+
+
 
 
 
