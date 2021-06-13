@@ -5,8 +5,22 @@ title: "Índice CEPER"
 date:   2021-06-13
 ---
 
+<head>
+    <meta charset="UTF-8"/>
+    <style>
+        body{
+	    margin: 0px;
+            background-color: hsla(195,81%,93%, 0.6);
+            color: rgba(0,0,0,1);
+        }
+        p{
+            text-align: justify;
+        }
+    </style>
+</head>
 
 
 
 
-<iframe height="600" width="110%" frameborder="no" src="https://marcos-j-ribeiro.shinyapps.io/CEPER/"> </iframe>
+
+<iframe height="1000" width="110%" frameborder="no" src="https://marcos-j-ribeiro.shinyapps.io/CEPER/"> </iframe>
