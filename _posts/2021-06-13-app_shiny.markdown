@@ -1,0 +1,12 @@
+---
+layout: post
+mathjax: true
+title: "Índice CEPER" 
+date:   2021-06-13
+---
+
+
+
+
+
+<iframe height="400" width="100%" frameborder="no" src="https://marcos-j-ribeiro.shinyapps.io/CEPER/"> </iframe>
