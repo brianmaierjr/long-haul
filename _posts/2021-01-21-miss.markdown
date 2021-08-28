@@ -1,8 +1,8 @@
 ---
 layout: post
 mathjax: true
-title: "Misallocation of talent in Brazil" 
-date:   2021-01-21
+title: "Misallocation of talent, human capital formation, and development in Brazil" 
+date:   2021-08-28
 ---
 <head>
     <meta charset="UTF-8"/>
@@ -21,17 +21,18 @@ date:   2021-01-21
 ### Misallocation of talent, human capital formation, and development in Brazil
 
 
+In this paper, we elaborate a General Equilibrium Model to study why the relative salary
+of teachers is higher in low and middle income regions in Brazil. In this model, teachers’
+human capital endowment is a source of positive externalities for all workers and occupational 
+choices are made based on incentives. However, individuals’ occupational decisions
+are distorted by barriers in the labor market and educational goods, which in turn cause a
+misallocation of talent and harm economic growth. After calibrating the model using the
+Method of Moments and data from Brazilian states from 2015, we performed a series of
+counterfactual exercises that show that reducing distortions in the labor and educational
+market would increase Brazilian GDP by a value between 9.19% and 43.49%.
+Keywords: Misallocation; Frictions; Human Capital; Externalities; Development.
 
-In this article, we elaborate a general equilibrium model to study why the relative salary
-of teachers is higher in regions with low and middle income in Brazil and how it affects the
-product. In this model, occupational choices, especially for teachers, are affected by distortions in 
-the labor market and in educational goods, which in turn have a direct impact
-on the formation of human capital. After calibrating the model, using the Generalized
-Moments Method, for the Brazilian scenario, it was found that there is a misallocation
-of talent in the Brazilian economy and reallocating more skilled people to the teaching
-occupation could increase GDP by 68.28 %.
 
-
-Link: [Misallocation of talent in Brazil](https://mj-ribeiro.github.io/miss.pdf)
+[Link](https://mj-ribeiro.github.io/miss.pdf)
 
  
