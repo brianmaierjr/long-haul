@@ -2,7 +2,7 @@
 layout: post
 mathjax: true
 title: "Misallocation of talent, human capital formation, and development in Brazil" 
-date:   2021-08-28
+date:   2021-08-30
 ---
 <head>
     <meta charset="UTF-8"/>
@@ -21,17 +21,19 @@ date:   2021-08-28
 ### Misallocation of talent, human capital formation, and development in Brazil
 
 
-In this paper, we elaborate a General Equilibrium Model to study why the relative salary
-of teachers is higher in low and middle income regions in Brazil. In this model, teachers’
-human capital endowment is a source of positive externalities for all workers and occupational 
-choices are made based on incentives. However, individuals’ occupational decisions
-are distorted by barriers in the labor market and educational goods, which in turn cause a
-misallocation of talent and harm economic growth. After calibrating the model using the
-Method of Moments and data from Brazilian states from 2015, we performed a series of
-counterfactual exercises that show that reducing distortions in the labor and educational
-market would increase Brazilian GDP by a value between 9.19% and 43.49%.
-Keywords: Misallocation; Frictions; Human Capital; Externalities; Development.
-
+In this paper, we elaborate a General Equilibrium Model to study why the relative wage
+of teachers is higher in low and middle income regions in Brazil. We define a Roy model
+where there is an externality in the occupational occupational choice because teachers’
+human capital is important to the formation of human capital of all workers. Then,
+when people with more idiosyncratic ability choose to become a teacher, all the workforce
+has benefits. However, in our model individuals’ occupational decisions are distorted by
+barriers in the labor and educational goods markets, which in turn cause a misallocation
+of talent and harm economic growth. After calibrating the model using the Method of
+Moments and data from Brazil, we find that distortions are an important factor to explain
+differences in relative wages. Moreover, we performed a series of counterfactual exercises
+that show that reducing distortions in the labor and educational market would increase
+Brazilian GDP by a value between 9.19% and 43.49%.
+Keywords: Misallocation; Frictions; Human Capital; Externalities; Development;
 
 [Link](https://mj-ribeiro.github.io/miss.pdf)
 
