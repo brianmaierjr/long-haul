@@ -1,5 +1,11 @@
 
+
 [Misallocation of talent, human capital formation, and development in Brazil](https://mj-ribeiro.github.io/miss.pdf) com [Fernando Barros Jr](https://scholar.google.com/citations?hl=en&authuser=1&user=o6FHHYkAAAAJ) e [Luciano Nakabashi](https://scholar.google.com.br/citations?user=EF86SiQAAAAJ&hl=pt-BR) 
+
+
+[Flutuações na aversão ao risco podem prever crises no
+mercado de ações brasileiro?](https://www.anpec.org.br/encontro/2021/submissao/files_I/i4-268191e82766a925f6ae83ac4715d68f.pdf) com [Renilson Rodrigues da Silva](https://scholar.google.com/citations?user=EoRb6vQAAAAJ&hl=en)
+
 
 [Índice CEPER de desenvolvimento municipal](https://mj-ribeiro.github.io/ceper_index.pdf) com [Luciano Nakabashi](https://scholar.google.com.br/citations?user=EF86SiQAAAAJ&hl=pt-BR) 
 
