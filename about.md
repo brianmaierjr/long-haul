@@ -12,6 +12,8 @@ Também sou o criador do canal [Alien Economista](https://www.youtube.com/channe
 
 [Lattes](http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K8457340D4)
 
+[Research Gate](<a href="https://www.researchgate.net/profile/Marcos_Ribeiro14">Marcos Júnio Ribeiro on ResearchGate</a>)
+
 
 ![presentation](\assets\img\mjr_rj.jpg "Apresentação no Rio de Janeiro")
 
