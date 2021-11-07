@@ -18,9 +18,7 @@ date:   2021-11-07
 </head>
 
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
+
 
 # Microdados
 
