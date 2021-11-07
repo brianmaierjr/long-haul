@@ -24,7 +24,7 @@ date:   2021-11-07
 
 ### Description
 
-In this package I provide a easy and fast way to get PNAD using R. With this package you have access to the PNADs (pessoas and domicilios) from 1992 to 2015, except for 1994,
+In this R package I provide a easy and fast way to get PNAD using R. With this package you have access to the PNADs (pessoas and domicilios) from 1992 to 2015, except for 1994,
 2000 and 2010, years in which the PNAD was not carried out. Enjoy !
 
 
@@ -61,5 +61,5 @@ load_pnad(2001, 'pessoas')       # load PNAD pessoas from 2001
 load_pnad(1996, 'domicilios')    # load PNAD domicilios from 1996
 ```
 
-My R course can be view in my channel on [YouTube ](https://www.youtube.com/channel/UChWkFzZwrWrfQgZ2PIEJbhg). 
+To contribute acess my [GitHub](https://github.com/mj-ribeiro/Microdados#readme). My R course can be view in my channel on [YouTube ](https://www.youtube.com/channel/UChWkFzZwrWrfQgZ2PIEJbhg). 
 
