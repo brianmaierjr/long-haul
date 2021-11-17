@@ -1,5 +1,5 @@
-title: Long Haul
-description: Long Form Jekyll theme built with SASS / COMPASS / SUSY
+title: Junyong's Blog
+description: KMU Jun Yong 
 
 url: http://long-haul.netlify.app
 paginate_path: "blog/page:num/"
