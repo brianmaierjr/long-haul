@@ -3,7 +3,7 @@ layout: post
 title:  "Git 페이지 만들기 "
 date:   2021-11-18
 description: how to make git page?
-comments: false
+comments: true
 ---
 
 ## Git page 만들기 
