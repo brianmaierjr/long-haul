@@ -1,0 +1,10 @@
+---
+layout: post
+title:  "Git 페이지 만들기 "
+date:   2021-11-18
+description: how to make git page?
+---
+
+## Git page 만들기 
+# step1.
+<blockquote> 블로그를 만드는 다양한 방법들이 존재하는데 그 중 Git을 이용해서 Blog를 만드는 방법을 알아보자. </blockquote>
