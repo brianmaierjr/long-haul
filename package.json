@@ -1,5 +1,5 @@
 {
-  "name": "long-haul",
+  "name": "junyong",
   "version": "0.0.0",
   "description": "A minimal, type-focused Jekyll theme. ",
   "main": "gulpfile.js",
@@ -16,8 +16,8 @@
     "gulp-sass": "^4.1.0"
   },
   "repository": {
-    "type": "git",
-    "url": "https://github.com/brianmaierjr/long-haul.git"
+    "type": "tistory",
+    "url": "https://jypark1111.tistory.com/"
   },
   "keywords": [
     "jekyll",
