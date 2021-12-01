@@ -1,19 +1,21 @@
 ---
 layout: default
 ---
-<div class="post">
+<article class="post">
   {%- if page.image -%}
     <div class="featuredImage">
         <img src="{{ '/assets/img/' | append: page.image }}" alt="" />
       </div>
   {%- endif -%}
-  <h1 class="postTitle">{{ page.title }}</h1>
-  <p class="meta">{{ page.date | date: '%B %d, %Y' }} | <span class="time">{{ page.content | number_of_words | divided_by:180 }}</span> Minute Read</p>
-  
+  <header>
+    <h1 class="postTitle">{{ page.title }}</h1>
+    <p class="meta">{{ page.date | date: '%B %d, %Y' }} | <span class="time">{{ page.content | number_of_words | divided_by:180 }}</span> Minute Read</p>
+  </header>
+
   {{ content }}
 
   <!-- POST NAVIGATION -->
-  <div class="postNav clearfix">
+  <footer class="postNav clearfix">
     {%- if page.previous.url -%} 
       <a class="prev{% if page.previous.image %} image{% endif %}" href="{{ page.previous.url }}"><span>&laquo;&nbsp;{{ page.previous.title }}</span>
       {%- if page.previous.image -%} 
@@ -28,8 +30,8 @@ layout: default
       {%- endif -%} 
       </a>
     {%- endif -%} 
-  </div>
-</div>
+  </footer>
+</article>
 
 {%- if site.disqus.shortname -%}
   {%- include disqus_comments.html -%}

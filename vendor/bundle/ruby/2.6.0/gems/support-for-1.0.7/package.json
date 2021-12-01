@@ -1,0 +1,40 @@
+{
+  "name": "support-for",
+  "version": "1.0.7",
+  "description": "Allows Sass authors to conditionally add support for specific browser versions.",
+  "homepage": "https://github.com/JohnAlbin/support-for",
+  "bugs": {
+    "url": "https://github.com/JohnAlbin/support-for/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/JohnAlbin/support-for.git"
+  },
+  "author": "John Albin Wilkins <virtually.johnalbin@gmail.com> (http://john.albin.net/)",
+  "keywords": [
+    "eyeglass-module",
+    "support-for",
+    "sass",
+    "browser support",
+    "support"
+  ],
+  "main": "sass/_support-for.scss",
+  "eyeglass": {
+    "sassDir": "sass",
+    "exports": false,
+    "needs": "*"
+  },
+  "scripts": {
+    "test": "mocha",
+    "posttest": "eslint test",
+    "test-only": "mocha"
+  },
+  "license": "GPL-2.0",
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "eslint": "^3.6.1",
+    "eyeglass": "^1.1.2",
+    "mocha": "^3.1.2",
+    "sassy-test": "^3.0.3"
+  }
+}
