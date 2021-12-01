@@ -5,15 +5,15 @@ title: Long Haul
 
 <div class="home" id="home">
   <h1 class="pageTitle">Recent Posts</h1>
-  <ul class="posts noList">
+  <div class="posts noList">
     {%- for post in paginator.posts -%}
-      <li>
+      <article>
         <span class="date">{{ post.date | date: '%B %d, %Y' }}</span>
         <h3><a class="post-link" href="{{ post.url }}">{{ post.title }}</a></h3>
         <p>{%- if post.description -%}{{ post.description }}{%- else -%}{{ post.excerpt | strip_html }}{%- endif -%}</p>
-      </li>
+      </article>
     {%- endfor -%}
-  </ul>
+  </div>
   <!-- Pagination links -->
   <div class="pagination">
     {%- if paginator.previous_page -%}

@@ -462,7 +462,7 @@ POST LIST STYLING
 ***************/
 
 .posts {
-	li {
+	article {
 		margin-bottom: 4rem;
 		position: relative;
 
@@ -508,7 +508,7 @@ DARK THEME STYLING
 		color: white;
 	}
 
-	.posts li .date {
+	.posts article .date {
 		color: white;
 	}
 	.postNav {
