@@ -4,8 +4,8 @@ TABLE STYLES
 
 table {
 	width: 100%;
-	border: 1px solid lighten($grey, 15%);
 	margin-bottom: 1.5em;
+	border-collapse: collapse;
 
 	caption {
 		margin: 0 0 7px;
@@ -17,26 +17,25 @@ table {
 }
 
 tr {
-	border-bottom: 1px solid lighten($grey, 15%);
 
 	&:nth-child(even) {
 		background-color: lighten($grey, 30%);
+
+		@media (prefers-color-scheme: dark) {
+			background-color: lighten(black, 10%);
+		}
 	}
 }
 
-td {
-	padding: 7px;
-	border-right: 1px solid lighten($grey, 15%);
-
-	&:last-child {
-		border-right: 0;
-	}
+td,
+th {
+	text-align: left;
+	padding: .5em;
 }
 
 th {
-	background-color: lighten($grey, 30%);
-	border-bottom: 1px solid lighten($grey, 15%);
-	border-right: 1px solid lighten($grey, 15%);
+	background-color: $primary-color;
+	color: white;
 
 	&:last-child {
 		border-right: 0;
