@@ -1,5 +1,5 @@
-title: Long Haul
-description: Long Form Jekyll theme built with SASS / COMPASS / SUSY
+title: Reflections
+description: This is a collection of thoughtful and analytical articles
 
 url: https://long-haul.netlify.app
 paginate_path: "blog/page:num/"
@@ -22,13 +22,10 @@ navigation:
     url: /contact
 
 social:
-  github: brianmaierjr
-  twitter: brianmaierjr
-  facebook: brianmaierjr
-  email: brimaidesigns@gmail.com
-  linkedin: brianmaierjr
+  email: abhadoria08@gmail.com
+  linkedin: akshay-singh-a38989155
 
-google_analytics: "UA-58263416-1"
+google_analytics: ""
 
 disqus:
-    shortname: brianmaierjr
+    shortname: singaks
