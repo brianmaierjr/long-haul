@@ -1,12 +1,12 @@
-title: Long Haul
-description: Long Form Jekyll theme built with SASS / COMPASS / SUSY
+title: Erkin Filiz
+description: 
 
 url: https://erkinfiliz.github.io
 paginate_path: "blog/page:num/"
 permalink: blog/:title/
 
 # Header Option
-# header: large
+header: large
 
 markdown: kramdown
 highlighter: rouge
@@ -22,13 +22,13 @@ navigation:
     url: /contact
 
 social:
-  github: brianmaierjr
-  twitter: brianmaierjr
-  facebook: brianmaierjr
+  github: ErkinFiliz
+  twitter: realErkinFiliz
+  #facebook: brianmaierjr
   email: flzerkin4@gmail.com
-  linkedin: brianmaierjr
+  linkedin: erkinfiliz
 
 # google_analytics: "UA-58263416-1"
 
 disqus:
-    shortname: brianmaierjr
+    shortname: erkinfiliz
