@@ -1,7 +1,8 @@
 title: Long Haul
 description: Long Form Jekyll theme built with SASS / COMPASS / SUSY
 
-url: https://erkinfiliz.github.io/long-haul
+url: https://erkinfiliz.github.io
+baseurl: '/long-haul'
 paginate_path: "blog/page:num/"
 permalink: blog/:title/
 
