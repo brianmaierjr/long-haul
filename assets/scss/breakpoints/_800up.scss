@@ -3,7 +3,7 @@ GLOBAL STYLES
 ***************/
 
 body {
-  font-size: 125%;
+	font-size: 125%;
 }
 
 .content {
@@ -12,9 +12,9 @@ body {
 	z-index: 1;
 
 	&:after {
-		z-index: -1; 
+		z-index: -1;
 		background: white;
-		content: ""; 
+		content: "";
 		display: block;
 		width: 100%;
 		height: 10em;
@@ -22,14 +22,14 @@ body {
 		top: -2em;
 		left: 0;
 		transform: skewY(-2deg);
-		transform-origin: bottom left; 
+		transform-origin: bottom left;
 	}
 }
 
 .container {
-  max-width: 880px;
-  margin-left: auto;
-  margin-right: auto;
+	max-width: 880px;
+	margin-left: auto;
+	margin-right: auto;
 	padding: 0;
 }
 
@@ -39,8 +39,11 @@ HOMEPAGE STYLING
 ***************/
 
 #home {
-	.posts, .pageTitle, .pagination {
-    width: 75%;
+
+	.posts,
+	.pageTitle,
+	.pagination {
+		width: 75%;
 		float: none;
 		margin: 0 auto 1.5em;
 	}
@@ -64,7 +67,7 @@ HEADER STYLING
 		position: relative;
 		top: 50%;
 		transform: translateY(-50%);
-    max-width: 800px;
+		max-width: 800px;
 		overflow: hidden;
 	}
 
@@ -81,6 +84,7 @@ HEADER STYLING
 
 		ul {
 			margin: 0;
+
 			li {
 				display: inline;
 				line-height: 3em;
@@ -101,7 +105,7 @@ HEADER STYLING
 
 				&.current {
 					padding-bottom: .25em;
-					border-bottom: 4px solid rgba(255,255,255,.4); 
+					border-bottom: 4px solid rgba(255, 255, 255, .4);
 				}
 			}
 		}
@@ -127,11 +131,11 @@ MENU STYLING
 .js {
 
 	.nav-collapse {
-	  position: relative;
-	  max-height: none;
+		position: relative;
+		max-height: none;
 
 		&.closed {
-		  max-height: none; 
+			max-height: none;
 		}
 
 		ul li a {
@@ -141,7 +145,7 @@ MENU STYLING
 }
 
 .nav-toggle {
-  display: none;
+	display: none;
 }
 
 
@@ -150,14 +154,36 @@ POST STYLING
 ***************/
 
 .post {
-	h1, h2, h3, h4, h5, h6, p, ul, ol, dl, .pageTitle {
-    width: 75%;
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	p,
+	ul,
+	ol,
+	dl,
+	.pageTitle {
+		width: 75%;
 		float: none;
-		margin: 0 auto 2rem; 
+		margin: 0 auto 2rem;
 	}
 
-	h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
-		margin: 1rem auto; 
+	h1,
+	.h1,
+	h2,
+	.h2,
+	h3,
+	.h3,
+	h4,
+	.h4,
+	h5,
+	.h5,
+	h6,
+	.h6 {
+		margin: 1rem auto;
 	}
 
 	.pageTitle {
@@ -190,7 +216,8 @@ POST NAV STYLING
 
 .postNav {
 
-	.prev, .next {
+	.prev,
+	.next {
 		width: 50%;
 	}
 
@@ -221,7 +248,7 @@ FOOTER STYLES
 
 	.container {
 		padding: 1rem 0;
-    max-width: 800px;
+		max-width: 800px;
 	}
 }
 
@@ -231,17 +258,17 @@ CONTACT PAGE STYLING
 ***************/
 
 .contactContent {
-  max-width: 48%;
-  margin-right: 2%;
-  float: left;
+	max-width: 48%;
+	margin-right: 2%;
+	float: left;
 }
 
 #contact {
 	form {
-    max-width: 48%;
-    width: 48%;
-    float: right;
-    margin-right: 0;
+		max-width: 48%;
+		width: 48%;
+		float: right;
+		margin-right: 0;
 	}
 }
 
@@ -254,8 +281,9 @@ DARK THEME STYLING
 		background-color: black;
 		color: white;
 	}
+
 	.content:after,
 	.post .featuredImage:before {
 		background: black;
 	}
-  }
+}
