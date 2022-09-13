@@ -1,8 +1,0 @@
-a148704724c2761459606dbe6f02676810cd56c2		branch 'jruby-fix-failed-tests' of https://github.com/tmm1/http_parser.rb
-e0bd3e9d5921822efdeb8c2adc5a5a6bf3913a19		branch 'latest-upstream' of https://github.com/tmm1/http_parser.rb
-90abe77b061c8b9b76204f53d4c223a2db0c858b		branch 'master' of https://github.com/tmm1/http_parser.rb
-96349a55d8fa2366454836ef832eab9afac49dc0	not-for-merge	tag 'v0.5.3' of https://github.com/tmm1/http_parser.rb
-ec53181a4c944f8c308830b84b08fc8f71075ba6	not-for-merge	tag 'v0.6.0' of https://github.com/tmm1/http_parser.rb
-95158ab7724782cc2f414f97a4d59fc5b766f5e9	not-for-merge	tag 'v0.6.1' of https://github.com/tmm1/http_parser.rb
-52ca604a90818ab095c76a33ee2736822ddeb2b3	not-for-merge	tag 'v0.7.0' of https://github.com/tmm1/http_parser.rb
-edef68878bc3b0991ed8f23b70250bfcf4d19b0e	not-for-merge	tag 'v0.8.0' of https://github.com/tmm1/http_parser.rb
