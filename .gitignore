@@ -5,3 +5,4 @@ _site
 node_modules
 .jekyll-cache/
 .jekyll-cache/*
+_vendor
