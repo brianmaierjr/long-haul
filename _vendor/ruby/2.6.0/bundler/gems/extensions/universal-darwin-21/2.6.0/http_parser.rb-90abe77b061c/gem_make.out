@@ -1,0 +1,12 @@
+current directory: /Users/brianmaierjr/Sites/long-haul/_vendor/ruby/2.6.0/bundler/gems/http_parser.rb-90abe77b061c/ext/ruby_http_parser
+/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/bin/ruby -I /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0 -r ./siteconf20220320-41620-440i2c.rb extconf.rb
+creating Makefile
+
+current directory: /Users/brianmaierjr/Sites/long-haul/_vendor/ruby/2.6.0/bundler/gems/http_parser.rb-90abe77b061c/ext/ruby_http_parser
+make "DESTDIR=" clean
+
+current directory: /Users/brianmaierjr/Sites/long-haul/_vendor/ruby/2.6.0/bundler/gems/http_parser.rb-90abe77b061c/ext/ruby_http_parser
+make "DESTDIR="
+make: *** No rule to make target `/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/include/ruby-2.6.0/universal-darwin21/ruby/config.h', needed by `ruby_http_parser.o'.  Stop.
+
+make failed, exit code 2

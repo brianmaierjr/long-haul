@@ -1,0 +1,12 @@
+# pack-refs with: peeled fully-peeled sorted 
+a148704724c2761459606dbe6f02676810cd56c2 refs/heads/jruby-fix-failed-tests
+e0bd3e9d5921822efdeb8c2adc5a5a6bf3913a19 refs/heads/latest-upstream
+90abe77b061c8b9b76204f53d4c223a2db0c858b refs/heads/master
+96349a55d8fa2366454836ef832eab9afac49dc0 refs/tags/v0.5.3
+ec53181a4c944f8c308830b84b08fc8f71075ba6 refs/tags/v0.6.0
+95158ab7724782cc2f414f97a4d59fc5b766f5e9 refs/tags/v0.6.1
+^c8dae7c6c2c78a5016d082a7fbda7e362292c14a
+52ca604a90818ab095c76a33ee2736822ddeb2b3 refs/tags/v0.7.0
+^1f1336f40a2eb3fad14ad773f5369c4f839a29ed
+edef68878bc3b0991ed8f23b70250bfcf4d19b0e refs/tags/v0.8.0
+^90abe77b061c8b9b76204f53d4c223a2db0c858b

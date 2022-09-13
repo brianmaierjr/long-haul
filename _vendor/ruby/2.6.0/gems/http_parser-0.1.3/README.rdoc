@@ -1,0 +1,72 @@
+= http_parser
+
+This gem provides a (hopefully) high quality http parser library that can
+build request information iteratively as data comes over the line without
+requiring the caller to maintain the entire body of the request as a single
+string in memory.
+
+It will also have a full set of specs and a Ruby-native reference library
+so that it can be used in implementations or environments that do not
+support C extensions.
+
+Simple usage example:
+
+	p = Http::Parser.new
+	p.parse("GET / HTTP/1.1\r\n")
+	p.parse("Host: blah.com\r\n")
+	p.parse("Cookie: blorp=blah\r\n")
+	p.parse("\r\n")
+	
+	p.method => "GET"
+	p.version => [1,1]
+	p.path => "/"
+	p.headers["HOST"] => "blah.com"
+	p.headers["COOKIE"] => "blorp=blah"
+	
+If the request is a type that has a body, the body will be available
+as a stream object via p.body:
+
+	p = Http::Parser.new
+	p.parse("PUT / HTTP/1.1\r\n")
+	p.parse("Host: blah.com\r\n")
+	p.parse("Content-Type: text/text\r\n")
+	p.parse("Content-Length: 5\r\n")
+	p.parse("\r\n")
+	p.parse("stuff")
+	
+	p.body.read => "stuff"
+	
+If you use p.parse!, any trailing text that isn't immediately parseable
+will be left in the string object you pass in while what was parsed will be
+removed. This allows for you to hand the parser a large glob of data and allow
+it to figure out what it needs and what it doesn't. When you get more data, you
+can append it to your existing string and pass that in again until the request
+is done. You can test if the request is done by using p.done?
+
+	p = Http::Parser.new
+	s = "GET / HTTP/1.1\r\nHost:"
+	p.parse!(s)
+	s => "Host:"
+	p.done? => false
+	s << " blah.com\r\n"
+	p.parse!(s)
+	s => ""
+	p.done? => false
+	s << "\r\n"
+	p.parse!(s)
+	s => ""
+	p.done? => true
+	
+== Note on Patches/Pull Requests
+ 
+* Fork the project.
+* Make your feature addition or bug fix.
+* Add tests for it. This is important so I don't break it in a
+  future version unintentionally.
+* Commit, do not mess with rakefile, version, or history.
+  (if you want to have your own version, that is fine but bump version in a commit by itself I can ignore when I pull)
+* Send me a pull request. Bonus points for topic branches.
+
+== Copyright
+
+Copyright (c) 2010 Graham Batty. See LICENSE for details.
