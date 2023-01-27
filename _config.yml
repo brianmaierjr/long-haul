@@ -8,25 +8,28 @@ permalink: blog/:title/
 # Header Option
 # header: large
 
+sass:
+    style: compressed
+
 markdown: kramdown
 highlighter: rouge
 plugins: [jekyll-paginate]
 paginate: 5
 
 navigation:
-  - title: Home
-    url: /index.html
-  - title: About
-    url: /about
-  - title: Contact
-    url: /contact
+    - title: Home
+      url: /index.html
+    - title: About
+      url: /about
+    - title: Contact
+      url: /contact
 
 social:
-  github: brianmaierjr
-  twitter: brianmaierjr
-  facebook: brianmaierjr
-  email: brimaidesigns@gmail.com
-  linkedin: brianmaierjr
+    github: brianmaierjr
+    twitter: brianmaierjr
+    facebook: brianmaierjr
+    email: brimaidesigns@gmail.com
+    linkedin: brianmaierjr
 
 google_analytics: "UA-58263416-1"
 
