@@ -11,7 +11,7 @@ If you really enjoy Long Haul and want to give me credit somewhere on the intern
 ## Features
 
 -   Minimal, Type Focused Design
--   Built with GULP + SASS + BROWSERSYNC + AUTOPREFIXER
+-   Built with SASS
 -   SVG Social Icons
 -   Responsive Nav Menu
 -   XML Feed for RSS Readers
@@ -31,8 +31,7 @@ If you really enjoy Long Haul and want to give me credit somewhere on the intern
 3. Clone it
 4. [Install Bundler](http://bundler.io/)
 5. Run `bundle install`
-6. Run Jekyll and watch files by running `bundle exec gulp`
-7. Customize and watch the magic happen!
+6. Run Jekyll Serve and Watch command`bundle exec jekyll serve -w`
 
 ## Site Settings
 
@@ -53,6 +52,10 @@ If you'd like your header to be larger then you can use the option below in you 
 -   **header:** large
 
 ![preview Long Haul](/preview-large.png)
+
+## To use on GitHub Pages
+
+To use latest Jekyll and Jekyll Sass Converter on GitHub Pages, <a href="https://github.blog/changelog/2022-07-27-github-pages-custom-github-actions-workflows-beta/">you can now deploy to a GitHub Pages site using GitHub Actions.</a>
 
 ## License
 

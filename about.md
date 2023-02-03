@@ -10,7 +10,7 @@ title: About Long Haul
 	<p>Long Haul was created in honor of all the hard working touring bicycles that have traversed the globe time and time again. Take it for a spin.</p>
 	<h2>Features</h2>
 	<ul>
-		<li>Built with SASS + GULP + BROWSERSYNC + AUTOPREFIXER</li>
+		<li>Built with the <a href="https://github.com/jekyll/jekyll-sass-converter">Jekyll SASS convertor</a> plugin</li>
   		<li>SVG Social Icons from <a href="http://customizr.net/icons/">Customizr</a></li>
   		<li><a href="http://responsive-nav.com/">Responsive Nav Menu</a></li>
   		<li><a href="https://github.com/snaptortoise/jekyll-rss-feeds">XML Feed for RSS Readers</a></li>
