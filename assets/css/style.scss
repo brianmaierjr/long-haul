@@ -1,3 +1,6 @@
+---
+---
+
 // Reset using Normalize
 @import "normalize";
 
@@ -6,7 +9,7 @@
 @import url(https://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic);
 
 // Site configuration
-@import "config"; 
+@import "config";
 
 // Import Partials
 @import "partials/typography";
@@ -14,16 +17,19 @@
 
 // Modules
 @import "modules/buttons";
-@import "modules/forms"; 
+@import "modules/forms";
 @import "modules/tables";
-@import "modules/syntax"; 
+@import "modules/syntax";
 
 // Mobile up base styles
 @import "breakpoints/mobileup";
 
 // Import media queries add more as you desire
-@media only screen and (min-width: 800px) { @import "breakpoints/800up";} 
-@media only screen and (min-width: 1200px) { @import "breakpoints/1200up";} 
+@media only screen and (min-width: 800px) {
+	@import "breakpoints/800up";
+}
+@media only screen and (min-width: 1200px) {
+	@import "breakpoints/1200up";
+}
 
 // If IE support is needed you can add them here or create another stylesheet for specific IE fixes
-
