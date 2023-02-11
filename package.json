@@ -9,7 +9,7 @@
   "author": "Brian Maier Jr.",
   "license": "MIT",
   "devDependencies": {
-    "browser-sync": "^2.26.3",
+    "browser-sync": "^2.27.11",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "1.0.0",
     "gulp-cssnano": "^2.1.2",
