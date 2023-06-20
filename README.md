@@ -4,6 +4,8 @@ Long Haul is a minimal jekyll theme built with SASS and focuses on long form blo
 
 If you really enjoy Long Haul and want to give me credit somewhere on the internet send or tweet out your experience with Long Haul and tag me [@brianmaierjr](https://twitter.com/brianmaierjr).
 
+**I made a few changes to make sure Jekyll live-reload works for Long Haul. This includes removal of all Gulp related files and configs which were halting Jekyll live-reload. I also removed http_parser and support-for gem as we do not need them anymore to live-reload. Webrick has also been updated. [@iambozdar](https://iambozdar.com/)**
+
 #### [View Demo](http://brianmaierjr.com/long-haul)
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/bd29f13b-3754-46d7-9a39-48db2e174b99/deploy-status)](https://app.netlify.com/sites/long-haul/deploys)
