@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Your New Jekyll Site
+title: All articles of the WPNinjasNL
 ---
 
 <div id="articles">
