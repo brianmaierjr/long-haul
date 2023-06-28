@@ -93,13 +93,14 @@ HEADER STYLING
 				border: none;
 
 				a {
-					color: white;
-					font-size: .9em;
+					color: #e63900;
+					font-size: 1em;
+					font-weight: bold;
 					text-decoration: none;
 					padding: 0 .25em;
 
 					&:hover {
-						color: darken(white, 20%);
+						color: darken(#e63900, 20%);
 					}
 				}
 
@@ -118,7 +119,8 @@ HEADER STYLING
 	height: 50vh;
 
 	.container {
-		top: 90%;
+		top: 60%;
+		left:175px;
 		transform: translateY(-100%);
 	}
 }

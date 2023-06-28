@@ -59,6 +59,8 @@ GEM
       sass-listen (~> 4.0.0)
     sass-embedded (1.58.0-arm64-darwin)
       google-protobuf (~> 3.21)
+    sass-embedded (1.58.0-x64-mingw-ucrt)
+      google-protobuf (~> 3.21)
     sass-listen (4.0.0)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
@@ -71,6 +73,7 @@ GEM
 
 PLATFORMS
   arm64-darwin-22
+  x64-mingw-ucrt
 
 DEPENDENCIES
   http_parser

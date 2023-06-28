@@ -87,7 +87,7 @@ MENU STYLING
 			border-bottom: 2px solid lighten($background-color, 5%);
 
 			a {
-				color: white;
+				color: #e63900;
 				text-decoration: none;
 				display: block;
 				padding: 5px 2rem;
@@ -132,7 +132,7 @@ MENU STYLING
 	transition: all 0.2s ease-in-out;
 
 	&:hover {
-		color: white;
+		color: #ffc000;
 		background-color: darken($background-color, 10%);
 	}
 }
@@ -181,15 +181,15 @@ HEADER STYLING
 
 .header {
 	background-color: $background-color;
-	background-image: url("../img/touring.jpg");
+	background-image: url("../img/WPNinjasNL-background.png");
 	background-size: cover;
 	background-position: center center;
-	color: white;
+	color: #e63900;
 	padding: 0;
 	height: 3em;
 
 	.container {
-		padding: 0;
+		padding:0;
 		max-width: 100%;
 	}
 
@@ -204,7 +204,7 @@ HEADER STYLING
 		text-transform: uppercase;
 
 		a {
-			color: white;
+			color: #e63900;
 			text-decoration: none;
 		}
 	}

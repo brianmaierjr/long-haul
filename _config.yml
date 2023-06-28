@@ -1,12 +1,12 @@
-title: Long Haul
-description: Long Form Jekyll theme built with SASS
+title: WPNinjas Netherlands
+description: Website/blog from the Workplace Ninja User Group Netherlands
 
-url: https://long-haul.netlify.app
+url: https://wpninjas.nl
 paginate_path: "blog/page:num/"
 permalink: blog/:title/
 
 # Header Option
-# header: large
+header: large
 
 sass:
     style: compressed
@@ -21,17 +21,16 @@ navigation:
       url: /index.html
     - title: About
       url: /about
-    - title: Contact
-      url: /contact
+#    - title: Contact
+#      url: /contact
 
 social:
-    github: brianmaierjr
-    twitter: brianmaierjr
-    facebook: brianmaierjr
-    email: brimaidesigns@gmail.com
-    linkedin: brianmaierjr
+    twitter: wpninjasnl
+    facebook: wpninjasnl
+    email: info@wpninjas.nl
+    linkedin: wpninjasnl
 
-google_analytics: "UA-58263416-1"
+google_analytics: ""
 
 disqus:
-    shortname: brianmaierjr
+    shortname: WPninjasNL

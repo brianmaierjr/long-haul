@@ -1,24 +1,28 @@
 ---
 layout: default
-title: About Long Haul
+title: About Workplace Ninjas Usergroup Netherlands
 ---
 
 <div class="post">
-	<h1 class="pageTitle">About Long Haul</h1>
-	<img src="{{ '/assets/img/touring.jpg' }}" alt="">
-	<p class="intro">Long Haul is a minimal, long form <a href="http://jekyllrb.com">Jekyll</a> Theme. It can be used as is or customized to your hearts desire.</p>
-	<p>Long Haul was created in honor of all the hard working touring bicycles that have traversed the globe time and time again. Take it for a spin.</p>
-	<h2>Features</h2>
+	<h1 class="pageTitle">About Workplace Ninjas Netherlands</h1>
+	<img src="/assets/img/WPNinjasNL-Intro.png" alt="">
+	<p class="intro">This user groups is founded in February 2013 by IT Pro's with a passion for everything that has to do with managing Windows, but not limiting to Windows.</p>
+	<br>
+	<p>Our goal is to provide a platform for IT-Pro's to share knowledge gain from the field and to share tips and tricks. This can be done via periodic physical meetups, virtual events, blogs or other channels. We want you to join us and take up the role within our User Group by sharing your knowledge with your peers from the community.</p>
+	<br>
+	<p>Reach out to us if you have a great story or topic to share via info@wpninjas.nl !</p>
+	<h2>Members</h2>
 	<ul>
-		<li>Built with the <a href="https://github.com/jekyll/jekyll-sass-converter">Jekyll SASS convertor</a> plugin</li>
-  		<li>SVG Social Icons from <a href="http://customizr.net/icons/">Customizr</a></li>
-  		<li><a href="http://responsive-nav.com/">Responsive Nav Menu</a></li>
-  		<li><a href="https://github.com/snaptortoise/jekyll-rss-feeds">XML Feed for RSS Readers</a></li>
-  		<li>Contact Form via <a href="http://formspree.io/">Formspree</a></li>
-      <li>5 Post Loop with excerpt on Home Page</li>
-  		<li>Previous / Next Post Navigation</li>
-      <li>Estimated Reading Time for posts</li>
-  		<li><a href="https://github.com/adobe-webplatform/dropcap.js">Drop Cap</a> on posts</li>
-  		<li><a href="http://typecast.com/blog/a-more-modern-scale-for-web-typography">A Better Type Scale</a></li>
+		<li>Kenneth van Surksum</li>
+		<li>Peter Daalmans</li>
+		<li>Erik Loef</li>
+		<li>Ronny de Jong</li>
+		<li>Arie de Haan</li>
+		<li>Bob Cornelissen</li>
+		<li>Arjan Bakker</li>
+		<li>Adnan Hendriks</li>
+		<li>Sander Rozemuller</li>
+		<li>Joost Geleijsteen</li>
+		<li>Frans Oudendorp</li>
   	</ul>
 </div>
