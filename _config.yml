@@ -1,5 +1,5 @@
-title: Long Haul
-description: Long Form Jekyll theme built with SASS
+title: Ishaan Chandak
+description: Blogs written by Ishaan Chandak
 
 url: https://long-haul.netlify.app
 paginate_path: "blog/page:num/"
@@ -25,11 +25,11 @@ navigation:
       url: /contact
 
 social:
-    github: brianmaierjr
+    github: Ishaan-Chandak
     twitter: brianmaierjr
     facebook: brianmaierjr
-    email: brimaidesigns@gmail.com
-    linkedin: brianmaierjr
+    email: ishaanchandak3@gmail.com
+    linkedin: ishaan-chandak-558b0822b
 
 google_analytics: "UA-58263416-1"
 

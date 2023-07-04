@@ -1,0 +1,11 @@
+---
+layout: post
+title:  "Solving issues in Ivy"
+date:   2023-03-23
+---
+
+<p class="intro"><span class="dropcap">I</span>n March 2023, I decided to start contributing to Ivy. Total I solved 3 issues in Ivy basically implementing three functions in Ivy's paddlepaddle backend. </p>
+
+Setting up Ivy was quite easy and because of the proper documentation provided it was not a task at all. I was ready with my setup withn an hour and was already researching about the issue. My first Issue was to implement unravel_index(), a numpy function that converts a flat index or array of flat indices into a tuple of coordinate arrays.
+
+Doing this in PaddlePaddle was going to be a task. In various backends this function was already implemented but in PaddlePaddle I had to write this from scratch. So firstly I went through the numpy source code for this function. At first I was scared, I had thoughts whether I would be able to do this or no but I stuck through. Even after understanding the numpy implementation I was unable to do

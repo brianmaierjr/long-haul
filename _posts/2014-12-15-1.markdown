@@ -1,0 +1,19 @@
+---
+layout: post
+title:  "Solving my 1st issue in Helmotz Analytics- Heat"
+date:   2023-03-20
+---
+
+<p class="intro"><span class="dropcap">I</span>n January 2023, I decided to take the plunge and contribute to open source projects. I was allocated my first issue in the Heat-Helmotz Analytics project. At first, I was excited but quickly became overwhelmed. </p>
+
+I had no idea where to start or how to tackle the issue. Despite my efforts, I couldn't solve the problem, and it left me feeling discouraged and unsure if I could even make a difference in the open-source world.
+
+But I didn't let this defeat me. I took a break and gathered the courage to try again. This time, I decided to choose a problem that was more manageable and to focus on resolving it before moving on to anything else. It took me two long days to send my first PR, and I was anxiously waiting for the reviewer to merge it directly. However, there were some bugs in my code that needed fixing.
+
+This problem essentially involved double-checking the input's dimension. Ht.sparse.sparse_csr_matrix should only accept input that is two dimensional, yet it does accept (and crash) non-two dimensional data. First, I considered calculating the dimensions from scratch to resolve this problem, but that too presented some challenges. I was unable to include all of the test-cases for this issue because the input tensor might contain lists or numpy.arrays.
+
+Later, while conducting research, I discovered the function tensor.ndim(), which essentially assisted me in resolving this problem. 
+
+By resolving this problem, I also gained experience developing unit tests. I was later required to create unit tests for the functionality I had added. 
+
+[Link to the merged PR](https://github.com/helmholtz-analytics/heat/pull/1098) 
