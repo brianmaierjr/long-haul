@@ -22,14 +22,14 @@ $maroon:  #85144B;
 $white:  #fff;
 $silver: #ddd;
 $grey:   #aaa;
-$black:  #111;
+$black:  #33342E;
 
 // Color variables
-$primary-color: seagreen;
-$secondary-color: #233E5B;
-$tertiary-color: #aaa;
+$primary-color: #FFDE16;
+$secondary-color: #E3EDDF;
+$tertiary-color: #33342E;
 $link-color: $primary-color;
-$background-color: $primary-color;
+$background-color: $black;
 
 $bad-color: $red; // Bad color for errors, validation etc.
 $good-color: $green; // Good color for success etc.
@@ -52,5 +52,5 @@ $line-height: 44px; // Consistent height for buttons, inputs etc.
 TYPE SETTINGS
 ***************/
 
-$sans-serif: "Open Sans", Helvetica, Arial, sans-serif;
-$serif: "PT Serif", Georgia, Times, serif;
+$sans-serif: "Source Sans Pro Bold", Helvetica, Arial, sans-serif;
+$serif: "Source Sans Pro Regular", Georgia, Times, serif;

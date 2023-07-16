@@ -181,10 +181,12 @@ HEADER STYLING
 
 .header {
 	background-color: $background-color;
-	background-image: url("../img/touring.jpg");
-	background-size: cover;
-	background-position: center center;
-	color: white;
+	background-image: url("../img/lfk-logo.webp");
+	background-size: 10em;
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-position-x: 2em;
+	color: $black;
 	padding: 0;
 	height: 3em;
 
@@ -219,6 +221,11 @@ POST STYLING
 		text-align: center;
 		margin-top: 2rem;
 		margin-bottom: 1rem;
+	}
+
+	.postAuthor {
+		text-align: center;
+		color: $primary-color;
 	}
 
 	blockquote {
@@ -423,7 +430,7 @@ FOOTER STYLING
 						}
 
 						.inner-shape {
-							fill: white;
+							fill: $tertiary-color;
 						}
 					}
 				}

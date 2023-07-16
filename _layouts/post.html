@@ -9,6 +9,7 @@ layout: default
   {%- endif -%}
   <header>
     <h1 class="postTitle">{{ page.title }}</h1>
+    <h3 class="postAuthor">{{ page.author }}</h3>
     <p class="meta">{{ page.date | date: '%B %d, %Y' }} | <span class="time">{{ page.content | number_of_words | divided_by:180 }}</span> Minute Read</p>
   </header>
 
@@ -16,20 +17,20 @@ layout: default
 
   <!-- POST NAVIGATION -->
   <footer class="postNav clearfix">
-    {%- if page.previous.url -%} 
+    {%- if page.previous.url -%}
       <a class="prev{% if page.previous.image %} image{% endif %}" href="{{ page.previous.url }}"><span>&laquo;&nbsp;{{ page.previous.title }}</span>
-      {%- if page.previous.image -%} 
+      {%- if page.previous.image -%}
         <img src="{{ '/assets/img/' |  append: page.previous.image }}" alt="">
       {%- endif -%}
     </a>
-    {%- endif -%}  
-    {%- if page.next.url -%}  
+    {%- endif -%}
+    {%- if page.next.url -%}
       <a class="next{% if page.next.image %} image{% endif %}" href="{{ page.next.url }}"><span>{{ page.next.title }}&nbsp;&raquo;</span>
-      {%- if page.next.image -%} 
+      {%- if page.next.image -%}
         <img src="{{ '/assets/img/' | append: page.next.image }}" alt="">
-      {%- endif -%} 
+      {%- endif -%}
       </a>
-    {%- endif -%} 
+    {%- endif -%}
   </footer>
 </article>
 
