@@ -34,7 +34,7 @@
 	/>
 	{%- else -%}
 	<meta
-		content="{{ '/assets/img/touring.jpg' | prepend: site.url }}"
+		content="{{ '/assets/img/touring.jpg' | relative_url }}"
 		property="og:image"
 	/>
 	{%- endif -%}
@@ -61,24 +61,24 @@
 	{%- else -%}
 	<meta
 		name="twitter:image:src"
-		content="{{ '/assets/img/touring.jpg' | prepend: site.url }}"
+		content="{{ '/assets/img/touring.jpg' | absolute_url }}"
 	/>
 	{%- endif -%}
 
 	<!-- Favicon -->
-	<link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico" />
+	<link rel="icon" type="image/x-icon" href={{"/assets/img/favicon.ico" | relative_url }}/>
 
 	<!-- Come and get me RSS readers -->
 	<link rel="alternate" type="application/rss+xml" title="{{ site.title }}"
-	href="{{ "/feed.xml" | prepend: site.url }}" />
+	href="{{ "/feed.xml" | absolute_url }}" />
 
 	<!-- Stylesheet -->
-	<link rel="stylesheet" href="/assets/css/style.css" />
+	<link rel="stylesheet" href={{"/assets/css/style.css" | relative_url }} />
 
 	<!-- Canonical URL -->
 	<link
 		rel="canonical"
-		href="{{ page.url | replace:'index.html','' | prepend: site.url }}"
+		href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}"
 	/>
 
 	{%- if site.google_analytics -%} {%- include google_analytics.html -%} {%-
