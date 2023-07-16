@@ -19,11 +19,11 @@ paginate: 5
 
 navigation:
     - title: Home
-      url: ({{ site.baseurl }}/index.html)
+      url: /index.html
     - title: About
-      url: ({{ site.baseurl }}/about)
+      url: /about
     - title: Contact
-      url: ({{ site.baseurl }}/contact)
+      url: /contact
 
 social:
     twitter: SunriseMvmt_LFK
