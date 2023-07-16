@@ -1,6 +1,7 @@
 title: Sunrise Movement Lawrence KS
 description: The Lawrence Hub of Sunrise
 
+url: https://taylor-scafe.github.io/
 baseurl: /sunrise-movement-lawrence
 paginate_path: "blog/page:num/"
 permalink: blog/:title/
@@ -18,11 +19,11 @@ paginate: 5
 
 navigation:
     - title: Home
-      url: /index.html
+      url: ({{ site.baseurl }}/index.html)
     - title: About
-      url: /about
+      url: ({{ site.baseurl }}/about)
     - title: Contact
-      url: /contact
+      url: ({{ site.baseurl }}/contact)
 
 social:
     twitter: SunriseMvmt_LFK
