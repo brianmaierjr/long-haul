@@ -44,7 +44,7 @@ jobs:
         uses: actions/configure-pages@v3
       - name: Build with Jekyll
         # Outputs to the './_site' directory by default
-        run: bundle exec jekyll build"
+        run: bundle exec jekyll build
         env:
           JEKYLL_ENV: production
       - name: Upload artifact
