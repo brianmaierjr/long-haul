@@ -1,6 +1,6 @@
- <div class="header {% if site.header == "large" %}header--large{% endif %}">
+ <div class="header {% if site.header == 'large' %}header--large{% endif %}">
      <div class="container">
-         <h1 class="logo"><a href={{ "/" | relative_url }}>{{ site.title }}</a></h1>
+         <h1 class="logo"><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
          <nav class="nav-collapse">
              <ul class="noList">
                  {%- for link in site.navigation -%}{%- assign current = nil -%}{%- if page.url contains link.url or forloop.first and page.url == '/' or page.url == 'index.html' -%}{%- assign current = 'current' -%}{%- endif -%}
