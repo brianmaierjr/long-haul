@@ -526,3 +526,20 @@ DARK THEME STYLING
 		border-top-color: lighten(black, 10%);
 	}
 }
+
+/***************
+FORM STYLING
+***************/
+
+form{
+	input, textarea{
+		padding: 10px;
+		border-radius: $br;
+		font-family:inherit;
+  	font-size: inherit;
+	}
+	input[type=checkbox]{
+		width:2em;
+		height:2em;
+	}
+}
