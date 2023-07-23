@@ -20,21 +20,21 @@
 	{%- else -%}
 	<meta content="{{ site.description }}" property="og:description" />
 	{%- endif -%} {%- if page.url -%}
-	<meta content="{{ site.url }}{{ page.url }}" property="og:url" />
+	<meta content="{{ page.url | absolute_url }}" property="og:url" />
 	{%- endif -%} {%- if page.date -%}
 	<meta
 		content="{{ page.date | date_to_xmlschema }}"
 		property="article:published_time"
 	/>
-	<meta content="{{ site.url }}/about/" property="article:author" />
+	<meta content="{{ '/about/' | absolute_url }}" property="article:author" />
 	{%- endif -%} {%- if page.image -%}
 	<meta
-		content="{{ site.url }}/assets/img/{{ page.image }}"
+		content="{{ '/assets/img/' | append:page.image | absolute_url }}"
 		property="og:image"
 	/>
 	{%- else -%}
 	<meta
-		content="{{ '/assets/img/touring.jpg' | relative_url }}"
+		content="{{ '/assets/img/touring.jpg' | absolute_url }}"
 		property="og:image"
 	/>
 	{%- endif -%}
@@ -48,7 +48,7 @@
 	{%- else -%}
 	<meta name="twitter:title" content="{{ site.title }}" />
 	{%- endif -%} {%- if page.url -%}
-	<meta name="twitter:url" content="{{ site.url }}{{ page.url }}" />
+	<meta name="twitter:url" content="{{ page.url | absolute_url }}" />
 	{%- endif -%} {%- if page.description -%}
 	<meta name="twitter:description" content="{{ page.description }}" />
 	{%- else -%}
@@ -56,7 +56,7 @@
 	{%- endif -%} {%- if page.image -%}
 	<meta
 		name="twitter:image:src"
-		content="{{ site.url }}/assets/img/{{ page.image }}"
+		content="{{ '/assets/img/' | append:page.image | absolute_url }}"
 	/>
 	{%- else -%}
 	<meta
@@ -66,19 +66,19 @@
 	{%- endif -%}
 
 	<!-- Favicon -->
-	<link rel="icon" type="image/x-icon" href={{"/assets/img/favicon.ico" | relative_url }}/>
+	<link rel="icon" type="image/x-icon" href="{{/assets/img/favicon.ico | relative_url }}"/>
 
 	<!-- Come and get me RSS readers -->
 	<link rel="alternate" type="application/rss+xml" title="{{ site.title }}"
-	href="{{ "/feed.xml" | absolute_url }}" />
+	href="{{ '/feed.xml' | absolute_url }}" />
 
 	<!-- Stylesheet -->
-	<link rel="stylesheet" href={{"/assets/css/style.css" | relative_url }} />
+	<link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}" />
 
 	<!-- Canonical URL -->
 	<link
 		rel="canonical"
-		href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}"
+		href="{{ page.url | absolute_url | replace:'index.html','' }}"
 	/>
 
 	{%- if site.google_analytics -%} {%- include google_analytics.html -%} {%-
