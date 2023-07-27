@@ -73,12 +73,11 @@ GEM
     webrick (1.8.1)
 
 PLATFORMS
-  arm64-darwin-22
   x64-mingw-ucrt
 
 DEPENDENCIES
   http_parser
-  jekyll
+  jekyll (~> 4.3)
   jekyll-paginate
   support-for
   wdm (>= 0.1.0)
