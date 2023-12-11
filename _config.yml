@@ -19,14 +19,14 @@ navigation:
   - title: About
     url: /about
   - title: My CV
-    url: /rc_cv
+    # url: /rc_cv
     
 social:
  # github: brianmaierjr
 #  twitter: brianmaierjr
  # facebook: brianmaierjr
   email: rsocattan@gmail.com
-  linkedin: rafael-cattan/
+  # linkedin: rafael-cattan/
 
 #google_analytics: "UA-58263416-1"
 
