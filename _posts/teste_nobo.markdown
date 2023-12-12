@@ -1,9 +1,8 @@
 ---
-title: "teste_novo"
-author: "Rafael Cattan"
-date: '2023-12-11'
-output:
-  html_document: default
+layout: post
+title: "testing"
+description: not much
+date: '2023-12-12'
 ---
 
 ```{r setup, include=FALSE}
