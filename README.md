@@ -1,4 +1,4 @@
  
-## Rafael Cattan GitHub
+## Rafael Cattan GitHub Repo
 
-Hi, this is my Github repo, where I (try) to post some of my workings as a data-Scientist.
+Hi! I've set up a dedicated website to showcase all my latest data science projects. Check out this GitHub repository for all the cool stuff I've been (trying) working on!
