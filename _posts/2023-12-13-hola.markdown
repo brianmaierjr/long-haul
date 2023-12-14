@@ -1,0 +1,74 @@
+---
+layout: post
+title:  "Encontrando lugares con Places API"
+date:   2023-12-13
+description: En este blog analizaremos como obtener información de lugares, como restaurantes, de una zona geográfica utilizando google Maps.
+---
+
+## Introducción 
+
+Places API es una API proporcionada por Google que permite utlizar información sobre lugares geográficos. Algunos de sus usos son:
+
+* Búsqueda de lugares (Places Search): 
+  * Permite realizar búsquedas de lugres basadas en diversos criterios como palabras clave, tipo de lugar, ubicación, etc.
+* Detalles de un lugar (Place Detail):
+  * Proporciona información detallada sobre un lugar específico, incluyendo datos como su nombre, dirección, número de teléfono, horarios de operación, calificaciones y opiniones.
+* Autocomlpetado de Búsqueda (Autocomplete):
+  * Sugiere términos de búsqueda y lugares a medida que el usuario escribe, facilitando la entrada de información en formularis de búsqueda.
+* Obtener fotografías de Lugares (Places Photos):
+  * Permite acceder a imágenes asociadas a un lugar específico.
+
+En este blog veremos como utilizarlo para obtener la información de lugares en google maps.
+
+## Código
+
+Primero debemos de instalar las bibliotecas necesarias: 
+```python
+pip install googlemaps
+```
+
+Posteriormente debemos declarar las bibliotecas en nuestro proyecto: 
+```python
+import googlemaps
+import pandas as pd
+import numpy as np
+from time import sleep
+```
+
+Ahora utilizando la herramienta Nearby Search obtendremos los restaurantes más cercanos al ITAM en un radio de 250 metros
+
+```python 
+# Primero necesitas generar tu api key en la web de google 
+cliente = googlemaps.Client('TU_API_KEY')
+#La coordenada del ITAM
+punto_inicial = (19.34436551859723, -99.19973935101214)
+radio = 250 #metros a la redonda en el que queremos buscar los restaurantes
+respuesta = cliente.places_nearby(location = punto_inicial, type='restaurant', radius=radio)
+```
+
+Guardaremos los resultados en una lista
+
+```python
+resultados = []
+resultados.extend(respuesta['results'])
+```
+
+Google limita la búsqued a 3 páginas de 20 resultados cada una, por tanto, tenemos que utilizar el siguiente código para obtener los resultados.
+
+```python
+try:
+    siguiente_pagina = respuesta['next_page_token']
+except KeyError:
+    siguiente_pagina = None  # Si no hay 'next_page_token', establecemos el valor en None y salimos del bucle
+while True: 
+    try: 
+        sleep(2)
+        respuesta = cliente.places_nearby(location = punto_inicial, type='restaurant',radius=radio,page_token=siguiente_pagina)
+        resultados.extend(respuesta['results'])
+        siguiente_pagina = respuesta['next_page_token']
+    except: 
+        break
+#Imprimimos el dataFrame con los resultados
+df = pd.DataFrame(resultados)
+df
+```
