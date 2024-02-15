@@ -10,7 +10,7 @@ title: Long Haul
 		<article>
 			<span class="date">{{ post.date | date: '%B %d, %Y' }}</span>
 			<h3>
-				<a class="post-link" href="{{ post.url }}">{{ post.title }}</a>
+				<a class="post-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
 			</h3>
 			<p>
 				{%- if post.description -%}{{ post.description }}{%- else -%}{{
@@ -23,12 +23,12 @@ title: Long Haul
 	<div class="pagination">
 		{%- if paginator.previous_page -%}
 		<a
-			href="{{ paginator.previous_page_path }}"
+			href="{{ paginator.previous_page_path | relative_url }}"
 			class="previous button__outline"
 			>Newer Posts</a
 		>
 		{%- endif -%} {%- if paginator.next_page -%}
-		<a href="{{ paginator.next_page_path }}" class="next button__outline"
+		<a href="{{ paginator.next_page_path | relative_url }}" class="next button__outline"
 			>Older Posts</a
 		>
 		{%- endif -%}

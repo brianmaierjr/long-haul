@@ -4,7 +4,7 @@ layout: default
 <article class="post">
   {%- if page.image -%}
     <div class="featuredImage">
-        <img src="{{ '/assets/img/' | append: page.image }}" alt="" />
+        <img src="{{ '/assets/img/' | append: page.image | relative_url }}" alt="" />
       </div>
   {%- endif -%}
   <header>
@@ -16,20 +16,20 @@ layout: default
 
   <!-- POST NAVIGATION -->
   <footer class="postNav clearfix">
-    {%- if page.previous.url -%} 
-      <a class="prev{% if page.previous.image %} image{% endif %}" href="{{ page.previous.url }}"><span>&laquo;&nbsp;{{ page.previous.title }}</span>
-      {%- if page.previous.image -%} 
-        <img src="{{ '/assets/img/' |  append: page.previous.image }}" alt="">
+    {%- if page.previous.url -%}
+      <a class="prev{% if page.previous.image %} image{% endif %}" href="{{ page.previous.url | relative_url }}"><span>&laquo;&nbsp;{{ page.previous.title }}</span>
+      {%- if page.previous.image -%}
+        <img src="{{ '/assets/img/' |  append: page.previous.image | relative_url }}" alt="">
       {%- endif -%}
     </a>
-    {%- endif -%}  
-    {%- if page.next.url -%}  
-      <a class="next{% if page.next.image %} image{% endif %}" href="{{ page.next.url }}"><span>{{ page.next.title }}&nbsp;&raquo;</span>
-      {%- if page.next.image -%} 
-        <img src="{{ '/assets/img/' | append: page.next.image }}" alt="">
-      {%- endif -%} 
+    {%- endif -%}
+    {%- if page.next.url -%}
+      <a class="next{% if page.next.image %} image{% endif %}" href="{{ page.next.url | relative_url }}"><span>{{ page.next.title }}&nbsp;&raquo;</span>
+      {%- if page.next.image -%}
+        <img src="{{ '/assets/img/' | append: page.next.image | relative_url }}" alt="">
+      {%- endif -%}
       </a>
-    {%- endif -%} 
+    {%- endif -%}
   </footer>
 </article>
 
