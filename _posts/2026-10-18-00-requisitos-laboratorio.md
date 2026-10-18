@@ -1,6 +1,6 @@
 ---
 title: "Requisitos del laboratorio de ciberseguridad"
-description: "PreparaciÃ³n y requisitos antes de instalar las herramientas del laboratorio."
+description: "Preparación y requisitos antes de instalar las herramientas del laboratorio."
 date: 2026-10-18
 categories: [Laboratorios]
 tags: [laboratorios, requisitos, docker]

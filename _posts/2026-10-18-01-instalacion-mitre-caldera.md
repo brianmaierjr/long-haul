@@ -1,6 +1,6 @@
 ---
-title: "InstalaciÃ³n de MITRE CALDERA 5.3.0"
-description: "InstalaciÃ³n base de MITRE CALDERA con Ubuntu y Docker."
+title: "Instalación de MITRE CALDERA 5.3.0"
+description: "Instalación base de MITRE CALDERA con Ubuntu y Docker."
 date: 2026-10-18
 categories: [Laboratorios]
 tags: [caldera, docker, ubuntu]

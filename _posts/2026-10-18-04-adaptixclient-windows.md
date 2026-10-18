@@ -1,6 +1,6 @@
 ---
 title: "Compilar AdaptixClient en Windows 11"
-description: "PreparaciÃ³n de dependencias y compilaciÃ³n de AdaptixClient con MSYS2 y Qt."
+description: "Preparación de dependencias y compilación de AdaptixClient con MSYS2 y Qt."
 date: 2026-10-18
 categories: [Herramientas]
 tags: [adaptixc2, windows, compilacion]

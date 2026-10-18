@@ -1,5 +1,5 @@
 ---
-title: "InstalaciÃ³n de BloodHound Community Edition"
+title: "Instalación de BloodHound Community Edition"
 description: "Despliegue de BloodHound CE con Docker y comprobaciones iniciales."
 date: 2026-10-18
 categories: [Laboratorios]

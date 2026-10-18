@@ -1,6 +1,6 @@
 ---
-title: "PublicaciÃ³n segura de documentaciÃ³n en GitHub"
-description: "OrganizaciÃ³n de manuales y buenas prÃ¡cticas antes de hacer pÃºblica la documentaciÃ³n."
+title: "Publicación segura de documentación en GitHub"
+description: "Organización de manuales y buenas prácticas antes de hacer pública la documentación."
 date: 2026-10-18
 categories: [Documentacion]
 tags: [github, git, documentacion]

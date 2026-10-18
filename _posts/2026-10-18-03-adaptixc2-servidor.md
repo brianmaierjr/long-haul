@@ -1,6 +1,6 @@
 ---
 title: "AdaptixC2: servidor de laboratorio en Docker"
-description: "InstalaciÃ³n y aislamiento del servidor de administraciÃ³n de AdaptixC2."
+description: "Instalación y aislamiento del servidor de administración de AdaptixC2."
 date: 2026-10-18
 categories: [Laboratorios]
 tags: [adaptixc2, docker, hardening]

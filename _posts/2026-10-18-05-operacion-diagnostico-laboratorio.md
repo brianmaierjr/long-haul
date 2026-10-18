@@ -1,6 +1,6 @@
 ---
-title: "OperaciÃ³n y diagnÃ³stico del laboratorio"
-description: "ComprobaciÃ³n del estado de los contenedores, conexiones y servicios locales."
+title: "Operación y diagnóstico del laboratorio"
+description: "Comprobación del estado de los contenedores, conexiones y servicios locales."
 date: 2026-10-18
 categories: [Laboratorios]
 tags: [docker, operacion, diagnostico]
