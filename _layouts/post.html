@@ -1,38 +1,16 @@
 ---
 layout: default
 ---
-<article class="post">
-  {%- if page.image -%}
-    <div class="featuredImage">
-        <img src="{{ '/assets/img/' | append: page.image | relative_url }}" alt="" />
-      </div>
-  {%- endif -%}
-  <header>
-    <h1 class="postTitle">{{ page.title }}</h1>
-    <p class="meta">{{ page.date | date: '%B %d, %Y' }} | <span class="time">{{ page.content | number_of_words | divided_by:180 }}</span> Minute Read</p>
-  </header>
-
-  {{ content }}
-
-  <!-- POST NAVIGATION -->
-  <footer class="postNav clearfix">
-    {%- if page.previous.url -%}
-      <a class="prev{% if page.previous.image %} image{% endif %}" href="{{ page.previous.url | relative_url }}"><span>&laquo;&nbsp;{{ page.previous.title }}</span>
-      {%- if page.previous.image -%}
-        <img src="{{ '/assets/img/' |  append: page.previous.image | relative_url }}" alt="">
-      {%- endif -%}
-    </a>
-    {%- endif -%}
-    {%- if page.next.url -%}
-      <a class="next{% if page.next.image %} image{% endif %}" href="{{ page.next.url | relative_url }}"><span>{{ page.next.title }}&nbsp;&raquo;</span>
-      {%- if page.next.image -%}
-        <img src="{{ '/assets/img/' | append: page.next.image | relative_url }}" alt="">
-      {%- endif -%}
-      </a>
-    {%- endif -%}
-  </footer>
-</article>
-
-{%- if site.disqus.shortname -%}
-  {%- include disqus_comments.html -%}
-{%- endif -%}
+<div class="container article-frame">
+  <div class="breadcrumbs"><a href="{{ '/' | relative_url }}">Inicio</a><span>/</span><a href="{{ '/articulos/' | relative_url }}">Artículos</a><span>/</span><span>Lectura</span></div>
+  <article class="article-shell">
+    <header class="article-head">
+      <div class="meta-line"><span class="eyebrow">{{ page.categories | first | default: 'Artículo' }}</span><span>{{ page.date | date: '%d/%m/%Y' }}</span><span>{{ content | number_of_words | divided_by: 200 | plus: 1 }} min de lectura</span></div>
+      <h1>{{ page.title }}</h1>
+      {% if page.description %}<p class="article-lead">{{ page.description }}</p>{% endif %}
+      {% if page.tags.size > 0 %}<div class="tags">{% for tag in page.tags %}<a class="tag" href="{{ '/temas/' | relative_url }}#{{ tag | slugify }}">#{{ tag }}</a>{% endfor %}</div>{% endif %}
+    </header>
+    <div class="article-body">{{ content }}</div>
+    <div class="article-end"><p>¿Te resultó útil? Puedes revisar más notas y laboratorios.</p><a class="text-link" href="{{ '/articulos/' | relative_url }}">← Volver a artículos</a></div>
+  </article>
+</div>
