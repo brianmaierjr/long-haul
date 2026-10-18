@@ -1,62 +1,56 @@
-![preview Long Haul](/preview.jpg)
+# CyberSec | Research & Labs — Blog de NoTrustedX
 
-Long Haul is a minimal jekyll theme built with SASS and focuses on long form blog posts. It is meant to be used as a starting point for a jekyll blog/website.
+Plantilla de blog técnico Jekyll + GitHub Pages en español, responsive y con modo claro/oscuro, artículos Markdown, etiquetas, archivo con buscador local y RSS.
 
-If you really enjoy Long Haul and want to give me credit somewhere on the internet send or tweet out your experience with Long Haul and tag me [@brianmaierjr](https://twitter.com/brianmaierjr).
+**Destino:** `https://github.com/NoTrustedx/notrustedx.github.io`
 
-#### [View Demo](http://brianmaierjr.com/long-haul)
+**URL prevista:** `https://notrustedx.github.io/`
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/bd29f13b-3754-46d7-9a39-48db2e174b99/deploy-status)](https://app.netlify.com/sites/long-haul/deploys)
+> El repositorio de destino ya existe y contiene otra plantilla (Long Haul). NO subas este proyecto directamente a `master` sin revisar los cambios. La publicación segura se hace en rama separada y por Pull Request.
 
-## Features
+## Publicar desde Windows (PowerShell)
 
--   Minimal, Type Focused Design
--   Built with SASS
--   SVG Social Icons
--   Responsive Nav Menu
--   XML Feed for RSS Readers
--   Contact Form via Formspree
--   5 Post Loop with excerpt on Home Page
--   Previous / Next Post Navigation
--   Estimated Reading Time for posts
--   Stylish Drop Cap on posts
--   A Better Type Scale for all devices
--   Comments powered by Disqus
--   [Dark Mode support](https://github.com/brianmaierjr/long-haul/blob/master/preview-dark.png) via [prefers-color-scheme](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme)
+1. Descomprime este ZIP en una carpeta (por ejemplo, `C:\CyberSec_Blog_NoTrustedx`).
+2. Instala Git for Windows y configura tu identidad Git si es la primera vez: `git config --global user.name "NoTrustedX"` y `git config --global user.email "tu-email-publico-o-noreply"` (elige tú el email real/noreply).
+3. Abre PowerShell dentro de la carpeta descomprimida.
+4. Ejecuta `powershell.exe -NoProfile -File .\scripts\Validar-Blog.ps1`.
+5. Ejecuta `powershell.exe -NoProfile -File .\scripts\Publicar-Blog-GitHub.ps1`.
+6. Autoriza la autenticación GitHub si Git Credential Manager la solicita.
+7. Abre el enlace de comparación impreso por el script; crea el Pull Request y revisa diferencias.
+8. Si deseas reemplazar Long Haul, integra el PR a `master`; revisa `Settings → Pages` para publicar desde `master` y `/(root)`.
+9. Comprueba el despliegue en `Actions` y en `https://notrustedx.github.io/`.
 
-## Setup
+La rama de trabajo propuesta se crea **sin sobrescribir master**. El script NO hace merge automático.
 
-1. [Install Jekyll](http://jekyllrb.com)
-2. Fork the [Long Haul repo](http://github.com/brianmaierjr/long-haul)
-3. Clone it
-4. [Install Bundler](http://bundler.io/)
-5. Run `bundle install`
-6. Run Jekyll Serve and Watch command`bundle exec jekyll serve -w`
+## Archivos del blog
 
-## Site Settings
+- `_config.yml`: identidad y configuración de Jekyll.
+- `_posts/`: artículos en Markdown.
+- `_layouts/`, `_includes/`: estructura de páginas.
+- `index.html`, `articulos.html`, `temas.html`, `sobre-mi.md`: secciones.
+- `assets/`: CSS, JavaScript e iconos.
+- `scripts/Validar-Blog.ps1`: validación de estructura.
+- `scripts/Publicar-Blog-GitHub.ps1`: prepara una rama y la sube para revisión.
+- `DEPLOY.md`: lista de despliegue y recomendaciones.
 
-The main settings can be found inside the `_config.yml` file:
+## Publicar artículos
 
--   **title:** title of your site
--   **description:** description of your site
--   **url:** your url
--   **paginate:** the amount of posts displayed on homepage
--   **navigation:** these are the links in the main site navigation
--   **social** diverse social media usernames (optional)
--   **google_analytics** Google Analytics key (optional)
+Crea un archivo `_posts/AAAA-MM-DD-titulo.md` con YAML Front Matter, por ejemplo:
 
-### Header Option
+```markdown
+---
+layout: post
+title: "Mi primer laboratorio"
+date: 2026-10-18 09:00:00 -0400
+categories: [Laboratorios]
+tags: [docker, seguridad]
+---
 
-If you'd like your header to be larger then you can use the option below in you `config.yml` to make it take up half of the vertical space on screens 800px wide and up. _Preview image below._
+Contenido del tutorial en Markdown.
+```
 
--   **header:** large
+Las tres publicaciones iniciales están identificadas como **demostraciones**. Personalízalas y verifica que no contienen información confidencial antes de usarlas como portafolio.
 
-![preview Long Haul](/preview-large.png)
+## Fuente
 
-## To use on GitHub Pages
-
-To use latest Jekyll and Jekyll Sass Converter on GitHub Pages, <a href="https://github.blog/changelog/2022-07-27-github-pages-custom-github-actions-workflows-beta/">you can now deploy to a GitHub Pages site using GitHub Actions.</a>
-
-## License
-
-This is [MIT](LICENSE) with no added caveats, so feel free to use this Jekyll theme on your site without linking back to me or using a disclaimer.
+[GitHub Docs: configuración de GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site).

@@ -1,24 +1,46 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
-<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" <![endif]-->
-<!--[if IE 8]><html class="no-js lt-ie9" <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-
-{%- include head.html -%}
-
+<!doctype html>
+<html lang="{{ site.lang | default: 'es' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1120">
+  {% seo %}
+  {% feed_meta %}
+  <link rel="icon" href="{{ '/assets/img/favicon.svg' | relative_url }}" type="image/svg+xml">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <script>
+    try { if(localStorage.getItem('cybersec-theme') === 'light') document.documentElement.setAttribute('data-theme','light'); } catch(e) {}
+  </script>
+</head>
 <body>
-
-   {%- include header.html -%}
-
-   <div class="content">
-      <div class="container">
-         {{ content }}
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <div class="top-glow" aria-hidden="true"></div>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="{{ '/' | relative_url }}" aria-label="{{ site.title }}: inicio">
+        <span class="brand-symbol" aria-hidden="true">&lt;/&gt;</span>
+        <span class="brand-text">CYBERSEC<span class="brand-dot">.</span><small>RESEARCH &amp; LABS</small></span>
+      </a>
+      <nav class="main-nav" aria-label="Navegación principal">
+        <a href="{{ '/' | relative_url }}">Inicio</a>
+        <a href="{{ '/articulos/' | relative_url }}">Artículos</a>
+        <a href="{{ '/temas/' | relative_url }}">Temas</a>
+        <a href="{{ '/sobre-mi/' | relative_url }}">Sobre mí</a>
+      </nav>
+      <button id="theme-toggle" class="theme-toggle" type="button" title="Alternar modo claro / oscuro" aria-label="Alternar modo claro y oscuro">◐</button>
+    </div>
+  </header>
+  <main id="contenido">{{ content }}</main>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div><strong>{{ site.title }}</strong><p>Conocimiento compartido. Investigación responsable.</p></div>
+      <div class="footer-links">
+        <a href="{{ '/feed.xml' | relative_url }}">RSS</a>
+        <a href="https://github.com/{{ site.author.github | default: 'TU_USUARIO' }}" rel="noopener noreferrer">GitHub ↗</a>
+        <span>© {{ 'now' | date: '%Y' }}</span>
       </div>
-   </div><!-- end .content -->
-
-   {%- include footer.html -%}
-   {%- include scripts.html -%}
-
+    </div>
+  </footer>
+  <script src="{{ '/assets/js/main.js' | relative_url }}" defer></script>
 </body>
-
 </html>
