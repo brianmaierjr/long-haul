@@ -1,0 +1,7 @@
+{% assign entry = include.post %}
+<article class="post-card">
+  <div class="card-top"><span class="chip">{{ entry.categories | first | default: 'Publicación' }}</span><time datetime="{{ entry.date | date: '%Y-%m-%d' }}">{{ entry.date | date: '%d %b %Y' }}</time></div>
+  <h3><a href="{{ entry.url | relative_url }}">{{ entry.title }}</a></h3>
+  <p>{{ entry.description | default: entry.excerpt | strip_html | truncate: 155 }}</p>
+  <div class="card-bottom"><span>{{ entry.content | number_of_words | divided_by: 200 | plus: 1 }} min lectura</span><a aria-label="Leer {{ entry.title }}" href="{{ entry.url | relative_url }}">Leer artículo <span aria-hidden="true">↗</span></a></div>
+</article>

@@ -1,0 +1,17 @@
+---
+layout: default
+title: "Artículos"
+description: "Todas las publicaciones de la bitácora."
+permalink: /articulos/
+---
+<section class="container inner-page">
+  <div class="page-heading"><span class="eyebrow">ARCHIVO DE INVESTIGACIÓN</span><h1>Todos los artículos<span class="accent">.</span></h1><p>Busca por título, descripción, categoría o palabra clave.</p></div>
+  <div class="search-strip"><label for="post-search" class="sr-only">Buscar artículos</label><span aria-hidden="true">⌕</span><input type="search" id="post-search" placeholder="Buscar artículos: docker, OSINT, evidencias…" autocomplete="off"><span class="search-count" id="search-count" aria-live="polite">{{ site.posts.size }} artículos</span></div>
+  <div class="post-grid" id="all-posts">
+    {% for post in site.posts %}
+    {% capture search_terms %}{{ post.title }} {{ post.description }} {{ post.categories | join: ' ' }} {{ post.tags | join: ' ' }}{% endcapture %}
+    <div class="filterable-post" data-filter-item data-search="{{ search_terms | downcase | escape }}">{% include post-card.html post=post %}</div>
+    {% endfor %}
+  </div>
+  <p id="empty-results" class="empty-results" hidden>No se encontraron artículos con ese término.</p>
+</section>

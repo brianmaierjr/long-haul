@@ -1,36 +1,33 @@
 ---
 layout: default
-title: Long Haul
+title: "Inicio"
+description: "Notas, tutoriales y laboratorios de ciberseguridad en español."
+permalink: /
 ---
-
-<div class="home" id="home">
-	<h1 class="pageTitle">Recent Posts</h1>
-	<div class="posts noList">
-		{%- for post in paginator.posts -%}
-		<article>
-			<span class="date">{{ post.date | date: '%B %d, %Y' }}</span>
-			<h3>
-				<a class="post-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
-			</h3>
-			<p>
-				{%- if post.description -%}{{ post.description }}{%- else -%}{{
-				post.excerpt | strip_html }}{%- endif -%}
-			</p>
-		</article>
-		{%- endfor -%}
-	</div>
-	<!-- Pagination links -->
-	<div class="pagination">
-		{%- if paginator.previous_page -%}
-		<a
-			href="{{ paginator.previous_page_path | relative_url }}"
-			class="previous button__outline"
-			>Newer Posts</a
-		>
-		{%- endif -%} {%- if paginator.next_page -%}
-		<a href="{{ paginator.next_page_path | relative_url }}" class="next button__outline"
-			>Older Posts</a
-		>
-		{%- endif -%}
-	</div>
-</div>
+<section class="hero container">
+  <div class="hero-content">
+    <div class="availability"><span class="pulse"></span> BITÁCORA TÉCNICA · EN ESPAÑOL</div>
+    <h1>La seguridad se aprende <em>investigando.</em></h1>
+    <p>Notas de campo, tutoriales y laboratorios para comprender la seguridad ofensiva, mejorar la defensa y documentar lo aprendido.</p>
+    <div class="hero-actions"><a class="button button-primary" href="{{ '/articulos/' | relative_url }}">Explorar artículos <span>↗</span></a><a class="button button-outline" href="{{ '/sobre-mi/' | relative_url }}">Conoce el proyecto</a></div>
+    <div class="hero-foot"><span>RESEARCH</span><span class="tiny-dot"></span><span>DEFENSE</span><span class="tiny-dot"></span><span>LABS</span><span class="tiny-dot"></span><span>KNOWLEDGE</span></div>
+  </div>
+  <div class="hero-display" aria-label="Panel ilustrativo del laboratorio" role="img">
+    <div class="terminal-top"><div class="window-dots"><i></i><i></i><i></i></div><span>lab-notes ~ /research</span><span>● ONLINE</span></div>
+    <div class="terminal-lines"><span class="line-muted">$ <b>cat</b> mission.txt</span><span class="line-green">[+] Aprende · Experimenta · Comparte</span><span class="line-muted">$ <b>ls</b> ./topics</span><span class="line-white">osint/ &nbsp; blue-team/ &nbsp; labs/</span><span class="line-muted">$ <b>echo</b> $PRINCIPLE</span><span class="line-green">"La ética es parte del método."</span><span class="cursor">▌</span></div>
+    <div class="terminal-grid" aria-hidden="true"></div>
+  </div>
+</section>
+<section class="container sections-area" aria-labelledby="topics-title">
+  <div class="section-heading"><div><span class="eyebrow">RUTAS DE APRENDIZAJE</span><h2 id="topics-title">Explora por temática</h2></div><a class="text-link" href="{{ '/temas/' | relative_url }}">Ver todas las etiquetas ↗</a></div>
+  <div class="topics-grid">
+    <a class="topic-card" href="{{ '/temas/' | relative_url }}#laboratorios"><span class="topic-icon">⌘</span><h3>Laboratorios</h3><p>Entornos aislados, Docker, virtualización y prácticas reproducibles.</p><span class="topic-arrow">↗</span></a>
+    <a class="topic-card" href="{{ '/temas/' | relative_url }}#osint"><span class="topic-icon">◉</span><h3>OSINT</h3><p>Investigación de fuentes abiertas, metodología y evidencia.</p><span class="topic-arrow">↗</span></a>
+    <a class="topic-card" href="{{ '/temas/' | relative_url }}#blue-team"><span class="topic-icon">⬡</span><h3>Blue Team</h3><p>Detección, telemetría, endurecimiento y mejora continua.</p><span class="topic-arrow">↗</span></a>
+  </div>
+</section>
+<section class="container sections-area posts-section" aria-labelledby="posts-title">
+  <div class="section-heading"><div><span class="eyebrow">EN LA BITÁCORA</span><h2 id="posts-title">Publicaciones recientes</h2></div><a class="text-link" href="{{ '/articulos/' | relative_url }}">Todos los artículos ↗</a></div>
+  <div class="post-grid">{% for post in site.posts limit: 6 %}{% include post-card.html post=post %}{% endfor %}</div>
+</section>
+<section class="container"><div class="newsletter-panel"><div><span class="eyebrow">FILOSOFÍA</span><h2>El laboratorio es el punto de partida.</h2><p>Documentar hipótesis, evidencias y resultados permite que otras personas reproduzcan el aprendizaje de manera segura.</p></div><a class="button button-primary" href="{{ '/sobre-mi/' | relative_url }}">Sobre este espacio ↗</a></div></section>

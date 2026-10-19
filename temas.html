@@ -1,0 +1,15 @@
+---
+layout: default
+title: "Temas"
+description: "Explora publicaciones organizadas por etiquetas."
+permalink: /temas/
+---
+<section class="container inner-page">
+  <div class="page-heading"><span class="eyebrow">MAPA DE CONOCIMIENTO</span><h1>Temas y etiquetas<span class="accent">.</span></h1><p>Encuentra contenidos relacionados con cada área de estudio.</p></div>
+  {% assign sorted_tags = site.tags | sort %}
+  <div class="tag-cloud">{% for entry in sorted_tags %}{% assign key = entry[0] %}<a href="#{{ key | slugify }}" class="tag">#{{ key }} <span>{{ entry[1].size }}</span></a>{% endfor %}</div>
+  {% for entry in sorted_tags %}
+    {% assign key = entry[0] %}
+    <section class="tag-section" id="{{ key | slugify }}"><h2>#{{ key }} <span>({{ entry[1].size }})</span></h2><div class="tag-articles">{% for post in entry[1] %}<a href="{{ post.url | relative_url }}"><span>{{ post.title }}</span><time>{{ post.date | date: '%d/%m/%Y' }}</time><span class="tag-arrow">↗</span></a>{% endfor %}</div></section>
+  {% endfor %}
+</section>

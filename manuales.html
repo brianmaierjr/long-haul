@@ -1,0 +1,24 @@
+---
+layout: default
+title: "Manuales del laboratorio"
+description: "Serie ordenada de siete manuales sobre laboratorios de ciberseguridad."
+permalink: /manuales/
+---
+<section class="container inner-page">
+  <div class="page-heading">
+    <span class="eyebrow">DOCUMENTACION TECNICA</span>
+    <h1>Manuales del laboratorio<span class="accent">.</span></h1>
+    <p>Lee la serie en orden: requisitos, instalación, operación y publicación.</p>
+  </div>
+  {% assign serie_manuales = site.posts | where: "serie", "laboratorio-ciberseguridad" | sort: "orden" %}
+  <div class="post-grid">
+    {% for post in serie_manuales %}
+    <article class="post-card">
+      <span class="chip">Manual {{ post.orden }}</span>
+      <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+      <p>{{ post.description }}</p>
+      <a href="{{ post.url | relative_url }}">Leer manual &rarr;</a>
+    </article>
+    {% endfor %}
+  </div>
+</section>

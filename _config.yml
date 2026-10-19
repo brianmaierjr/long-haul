@@ -1,41 +1,35 @@
-title: Long Haul
-description: Long Form Jekyll theme built with SASS
-
-url: https://long-haul.netlify.app
-# Only necessary when hosting your site in a sub-directory. Project sites hosted on GitHub Pages are the common use-case of this variable.
-baseurl: # Ex: /project-page
-paginate_path: "blog/page:num/"
-permalink: blog/:title/
-
-# Header Option
-# header: large
-
-sass:
-    style: compressed
-
+# Personaliza estas opciones antes de publicar.
+title: "CyberSec | Research & Labs"
+description: "Investigación, defensa, laboratorios y aprendizaje de ciberseguridad."
+url: "https://notrustedx.github.io"
+baseurl: "" # Repositorio principal NoTrustedx/notrustedx.github.io
+lang: es
+author:
+  name: "NoTrustedX"
+  bio: "Compartiendo aprendizaje y experimentación responsable en seguridad."
+  github: "NoTrustedx"
+permalink: /articulos/:year/:month/:day/:title/
 markdown: kramdown
 highlighter: rouge
-plugins: [jekyll-paginate]
-paginate: 5
-
-navigation:
-    - title: Home
-      url: /index.html
-    - title: About
-      url: /about
-    - title: Contact
-      url: /contact
-
-social:
-    github: brianmaierjr
-    twitter: brianmaierjr
-    facebook: brianmaierjr
-    email: brimaidesigns@gmail.com
-    linkedin: brianmaierjr
-    youtube: RickAstleyYT
-    tumblr: i-am-a-fish
-
-google_analytics: "UA-58263416-1"
-
-disqus:
-    shortname: brianmaierjr
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+feed:
+  path: feed.xml
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+exclude:
+  - README.md
+  - DEPLOY.md
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - scripts/
+  - vendor/
+  - .github/
+  - node_modules/

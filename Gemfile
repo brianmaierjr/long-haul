@@ -1,8 +1,5 @@
-source 'https://rubygems.org'
+source "https://rubygems.org"
 
-gem "jekyll"
-gem "jekyll-paginate"
-gem "support-for"
-gem "http_parser"
-gem "webrick", "~> 1.7"
- 
+gem "github-pages", group: :jekyll_plugins
+# Servidor local cuando Ruby lo requiera
+gem "webrick", "~> 1.8"
